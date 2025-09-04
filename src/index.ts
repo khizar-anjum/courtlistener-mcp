@@ -34,7 +34,7 @@ interface SearchArgs {
 
 interface CaseDetailsArgs {
   case_id: string;
-  include_full_text?: boolean;
+  content_mode?: "summary" | "full";
 }
 
 interface SimilarPrecedentsArgs {
@@ -240,10 +240,11 @@ class CourtListenerMCPServer {
                 description:
                   "Case ID from search results (cluster ID or docket ID)",
               },
-              include_full_text: {
-                type: "boolean",
-                description: "Include full opinion text (may be large)",
-                default: false,
+              content_mode: {
+                type: "string",
+                enum: ["summary", "full"],
+                description: "Content mode: 'summary' returns API syllabus or 'N/A - use full mode', 'full' returns complete opinion text",
+                default: "summary",
               },
             },
             required: ["case_id"],
@@ -707,7 +708,7 @@ class CourtListenerMCPServer {
         ...dateFilter,
         cited_gt: 0,
         page_size: Math.min(limit * 2, 40),
-        fields: "id,case_name,court,date_filed,citation_count,snippet",
+        fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,citation_count,snippet,absolute_url,citation,lexisCite,neutralCite,docketNumber,status,syllabus,judge,download_url",
       };
 
       const response = await this.axiosInstance.get("/search/", { params });
@@ -741,17 +742,36 @@ class CourtListenerMCPServer {
       const results = sortedResults.map((item: any) => ({
         case_id: item.id,
         case_name: item.case_name,
-        court: item.court,
+        case_name_full: item.case_name_full || item.case_name,
+        court: {
+          id: item.court,
+          name: item.court, // API returns court ID, full name would need separate lookup
+          citation_string: item.court_citation_string || ""
+        },
         date_filed: item.date_filed,
+        citations: {
+          official: item.citation ? (Array.isArray(item.citation) ? item.citation : [item.citation]) : [],
+          lexis: item.lexisCite || undefined,
+          neutral: item.neutralCite || undefined
+        },
+        urls: {
+          courtlistener: item.absolute_url ? `https://www.courtlistener.com${item.absolute_url}` : undefined,
+          download: item.download_url || undefined
+        },
+        docket_number: item.docketNumber || "N/A",
+        legal_summary: item.syllabus || "N/A - use full mode for complete text",
+        full_text_available: !!item.snippet,
+        judge: item.judge || "N/A",
+        precedential_status: item.status || "Unknown",
         citation_count: item.citation_count || 0,
-        relevance_summary: this.truncateText(item.snippet, 200),
-        keyword_matches: item.relevance_score,
         precedential_value:
           item.citation_count > 10
             ? "Strong"
             : item.citation_count > 2
               ? "Moderate"
               : "Limited",
+        content_mode: "summary",
+        keyword_matches: item.relevance_score
       }));
 
       return {
@@ -815,7 +835,7 @@ class CourtListenerMCPServer {
   }
 
   private async getCaseDetails(args: CaseDetailsArgs) {
-    const { case_id, include_full_text = false } = args;
+    const { case_id, content_mode = "summary" } = args;
 
     try {
       let clusterResponse;
@@ -868,9 +888,9 @@ class CourtListenerMCPServer {
               `/opinions/${opinionId}/`,
               {
                 params: {
-                  fields: include_full_text
-                    ? "id,type,author_str,plain_text,html_with_citations"
-                    : "id,type,author_str,snippet",
+                  fields: content_mode === "full"
+                    ? "id,type,author_str,plain_text,html_with_citations,syllabus,download_url"
+                    : "id,type,author_str,snippet,syllabus,download_url",
                 },
               },
             );
@@ -884,18 +904,38 @@ class CourtListenerMCPServer {
       const result = {
         case_id: cluster.id,
         case_name: cluster.case_name,
-        court: cluster.court,
+        case_name_full: cluster.case_name_full || cluster.case_name,
+        court: {
+          id: cluster.court,
+          name: cluster.court, // Would need separate lookup for full name
+          citation_string: cluster.court_citation_string || ""
+        },
         date_filed: cluster.date_filed,
+        citations: {
+          official: cluster.citation ? (Array.isArray(cluster.citation) ? cluster.citation : [cluster.citation]) : [],
+          lexis: cluster.lexisCite || undefined,
+          neutral: cluster.neutralCite || undefined
+        },
+        urls: {
+          courtlistener: cluster.absolute_url ? `https://www.courtlistener.com${cluster.absolute_url}` : undefined
+        },
+        docket_number: cluster.docketNumber || "N/A",
         citation_count: cluster.citation_count || 0,
         precedential_status: cluster.precedential_status,
         judges: cluster.judges,
+        content_mode: content_mode,
+        legal_summary: cluster.syllabus || "N/A - use full mode for complete text",
+        full_text_available: opinions.some(op => op.plain_text),
         opinions: opinions.map((op) => ({
           opinion_id: op.id,
           type: op.type,
           author: op.author_str,
-          content: include_full_text
-            ? this.truncateText(op.plain_text, 5000)
-            : this.truncateText(op.snippet || "No excerpt available", 500),
+          legal_summary: op.syllabus || "N/A - use full mode for complete text",
+          content: content_mode === "full" 
+            ? op.plain_text || "Full text not available"
+            : (op.syllabus || "N/A - use full mode for complete text"),
+          download_url: op.download_url || undefined,
+          html_with_citations: content_mode === "full" ? op.html_with_citations : undefined
         })),
         cited_by_count: cluster.citation_count,
         legal_significance:
@@ -907,11 +947,11 @@ class CourtListenerMCPServer {
       };
 
       if (
-        !include_full_text &&
-        result.opinions.some((op) => op.content.includes("TRUNCATED"))
+        content_mode === "summary" &&
+        result.opinions.some((op) => op.content === "N/A - use full mode for complete text")
       ) {
         (result as any).note =
-          "Use include_full_text: true to get complete opinion text";
+          "Use content_mode: 'full' to get complete opinion text";
       }
 
       return {
@@ -1045,7 +1085,7 @@ class CourtListenerMCPServer {
         type: "o",
         cited_gt: citation_threshold - 1,
         page_size: limit + 5,
-        fields: "id,case_name,court,date_filed,citation_count,snippet",
+        fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,citation_count,snippet,absolute_url,citation,lexisCite,neutralCite,docketNumber,status,syllabus,judge,download_url",
       };
 
       const response = await this.axiosInstance.get("/search/", { params });
@@ -1055,16 +1095,36 @@ class CourtListenerMCPServer {
         .map((item: any) => ({
           case_id: item.id,
           case_name: item.case_name,
-          court: item.court,
+          case_name_full: item.case_name_full || item.case_name,
+          court: {
+            id: item.court,
+            name: item.court,
+            citation_string: item.court_citation_string || ""
+          },
           date_filed: item.date_filed,
+          citations: {
+            official: item.citation ? (Array.isArray(item.citation) ? item.citation : [item.citation]) : [],
+            lexis: item.lexisCite || undefined,
+            neutral: item.neutralCite || undefined
+          },
+          urls: {
+            courtlistener: item.absolute_url ? `https://www.courtlistener.com${item.absolute_url}` : undefined,
+            download: item.download_url || undefined
+          },
+          docket_number: item.docketNumber || "N/A",
+          legal_summary: item.syllabus || "N/A - use full mode for complete text",
+          full_text_available: !!item.snippet,
+          judge: item.judge || "N/A",
+          precedential_status: item.status || "Unknown",
           citation_count: item.citation_count || 0,
-          similarity_summary: this.truncateText(item.snippet, 150),
           precedential_value:
             item.citation_count > 10
               ? "Strong"
               : item.citation_count > 2
                 ? "Moderate"
                 : "Limited",
+          content_mode: "summary",
+          similarity_summary: this.truncateText(item.snippet, 150)
         }));
 
       return {
@@ -1251,7 +1311,7 @@ class CourtListenerMCPServer {
         type: "r",
         ...dateFilter,
         page_size: 50,
-        fields: "id,case_name,court,date_filed,date_terminated,nature_of_suit",
+        fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,date_terminated,nature_of_suit,assignedTo,assigned_to_id,attorney,cause,chapter,juryDemand,party,firm",
       };
 
       const response = await this.axiosInstance.get("/search/", { params });
@@ -1262,13 +1322,71 @@ class CourtListenerMCPServer {
         terminated_cases: cases.filter((c: any) => c.date_terminated).length,
         ongoing_cases: cases.filter((c: any) => !c.date_terminated).length,
         court_breakdown: {} as Record<string, number>,
+        judge_breakdown: {} as Record<string, number>,
+        attorney_patterns: {} as Record<string, number>,
+        case_nature_breakdown: {} as Record<string, number>,
+        party_analysis: {
+          unique_parties: new Set(),
+          repeat_litigants: {} as Record<string, number>
+        },
         avg_case_duration: null as number | null,
+        case_details: cases.slice(0, 10).map((c: any) => ({
+          case_id: c.id,
+          case_name: c.case_name,
+          case_name_full: c.case_name_full || c.case_name,
+          court: {
+            id: c.court,
+            name: c.court,
+            citation_string: c.court_citation_string || ""
+          },
+          date_filed: c.date_filed,
+          date_terminated: c.date_terminated || "Ongoing",
+          nature_of_suit: c.nature_of_suit || "Unknown",
+          assigned_judge: c.assignedTo || "N/A",
+          attorneys: c.attorney ? (Array.isArray(c.attorney) ? c.attorney : [c.attorney]) : [],
+          parties: c.party ? (Array.isArray(c.party) ? c.party : [c.party]) : [],
+          jury_demand: c.juryDemand || "Unknown",
+          urls: {
+            courtlistener: c.absolute_url ? `https://www.courtlistener.com${c.absolute_url}` : undefined
+          }
+        }))
       };
 
       cases.forEach((case_item: any) => {
         const court = case_item.court || "unknown";
         outcomes.court_breakdown[court] =
           (outcomes.court_breakdown[court] || 0) + 1;
+        
+        // Judge analysis
+        if (case_item.assignedTo) {
+          outcomes.judge_breakdown[case_item.assignedTo] =
+            (outcomes.judge_breakdown[case_item.assignedTo] || 0) + 1;
+        }
+        
+        // Attorney analysis
+        if (case_item.attorney) {
+          const attorneys = Array.isArray(case_item.attorney) ? case_item.attorney : [case_item.attorney];
+          attorneys.forEach((attorney: string) => {
+            outcomes.attorney_patterns[attorney] =
+              (outcomes.attorney_patterns[attorney] || 0) + 1;
+          });
+        }
+        
+        // Nature of suit analysis
+        if (case_item.nature_of_suit) {
+          outcomes.case_nature_breakdown[case_item.nature_of_suit] =
+            (outcomes.case_nature_breakdown[case_item.nature_of_suit] || 0) + 1;
+        }
+        
+        // Party analysis
+        if (case_item.party) {
+          const parties = Array.isArray(case_item.party) ? case_item.party : [case_item.party];
+          parties.forEach((party: string) => {
+            outcomes.party_analysis.unique_parties.add(party);
+            outcomes.party_analysis.repeat_litigants[party] =
+              (outcomes.party_analysis.repeat_litigants[party] || 0) + 1;
+          });
+        }
       });
 
       const terminatedCases = cases.filter(
@@ -1292,6 +1410,17 @@ class CourtListenerMCPServer {
         }
       }
 
+      // Convert Set to array for JSON serialization
+      const finalOutcomes = {
+        ...outcomes,
+        party_analysis: {
+          unique_parties_count: outcomes.party_analysis.unique_parties.size,
+          repeat_litigants: Object.entries(outcomes.party_analysis.repeat_litigants)
+            .filter(([, count]) => count > 1)
+            .reduce((acc, [party, count]) => ({ ...acc, [party]: count }), {})
+        }
+      };
+
       return {
         content: [
           {
@@ -1308,7 +1437,7 @@ class CourtListenerMCPServer {
                       ? "all courts"
                       : targetCourts.length,
                 },
-                outcome_patterns: outcomes,
+                outcome_patterns: finalOutcomes,
                 success_indicators: {
                   case_closure_rate:
                     outcomes.terminated_cases > 0
@@ -1377,7 +1506,7 @@ class CourtListenerMCPServer {
 
       const judgeParams = {
         name__icontains: judge_name,
-        fields: "id,name_full,positions",
+        fields: "id,name_full,name_first,name_last,positions,political_affiliations,education,date_created,date_modified",
       };
 
       const judgeResponse = await this.axiosInstance.get("/people/", {
@@ -1424,7 +1553,7 @@ class CourtListenerMCPServer {
         q: finalQuery,
         type: "o",
         page_size: 20,
-        fields: "id,case_name,court,date_filed,type",
+        fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,citation_count,snippet,absolute_url,citation,lexisCite,neutralCite,docketNumber,status,syllabus,judge,type",
       };
 
       const opinionResponse = await this.axiosInstance.get("/search/", {
@@ -1434,9 +1563,17 @@ class CourtListenerMCPServer {
 
       const analysis = {
         judge_info: {
-          name: selectedJudge.name_full,
           id: selectedJudge.id,
-          positions: selectedJudge.positions?.slice(-3) || [],
+          name_full: selectedJudge.name_full,
+          name_first: selectedJudge.name_first,
+          name_last: selectedJudge.name_last,
+          positions: selectedJudge.positions || [],
+          political_affiliations: selectedJudge.political_affiliations || [],
+          education: selectedJudge.education || [],
+          career_span: {
+            date_created: selectedJudge.date_created,
+            date_modified: selectedJudge.date_modified
+          },
           multiple_matches: judges.length > 1 ? `Found ${judges.length} judges with similar names` : null,
         },
         search_parameters: {
@@ -1448,17 +1585,51 @@ class CourtListenerMCPServer {
           total_opinions_found: opinions.length,
           opinion_types: {} as Record<string, number>,
           courts_served: {} as Record<string, number>,
-          recent_cases: opinions.slice(0, 5).map((op: any) => ({
+          citation_analysis: {
+            total_citations: opinions.reduce((sum: number, op: any) => sum + (op.citation_count || 0), 0),
+            avg_citations_per_opinion: opinions.length > 0 
+              ? Math.round(opinions.reduce((sum: number, op: any) => sum + (op.citation_count || 0), 0) / opinions.length)
+              : 0,
+            highly_cited_opinions: opinions.filter((op: any) => (op.citation_count || 0) > 5).length
+          },
+          recent_cases: opinions.slice(0, 8).map((op: any) => ({
+            case_id: op.id,
             case_name: op.case_name,
-            court: op.court,
-            date: op.date_filed,
-            type: op.type,
+            case_name_full: op.case_name_full || op.case_name,
+            court: {
+              id: op.court,
+              name: op.court,
+              citation_string: op.court_citation_string || ""
+            },
+            date_filed: op.date_filed,
+            citations: {
+              official: op.citation ? (Array.isArray(op.citation) ? op.citation : [op.citation]) : [],
+              lexis: op.lexisCite || undefined,
+              neutral: op.neutralCite || undefined
+            },
+            urls: {
+              courtlistener: op.absolute_url ? `https://www.courtlistener.com${op.absolute_url}` : undefined
+            },
+            docket_number: op.docketNumber || "N/A",
+            legal_summary: op.syllabus || "N/A - use full mode for complete text",
+            citation_count: op.citation_count || 0,
+            precedential_status: op.status || "Unknown",
+            opinion_type: op.type
           })),
         },
+        judicial_patterns: {
+          most_active_court: null as string | null,
+          opinion_frequency: opinions.length > 0 ? "Active" : "Limited",
+          precedential_impact: opinions.filter((op: any) => (op.citation_count || 0) > 2).length > 0 
+            ? "High - has written influential opinions"
+            : "Moderate - standard judicial output"
+        },
         strategic_insight:
-          opinions.length > 5
-            ? "Judge has significant experience in this area"
-            : "Limited data available - consider broader search",
+          opinions.length > 10
+            ? "Judge has extensive experience in this area with significant precedential impact"
+            : opinions.length > 5
+              ? "Judge has moderate experience in this area"
+              : "Limited data available - consider broader search or different case type",
       };
 
       opinions.forEach((op: any) => {
@@ -1467,6 +1638,12 @@ class CourtListenerMCPServer {
         analysis.case_analysis.courts_served[op.court] =
           (analysis.case_analysis.courts_served[op.court] || 0) + 1;
       });
+
+      // Determine most active court
+      if (Object.keys(analysis.case_analysis.courts_served).length > 0) {
+        analysis.judicial_patterns.most_active_court = Object.keys(analysis.case_analysis.courts_served)
+          .reduce((a, b) => analysis.case_analysis.courts_served[a] > analysis.case_analysis.courts_served[b] ? a : b);
+      }
 
       return {
         content: [
@@ -1535,7 +1712,7 @@ class CourtListenerMCPServer {
           q: finalQuery,
           type: "o",
           page_size: 5,
-          fields: "id,case_name,court,date_filed,citation_count,snippet",
+          fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,citation_count,snippet,absolute_url,citation,lexisCite,neutralCite,docketNumber,status,syllabus,judge,download_url",
         };
 
         const response = await this.axiosInstance.get("/search/", {
@@ -1553,9 +1730,33 @@ class CourtListenerMCPServer {
             matched_case: {
               case_id: bestMatch.id,
               case_name: bestMatch.case_name,
-              court: bestMatch.court,
+              case_name_full: bestMatch.case_name_full || bestMatch.case_name,
+              court: {
+                id: bestMatch.court,
+                name: bestMatch.court,
+                citation_string: bestMatch.court_citation_string || ""
+              },
               date_filed: bestMatch.date_filed,
-              citation_count: bestMatch.citation_count,
+              citations: {
+                official: bestMatch.citation ? (Array.isArray(bestMatch.citation) ? bestMatch.citation : [bestMatch.citation]) : [],
+                lexis: bestMatch.lexisCite || undefined,
+                neutral: bestMatch.neutralCite || undefined
+              },
+              urls: {
+                courtlistener: bestMatch.absolute_url ? `https://www.courtlistener.com${bestMatch.absolute_url}` : undefined,
+                download: bestMatch.download_url || undefined
+              },
+              docket_number: bestMatch.docketNumber || "N/A",
+              legal_summary: bestMatch.syllabus || "N/A - use full mode for complete text",
+              judge: bestMatch.judge || "N/A",
+              precedential_status: bestMatch.status || "Unknown",
+              citation_count: bestMatch.citation_count || 0,
+              precedential_value: bestMatch.citation_count > 10 ? "Strong" : bestMatch.citation_count > 2 ? "Moderate" : "Limited"
+            },
+            citation_formats: {
+              input_format: citation,
+              suggested_formats: bestMatch.citation ? (Array.isArray(bestMatch.citation) ? bestMatch.citation : [bestMatch.citation]) : [],
+              bluebook_format: bestMatch.neutralCite || bestMatch.lexisCite || (bestMatch.citation && bestMatch.citation[0]) || "Format unavailable"
             },
             context_relevance:
               context_text && bestMatch.snippet ? "relevant" : "needs_review",
@@ -1566,7 +1767,22 @@ class CourtListenerMCPServer {
               ...matches.slice(1, 3).map((match: any) => ({
                 case_id: match.id,
                 case_name: match.case_name,
+                case_name_full: match.case_name_full || match.case_name,
+                court: {
+                  id: match.court,
+                  name: match.court,
+                  citation_string: match.court_citation_string || ""
+                },
+                urls: {
+                  courtlistener: match.absolute_url ? `https://www.courtlistener.com${match.absolute_url}` : undefined
+                },
+                citations: {
+                  official: match.citation ? (Array.isArray(match.citation) ? match.citation : [match.citation]) : [],
+                  lexis: match.lexisCite || undefined,
+                  neutral: match.neutralCite || undefined
+                },
                 relationship: "related_citation",
+                precedential_value: match.citation_count > 10 ? "Strong" : match.citation_count > 2 ? "Moderate" : "Limited"
               })),
             );
           }
@@ -1654,7 +1870,7 @@ class CourtListenerMCPServer {
         q: finalQuery,
         type: "o",
         page_size: 20,
-        fields: "id,case_name,court,date_filed,snippet",
+        fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,citation_count,snippet,absolute_url,citation,lexisCite,neutralCite,docketNumber,status,syllabus,judge,download_url",
         order_by: "-date_filed",
       };
 
@@ -1695,10 +1911,31 @@ class CourtListenerMCPServer {
         },
         case_type: case_type,
         procedural_precedents: proceduralCases.map((case_item: any) => ({
+          case_id: case_item.id,
           case_name: case_item.case_name,
-          court: case_item.court,
-          date: case_item.date_filed,
+          case_name_full: case_item.case_name_full || case_item.case_name,
+          court: {
+            id: case_item.court,
+            name: case_item.court,
+            citation_string: case_item.court_citation_string || ""
+          },
+          date_filed: case_item.date_filed,
+          citations: {
+            official: case_item.citation ? (Array.isArray(case_item.citation) ? case_item.citation : [case_item.citation]) : [],
+            lexis: case_item.lexisCite || undefined,
+            neutral: case_item.neutralCite || undefined
+          },
+          urls: {
+            courtlistener: case_item.absolute_url ? `https://www.courtlistener.com${case_item.absolute_url}` : undefined,
+            download: case_item.download_url || undefined
+          },
+          docket_number: case_item.docketNumber || "N/A",
+          legal_summary: case_item.syllabus || "N/A - use full mode for complete text",
+          judge: case_item.judge || "N/A",
+          precedential_status: case_item.status || "Unknown",
+          citation_count: case_item.citation_count || 0,
           procedural_insight: this.truncateText(case_item.snippet, 200),
+          relevance_for_procedure: "Contains procedural guidance for " + case_type
         })),
         general_procedural_requirements: [
           "Determine proper court jurisdiction based on case type and amount",
@@ -1815,7 +2052,7 @@ class CourtListenerMCPServer {
         ...dateFilter,
         page_size: 50,
         order_by: "-date_filed",
-        fields: "id,case_name,court,date_filed,date_terminated,citation_count",
+        fields: "id,case_name,case_name_full,court,court_citation_string,date_filed,date_terminated,citation_count,snippet,absolute_url,citation,lexisCite,neutralCite,docketNumber,status,syllabus,judge",
       };
 
       const response = await this.axiosInstance.get("/search/", { params });
@@ -1824,16 +2061,65 @@ class CourtListenerMCPServer {
       const trends = {
         analysis_period: time_period,
         legal_area: legal_area,
+        trend_type: trend_type,
         total_cases_found: cases.length,
         trend_analysis: {} as any,
         court_activity: {} as Record<string, number>,
+        judge_activity: {} as Record<string, number>,
         monthly_filing_pattern: {} as Record<string, number>,
+        geographic_distribution: {} as Record<string, number>,
+        citation_trends: {
+          highly_cited_cases: 0,
+          avg_citation_count: 0,
+          emerging_precedents: [] as any[]
+        },
         key_trends: [] as string[],
+        representative_cases: cases.slice(0, 5).map((case_item: any) => ({
+          case_id: case_item.id,
+          case_name: case_item.case_name,
+          case_name_full: case_item.case_name_full || case_item.case_name,
+          court: {
+            id: case_item.court,
+            name: case_item.court,
+            citation_string: case_item.court_citation_string || ""
+          },
+          date_filed: case_item.date_filed,
+          date_terminated: case_item.date_terminated || "Ongoing",
+          citations: {
+            official: case_item.citation ? (Array.isArray(case_item.citation) ? case_item.citation : [case_item.citation]) : [],
+            lexis: case_item.lexisCite || undefined,
+            neutral: case_item.neutralCite || undefined
+          },
+          urls: {
+            courtlistener: case_item.absolute_url ? `https://www.courtlistener.com${case_item.absolute_url}` : undefined
+          },
+          docket_number: case_item.docketNumber || "N/A",
+          legal_summary: case_item.syllabus || "N/A - use full mode for complete text",
+          judge: case_item.judge || "N/A",
+          precedential_status: case_item.status || "Unknown",
+          citation_count: case_item.citation_count || 0,
+          trend_significance: case_item.citation_count > 5 ? "High impact" : "Standard case"
+        }))
       };
 
       cases.forEach((case_item: any) => {
         const court = case_item.court || "unknown";
         trends.court_activity[court] = (trends.court_activity[court] || 0) + 1;
+
+        // Judge activity tracking
+        if (case_item.judge) {
+          trends.judge_activity[case_item.judge] = (trends.judge_activity[case_item.judge] || 0) + 1;
+        }
+
+        // Geographic distribution (simplified by court ID prefix)
+        const courtPrefix = court.substring(0, 2);
+        trends.geographic_distribution[courtPrefix] = (trends.geographic_distribution[courtPrefix] || 0) + 1;
+
+        // Citation trends analysis
+        const citationCount = case_item.citation_count || 0;
+        if (citationCount > 5) {
+          trends.citation_trends.highly_cited_cases++;
+        }
 
         if (case_item.date_filed) {
           const month = case_item.date_filed.substring(0, 7);
@@ -1841,6 +2127,21 @@ class CourtListenerMCPServer {
             (trends.monthly_filing_pattern[month] || 0) + 1;
         }
       });
+
+      // Calculate citation trends
+      const totalCitations = cases.reduce((sum: number, c: any) => sum + (c.citation_count || 0), 0);
+      trends.citation_trends.avg_citation_count = cases.length > 0 ? Math.round(totalCitations / cases.length) : 0;
+      
+      // Identify emerging precedents (high citation recent cases)
+      trends.citation_trends.emerging_precedents = cases
+        .filter((c: any) => (c.citation_count || 0) > 3)
+        .slice(0, 3)
+        .map((c: any) => ({
+          case_name: c.case_name,
+          citation_count: c.citation_count,
+          court: c.court,
+          date_filed: c.date_filed
+        }));
 
       if (trend_type === "outcomes") {
         const terminated = cases.filter((c: any) => c.date_terminated).length;
@@ -1854,8 +2155,8 @@ class CourtListenerMCPServer {
         };
         trends.key_trends.push(
           terminated > ongoing
-            ? "High case resolution rate"
-            : "Many cases still pending",
+            ? "High case resolution rate - favorable for litigation"
+            : "Many cases still pending - consider alternative dispute resolution",
           `Peak filing activity in court: ${Object.keys(
             trends.court_activity,
           ).reduce(
@@ -1863,6 +2164,10 @@ class CourtListenerMCPServer {
               trends.court_activity[a] > trends.court_activity[b] ? a : b,
             "none",
           )}`,
+          `Average citation impact: ${trends.citation_trends.avg_citation_count} citations per case`,
+          trends.citation_trends.highly_cited_cases > 0 
+            ? `${trends.citation_trends.highly_cited_cases} high-impact cases identified`
+            : "Limited precedential impact in recent cases"
         );
       } else if (trend_type === "new-precedents") {
         const highCitation = cases.filter(
@@ -1878,7 +2183,10 @@ class CourtListenerMCPServer {
           highCitation.length > 0
             ? `${highCitation.length} cases gaining precedential status`
             : "No strong precedents emerging",
-          "Monitor these cases for legal developments",
+          `${trends.citation_trends.emerging_precedents.length} emerging high-impact precedents identified`,
+          "Monitor representative cases for evolving legal standards",
+          `Most active jurisdiction: ${Object.keys(trends.geographic_distribution)
+            .reduce((a, b) => trends.geographic_distribution[a] > trends.geographic_distribution[b] ? a : b, "none")}`
         );
       }
 
@@ -1890,6 +2198,10 @@ class CourtListenerMCPServer {
       if (mostActiveMonths.length > 0) {
         trends.key_trends.push(
           `Most active filing periods: ${mostActiveMonths.join(", ")}`,
+          Object.keys(trends.judge_activity).length > 0 
+            ? `Most active judge: ${Object.keys(trends.judge_activity)
+                .reduce((a, b) => trends.judge_activity[a] > trends.judge_activity[b] ? a : b)}`
+            : "No specific judge patterns identified"
         );
       }
 
