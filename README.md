@@ -1,6 +1,6 @@
 # CourtListener Legal Research MCP Server
 
-A specialized Model Context Protocol (MCP) server implemented in **TypeScript** that helps LLMs provide legal research and analysis by enabling intelligent case law search and deep investigation capabilities across various jurisdictions including New York, California, and Federal courts.
+A specialized Model Context Protocol (MCP) server implemented in **TypeScript** that helps LLMs provide legal research and analysis by enabling intelligent case law search and deep investigation capabilities across **all 3,353+ courts** in the CourtListener database - including federal, state, local, bankruptcy, and military courts.
 
 ## Overview
 
@@ -13,6 +13,7 @@ This advanced MCP server transforms how LLMs interact with legal databases by pr
 - Automated legal concept extraction
 - Precedent similarity analysis
 - Citation network exploration
+- **Dynamic court discovery** - Access to all 3,353+ courts
 
 ### 📊 **Strategic Analysis Tools**
 - Case outcome pattern analysis
@@ -28,8 +29,8 @@ This advanced MCP server transforms how LLMs interact with legal databases by pr
 
 ### 🎯 **Data Optimization**
 - Intelligent text truncation to preserve context
-- Focused NY court targeting
-- Rate limit management
+- Flexible jurisdiction targeting across all courts
+- Rate limit management with 15-day court cache
 - Error-resilient operations
 
 ## Quick Start
@@ -65,6 +66,33 @@ cp .env.example .env
 npm start
 ```
 
+## Comprehensive Jurisdiction Support
+
+### 🏛️ **Dynamic Court Discovery**
+The server automatically discovers and caches information about all 3,353+ courts in the CourtListener database, including:
+
+- **Federal Courts**: Supreme Court, Circuit Courts (1st-11th, DC, Federal), District Courts
+- **State Courts**: All 50 states' supreme, appellate, and trial courts  
+- **Local Courts**: Municipal, county, city courts nationwide
+- **Specialized Courts**: Bankruptcy, military, administrative courts
+
+### 🎯 **Flexible Jurisdiction Options**
+Users can specify jurisdictions in multiple ways:
+
+| Input Format | Example | Description |
+|-------------|---------|-------------|
+| **All Courts** | `"all"` | Search across all 3,353+ courts |
+| **Court Type** | `"federal"`, `"state"` | All courts of specific type |
+| **State Name** | `"california"`, `"new-york"`, `"texas"` | All courts in specific state |
+| **Specific Court** | `"scotus"`, `"ca9"`, `"cal"` | Individual court by ID |
+| **Multiple Courts** | `"ca9,scotus,cal"` | Comma-separated list |
+| **Specialized** | `"federal-bankruptcy"`, `"military"` | Courts by specialization |
+
+### 🧠 **Intelligent Error Handling**
+- **Smart suggestions** for misspelled jurisdictions
+- **Partial matching** for court names and abbreviations
+- **Clear examples** showing proper usage formats
+
 ## Available Tools
 
 ### 🔍 search_cases_by_problem
@@ -78,7 +106,7 @@ npm start
   - `case_type`: Legal issue type (consumer, contract, employment, civil-rights, etc.)
   - `date_range`: Time preference (recent-2years, established-precedent, all-time)
   - `limit`: Number of cases to return (1-20, default: 10)
-  - `jurisdiction` (required): Jurisdiction to search ("new-york", "california", "federal")
+  - `jurisdiction` (required): Jurisdiction to search (see table above for all options)
   - `court_level`: Court level filter (trial, appellate, supreme, all)
 
 **LLM Usage**: The LLM should analyze the client's problem and extract 3-7 relevant legal keywords like `["breach of contract", "negligence", "damages"]` before calling this function. Always specify the jurisdiction where the legal issue occurred.
@@ -101,6 +129,7 @@ npm start
   - `legal_concepts`: Key legal concepts to match
   - `citation_threshold`: Minimum citation count for authority
   - `limit`: Number of similar cases (1-15, default: 8)
+  - `jurisdiction` (required): Jurisdiction to search for similar cases
 
 ### 📊 analyze_case_outcomes
 **Purpose**: Analyze outcome patterns to predict success likelihood
@@ -108,9 +137,10 @@ npm start
 - Court-specific success rates and duration analysis
 - Strategic insights for case positioning
 - **Parameters**:
-  - `case_type` (required): Type of consumer issue
+  - `case_type` (required): Type of legal issue
   - `court_level`: Trial vs appellate analysis
   - `date_range`: Time period for analysis
+  - `jurisdiction` (required): Jurisdiction to analyze
 
 ### ⚖️ get_judge_analysis
 **Purpose**: Understand judge's typical rulings for strategic positioning
@@ -120,7 +150,8 @@ npm start
 - **Parameters**:
   - `judge_name` (required): Full name of judge
   - `case_type` (required): Area of law to analyze
-  - `court`: Specific court identifier
+  - `court`: Specific court identifier (optional)
+  - `jurisdiction`: Jurisdiction to help identify correct judge (optional)
 
 ### ✅ validate_citations
 **Purpose**: Verify and expand legal citations with related case discovery
@@ -129,17 +160,19 @@ npm start
 - Context relevance assessment
 - **Parameters**:
   - `citations` (required): Array of citations to verify
-  - `context_text`: Surrounding legal argument for relevance
+  - `context_text`: Surrounding legal argument for relevance (optional)
+  - `jurisdiction`: Jurisdiction to improve search accuracy (optional)
 
 ### 📝 get_procedural_requirements
-**Purpose**: Find filing requirements and procedural rules for NY courts
+**Purpose**: Find filing requirements and procedural rules for any jurisdiction
 - Court jurisdiction analysis based on claim amount
-- Filing fee estimates and deadlines
-- Procedural precedent discovery
+- Court level recommendations based on dispute value
+- Procedural precedent discovery from relevant cases
 - **Parameters**:
-  - `case_type` (required): Type of consumer complaint
-  - `court`: Target NY court (default: ny-civ-ct)
-  - `claim_amount`: Dollar amount for jurisdiction analysis
+  - `case_type` (required): Type of legal complaint
+  - `jurisdiction` (required): Jurisdiction for procedural rules
+  - `court`: Specific court identifier (optional)
+  - `claim_amount`: Dollar amount for jurisdiction analysis (optional)
 
 ### 📈 track_legal_trends
 **Purpose**: Identify recent trends in case law for strategic advantage
@@ -191,49 +224,30 @@ To prevent LLM context window overflow:
 - **Optimization**: Field selection, intelligent caching, batch operations
 - **Monitoring**: Built-in rate limit tracking and warnings
 
-## Target Courts for LawyeredAI
+## Court Discovery & Caching
 
-### Primary Sources (90% of relevant cases)
-These courts handle the majority of consumer grievances and small claims under $10,000:
+### Dynamic Court Discovery
+The server automatically discovers and caches all 3,353+ courts in the CourtListener database:
 
-#### New York City
-- **Civil Court of the City of New York** (all boroughs)
-  - NYC Civil Court, Bronx
-  - NYC Civil Court, Kings
-  - NYC Civil Court, New York
-  - NYC Civil Court, Queens
-  - NYC Civil Court, Richmond
+- **Cache Duration**: 15 days (optimized for mostly static court data)
+- **Discovery Process**: ~17-20 API calls on first load
+- **Court Categories**: Federal, State, Bankruptcy, Military, Special courts
+- **Automatic Updates**: Cache refreshes periodically to capture new courts
 
-#### Major City Courts (Outside NYC)
-- Buffalo City Court
-- Rochester City Court
-- Syracuse City Court
-- Albany City Court
-- Yonkers City Court
-- White Plains City Court
-- New Rochelle City Court
-- Mount Vernon City Court
-- Schenectady City Court
-- Utica City Court
+### Court Level Recommendations
+Based on claim amounts, the system recommends appropriate court levels:
 
-#### District Courts
-- Nassau County District Court
-- Suffolk County District Court
+- **Small Claims** ($0-$10,000): Small claims or limited jurisdiction courts
+- **District/State** ($10,000-$75,000): State trial courts or district courts  
+- **Superior/Federal** ($75,000+): Superior/Supreme courts or federal courts
 
-#### Town and Village Justice Courts
-Top 20-30 by population, including:
-- Hempstead Justice Court
-- Brookhaven Justice Court
-- Oyster Bay Justice Court
-- North Hempstead Justice Court
-- Babylon Justice Court
+### Jurisdiction Resolution
+The system intelligently resolves various jurisdiction formats:
 
-### Secondary Sources (10% of relevant cases)
-For precedent-setting decisions and appeals:
-
-- **New York Supreme Court** (County divisions) - Consumer protection cases
-- **Appellate Division of the Supreme Court of New York** - Appeals setting consumer law precedent
-- **Appellate Terms of the Supreme Court of New York** - Lower court appeals
+- State names are mapped to all courts in that state
+- Court type keywords ("federal", "bankruptcy") return all matching courts
+- Partial matches and common abbreviations are supported
+- Multiple courts can be specified with comma separation
 
 ## LLM Integration Examples
 
@@ -261,9 +275,27 @@ The LLM should follow this pattern when using the MCP server:
     "problem_summary": "Laptop failed after 3 months, manufacturer denying warranty coverage",
     "case_type": "warranty",
     "date_range": "recent-2years",
-    "jurisdiction": "new-york"
+    "jurisdiction": "california" // Can also use "all", "federal", "ca", "scotus", etc.
   }
 }
+```
+
+#### Additional Jurisdiction Examples:
+```javascript
+// Search all courts nationwide
+{ "jurisdiction": "all" }
+
+// Search only federal courts  
+{ "jurisdiction": "federal" }
+
+// Search specific court
+{ "jurisdiction": "scotus" }
+
+// Search multiple specific courts
+{ "jurisdiction": "ca9,scotus,cal" }
+
+// Search all Texas courts
+{ "jurisdiction": "texas" }
 ```
 
 #### Scenario 2: Landlord-Tenant Dispute
@@ -279,7 +311,22 @@ The LLM should follow this pattern when using the MCP server:
     "search_keywords": ["rent withholding", "habitability", "landlord tenant", "mold", "eviction defense"],
     "problem_summary": "Tenant withholding rent due to mold, facing eviction",
     "case_type": "landlord-tenant",
-    "jurisdiction": "california"
+    "jurisdiction": "texas"  // Or any state where the issue occurred
+  }
+}
+```
+
+#### Scenario 3: Employment Discrimination
+**Client Problem**: "I was passed over for promotion three times despite excellent reviews. Younger, less experienced colleagues were promoted instead."
+
+**MCP Call**:
+```javascript
+{
+  "tool": "search_cases_by_problem",
+  "arguments": {
+    "search_keywords": ["age discrimination", "promotion denial", "disparate treatment", "ADEA"],
+    "case_type": "employment",
+    "jurisdiction": "federal"  // Federal courts for discrimination cases
   }
 }
 ```
@@ -291,29 +338,37 @@ The LLM should follow this pattern when using the MCP server:
 - **Add procedural terms** if relevant (dismissal, summary judgment, etc.)
 - **Combine specific and general terms** for comprehensive coverage
 
-### Date Range
-- Focus on cases from the last 10 years for current precedents
-- Use `date_filed_after` parameter with date 10 years ago
+### Best Practices
 
-### Amount Filters
-- Cases with controversy amount under $10,000
-- Small claims jurisdiction cases
+#### Date Range Selection
+- **Recent precedents**: Use `recent-2years` for current legal trends
+- **Established law**: Use `established-precedent` for well-settled principles
+- **Comprehensive search**: Use `all-time` for historical perspective
 
-### Court Identifiers
-When using the `court` parameter, prioritize:
-- `ny-civ-ct` - NYC Civil Court
-- `ny-dist-ct-nassau` - Nassau District Court
-- `ny-dist-ct-suffolk` - Suffolk District Court
-- `ny-city-ct-*` - Various city courts
+#### Jurisdiction Selection
+- **Start broad**: Begin with state or federal level searches
+- **Narrow down**: Use specific court IDs for targeted research
+- **Cross-jurisdictional**: Use `"all"` for nationwide precedent searches
 
-
+#### Procedural Requirements
+When searching for procedural rules:
+```javascript
+{
+  "tool": "get_procedural_requirements",
+  "arguments": {
+    "case_type": "breach of contract",
+    "jurisdiction": "florida",  // Specify the relevant jurisdiction
+    "claim_amount": 25000  // Optional: helps determine court level
+  }
+}
+```
 
 ## Data Sources
 
 CourtListener aggregates legal data from:
-- New York State courts
-- Focus on consumer-relevant jurisdictions
-- Recent case law (last 10 years priority)
+- **All U.S. Courts**: Federal, state, local, and specialized courts
+- **3,353+ Courts**: Complete coverage of the U.S. legal system
+- **Historical & Current**: Cases from founding to present day
 
 
 

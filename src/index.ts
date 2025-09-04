@@ -52,15 +52,18 @@ interface JudgeAnalysisArgs {
   judge_name: string;
   case_type: string;
   court?: string;
+  jurisdiction?: string;
 }
 
 interface ValidateCitationsArgs {
   citations: string[];
   context_text?: string;
+  jurisdiction?: string;
 }
 
 interface ProceduralRequirementsArgs {
   case_type: string;
+  jurisdiction: string;
   court?: string;
   claim_amount?: number;
 }
@@ -81,19 +84,31 @@ interface TrackLegalTrendsArgs {
 }
 
 interface CourtInfo {
-  primary: string[];
-  secondary: string[];
+  id: string;
+  short_name: string;
+  full_name: string;
+  jurisdiction: string; // F, ST, FB, MA, etc.
+  start_date?: string;
+  end_date?: string;
 }
 
-interface CourtJurisdiction {
-  name: string;
-  limit: number | null;
-  filing_fee: string;
+interface CourtCache {
+  [key: string]: CourtInfo[];
+  federal: CourtInfo[];
+  state: CourtInfo[];
+  "federal-bankruptcy": CourtInfo[];
+  military: CourtInfo[];
+  special: CourtInfo[];
+  all: CourtInfo[];
 }
+
 
 class CourtListenerMCPServer {
   private server: Server;
   private axiosInstance: AxiosInstance;
+  private courtCache?: CourtCache;
+  private cacheExpiry?: Date;
+  private readonly CACHE_DURATION = 15 * 24 * 60 * 60 * 1000; // 15 days
 
   constructor(apiKey: string = "") {
     this.server = new Server(
@@ -179,8 +194,15 @@ class CourtListenerMCPServer {
               },
               jurisdiction: {
                 type: "string",
-                description:
-                  "Jurisdiction to search (e.g., 'new-york', 'california', 'federal'). If not specified, the server will request this information.",
+                description: `Jurisdiction to search. Options:
+                  - "all" (search all courts)
+                  - "federal" (all federal courts)
+                  - "state" (all state courts)
+                  - "federal-bankruptcy" (bankruptcy courts)
+                  - "military" (military courts)
+                  - State names: "california", "texas", "florida", etc.
+                  - Specific court IDs: "scotus", "ca9", "ca11", etc.
+                  - Multiple courts: "ca9,ca11,scotus" (comma-separated)`,
               },
               court_level: {
                 type: "string",
@@ -244,8 +266,13 @@ class CourtListenerMCPServer {
               },
               jurisdiction: {
                 type: "string",
-                description:
-                  "Jurisdiction to search for similar cases (e.g., 'new-york', 'california', 'federal'). If not specified, the server will request this information.",
+                description: `Jurisdiction to search for similar cases. Options:
+                  - "all" (search all courts)
+                  - "federal" (all federal courts)
+                  - "state" (all state courts)
+                  - State names: "california", "texas", "florida", etc.
+                  - Specific court IDs: "scotus", "ca9", "ca11", etc.
+                  - Multiple courts: "ca9,ca11,scotus" (comma-separated)`,
               },
             },
             required: ["reference_case_id"],
@@ -276,8 +303,12 @@ class CourtListenerMCPServer {
               },
               jurisdiction: {
                 type: "string",
-                description:
-                  "Jurisdiction to analyze cases in (e.g., 'new-york', 'california', 'federal'). If not specified, the server will request this information.",
+                description: `Jurisdiction to analyze cases in. Options:
+                  - "all" (analyze all courts)
+                  - "federal" (all federal courts)
+                  - "state" (all state courts)
+                  - State names: "california", "new-york", "texas", etc.
+                  - Specific court IDs: "scotus", "ca9", "cal", etc.`,
               },
             },
             required: ["case_type"],
@@ -301,7 +332,16 @@ class CourtListenerMCPServer {
               },
               court: {
                 type: "string",
-                description: "Specific court identifier (optional)",
+                description: "Specific court identifier (optional, narrows down the search)",
+              },
+              jurisdiction: {
+                type: "string",
+                description: `Optional jurisdiction to help identify the correct judge. Options:
+                  - "federal" (all federal courts)
+                  - "state" (all state courts)
+                  - State names: "california", "texas", "florida", etc.
+                  - Specific court IDs: "scotus", "ca9", "ca11", etc.
+                  Helps disambiguate common judge names.`,
               },
             },
             required: ["judge_name", "case_type"],
@@ -325,6 +365,15 @@ class CourtListenerMCPServer {
                 description:
                   "Surrounding legal argument context for better validation",
               },
+              jurisdiction: {
+                type: "string",
+                description: `Optional jurisdiction to improve search accuracy. Options:
+                  - "federal" (all federal courts)
+                  - "state" (all state courts)
+                  - State names: "california", "texas", "florida", etc.
+                  - Specific court IDs: "scotus", "ca9", "ca11", etc.
+                  If omitted, searches all courts.`,
+              },
             },
             required: ["citations"],
           },
@@ -332,7 +381,7 @@ class CourtListenerMCPServer {
         {
           name: "get_procedural_requirements",
           description:
-            "Find procedural rules and filing requirements for specific case types in NY courts",
+            "Find procedural rules and filing requirements for specific case types in any jurisdiction",
           inputSchema: {
             type: "object",
             properties: {
@@ -340,18 +389,25 @@ class CourtListenerMCPServer {
                 type: "string",
                 description: "Type of legal complaint or case",
               },
+              jurisdiction: {
+                type: "string",
+                description: `Jurisdiction to search for procedural requirements. Options:
+                  - "federal" (all federal courts)
+                  - "state" (all state courts)
+                  - State names: "california", "new-york", "texas", etc.
+                  - Specific court IDs: "scotus", "ca9", "cal", etc.`,
+              },
               court: {
                 type: "string",
-                description: "Target court for filing (NY court identifier)",
-                default: "ny-civ-ct",
+                description: "Specific court identifier (optional, narrows down the search)",
               },
               claim_amount: {
                 type: "number",
                 description:
-                  "Dollar amount of dispute (influences court jurisdiction)",
+                  "Dollar amount of dispute (helps determine appropriate court level)",
               },
             },
-            required: ["case_type"],
+            required: ["case_type", "jurisdiction"],
           },
         },
         {
@@ -440,98 +496,6 @@ class CourtListenerMCPServer {
     });
   }
 
-  private getJurisdictionCourts(
-    jurisdiction?: string,
-    courtLevel: string = "all",
-  ): string[] {
-    // If no jurisdiction provided, return empty array to trigger validation error
-    if (!jurisdiction) {
-      return [];
-    }
-
-    const normalizedJurisdiction = jurisdiction
-      .toLowerCase()
-      .replace(/[-_\s]/g, "");
-
-    // Define court mappings by jurisdiction
-    const jurisdictionMappings: Record<
-      string,
-      { trial: string[]; appellate: string[]; supreme: string[] }
-    > = {
-      newyork: {
-        trial: [
-          "ny-civ-ct",
-          "ny-city-ct-buffalo",
-          "ny-city-ct-rochester",
-          "ny-city-ct-syracuse",
-          "ny-city-ct-albany",
-          "ny-city-ct-yonkers",
-          "ny-dist-ct-nassau",
-          "ny-dist-ct-suffolk",
-        ],
-        appellate: [
-          "ny-app-div-1st",
-          "ny-app-div-2nd",
-          "ny-app-div-3rd",
-          "ny-app-div-4th",
-        ],
-        supreme: ["ny-supreme-ct", "ny-ct-app"],
-      },
-      california: {
-        trial: ["ca-superior-ct", "ca-municipal-ct"],
-        appellate: [
-          "ca-ct-app-1st",
-          "ca-ct-app-2nd",
-          "ca-ct-app-3rd",
-          "ca-ct-app-4th",
-          "ca-ct-app-5th",
-          "ca-ct-app-6th",
-        ],
-        supreme: ["cal", "ca"],
-      },
-      federal: {
-        trial: ["ald", "akd", "azd", "ard", "cacd", "caed", "cand", "casd"],
-        appellate: [
-          "ca1",
-          "ca2",
-          "ca3",
-          "ca4",
-          "ca5",
-          "ca6",
-          "ca7",
-          "ca8",
-          "ca9",
-          "ca10",
-          "ca11",
-          "cadc",
-          "cafc",
-        ],
-        supreme: ["scotus"],
-      },
-    };
-
-    const courtData = jurisdictionMappings[normalizedJurisdiction];
-    if (!courtData) {
-      return []; // Will trigger validation error for unsupported jurisdiction
-    }
-
-    switch (courtLevel) {
-      case "trial":
-        return courtData.trial;
-      case "appellate":
-        return courtData.appellate;
-      case "supreme":
-        return courtData.supreme;
-      case "all":
-      default:
-        return [
-          ...courtData.trial,
-          ...courtData.appellate,
-          ...courtData.supreme,
-        ];
-    }
-  }
-
   private validateSearchKeywords(keywords: string[]): string[] {
     if (!Array.isArray(keywords) || keywords.length === 0) {
       throw new Error(
@@ -587,6 +551,271 @@ class CourtListenerMCPServer {
     );
   }
 
+  private async discoverCourts(): Promise<Record<string, any>[]> {
+    try {
+      const allCourts: Record<string, any>[] = [];
+      let page = 1;
+      let hasMore = true;
+
+      console.log("Discovering courts from CourtListener API...");
+
+      while (hasMore && allCourts.length < 4000) {
+        // Safety limit
+        const response = await this.axiosInstance.get("/courts/", {
+          params: { page, page_size: 200 },
+        });
+
+        const { results, next } = response.data;
+        allCourts.push(...results);
+        hasMore = !!next;
+        page++;
+
+        if (page % 5 === 0) {
+          console.log(`Discovered ${allCourts.length} courts so far...`);
+        }
+      }
+
+      console.log(`Total courts discovered: ${allCourts.length}`);
+      return allCourts;
+    } catch (error) {
+      console.error("Failed to discover courts:", error);
+      return [];
+    }
+  }
+
+  private categorizeCourtsByJurisdiction(
+    courts: Record<string, any>[],
+  ): CourtCache {
+    const categorized: CourtCache = {
+      federal: [],
+      state: [],
+      "federal-bankruptcy": [],
+      military: [],
+      special: [],
+      all: [],
+    };
+
+    courts.forEach((court) => {
+      // Skip courts without proper data
+      if (!court.id || !court.jurisdiction) {
+        return;
+      }
+
+      const courtInfo: CourtInfo = {
+        id: court.id,
+        short_name: court.short_name || court.id,
+        full_name: court.full_name || court.short_name || court.id,
+        jurisdiction: court.jurisdiction,
+        start_date: court.start_date,
+        end_date: court.end_date,
+      };
+
+      categorized.all.push(courtInfo);
+
+      switch (court.jurisdiction) {
+        case "F":
+          categorized.federal.push(courtInfo);
+          break;
+        case "ST":
+          categorized.state.push(courtInfo);
+          break;
+        case "FB":
+          categorized["federal-bankruptcy"].push(courtInfo);
+          break;
+        case "MA":
+          categorized.military.push(courtInfo);
+          break;
+        case "FS":
+          categorized.special.push(courtInfo);
+          break;
+        default:
+          // For unknown jurisdiction types, still add to special
+          categorized.special.push(courtInfo);
+          break;
+      }
+    });
+
+    console.log(`Categorized courts:
+      Total: ${categorized.all.length}
+      Federal: ${categorized.federal.length}
+      State: ${categorized.state.length}
+      Federal Bankruptcy: ${categorized["federal-bankruptcy"].length}
+      Military: ${categorized.military.length}
+      Special: ${categorized.special.length}`);
+
+    return categorized;
+  }
+
+  private async ensureCourtCache(): Promise<void> {
+    const now = new Date();
+
+    if (!this.courtCache || !this.cacheExpiry || now > this.cacheExpiry) {
+      console.log("Refreshing court cache...");
+      const courts = await this.discoverCourts();
+      this.courtCache = this.categorizeCourtsByJurisdiction(courts);
+      this.cacheExpiry = new Date(now.getTime() + this.CACHE_DURATION);
+      console.log(`Cached ${this.courtCache.all.length} courts`);
+    }
+  }
+
+  private findCourtsByState(stateName: string): string[] {
+    if (!this.courtCache) return [];
+
+    const stateAbbreviations: Record<string, string[]> = {
+      california: ["ca", "cal"],
+      newyork: ["ny"],
+      texas: ["tx", "tex"],
+      florida: ["fl", "fla"],
+      illinois: ["il", "ill"],
+      ohio: ["oh"],
+      pennsylvania: ["pa"],
+      michigan: ["mi"],
+      georgia: ["ga"],
+      northcarolina: ["nc"],
+      newjersey: ["nj"],
+      virginia: ["va"],
+      washington: ["wa"],
+      arizona: ["az"],
+      massachusetts: ["ma"],
+      tennessee: ["tn", "tenn"],
+      indiana: ["in"],
+      missouri: ["mo"],
+      maryland: ["md"],
+      wisconsin: ["wi"],
+      colorado: ["co"],
+      minnesota: ["mn"],
+      southcarolina: ["sc"],
+      alabama: ["al"],
+      louisiana: ["la"],
+      kentucky: ["ky"],
+      oregon: ["or"],
+      oklahoma: ["ok"],
+      connecticut: ["ct", "conn"],
+      utah: ["ut"],
+      iowa: ["ia"],
+      nevada: ["nv"],
+      arkansas: ["ar"],
+      mississippi: ["ms"],
+      kansas: ["ks"],
+      newmexico: ["nm"],
+      nebraska: ["ne"],
+      westvirginia: ["wv"],
+      idaho: ["id"],
+      hawaii: ["hi"],
+      newhampshire: ["nh"],
+      maine: ["me"],
+      montana: ["mt"],
+      rhodeisland: ["ri"],
+      delaware: ["de"],
+      southdakota: ["sd"],
+      northdakota: ["nd"],
+      alaska: ["ak"],
+      vermont: ["vt"],
+      wyoming: ["wy"],
+    };
+
+    const stateCodes = stateAbbreviations[stateName] || [stateName];
+
+    return this.courtCache.state
+      .filter((court) => {
+        const courtId = court.id.toLowerCase();
+        return stateCodes.some((code) => courtId.startsWith(code));
+      })
+      .map((c) => c.id);
+  }
+
+  private suggestSimilarJurisdictions(input: string): string[] {
+    if (!this.courtCache) return [];
+
+    const suggestions: string[] = [];
+    const normalized = input.toLowerCase();
+
+    // Find similar court names (limit to avoid huge lists)
+    this.courtCache.all.slice(0, 100).forEach((court) => {
+      if (
+        court.short_name.toLowerCase().includes(normalized) ||
+        court.full_name.toLowerCase().includes(normalized)
+      ) {
+        suggestions.push(court.id);
+      }
+    });
+
+    // Add common alternatives
+    if (normalized.includes("fed")) suggestions.push("federal");
+    if (normalized.includes("state")) suggestions.push("state");
+    if (normalized.includes("supreme")) suggestions.push("scotus");
+    if (normalized.includes("ca") && !normalized.includes("cal"))
+      suggestions.push("california");
+    if (normalized.includes("ny")) suggestions.push("new-york");
+
+    return [...new Set(suggestions)].slice(0, 5); // Limit suggestions, remove duplicates
+  }
+
+  private async resolveJurisdiction(jurisdiction: string): Promise<string[]> {
+    await this.ensureCourtCache();
+
+    if (!this.courtCache) {
+      throw new Error("Court cache not available");
+    }
+
+    const normalized = jurisdiction.toLowerCase().replace(/[-_\s]/g, "");
+
+    // Handle special cases
+    switch (normalized) {
+      case "all":
+        return []; // Empty = no filter = all courts
+
+      case "federal":
+        return this.courtCache.federal.map((c) => c.id);
+
+      case "state":
+        return this.courtCache.state.map((c) => c.id);
+
+      case "federalbankruptcy":
+      case "bankruptcy":
+        return this.courtCache["federal-bankruptcy"].map((c) => c.id);
+
+      case "military":
+        return this.courtCache.military.map((c) => c.id);
+
+      case "special":
+        return this.courtCache.special.map((c) => c.id);
+    }
+
+    // Handle comma-separated court IDs
+    if (jurisdiction.includes(",")) {
+      const courtIds = jurisdiction.split(",").map((id) => id.trim());
+      const validIds = courtIds.filter((id) =>
+        this.courtCache!.all.some((c) => c.id === id),
+      );
+      return validIds;
+    }
+
+    // Handle single court ID (exact match)
+    if (this.courtCache.all.some((c) => c.id === jurisdiction)) {
+      return [jurisdiction];
+    }
+
+    // Handle state names
+    const stateResults = this.findCourtsByState(normalized);
+    if (stateResults.length > 0) {
+      return stateResults;
+    }
+
+    // Handle partial matches in court names
+    const partialMatches = this.courtCache.all.filter(
+      (court) =>
+        court.short_name.toLowerCase().includes(normalized) ||
+        court.full_name.toLowerCase().includes(normalized),
+    );
+
+    if (partialMatches.length > 0) {
+      return partialMatches.slice(0, 50).map((c) => c.id); // Limit to avoid huge lists
+    }
+
+    throw new Error(`Unrecognized jurisdiction: ${jurisdiction}`);
+  }
+
   private async searchCasesByProblem(args: SearchArgs) {
     const {
       search_keywords,
@@ -608,16 +837,19 @@ class CourtListenerMCPServer {
               text: JSON.stringify(
                 {
                   error: "Jurisdiction is required for case search",
-                  message:
-                    'Please specify which jurisdiction to search in (e.g., "new-york", "california", "federal")',
-                  supported_jurisdictions: [
-                    "new-york",
-                    "california",
-                    "federal",
+                  message: "Please specify which jurisdiction to search",
+                  supported_options: [
+                    "all (search all courts)",
+                    "federal (all federal courts)",
+                    "state (all state courts)",
+                    "california (all CA courts)",
+                    "texas (all TX courts)",
+                    "scotus (Supreme Court only)",
+                    "ca9,ca11 (multiple specific courts)",
                   ],
                   example: {
                     search_keywords: search_keywords,
-                    jurisdiction: "new-york",
+                    jurisdiction: "california",
                     court_level: "all",
                   },
                 },
@@ -631,28 +863,35 @@ class CourtListenerMCPServer {
 
       const validKeywords = this.validateSearchKeywords(search_keywords);
 
-      // Get courts for the specified jurisdiction
-      const targetCourts = this.getJurisdictionCourts(
-        jurisdiction,
-        court_level,
-      );
-      if (targetCourts.length === 0) {
+      // Resolve jurisdiction to court IDs
+      let targetCourts: string[];
+      try {
+        targetCourts = await this.resolveJurisdiction(jurisdiction);
+      } catch (error) {
+        const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
         return {
           content: [
             {
               type: "text",
               text: JSON.stringify(
                 {
-                  error: `Unsupported jurisdiction: ${jurisdiction}`,
-                  message: "Please use one of the supported jurisdictions",
-                  supported_jurisdictions: [
-                    "new-york",
-                    "california",
-                    "federal",
-                  ],
+                  error: `Unrecognized jurisdiction: ${jurisdiction}`,
+                  message:
+                    error instanceof Error ? error.message : String(error),
+                  suggestions:
+                    suggestions.length > 0
+                      ? suggestions
+                      : [
+                          "all",
+                          "federal",
+                          "state",
+                          "california",
+                          "new-york",
+                          "texas",
+                        ],
                   example: {
                     search_keywords: search_keywords,
-                    jurisdiction: "new-york",
+                    jurisdiction: suggestions[0] || "federal",
                     court_level: court_level,
                   },
                 },
@@ -688,12 +927,10 @@ class CourtListenerMCPServer {
           break;
       }
 
-      const courtFilter = targetCourts.join(",");
-
       const params = {
         q: searchQueryFinal,
         type: "o",
-        court: courtFilter,
+        ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
         ...dateFilter,
         cited_gt: 0,
         page_size: Math.min(limit * 2, 40),
@@ -756,7 +993,10 @@ class CourtListenerMCPServer {
                   date_range_applied: date_range,
                   jurisdiction: jurisdiction,
                   court_level: court_level,
-                  courts_searched: targetCourts.length,
+                  courts_searched:
+                    targetCourts.length === 0
+                      ? "all courts"
+                      : targetCourts.length,
                 },
                 problem_context: problem_summary || "No summary provided",
                 search_results: {
@@ -950,16 +1190,18 @@ class CourtListenerMCPServer {
                 {
                   error:
                     "Jurisdiction is required for finding similar precedents",
-                  message:
-                    'Please specify which jurisdiction to search in (e.g., "new-york", "california", "federal")',
-                  supported_jurisdictions: [
-                    "new-york",
-                    "california",
-                    "federal",
+                  message: "Please specify which jurisdiction to search",
+                  supported_options: [
+                    "all (search all courts)",
+                    "federal (all federal courts)",
+                    "state (all state courts)",
+                    "california (all CA courts)",
+                    "texas (all TX courts)",
+                    "scotus (Supreme Court only)",
                   ],
                   example: {
                     reference_case_id: reference_case_id,
-                    jurisdiction: "new-york",
+                    jurisdiction: "federal",
                     legal_concepts: legal_concepts,
                   },
                 },
@@ -971,25 +1213,28 @@ class CourtListenerMCPServer {
         };
       }
 
-      // Get courts for the specified jurisdiction
-      const targetCourts = this.getJurisdictionCourts(jurisdiction, "all");
-      if (targetCourts.length === 0) {
+      // Resolve jurisdiction to court IDs
+      let targetCourts: string[];
+      try {
+        targetCourts = await this.resolveJurisdiction(jurisdiction);
+      } catch (error) {
+        const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
         return {
           content: [
             {
               type: "text",
               text: JSON.stringify(
                 {
-                  error: `Unsupported jurisdiction: ${jurisdiction}`,
-                  message: "Please use one of the supported jurisdictions",
-                  supported_jurisdictions: [
-                    "new-york",
-                    "california",
-                    "federal",
-                  ],
+                  error: `Unrecognized jurisdiction: ${jurisdiction}`,
+                  message:
+                    error instanceof Error ? error.message : String(error),
+                  suggestions:
+                    suggestions.length > 0
+                      ? suggestions
+                      : ["all", "federal", "state", "california", "new-york"],
                   example: {
                     reference_case_id: reference_case_id,
-                    jurisdiction: "new-york",
+                    jurisdiction: suggestions[0] || "federal",
                     legal_concepts: legal_concepts,
                   },
                 },
@@ -1019,7 +1264,7 @@ class CourtListenerMCPServer {
       const params = {
         q: searchQuery,
         type: "o",
-        court: targetCourts.join(","),
+        ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
         cited_gt: citation_threshold - 1,
         page_size: limit + 5,
         fields: "id,case_name,court,date_filed,citation_count,snippet",
@@ -1059,7 +1304,10 @@ class CourtListenerMCPServer {
                   legal_concepts_used: searchTerms,
                   citation_threshold,
                   jurisdiction: jurisdiction,
-                  courts_searched: targetCourts.length,
+                  courts_searched:
+                    targetCourts.length === 0
+                      ? "all courts"
+                      : targetCourts.length,
                 },
                 similar_cases: results,
                 analysis_note: `Found ${results.length} similar cases. Cases with higher citation counts have stronger precedential value.`,
@@ -1126,19 +1374,103 @@ class CourtListenerMCPServer {
         break;
     }
 
-    const nyCourts = this.getNYCourts();
-    const courtsToSearch =
-      court_level === "trial"
-        ? nyCourts.primary
-        : court_level === "appellate"
-          ? nyCourts.secondary
-          : [...nyCourts.primary, ...nyCourts.secondary];
+    // Validate jurisdiction is provided
+    if (!jurisdiction) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: JSON.stringify(
+              {
+                error: "Jurisdiction is required for case outcome analysis",
+                message: "Please specify which jurisdiction to analyze",
+                supported_options: [
+                  "all (analyze all courts)",
+                  "federal (all federal courts)",
+                  "state (all state courts)",
+                  "california (CA state courts)",
+                  "new-york (NY state courts)",
+                  "scotus (Supreme Court only)",
+                ],
+                example: {
+                  case_type: case_type,
+                  jurisdiction: "federal",
+                  court_level: court_level,
+                  date_range: date_range,
+                },
+              },
+              null,
+              2,
+            ),
+          },
+        ],
+      };
+    }
+
+    // Resolve jurisdiction to court IDs
+    let targetCourts: string[];
+    try {
+      targetCourts = await this.resolveJurisdiction(jurisdiction);
+
+      // Apply court level filtering if specific courts were resolved
+      if (targetCourts.length > 0 && court_level !== "all") {
+        // Filter by court level using court cache
+        await this.ensureCourtCache();
+        if (this.courtCache) {
+          const courtsByLevel = this.courtCache.all.filter((court) => {
+            if (court_level === "trial" && court.jurisdiction === "ST")
+              return true;
+            if (
+              court_level === "appellate" &&
+              (court.id.includes("app") || court.id.includes("ca"))
+            )
+              return true;
+            if (
+              court_level === "supreme" &&
+              (court.id === "scotus" || court.id.includes("supreme"))
+            )
+              return true;
+            return false;
+          });
+          targetCourts = targetCourts.filter((id) =>
+            courtsByLevel.some((c) => c.id === id),
+          );
+        }
+      }
+    } catch (error) {
+      const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
+      return {
+        content: [
+          {
+            type: "text",
+            text: JSON.stringify(
+              {
+                error: `Unrecognized jurisdiction: ${jurisdiction}`,
+                message: error instanceof Error ? error.message : String(error),
+                suggestions:
+                  suggestions.length > 0
+                    ? suggestions
+                    : ["all", "federal", "state", "california", "new-york"],
+                example: {
+                  case_type: case_type,
+                  jurisdiction: suggestions[0] || "federal",
+                  court_level: court_level,
+                  date_range: date_range,
+                },
+              },
+              null,
+              2,
+            ),
+          },
+        ],
+      };
+    }
 
     try {
       const params = {
         q: `"${case_type}"`,
         type: "r",
-        court: courtsToSearch.join(","),
+        ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
         ...dateFilter,
         page_size: 50,
         fields: "id,case_name,court,date_filed,date_terminated,nature_of_suit",
@@ -1192,7 +1524,11 @@ class CourtListenerMCPServer {
                   case_type,
                   court_level,
                   date_range,
-                  courts_analyzed: courtsToSearch.length,
+                  jurisdiction: jurisdiction,
+                  courts_analyzed:
+                    targetCourts.length === 0
+                      ? "all courts"
+                      : targetCourts.length,
                 },
                 outcome_patterns: outcomes,
                 success_indicators: {
@@ -1247,9 +1583,20 @@ class CourtListenerMCPServer {
   }
 
   private async getJudgeAnalysis(args: JudgeAnalysisArgs) {
-    const { judge_name, case_type, court } = args;
+    const { judge_name, case_type, court, jurisdiction } = args;
 
     try {
+      // Resolve jurisdiction if provided to help narrow down the judge search
+      let targetCourts: string[] = [];
+      if (jurisdiction && !court) {
+        try {
+          targetCourts = await this.resolveJurisdiction(jurisdiction);
+        } catch (error) {
+          // If jurisdiction resolution fails, continue without filter
+          console.warn(`Could not resolve jurisdiction ${jurisdiction}, searching all judges`);
+        }
+      }
+
       const judgeParams = {
         name__icontains: judge_name,
         fields: "id,name_full,positions",
@@ -1269,7 +1616,7 @@ class CourtListenerMCPServer {
                 {
                   judge_name,
                   error: "Judge not found in database",
-                  suggestion: "Check spelling or try last name only",
+                  suggestion: "Check spelling or try last name only. If common name, specify court or jurisdiction.",
                 },
                 null,
                 2,
@@ -1279,8 +1626,15 @@ class CourtListenerMCPServer {
         };
       }
 
-      const judge = judges[0];
-      const judgeId = judge.id;
+      // If multiple judges found and jurisdiction specified, try to filter
+      let selectedJudge = judges[0];
+      if (judges.length > 1 && (court || targetCourts.length > 0)) {
+        // Try to find judge associated with specified court/jurisdiction
+        // This is a simplified approach - could be enhanced with position analysis
+        selectedJudge = judges[0]; // For now, still use first match
+      }
+
+      const judgeId = selectedJudge.id;
 
       const opinionParams: any = {
         author: judgeId,
@@ -1292,6 +1646,8 @@ class CourtListenerMCPServer {
 
       if (court) {
         opinionParams.court = court;
+      } else if (targetCourts.length > 0) {
+        opinionParams.court = targetCourts.join(",");
       }
 
       const opinionResponse = await this.axiosInstance.get("/search/", {
@@ -1301,9 +1657,15 @@ class CourtListenerMCPServer {
 
       const analysis = {
         judge_info: {
-          name: judge.name_full,
-          id: judge.id,
-          positions: judge.positions?.slice(-3) || [],
+          name: selectedJudge.name_full,
+          id: selectedJudge.id,
+          positions: selectedJudge.positions?.slice(-3) || [],
+          multiple_matches: judges.length > 1 ? `Found ${judges.length} judges with similar names` : null,
+        },
+        search_parameters: {
+          case_type: case_type,
+          jurisdiction_filter: jurisdiction || "all courts",
+          specific_court: court || null,
         },
         case_analysis: {
           total_opinions_found: opinions.length,
@@ -1360,13 +1722,25 @@ class CourtListenerMCPServer {
   }
 
   private async validateCitations(args: ValidateCitationsArgs) {
-    const { citations, context_text } = args;
+    const { citations, context_text, jurisdiction } = args;
+
+    // Resolve jurisdiction if provided
+    let targetCourts: string[] = [];
+    if (jurisdiction) {
+      try {
+        targetCourts = await this.resolveJurisdiction(jurisdiction);
+      } catch (error) {
+        // If jurisdiction resolution fails, continue without filter
+        console.warn(`Could not resolve jurisdiction ${jurisdiction}, searching all courts`);
+      }
+    }
 
     const results = {
       validation_summary: {
         total_citations: citations.length,
         valid_citations: 0,
         invalid_citations: 0,
+        jurisdiction_searched: jurisdiction || "all courts",
       },
       citation_details: [] as any[],
       related_cases: [] as any[],
@@ -1377,6 +1751,7 @@ class CourtListenerMCPServer {
         const searchParams = {
           q: `"${citation}"`,
           type: "o",
+          ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
           page_size: 5,
           fields: "id,case_name,court,date_filed,citation_count,snippet",
         };
@@ -1448,80 +1823,122 @@ class CourtListenerMCPServer {
   }
 
   private async getProceduralRequirements(args: ProceduralRequirementsArgs) {
-    const { case_type, court = "ny-civ-ct", claim_amount } = args;
-
-    const courtJurisdiction: Record<string, CourtJurisdiction> = {
-      "ny-civ-ct": {
-        name: "NYC Civil Court",
-        limit: 25000,
-        filing_fee: "$20-45",
-      },
-      "ny-dist-ct-nassau": {
-        name: "Nassau District Court",
-        limit: 15000,
-        filing_fee: "$15-30",
-      },
-      "ny-dist-ct-suffolk": {
-        name: "Suffolk District Court",
-        limit: 15000,
-        filing_fee: "$15-30",
-      },
-      "ny-supreme-ct": {
-        name: "NY Supreme Court",
-        limit: null,
-        filing_fee: "$210+",
-      },
-    };
-
-    const selectedCourt =
-      courtJurisdiction[court] || courtJurisdiction["ny-civ-ct"];
-    const jurisdictionCheck =
-      claim_amount && selectedCourt.limit
-        ? claim_amount <= selectedCourt.limit
-        : true;
+    const { case_type, jurisdiction, court, claim_amount } = args;
 
     try {
+      // Resolve jurisdiction to court IDs
+      let targetCourts: string[];
+      try {
+        targetCourts = await this.resolveJurisdiction(jurisdiction);
+      } catch (error) {
+        const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(
+                {
+                  error: `Unrecognized jurisdiction: ${jurisdiction}`,
+                  message: error instanceof Error ? error.message : String(error),
+                  suggestions:
+                    suggestions.length > 0
+                      ? suggestions
+                      : ["federal", "state", "california", "new-york", "texas"],
+                  example: {
+                    case_type: case_type,
+                    jurisdiction: suggestions[0] || "federal",
+                    claim_amount: claim_amount,
+                  },
+                },
+                null,
+                2,
+              ),
+            },
+          ],
+        };
+      }
+
+      // If specific court provided, use it; otherwise use resolved courts
+      const searchCourts = court ? [court] : targetCourts;
+
+      // Search for procedural cases
       const searchParams = {
-        q: `"${case_type}" AND (procedure OR filing OR requirement)`,
-        court: court,
+        q: `"${case_type}" AND (procedure OR filing OR requirement OR "civil procedure" OR "rules of court")`,
+        ...(searchCourts.length > 0 && { court: searchCourts.join(",") }),
         type: "o",
-        page_size: 10,
-        fields: "id,case_name,date_filed,snippet",
+        page_size: 20,
+        fields: "id,case_name,court,date_filed,snippet",
+        order_by: "-date_filed",
       };
 
       const response = await this.axiosInstance.get("/search/", {
         params: searchParams,
       });
-      const proceduralCases = response.data.results.slice(0, 5);
+      const proceduralCases = response.data.results.slice(0, 10);
+
+      // Get court information if available
+      await this.ensureCourtCache();
+      let courtInfo = null;
+      if (court && this.courtCache) {
+        const foundCourt = this.courtCache.all.find((c) => c.id === court);
+        if (foundCourt) {
+          courtInfo = {
+            court_id: foundCourt.id,
+            court_name: foundCourt.full_name,
+            court_type: foundCourt.jurisdiction,
+          };
+        }
+      }
+
+      // Determine appropriate court level based on claim amount
+      let courtLevelRecommendation = null;
+      if (claim_amount) {
+        if (claim_amount <= 10000) {
+          courtLevelRecommendation = "Small claims or limited jurisdiction court recommended";
+        } else if (claim_amount <= 75000) {
+          courtLevelRecommendation = "State trial court or district court recommended";
+        } else {
+          courtLevelRecommendation = "Superior/Supreme court or federal court may be appropriate";
+        }
+      }
 
       const requirements = {
-        court_info: {
-          court_name: selectedCourt.name,
-          jurisdiction_limit: selectedCourt.limit,
-          estimated_filing_fee: selectedCourt.filing_fee,
-          jurisdiction_appropriate: jurisdictionCheck,
+        jurisdiction_info: {
+          jurisdiction_searched: jurisdiction,
+          specific_court: courtInfo,
+          courts_searched: searchCourts.length === 0 ? "all courts" : searchCourts.length,
+          claim_amount: claim_amount,
+          court_level_recommendation: courtLevelRecommendation,
         },
-        case_type_analysis: case_type,
-        procedural_insights: proceduralCases.map((case_item: any) => ({
+        case_type: case_type,
+        procedural_precedents: proceduralCases.map((case_item: any) => ({
           case_name: case_item.case_name,
+          court: case_item.court,
           date: case_item.date_filed,
-          procedural_note: this.truncateText(case_item.snippet, 150),
+          procedural_insight: this.truncateText(case_item.snippet, 200),
         })),
-        general_requirements: [
-          "File complaint with proper court",
-          "Pay required filing fees",
-          "Serve defendants properly",
-          "Include all required documentation",
-          "Meet statute of limitations",
+        general_procedural_requirements: [
+          "Determine proper court jurisdiction based on case type and amount",
+          "File complaint/petition with required forms",
+          "Pay applicable filing fees (varies by court)",
+          "Serve all defendants according to local rules",
+          "Include all required supporting documentation",
+          "Meet applicable statute of limitations",
+          "Follow local court rules for formatting and submission",
         ],
-        recommended_actions: [
-          jurisdictionCheck
-            ? `✓ ${selectedCourt.name} has jurisdiction for this claim amount`
-            : `⚠ Consider ${selectedCourt.limit ? "higher" : "lower"} court for this claim amount`,
-          "Review recent similar cases for procedural precedents",
-          "Ensure all documentary evidence is properly prepared",
-          "Consider mediation or settlement before filing",
+        recommended_next_steps: [
+          "Review local court rules for specific filing requirements",
+          "Check statute of limitations for your case type",
+          "Verify court has jurisdiction over defendants",
+          "Prepare all necessary documentation before filing",
+          "Consider alternative dispute resolution options",
+          proceduralCases.length > 0 
+            ? "Review the procedural precedents above for jurisdiction-specific guidance"
+            : "Research local court rules for detailed requirements",
         ],
+        search_results_note: proceduralCases.length === 0
+          ? "No specific procedural cases found. Consider broadening search or checking local court rules directly."
+          : `Found ${proceduralCases.length} relevant procedural cases for reference.`,
       };
 
       return {
@@ -1540,17 +1957,18 @@ class CourtListenerMCPServer {
             text: JSON.stringify(
               {
                 case_type,
-                court: selectedCourt.name,
-                error: `Could not retrieve specific procedural requirements: ${error instanceof Error ? error.message : String(error)}`,
+                jurisdiction,
+                error: `Could not retrieve procedural requirements: ${error instanceof Error ? error.message : String(error)}`,
                 general_guidance: {
-                  filing_fee: selectedCourt.filing_fee,
-                  jurisdiction_limit: selectedCourt.limit,
                   basic_steps: [
-                    "Prepare complaint",
-                    "Pay fees",
+                    "Research local court rules",
+                    "Prepare complaint with required elements",
+                    "File with appropriate court",
+                    "Pay filing fees",
                     "Serve defendants",
-                    "Await response",
+                    "Await response and follow court procedures",
                   ],
+                  note: "Procedural requirements vary significantly by jurisdiction. Consult local court rules or legal counsel for specific requirements.",
                 },
               },
               null,
@@ -1607,11 +2025,10 @@ class CourtListenerMCPServer {
     const searchQuery = areaQueries[legal_area] || legal_area;
 
     try {
-      const nyCourts = this.getNYCourts();
       const params = {
         q: searchQuery,
         type: trend_type === "new-precedents" ? "o" : "r",
-        court: [...nyCourts.primary, ...nyCourts.secondary].join(","),
+        // No court filter - search all courts nationwide
         ...dateFilter,
         page_size: 50,
         order_by: "-date_filed",
