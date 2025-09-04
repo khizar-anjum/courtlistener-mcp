@@ -1,0 +1,4417 @@
+{
+  "state": "ohio",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 489,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "ohctapp1hamilto",
+      "ohctapp2",
+      "ohctapp2champai",
+      "ohctapp2clark",
+      "ohctapp2darke",
+      "ohctapp2greene",
+      "ohctapp2miami",
+      "ohctapp2montgom",
+      "ohctapp3",
+      "ohctapp3allen",
+      "ohctapp3auglaiz",
+      "ohctapp3crawfor",
+      "ohctapp3defianc",
+      "ohctapp3hancock",
+      "ohctapp3hardin",
+      "ohctapp3henry",
+      "ohctapp3logan",
+      "ohctapp3marion",
+      "ohctapp3mercer",
+      "ohctapp3pauldin",
+      "ohctapp3putnam",
+      "ohctapp3seneca",
+      "ohctapp3shelby",
+      "ohctapp3union",
+      "ohctapp3vanwert",
+      "ohctapp3wyandot",
+      "ohctapp4",
+      "ohctapp4adams",
+      "ohctapp4athens",
+      "ohctapp4gallia",
+      "ohctapp4highlan",
+      "ohctapp4hocking",
+      "ohctapp4jackson",
+      "ohctapp4lawrenc",
+      "ohctapp4meigs",
+      "ohctapp4pickawa",
+      "ohctapp4pike",
+      "ohctapp4ross",
+      "ohctapp4scioto",
+      "ohctapp4vinton",
+      "ohctapp4washing",
+      "ohctapp5",
+      "ohctapp5ashland",
+      "ohctapp5coshoct",
+      "ohctapp5delawar",
+      "ohctapp5fairfie",
+      "ohctapp5guernse",
+      "ohctapp5holmes",
+      "ohctapp5knox",
+      "ohctapp5licking",
+      "ohctapp5morgan",
+      "ohctapp5morrow",
+      "ohctapp5musking",
+      "ohctapp5richlan",
+      "ohctapp5stark",
+      "ohctapp5tuscara",
+      "ohctapp6",
+      "ohctapp6erie",
+      "ohctapp6fulton",
+      "ohctapp6huron",
+      "ohctapp6lucas",
+      "ohctapp6ottawa",
+      "ohctapp6sandusk",
+      "ohctapp6william",
+      "ohctapp6wood",
+      "ohctapp7",
+      "ohctapp7belmont",
+      "ohctapp7carroll",
+      "ohctapp7columbi",
+      "ohctapp7harriso",
+      "ohctapp7jeffers",
+      "ohctapp7mahonin",
+      "ohctapp7monroe",
+      "ohctapp7noble",
+      "ohctapp8",
+      "ohctapp8cuyahog",
+      "ohctapp9",
+      "ohctapp9lorain",
+      "ohctapp9medina",
+      "ohctapp9summit",
+      "ohctapp9wayne",
+      "ohctapp10",
+      "ohctapp10frankl",
+      "ohctapp11",
+      "ohctapp11ashtab",
+      "ohctapp11geauga",
+      "ohctapp11lake",
+      "ohctapp11portag",
+      "ohctapp11trumbu",
+      "ohctapp12",
+      "ohctapp12brown",
+      "ohctapp12butler",
+      "ohctapp12clermo",
+      "ohctapp12clinto",
+      "ohctapp12fayett",
+      "ohctapp12madiso",
+      "ohctapp12preble",
+      "ohctapp12warren",
+      "ohiocirct",
+      "ohcirctadams",
+      "ohcirctallen",
+      "ohcirctashland",
+      "ohcirctashtabul",
+      "ohcirctathens",
+      "ohcirctauglaize",
+      "ohcirctbelmont",
+      "ohcirctbrown",
+      "ohcirctbutler",
+      "ohcirctcarroll",
+      "ohcirctchampaig",
+      "ohcirctclark",
+      "ohcirctclermont",
+      "ohcirctclinton",
+      "ohcirctcolumbia",
+      "ohcirctcoshocto",
+      "ohcirctcrawford",
+      "ohcirctcuyahoga",
+      "ohcirctdarke",
+      "ohcirctdefiance",
+      "ohcirctdelaware",
+      "ohcircterie",
+      "ohcirctfairfiel",
+      "ohcirctfayette",
+      "ohcirctfranklin",
+      "ohcirctfulton",
+      "ohcirctgeauga",
+      "ohcirctgreene",
+      "ohcirctguernsey",
+      "ohcircthamilton",
+      "ohcircthancock",
+      "ohcircthancook",
+      "ohcircthardin",
+      "ohcirctharrison",
+      "ohcircthenry",
+      "ohcirctholmes",
+      "ohcircthighland",
+      "ohcircthuron",
+      "ohcirctjackson",
+      "ohcirctjefferso",
+      "ohcirctknox",
+      "ohcirctlake",
+      "ohcirctlawrence",
+      "ohcirctlicking",
+      "ohcirctlogan",
+      "ohcirctlorain",
+      "ohcirctlucas",
+      "ohcirctmadison",
+      "ohcirctmahoning",
+      "ohcirctmarion",
+      "ohcirctmedina",
+      "ohcirctmeigs",
+      "ohcirctmercer",
+      "ohcirctmiami",
+      "ohcirctmonroe",
+      "ohcirctmontgome",
+      "ohcirctmorgan",
+      "ohcirctmorrow",
+      "ohcirctmuskingu",
+      "ohcirctnoble",
+      "ohcirctottawa",
+      "ohcirctpaulding",
+      "ohcirctperry",
+      "ohcirctpickaway",
+      "ohcirctpike",
+      "ohcirctportage",
+      "ohcirctpreble",
+      "ohcirctputnam",
+      "ohcirctrichland",
+      "ohcirctross",
+      "ohcirctsandusky",
+      "ohcirctscioto",
+      "ohcirctseneca",
+      "ohcirctshelby",
+      "ohcirctstark",
+      "ohcirctsummit",
+      "ohcircttaggart",
+      "ohcircttrumbull",
+      "ohcircttuscaraw",
+      "ohcirctunion",
+      "ohcirctvanwert",
+      "ohcirctvinton",
+      "ohcirctwarren",
+      "ohcirctwayne",
+      "ohcirctwilliams",
+      "ohcirctwood",
+      "ohcirctwyandot",
+      "ohcirctwyandott",
+      "ohiocountyct",
+      "ohioctyctashtab",
+      "ohioctyctbelmon",
+      "ohioctyctbrown",
+      "ohioctyctbutler",
+      "ohioctyctclark",
+      "ohioctyctcolum",
+      "ohioctyctcosh",
+      "ohioctyctfrank",
+      "ohioctyctharris",
+      "ohioctycthighla",
+      "ohioctyctmahoni",
+      "ohioctyctmuskin",
+      "ohioctyctmonroe",
+      "ohioctyctpauldi",
+      "ohioctyctperry",
+      "ohioctyctpike",
+      "ohioctyctstark",
+      "ohioctycttrumbu",
+      "ohctcompladams",
+      "ohctcomplallen",
+      "ohctcomplashlan",
+      "ohctcomplashtab",
+      "ohctcomplathens",
+      "ohctcomplauglai",
+      "ohctcomplbelmon",
+      "ohctcomplboss",
+      "ohctcomplbrown",
+      "ohctcomplbutler",
+      "ohctcomplcarrol",
+      "ohctcomplchampa",
+      "ohctcomplclark",
+      "ohctcomplclarke",
+      "ohctcomplclermo",
+      "ohctcomplclinto",
+      "ohctcomplcolumb",
+      "ohctcomplcoshoc",
+      "ohctcomplcrawfo",
+      "ohctcomplcuyaho",
+      "ohctcompldarke",
+      "ohctcompldefian",
+      "ohctcompldelawa",
+      "ohctcomplerie",
+      "ohctcomplfairfi",
+      "ohctcomplfayett",
+      "ohctcomplfulton",
+      "ohctcomplfrankl",
+      "ohctcomplgalia",
+      "ohctcomplgallia",
+      "ohctcomplgeauga",
+      "ohctcomplgreen",
+      "ohctcomplgreene",
+      "ohctcomplguerns",
+      "ohctcomplhamilt",
+      "ohctcomplhancoc",
+      "ohctcomplhardin",
+      "ohctcomplharris",
+      "ohctcomplhenry",
+      "ohctcomplhighla",
+      "ohctcomplhockin",
+      "ohctcomplholmes",
+      "ohctcomplhuron",
+      "ohctcompljackso",
+      "ohctcompljeffer",
+      "ohctcomplknox",
+      "ohctcompllake",
+      "ohctcompllawren",
+      "ohctcompllickin",
+      "ohctcompllogan",
+      "ohctcompllorain",
+      "ohctcompllucas",
+      "ohctcomplmadiso",
+      "ohctcomplmahoni",
+      "ohctcomplmarion",
+      "ohctcomplmedina",
+      "ohctcomplmeigs",
+      "ohctcomplmercer",
+      "ohctcomplmiami",
+      "ohctcomplmonroe",
+      "ohctcomplmontgo",
+      "ohctcomplmorgan",
+      "ohctcomplmorrow",
+      "ohctcomplmuskin",
+      "ohctcomplnoble",
+      "ohctcomplottawa",
+      "ohctcomplpauldi",
+      "ohctcomplpickaw",
+      "ohctcomplpike",
+      "ohctcomplportag",
+      "ohctcomplpreble",
+      "ohctcomplputnam",
+      "ohctcomplrichla",
+      "ohctcomplross",
+      "ohctcomplsandus",
+      "ohctcomplscioto",
+      "ohctcomplseneca",
+      "ohctcomplshelby",
+      "ohctcomplstark",
+      "ohctcomplsummit",
+      "ohctcompltascar",
+      "ohctcompltrumbu",
+      "ohctcompltuscar",
+      "ohctcomplunion",
+      "ohctcomplvanwe",
+      "ohctcomplvinton",
+      "ohctcomplwarren",
+      "ohctcomplwashin",
+      "ohctcomplwayne",
+      "ohctcomplwillia",
+      "ohctcomplwood",
+      "ohctcomplwyando",
+      "ohjuvct",
+      "ohjuvctallen",
+      "ohjuvctcolumbia",
+      "ohjuvctcuyahoga",
+      "ohjuvctgreene",
+      "ohjuvcthamilton",
+      "ohjuvcthuron",
+      "ohjuvctlicking",
+      "ohjuvctlucas",
+      "ohjuvctmarion",
+      "ohjuvctmuskingu",
+      "ohjuvctnoble",
+      "ohjuvctpreble",
+      "ohjuvcttuscaraw",
+      "ohjuvctwarren",
+      "ohjuvctwayne",
+      "ohmayorct",
+      "ohmayorctcinci",
+      "ohmayorctclev",
+      "ohmayorctcolum",
+      "ohmunict",
+      "ohmunictakron",
+      "ohmunictashland",
+      "ohmunictashtabu",
+      "ohmunictathens",
+      "ohmunictauglaiz",
+      "ohmunictavonlak",
+      "ohmunictbarbert",
+      "ohmunictbedford",
+      "ohmunictbellefo",
+      "ohmunictberea",
+      "ohmunictbowling",
+      "ohmunictcanton",
+      "ohmunictcelina",
+      "ohmunictchardon",
+      "ohmunictchillic",
+      "ohmunictcincinn",
+      "ohmunictcirclev",
+      "ohmunictclark",
+      "ohmunictclermon",
+      "ohmunictclevela",
+      "ohmunictcolumbu",
+      "ohmunictcrawfor",
+      "ohmunictcuyahog",
+      "ohmunictcuyfall",
+      "ohmunictdarke",
+      "ohmunictdayton",
+      "ohmunicteastliv",
+      "ohmunictelyria",
+      "ohmunicteuclid",
+      "ohmunicteuclidc",
+      "ohmunictfindlay",
+      "ohmunictfostori",
+      "ohmunictfrankli",
+      "ohmunictfremont",
+      "ohmunictgallipo",
+      "ohmunictgirard",
+      "ohmunicthamilto",
+      "ohmunicthighlan",
+      "ohmunicthocking",
+      "ohmunictketteri",
+      "ohmunictlakewoo",
+      "ohmunictlancast",
+      "ohmunictlawrenc",
+      "ohmunictlicking",
+      "ohmunictlima",
+      "ohmunictlorain",
+      "ohmunictlucas",
+      "ohmunictmansfie",
+      "ohmunictmarion",
+      "ohmunictmarysvi",
+      "ohmunictmassill",
+      "ohmunictmaumee",
+      "ohmunictmedina",
+      "ohmunictmiamisb",
+      "ohmunictmiddlet",
+      "ohmunictmorrow",
+      "ohmunictnewphil",
+      "ohmunictnewtonf",
+      "ohmunictoberlin",
+      "ohmunictparma",
+      "ohmunictperrysb",
+      "ohmunictpiqua",
+      "ohmunictportage",
+      "ohmunictportcli",
+      "ohmunictportsmo",
+      "ohmunictravenna",
+      "ohmunictrockyri",
+      "ohmunictshakerh",
+      "ohmunictsidney",
+      "ohmunictsoutheu",
+      "ohmunictspringf",
+      "ohmunictstruthe",
+      "ohmunictsummit",
+      "ohmunictsylvani",
+      "ohmunicttiffin",
+      "ohmunicttoledo",
+      "ohmunicttrumbul",
+      "ohmunictuppersa",
+      "ohmunictvandali",
+      "ohmunictvanwert",
+      "ohmunictwadswor",
+      "ohmunictwarren",
+      "ohmunictwayne",
+      "ohmunictwilloug",
+      "ohmunictxenia",
+      "ohmunictzanesvi",
+      "ohprobct",
+      "ohprobctallen",
+      "ohprobctashtabu",
+      "ohprobctauglaiz",
+      "ohprobctbelmont",
+      "ohprobctbutler",
+      "ohprobctchampai",
+      "ohprobctclark",
+      "ohprobctclarke",
+      "ohprobctclermon",
+      "ohprobctclinton",
+      "ohprobctcolumbi",
+      "ohprobctcuyahog",
+      "ohprobctdarke",
+      "ohprobcterie",
+      "ohprobctfairfie",
+      "ohprobctfayette",
+      "ohprobctfrankli",
+      "ohprobctfulton",
+      "ohprobctgeauga",
+      "ohprobctgreene",
+      "ohprobcthamilto",
+      "ohprobcthancock",
+      "ohprobcthardin",
+      "ohprobctharriso",
+      "ohprobcthenry",
+      "ohprobcthighlan",
+      "ohprobcthuron",
+      "ohprobctjackson",
+      "ohprobctjeffers",
+      "ohprobctknox",
+      "ohprobctlake",
+      "ohprobctlicking",
+      "ohprobctlorain",
+      "ohprobctlucas",
+      "ohprobctmadison",
+      "ohprobctmahonin",
+      "ohprobctmarion",
+      "ohprobctmeigs",
+      "ohprobctmercer",
+      "ohprobctmiami",
+      "ohprobctmontgom",
+      "ohprobctmorgan",
+      "ohprobctmusking",
+      "ohprobctnoble",
+      "ohprobctperry",
+      "ohprobctpike",
+      "ohprobctportage",
+      "ohprobctpreble",
+      "ohprobctputnam",
+      "ohprobctross",
+      "ohprobctsandusk",
+      "ohprobctscioto",
+      "ohprobctseneca",
+      "ohprobctshelby",
+      "ohprobctstark",
+      "ohprobctsummit",
+      "ohprobcttrumbul",
+      "ohprobcttuscara",
+      "ohprobctunion",
+      "ohprobctvanwer",
+      "ohprobctwarren",
+      "ohprobctwashing",
+      "ohprobctwayne",
+      "ohctinsolv",
+      "ohioctnp",
+      "ohiosuperct",
+      "ohsuperctcinci",
+      "ohiopuc",
+      "ohioctcompl"
+    ],
+    "bankruptcy": [
+      "ohnb",
+      "ohsb"
+    ],
+    "local": [
+      "ohnd",
+      "ohsd",
+      "ohiod",
+      "ohio",
+      "ohioctapp",
+      "ohctinsolvcuyah",
+      "ohctinsolvhamil",
+      "ohiorac",
+      "ohiotax",
+      "ohiobar",
+      "ohiocivright",
+      "ohioctcl"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ohnb",
+      "short_name": "N.D. Ohio",
+      "full_name": "United States Bankruptcy Court, N.D. Ohio",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohsb",
+      "short_name": "S.D. Ohio",
+      "full_name": "United States Bankruptcy Court, S.D. Ohio",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohnd",
+      "short_name": "N.D. Ohio",
+      "full_name": "District Court, N.D. Ohio",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohsd",
+      "short_name": "S.D. Ohio",
+      "full_name": "District Court, S.D. Ohio",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiod",
+      "short_name": "D. Ohio",
+      "full_name": "District Court, D. Ohio",
+      "jurisdiction": "FD",
+      "start_date": "1803-02-19",
+      "end_date": "1855-02-10"
+    },
+    {
+      "id": "ohio",
+      "short_name": "Ohio Supreme Court",
+      "full_name": "Ohio Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ohioctapp",
+      "short_name": "Ohio Court of Appeals",
+      "full_name": "Ohio Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1912-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ohctapp1hamilto",
+      "short_name": "Court of Appeals of Ohio, First District, Hamilton County",
+      "full_name": "Court of Appeals of Ohio, First District, Hamilton County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2",
+      "short_name": "Court of Appeals of Ohio, Second District",
+      "full_name": "Court of Appeals of Ohio, Second District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2champai",
+      "short_name": "Court of Appeals of Ohio, Second District, Champaign County",
+      "full_name": "Court of Appeals of Ohio, Second District, Champaign County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2clark",
+      "short_name": "Court of Appeals of Ohio, Second District, Clark County",
+      "full_name": "Court of Appeals of Ohio, Second District, Clark County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2darke",
+      "short_name": "Court of Appeals of Ohio, Second District, Darke County",
+      "full_name": "Court of Appeals of Ohio, Second District, Darke County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2greene",
+      "short_name": "Court of Appeals of Ohio, Second District, Greene County",
+      "full_name": "Court of Appeals of Ohio, Second District, Greene County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2miami",
+      "short_name": "Court of Appeals of Ohio, Second District, Miami County",
+      "full_name": "Court of Appeals of Ohio, Second District, Miami County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp2montgom",
+      "short_name": "Court of Appeals of Ohio, Second District, Montgomery County",
+      "full_name": "Court of Appeals of Ohio, Second District, Montgomery County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3",
+      "short_name": "Court of Appeals of Ohio, Third District",
+      "full_name": "Court of Appeals of Ohio, Third District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3allen",
+      "short_name": "Court of Appeals of Ohio, Third District, Allen County",
+      "full_name": "Court of Appeals of Ohio, Third District, Allen County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3auglaiz",
+      "short_name": "Court of Appeals of Ohio, Third District, Auglaize County",
+      "full_name": "Court of Appeals of Ohio, Third District, Auglaize County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3crawfor",
+      "short_name": "Court of Appeals of Ohio, Third District, Crawford County",
+      "full_name": "Court of Appeals of Ohio, Third District, Crawford County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3defianc",
+      "short_name": "Court of Appeals of Ohio, Third District, Defiance County",
+      "full_name": "Court of Appeals of Ohio, Third District, Defiance County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3hancock",
+      "short_name": "Court of Appeals of Ohio, Third District, Hancock County",
+      "full_name": "Court of Appeals of Ohio, Third District, Hancock County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3hardin",
+      "short_name": "Court of Appeals of Ohio, Third District, Hardin County",
+      "full_name": "Court of Appeals of Ohio, Third District, Hardin County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3henry",
+      "short_name": "Court of Appeals of Ohio, Third District, Henry County",
+      "full_name": "Court of Appeals of Ohio, Third District, Henry County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3logan",
+      "short_name": "Court of Appeals of Ohio, Third District, Logan County",
+      "full_name": "Court of Appeals of Ohio, Third District, Logan County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3marion",
+      "short_name": "Court of Appeals of Ohio, Third District, Marion County",
+      "full_name": "Court of Appeals of Ohio, Third District, Marion County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3mercer",
+      "short_name": "Court of Appeals of Ohio, Third District, Mercer County",
+      "full_name": "Court of Appeals of Ohio, Third District, Mercer County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3pauldin",
+      "short_name": "Court of Appeals of Ohio, Third District, Paulding County",
+      "full_name": "Court of Appeals of Ohio, Third District, Paulding County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3putnam",
+      "short_name": "Court of Appeals of Ohio, Third District, Putnam County",
+      "full_name": "Court of Appeals of Ohio, Third District, Putnam County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3seneca",
+      "short_name": "Court of Appeals of Ohio, Third District, Seneca County",
+      "full_name": "Court of Appeals of Ohio, Third District, Seneca County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3shelby",
+      "short_name": "Court of Appeals of Ohio, Third District, Shelby County",
+      "full_name": "Court of Appeals of Ohio, Third District, Shelby County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3union",
+      "short_name": "Court of Appeals of Ohio, Third District, Union County",
+      "full_name": "Court of Appeals of Ohio, Third District, Union County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3vanwert",
+      "short_name": "Court of Appeals of Ohio, Third District, Van Wert County",
+      "full_name": "Court of Appeals of Ohio, Third District, Van Wert County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp3wyandot",
+      "short_name": "Court of Appeals of Ohio, Third District, Wyandot County",
+      "full_name": "Court of Appeals of Ohio, Third District, Wyandot County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4",
+      "short_name": "Court of Appeals of Ohio, Fourth District",
+      "full_name": "Court of Appeals of Ohio, Fourth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4adams",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Adams County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Adams County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4athens",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Athens County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Athens County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4gallia",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Gallia County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Gallia County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4highlan",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Highland County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Highland County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4hocking",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Hocking County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Hocking County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4jackson",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Jackson County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Jackson County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4lawrenc",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Lawrence County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Lawrence County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4meigs",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Meigs County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Meigs County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4pickawa",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Pickaway County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Pickaway County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4pike",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Pike County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Pike County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4ross",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Ross County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Ross County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4scioto",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Scioto County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Scioto County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4vinton",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Vinton County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Vinton County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp4washing",
+      "short_name": "Court of Appeals of Ohio, Fourth District, Washington County",
+      "full_name": "Court of Appeals of Ohio, Fourth District, Washington County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5",
+      "short_name": "Court of Appeals of Ohio, Fifth District",
+      "full_name": "Court of Appeals of Ohio, Fifth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5ashland",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Ashland County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Ashland County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5coshoct",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Coshocton County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Coshocton County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5delawar",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Delaware County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Delaware County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5fairfie",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Fairfield County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Fairfield County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5guernse",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Guernsey County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Guernsey County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5holmes",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Holmes County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Holmes County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5knox",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Knox County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Knox County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5licking",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Licking County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Licking County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5morgan",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Morgan County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Morgan County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5morrow",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Morrow County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Morrow County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5musking",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Muskingum County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Muskingum County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5richlan",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Richland County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Richland County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5stark",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Stark County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Stark County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp5tuscara",
+      "short_name": "Court of Appeals of Ohio, Fifth District, Tuscarawas County",
+      "full_name": "Court of Appeals of Ohio, Fifth District, Tuscarawas County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6",
+      "short_name": "Court of Appeals of Ohio, Sixth District",
+      "full_name": "Court of Appeals of Ohio, Sixth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6erie",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Erie County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Erie County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6fulton",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Fulton County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Fulton County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6huron",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Huron County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Huron County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6lucas",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Lucas County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Lucas County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6ottawa",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Ottawa County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Ottawa County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6sandusk",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Sandusky County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Sandusky County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6william",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Williams County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Williams County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp6wood",
+      "short_name": "Court of Appeals of Ohio, Sixth District, Wood County",
+      "full_name": "Court of Appeals of Ohio, Sixth District, Wood County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7",
+      "short_name": "Court of Appeals of Ohio, Seventh District",
+      "full_name": "Court of Appeals of Ohio, Seventh District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7belmont",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Belmont County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Belmont County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7carroll",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Carroll County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Carroll County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7columbi",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Columbiana County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Columbiana County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7harriso",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Harrison County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Harrison County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7jeffers",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Jefferson County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Jefferson County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7mahonin",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Mahoning County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Mahoning County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7monroe",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Monroe County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Monroe County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp7noble",
+      "short_name": "Court of Appeals of Ohio, Seventh District, Noble County",
+      "full_name": "Court of Appeals of Ohio, Seventh District, Noble County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp8",
+      "short_name": "Court of Appeals of Ohio, Eighth District",
+      "full_name": "Court of Appeals of Ohio, Eighth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp8cuyahog",
+      "short_name": "Court of Appeals of Ohio, Eighth District, Cuyahoga County",
+      "full_name": "Court of Appeals of Ohio, Eighth District, Cuyahoga County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp9",
+      "short_name": "Court of Appeals of Ohio, Ninth District",
+      "full_name": "Court of Appeals of Ohio, Ninth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp9lorain",
+      "short_name": "Court of Appeals of Ohio, Ninth District, Lorain County",
+      "full_name": "Court of Appeals of Ohio, Ninth District, Lorain County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp9medina",
+      "short_name": "Court of Appeals of Ohio, Ninth District, Medina County",
+      "full_name": "Court of Appeals of Ohio, Ninth District, Medina County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp9summit",
+      "short_name": "Court of Appeals of Ohio, Ninth District, Summit County",
+      "full_name": "Court of Appeals of Ohio, Ninth District, Summit County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp9wayne",
+      "short_name": "Court of Appeals of Ohio, Ninth District, Wayne County",
+      "full_name": "Court of Appeals of Ohio, Ninth District, Wayne County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp10",
+      "short_name": "Court of Appeals of Ohio, Tenth District",
+      "full_name": "Court of Appeals of Ohio, Tenth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp10frankl",
+      "short_name": "Court of Appeals of Ohio, Tenth District, Franklin County",
+      "full_name": "Court of Appeals of Ohio, Tenth District, Franklin County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp11",
+      "short_name": "Court of Appeals of Ohio, Eleventh District",
+      "full_name": "Court of Appeals of Ohio, Eleventh District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp11ashtab",
+      "short_name": "Court of Appeals of Ohio, Eleventh District, Ashtabula County",
+      "full_name": "Court of Appeals of Ohio, Eleventh District, Ashtabula County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp11geauga",
+      "short_name": "Court of Appeals of Ohio, Eleventh District, Geauga County",
+      "full_name": "Court of Appeals of Ohio, Eleventh District, Geauga County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp11lake",
+      "short_name": "Court of Appeals of Ohio, Eleventh District, Lake County",
+      "full_name": "Court of Appeals of Ohio, Eleventh District, Lake County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp11portag",
+      "short_name": "Court of Appeals of Ohio, Eleventh District, Portage County",
+      "full_name": "Court of Appeals of Ohio, Eleventh District, Portage County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp11trumbu",
+      "short_name": "Court of Appeals of Ohio, Eleventh District, Trumbull County",
+      "full_name": "Court of Appeals of Ohio, Eleventh District, Trumbull County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12",
+      "short_name": "Court of Appeals of Ohio, Twelfth District",
+      "full_name": "Court of Appeals of Ohio, Twelfth District",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12brown",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Brown County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Brown County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12butler",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Butler County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Butler County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12clermo",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Clermont County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Clermont County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12clinto",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Clinton County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Clinton County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12fayett",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Fayette County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Fayette County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12madiso",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Madison County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Madison County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12preble",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Preble County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Preble County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctapp12warren",
+      "short_name": "Court of Appeals of Ohio, Twelfth District, Warren County",
+      "full_name": "Court of Appeals of Ohio, Twelfth District, Warren County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiocirct",
+      "short_name": "Ohio Circuit Courts",
+      "full_name": "Ohio Circuit Courts",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctadams",
+      "short_name": "Adams Circuit Court",
+      "full_name": "Adams Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctallen",
+      "short_name": "Allen Circuit Court",
+      "full_name": "Allen Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctashland",
+      "short_name": "Ashland Circuit Court",
+      "full_name": "Ashland Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctashtabul",
+      "short_name": "Ashtabula Circuit Court",
+      "full_name": "Ashtabula Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctathens",
+      "short_name": "Athens Circuit Court",
+      "full_name": "Athens Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctauglaize",
+      "short_name": "Auglaize County Circuit Court",
+      "full_name": "Auglaize County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctbelmont",
+      "short_name": "Belmont Circuit Court",
+      "full_name": "Belmont Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctbrown",
+      "short_name": "Brown Circuit Court",
+      "full_name": "Brown Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctbutler",
+      "short_name": "Butler Circuit Court",
+      "full_name": "Butler Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctcarroll",
+      "short_name": "Carroll Circuit Court",
+      "full_name": "Carroll Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctchampaig",
+      "short_name": "Champaign Circuit Court",
+      "full_name": "Champaign Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctclark",
+      "short_name": "Clark Circuit Court",
+      "full_name": "Clark Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctclermont",
+      "short_name": "Clermont Circuit Court",
+      "full_name": "Clermont Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctclinton",
+      "short_name": "Clinton Circuit Court",
+      "full_name": "Clinton Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctcolumbia",
+      "short_name": "Columbiana Circuit Court",
+      "full_name": "Columbiana Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctcoshocto",
+      "short_name": "Coshocton Circuit Court",
+      "full_name": "Coshocton Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctcrawford",
+      "short_name": "Crawford Circuit Court",
+      "full_name": "Crawford Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctcuyahoga",
+      "short_name": "Cuyahoga Circuit Court",
+      "full_name": "Cuyahoga Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctdarke",
+      "short_name": "Darke Circuit Court",
+      "full_name": "Darke Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctdefiance",
+      "short_name": "Defiance Circuit Court",
+      "full_name": "Defiance Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctdelaware",
+      "short_name": "Delaware Circuit Court",
+      "full_name": "Delaware Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircterie",
+      "short_name": "Erie Circuit Court",
+      "full_name": "Erie Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctfairfiel",
+      "short_name": "Fairfield Circuit Court",
+      "full_name": "Fairfield Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctfayette",
+      "short_name": "Fayette Circuit Court",
+      "full_name": "Fayette Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctfranklin",
+      "short_name": "Franklin Circuit Court",
+      "full_name": "Franklin Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctfulton",
+      "short_name": "Fulton Circuit Court",
+      "full_name": "Fulton Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctgeauga",
+      "short_name": "Geauga Circuit Court",
+      "full_name": "Geauga Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctgreene",
+      "short_name": "Greene Circuit Court",
+      "full_name": "Greene Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctguernsey",
+      "short_name": "Guernsey Circuit Court",
+      "full_name": "Guernsey Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthamilton",
+      "short_name": "Hamilton Circuit Court",
+      "full_name": "Hamilton Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthancock",
+      "short_name": "Hancock Circuit Court",
+      "full_name": "Hancock Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthancook",
+      "short_name": "Hancook Circuit Court",
+      "full_name": "Hancook Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthardin",
+      "short_name": "Hardin Circuit Court",
+      "full_name": "Hardin Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctharrison",
+      "short_name": "Harrison Circuit Court",
+      "full_name": "Harrison Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthenry",
+      "short_name": "Henry Circuit Court",
+      "full_name": "Henry Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctholmes",
+      "short_name": "Holmes Circuit Court",
+      "full_name": "Holmes Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthighland",
+      "short_name": "Highland Circuit Court",
+      "full_name": "Highland Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircthuron",
+      "short_name": "Huron Circuit Court",
+      "full_name": "Huron Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctjackson",
+      "short_name": "Jackson Circuit Court",
+      "full_name": "Jackson Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctjefferso",
+      "short_name": "Jefferson Circuit Court",
+      "full_name": "Jefferson Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctknox",
+      "short_name": "Knox County Circuit Court",
+      "full_name": "Knox County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctlake",
+      "short_name": "Lake County Circuit Court",
+      "full_name": "Lake County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctlawrence",
+      "short_name": "Lawrence Circuit Court",
+      "full_name": "Lawrence Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctlicking",
+      "short_name": "Licking Circuit Court",
+      "full_name": "Licking Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctlogan",
+      "short_name": "Logan Circuit Court",
+      "full_name": "Logan Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctlorain",
+      "short_name": "Lorain Circuit Court",
+      "full_name": "Lorain Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctlucas",
+      "short_name": "Lucas Circuit Court",
+      "full_name": "Lucas Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmadison",
+      "short_name": "Madison Circuit Court",
+      "full_name": "Madison Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmahoning",
+      "short_name": "Mahoning Circuit Court",
+      "full_name": "Mahoning Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmarion",
+      "short_name": "Marion Circuit Court",
+      "full_name": "Marion Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmedina",
+      "short_name": "Medina Circuit Court",
+      "full_name": "Medina Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmeigs",
+      "short_name": "Meigs Circuit Court",
+      "full_name": "Meigs Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmercer",
+      "short_name": "Mercer Circuit Court",
+      "full_name": "Mercer Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmiami",
+      "short_name": "Miami Circuit Court",
+      "full_name": "Miami Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmonroe",
+      "short_name": "Monroe Circuit Court",
+      "full_name": "Monroe Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmontgome",
+      "short_name": "Montgomery Circuit Court",
+      "full_name": "Montgomery Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmorgan",
+      "short_name": "Morgan Circuit Court",
+      "full_name": "Morgan Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmorrow",
+      "short_name": "Morrow Circuit Court",
+      "full_name": "Morrow Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctmuskingu",
+      "short_name": "Muskingum Circuit Court",
+      "full_name": "Muskingum Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctnoble",
+      "short_name": "Noble Circuit Court",
+      "full_name": "Noble Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctottawa",
+      "short_name": "Ottawa Circuit Court",
+      "full_name": "Ottawa Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctpaulding",
+      "short_name": "Paulding Circuit Court",
+      "full_name": "Paulding Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctperry",
+      "short_name": "Perry Circuit Court",
+      "full_name": "Perry Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctpickaway",
+      "short_name": "Pickaway Circuit Court",
+      "full_name": "Pickaway Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctpike",
+      "short_name": "Pike Circuit Court",
+      "full_name": "Pike Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctportage",
+      "short_name": "Portage Circuit Court",
+      "full_name": "Portage Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctpreble",
+      "short_name": "Preble Circuit Court",
+      "full_name": "Preble Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctputnam",
+      "short_name": "Putnam Circuit Court",
+      "full_name": "Putnam Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctrichland",
+      "short_name": "Richland Circuit Court",
+      "full_name": "Richland Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctross",
+      "short_name": "Ross Circuit Court",
+      "full_name": "Ross Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctsandusky",
+      "short_name": "Sandusky Circuit Court",
+      "full_name": "Sandusky Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctscioto",
+      "short_name": "Scioto Circuit Court",
+      "full_name": "Scioto Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctseneca",
+      "short_name": "Seneca Circuit Court",
+      "full_name": "Seneca Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctshelby",
+      "short_name": "Shelby Circuit Court",
+      "full_name": "Shelby Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctstark",
+      "short_name": "Stark Circuit Court",
+      "full_name": "Stark Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctsummit",
+      "short_name": "Summit Circuit Court",
+      "full_name": "Summit Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircttaggart",
+      "short_name": "Taggart Circuit Court",
+      "full_name": "Taggart Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircttrumbull",
+      "short_name": "Trumbull Circuit Court",
+      "full_name": "Trumbull Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcircttuscaraw",
+      "short_name": "Tuscarawas Circuit Court",
+      "full_name": "Tuscarawas Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctunion",
+      "short_name": "Union County Circuit Court",
+      "full_name": "Union County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctvanwert",
+      "short_name": "Van Wert Circuit Court",
+      "full_name": "Van Wert Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctvinton",
+      "short_name": "Vinton County Circuit Court",
+      "full_name": "Vinton County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctwarren",
+      "short_name": "Warren Circuit Court",
+      "full_name": "Warren Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctwayne",
+      "short_name": "Wayne Circuit Court",
+      "full_name": "Wayne Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctwilliams",
+      "short_name": "Williams Circuit Court",
+      "full_name": "Williams Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctwood",
+      "short_name": "Wood Circuit Court",
+      "full_name": "Wood Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctwyandot",
+      "short_name": "Wyandot Circuit Court",
+      "full_name": "Wyandot Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohcirctwyandott",
+      "short_name": "Wyandotte County Circuit Court",
+      "full_name": "Wyandotte County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiocountyct",
+      "short_name": "Ohio County Court",
+      "full_name": "Ohio County Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctashtab",
+      "short_name": "Ashtabula County Courts, Ohio",
+      "full_name": "Ashtabula County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctbelmon",
+      "short_name": "Belmont County Courts, Ohio",
+      "full_name": "Belmont County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctbrown",
+      "short_name": "Brown County Courts, Ohio",
+      "full_name": "Brown County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctbutler",
+      "short_name": "Butler County Courts, Ohio",
+      "full_name": "Butler County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctclark",
+      "short_name": "Clark County Court, Ohio",
+      "full_name": "Clark County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctcolum",
+      "short_name": "Columbiana County Courts, Ohio",
+      "full_name": "Columbiana County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctcosh",
+      "short_name": "Coshocton County Court, Ohio",
+      "full_name": "Coshocton County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctfrank",
+      "short_name": "Franklin County Courts, Ohio",
+      "full_name": "Franklin County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctharris",
+      "short_name": "Harrison County Court, Ohio",
+      "full_name": "Harrison County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctycthighla",
+      "short_name": "Highland County Court, Ohio",
+      "full_name": "Highland County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctmahoni",
+      "short_name": "Mahoning County Courts, Ohio",
+      "full_name": "Mahoning County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctmuskin",
+      "short_name": "Muskingum County Court, Ohio",
+      "full_name": "Muskingum County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctmonroe",
+      "short_name": "Monroe County Court, Ohio",
+      "full_name": "Monroe County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctpauldi",
+      "short_name": "Paulding County Court, Ohio",
+      "full_name": "Paulding County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctperry",
+      "short_name": "Perry County Court, Ohio",
+      "full_name": "Perry County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctpike",
+      "short_name": "Pike County Court, Ohio",
+      "full_name": "Pike County Court, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctyctstark",
+      "short_name": "Stark County Courts, Ohio",
+      "full_name": "Stark County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctycttrumbu",
+      "short_name": "Trumbull County Courts, Ohio",
+      "full_name": "Trumbull County Courts, Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompladams",
+      "short_name": "Adams County Court of Common Pleas",
+      "full_name": "Adams County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplallen",
+      "short_name": "Allen County Court of Common Pleas",
+      "full_name": "Allen County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplashlan",
+      "short_name": "Ashland County Court of Common Pleas",
+      "full_name": "Ashland County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplashtab",
+      "short_name": "Ashtabula County Court of Common Pleas",
+      "full_name": "Ashtabula County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplathens",
+      "short_name": "Athens County Court of Common Pleas",
+      "full_name": "Athens County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplauglai",
+      "short_name": "Auglaize County Court of Common Pleas",
+      "full_name": "Auglaize County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplbelmon",
+      "short_name": "Belmont County Court of Common Pleas",
+      "full_name": "Belmont County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplboss",
+      "short_name": "Boss County Court of Common Pleas",
+      "full_name": "Boss County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplbrown",
+      "short_name": "Brown County Court of Common Pleas",
+      "full_name": "Brown County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplbutler",
+      "short_name": "Butler County Court of Common Pleas",
+      "full_name": "Butler County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplcarrol",
+      "short_name": "Carroll County Court of Common Pleas",
+      "full_name": "Carroll County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplchampa",
+      "short_name": "Champaign County Court of Common Pleas",
+      "full_name": "Champaign County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplclark",
+      "short_name": "Clark County Court of Common Pleas",
+      "full_name": "Clark County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplclarke",
+      "short_name": "Clarke County Court of Common Pleas",
+      "full_name": "Clarke County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplclermo",
+      "short_name": "Clermont County Court of Common Pleas",
+      "full_name": "Clermont County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplclinto",
+      "short_name": "Clinton County Court of Common Pleas",
+      "full_name": "Clinton County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplcolumb",
+      "short_name": "Columbiana County Court of Common Pleas",
+      "full_name": "Columbiana County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplcoshoc",
+      "short_name": "Coshocton County Court of Common Pleas",
+      "full_name": "Coshocton County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplcrawfo",
+      "short_name": "Crawford County Court of Common Pleas",
+      "full_name": "Crawford County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplcuyaho",
+      "short_name": "Cuyahoga County Common Pleas Court",
+      "full_name": "Cuyahoga County Common Pleas Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompldarke",
+      "short_name": "Darke County Court of Common Pleas",
+      "full_name": "Darke County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompldefian",
+      "short_name": "Defiance County Court of Common Pleas",
+      "full_name": "Defiance County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompldelawa",
+      "short_name": "Delaware County Court of Common Pleas",
+      "full_name": "Delaware County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplerie",
+      "short_name": "Erie County Court of Common Pleas",
+      "full_name": "Erie County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplfairfi",
+      "short_name": "Fairfield County Court of Common Pleas",
+      "full_name": "Fairfield County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplfayett",
+      "short_name": "Fayette County Court of Common Pleas",
+      "full_name": "Fayette County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplfulton",
+      "short_name": "Fulton County Court of Common Pleas",
+      "full_name": "Fulton County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplfrankl",
+      "short_name": "Court of Common Pleas of Ohio, Franklin County, Civil Division",
+      "full_name": "Court of Common Pleas of Ohio, Franklin County, Civil Division",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplgalia",
+      "short_name": "Galia County Court of Common Pleas",
+      "full_name": "Galia County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplgallia",
+      "short_name": "Gallia County Court of Common Pleas",
+      "full_name": "Gallia County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplgeauga",
+      "short_name": "Geauga County Court of Common Pleas",
+      "full_name": "Geauga County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplgreen",
+      "short_name": "Green County Court of Common Pleas",
+      "full_name": "Green County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplgreene",
+      "short_name": "Greene County Court of Common Pleas",
+      "full_name": "Greene County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplguerns",
+      "short_name": "Guernsey County Court of Common Pleas",
+      "full_name": "Guernsey County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhamilt",
+      "short_name": "Court of Common Pleas of Ohio, Hamilton County",
+      "full_name": "Court of Common Pleas of Ohio, Hamilton County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhancoc",
+      "short_name": "Hancock County Court of Common Pleas",
+      "full_name": "Hancock County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhardin",
+      "short_name": "Hardin County Court of Common Pleas",
+      "full_name": "Hardin County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplharris",
+      "short_name": "Harrison County Court of Common Pleas",
+      "full_name": "Harrison County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhenry",
+      "short_name": "Henry County Court of Common Pleas",
+      "full_name": "Henry County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhighla",
+      "short_name": "Highland County Court of Common Pleas",
+      "full_name": "Highland County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhockin",
+      "short_name": "Hocking County Court of Common Pleas",
+      "full_name": "Hocking County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplholmes",
+      "short_name": "Holmes County Court of Common Pleas",
+      "full_name": "Holmes County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplhuron",
+      "short_name": "Huron County Court of Common Pleas",
+      "full_name": "Huron County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompljackso",
+      "short_name": "Jackson County Court of Common Pleas",
+      "full_name": "Jackson County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompljeffer",
+      "short_name": "Jefferson County Court of Common Pleas",
+      "full_name": "Jefferson County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplknox",
+      "short_name": "Knox County Court of Common Pleas",
+      "full_name": "Knox County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompllake",
+      "short_name": "Lake County Court of Common Pleas",
+      "full_name": "Lake County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompllawren",
+      "short_name": "Lawrence County Common Pleas Court",
+      "full_name": "Lawrence County Common Pleas Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompllickin",
+      "short_name": "Licking County Court of Common Pleas",
+      "full_name": "Licking County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompllogan",
+      "short_name": "Logan County Court of Common Pleas",
+      "full_name": "Logan County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompllorain",
+      "short_name": "Lorain County Court of Common Pleas",
+      "full_name": "Lorain County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompllucas",
+      "short_name": "Lucas County Court of Common Pleas",
+      "full_name": "Lucas County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmadiso",
+      "short_name": "Madison County Court of Common Pleas",
+      "full_name": "Madison County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmahoni",
+      "short_name": "Mahoning County Court of Common Pleas",
+      "full_name": "Mahoning County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmarion",
+      "short_name": "Marion County Court of Common Pleas",
+      "full_name": "Marion County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmedina",
+      "short_name": "Medina County Court of Common Pleas",
+      "full_name": "Medina County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmeigs",
+      "short_name": "Meigs County Court of Common Pleas",
+      "full_name": "Meigs County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmercer",
+      "short_name": "Mercer County Court of Common Pleas",
+      "full_name": "Mercer County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmiami",
+      "short_name": "Miami County Court of Common Pleas",
+      "full_name": "Miami County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmonroe",
+      "short_name": "Monroe County Court of Common Pleas",
+      "full_name": "Monroe County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmontgo",
+      "short_name": "Montgomery County Court of Common Pleas",
+      "full_name": "Montgomery County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmorgan",
+      "short_name": "Morgan County Court of Common Pleas",
+      "full_name": "Morgan County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmorrow",
+      "short_name": "Morrow County Court of Common Pleas",
+      "full_name": "Morrow County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplmuskin",
+      "short_name": "Muskingum County Court of Common Pleas",
+      "full_name": "Muskingum County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplnoble",
+      "short_name": "Noble County Court of Common Pleas",
+      "full_name": "Noble County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplottawa",
+      "short_name": "Ottawa County Court of Common Pleas",
+      "full_name": "Ottawa County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplpauldi",
+      "short_name": "Paulding County Court of Common Pleas",
+      "full_name": "Paulding County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplpickaw",
+      "short_name": "Pickaway County Court of Common Pleas",
+      "full_name": "Pickaway County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplpike",
+      "short_name": "Pike County Court of Common Pleas",
+      "full_name": "Pike County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplportag",
+      "short_name": "Portage County Court of Common Pleas",
+      "full_name": "Portage County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplpreble",
+      "short_name": "Preble County Court of Common Pleas",
+      "full_name": "Preble County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplputnam",
+      "short_name": "Putnam County Court of Common Pleas",
+      "full_name": "Putnam County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplrichla",
+      "short_name": "Richland County Court of Common Pleas",
+      "full_name": "Richland County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplross",
+      "short_name": "Ross County Court of Common Pleas",
+      "full_name": "Ross County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplsandus",
+      "short_name": "Sandusky County Court of Common Pleas",
+      "full_name": "Sandusky County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplscioto",
+      "short_name": "Scioto County Court of Common Pleas",
+      "full_name": "Scioto County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplseneca",
+      "short_name": "Seneca County Court of Common Pleas",
+      "full_name": "Seneca County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplshelby",
+      "short_name": "Shelby County Court of Common Pleas",
+      "full_name": "Shelby County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplstark",
+      "short_name": "Stark County Court of Common Pleas",
+      "full_name": "Stark County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplsummit",
+      "short_name": "Summit County Court of Common Pleas",
+      "full_name": "Summit County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompltascar",
+      "short_name": "Tascarawas County Court of Common Pleas",
+      "full_name": "Tascarawas County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompltrumbu",
+      "short_name": "Trumbull County Court of Common Pleas",
+      "full_name": "Trumbull County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcompltuscar",
+      "short_name": "Tuscarawas County Court of Common Pleas",
+      "full_name": "Tuscarawas County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplunion",
+      "short_name": "Union County Court of Common Pleas",
+      "full_name": "Union County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplvanwe",
+      "short_name": "Van Wert County Court of Common Pleas",
+      "full_name": "Van Wert County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplvinton",
+      "short_name": "Vinton County Court of Common Pleas",
+      "full_name": "Vinton County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplwarren",
+      "short_name": "Warren County Court of Common Pleas",
+      "full_name": "Warren County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplwashin",
+      "short_name": "Washington County Court of Common Pleas",
+      "full_name": "Washington County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplwayne",
+      "short_name": "Wayne County Court of Common Pleas",
+      "full_name": "Wayne County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplwillia",
+      "short_name": "Williams County Court of Common Pleas",
+      "full_name": "Williams County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplwood",
+      "short_name": "Wood County Court of Common Pleas",
+      "full_name": "Wood County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctcomplwyando",
+      "short_name": "Wyandot County Court of Common Pleas",
+      "full_name": "Wyandot County Court of Common Pleas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvct",
+      "short_name": "Ohio Juvenile Court",
+      "full_name": "Ohio Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctallen",
+      "short_name": "Allen County Juvenile Court",
+      "full_name": "Allen County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctcolumbia",
+      "short_name": "Columbiana County Juvenile Court",
+      "full_name": "Columbiana County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctcuyahoga",
+      "short_name": "Cuyahoga County Juvenile Court",
+      "full_name": "Cuyahoga County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctgreene",
+      "short_name": "Greene County Juvenile Court",
+      "full_name": "Greene County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvcthamilton",
+      "short_name": "Hamilton County Juvenile Court",
+      "full_name": "Hamilton County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvcthuron",
+      "short_name": "Huron County Juvenile Court",
+      "full_name": "Huron County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctlicking",
+      "short_name": "Licking County Juvenile Court",
+      "full_name": "Licking County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctlucas",
+      "short_name": "Lucas County Juvenile Court",
+      "full_name": "Lucas County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctmarion",
+      "short_name": "Marion County Juvenile Court",
+      "full_name": "Marion County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctmuskingu",
+      "short_name": "Muskingum County Juvenile Court",
+      "full_name": "Muskingum County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctnoble",
+      "short_name": "Noble County Juvenile Court",
+      "full_name": "Noble County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctpreble",
+      "short_name": "Preble County Juvenile Court",
+      "full_name": "Preble County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvcttuscaraw",
+      "short_name": "Tuscarawas County Juvenile Court",
+      "full_name": "Tuscarawas County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctwarren",
+      "short_name": "Warren County Juvenile Court",
+      "full_name": "Warren County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohjuvctwayne",
+      "short_name": "Wayne County Juvenile Court",
+      "full_name": "Wayne County Juvenile Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmayorct",
+      "short_name": "Ohio Police Court",
+      "full_name": "Ohio Police Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmayorctcinci",
+      "short_name": "Cincinnati Police Court",
+      "full_name": "Cincinnati Police Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmayorctclev",
+      "short_name": "Cleveland Police Court",
+      "full_name": "Cleveland Police Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmayorctcolum",
+      "short_name": "Columbus Police Court",
+      "full_name": "Columbus Police Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunict",
+      "short_name": "Municipal Courts of Ohio",
+      "full_name": "Municipal Courts of Ohio",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictakron",
+      "short_name": "Akron Municipal Court",
+      "full_name": "Akron Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictashland",
+      "short_name": "Ashland Municipal Court",
+      "full_name": "Ashland Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictashtabu",
+      "short_name": "Ashtabula Municipal Court",
+      "full_name": "Ashtabula Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictathens",
+      "short_name": "Athens County Municipal Court",
+      "full_name": "Athens County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictauglaiz",
+      "short_name": "Auglaize County Municipal Court",
+      "full_name": "Auglaize County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictavonlak",
+      "short_name": "Avon Lake Municipal Court",
+      "full_name": "Avon Lake Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictbarbert",
+      "short_name": "Barberton Municipal Court",
+      "full_name": "Barberton Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictbedford",
+      "short_name": "Bedford Municipal Court",
+      "full_name": "Bedford Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictbellefo",
+      "short_name": "Bellefontaine Municipal Court",
+      "full_name": "Bellefontaine Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictberea",
+      "short_name": "Berea Municipal Court",
+      "full_name": "Berea Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictbowling",
+      "short_name": "Bowling Green County Municipal Court",
+      "full_name": "Bowling Green County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcanton",
+      "short_name": "Canton Municipal Court",
+      "full_name": "Canton Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcelina",
+      "short_name": "Celina Municipal Court",
+      "full_name": "Celina Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictchardon",
+      "short_name": "Chardon Municipal Court",
+      "full_name": "Chardon Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictchillic",
+      "short_name": "Chillicothe Municipal Court",
+      "full_name": "Chillicothe Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcincinn",
+      "short_name": "Cincinnati Municipal Court",
+      "full_name": "Cincinnati Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcirclev",
+      "short_name": "Circleville Municipal Court",
+      "full_name": "Circleville Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictclark",
+      "short_name": "Clark County Municipal Court",
+      "full_name": "Clark County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictclermon",
+      "short_name": "Clermont County Municipal Court",
+      "full_name": "Clermont County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictclevela",
+      "short_name": "City of Cleveland Municipal Court",
+      "full_name": "City of Cleveland Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcolumbu",
+      "short_name": "City of Columbus Municipal Court",
+      "full_name": "City of Columbus Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcrawfor",
+      "short_name": "Crawford County Municipal Court",
+      "full_name": "Crawford County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcuyahog",
+      "short_name": "Cuyahoga County Municipal Court",
+      "full_name": "Cuyahoga County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictcuyfall",
+      "short_name": "Cuyahoga Falls Municipal Court",
+      "full_name": "Cuyahoga Falls Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictdarke",
+      "short_name": "Darke County Municipal Court",
+      "full_name": "Darke County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictdayton",
+      "short_name": "City of Dayton Municipal Court",
+      "full_name": "City of Dayton Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicteastliv",
+      "short_name": "East Liverpool Municipal Court",
+      "full_name": "East Liverpool Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictelyria",
+      "short_name": "Elyria Municipal Court",
+      "full_name": "Elyria Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicteuclid",
+      "short_name": "Euclid Municipal Court",
+      "full_name": "Euclid Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicteuclidc",
+      "short_name": "Euclid City Municipal Court",
+      "full_name": "Euclid City Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictfindlay",
+      "short_name": "Findlay Municipal Court",
+      "full_name": "Findlay Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictfostori",
+      "short_name": "Fostoria Municipal Court",
+      "full_name": "Fostoria Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictfrankli",
+      "short_name": "Franklin County Municipal Court",
+      "full_name": "Franklin County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictfremont",
+      "short_name": "Fremont Municipal Court",
+      "full_name": "Fremont Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictgallipo",
+      "short_name": "Gallipolis Municipal Court",
+      "full_name": "Gallipolis Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictgirard",
+      "short_name": "Girard Municipal Court",
+      "full_name": "Girard Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicthamilto",
+      "short_name": "Hamilton County Municipal Court",
+      "full_name": "Hamilton County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicthighlan",
+      "short_name": "Highland County Municipal Court",
+      "full_name": "Highland County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicthocking",
+      "short_name": "Hocking County Municipal Court",
+      "full_name": "Hocking County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictketteri",
+      "short_name": "Kettering Municipal Court",
+      "full_name": "Kettering Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlakewoo",
+      "short_name": "Lakewood Municipal Court",
+      "full_name": "Lakewood Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlancast",
+      "short_name": "Lancaster Municipal Court",
+      "full_name": "Lancaster Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlawrenc",
+      "short_name": "Lawrence County Municipal Court",
+      "full_name": "Lawrence County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlicking",
+      "short_name": "Licking County Municipal Court",
+      "full_name": "Licking County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlima",
+      "short_name": "Lima Municipal Court",
+      "full_name": "Lima Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlorain",
+      "short_name": "Lorain Municipal Court",
+      "full_name": "Lorain Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictlucas",
+      "short_name": "Lucas County Municipal Court",
+      "full_name": "Lucas County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmansfie",
+      "short_name": "Mansfield Municipal Court",
+      "full_name": "Mansfield Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmarion",
+      "short_name": "Marion County Municipal Court",
+      "full_name": "Marion County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmarysvi",
+      "short_name": "Marysville Municipal Court",
+      "full_name": "Marysville Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmassill",
+      "short_name": "Massillon Municipal Court",
+      "full_name": "Massillon Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmaumee",
+      "short_name": "Maumee Municipal Court",
+      "full_name": "Maumee Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmedina",
+      "short_name": "Medina Municipal Court",
+      "full_name": "Medina Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmiamisb",
+      "short_name": "Miamisburg Municipal Court",
+      "full_name": "Miamisburg Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmiddlet",
+      "short_name": "Middletown Municipal Court",
+      "full_name": "Middletown Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictmorrow",
+      "short_name": "Morrow County Municipal Court",
+      "full_name": "Morrow County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictnewphil",
+      "short_name": "New Philadelphia Municipal Court",
+      "full_name": "New Philadelphia Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictnewtonf",
+      "short_name": "Newton Falls Municipal Court",
+      "full_name": "Newton Falls Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictoberlin",
+      "short_name": "Oberlin Municipal Court",
+      "full_name": "Oberlin Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictparma",
+      "short_name": "Parma Municipal Court",
+      "full_name": "Parma Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictperrysb",
+      "short_name": "Perrysburg Municipal Court",
+      "full_name": "Perrysburg Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictpiqua",
+      "short_name": "Piqua Municipal Court",
+      "full_name": "Piqua Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictportage",
+      "short_name": "Portage County Municipal Court",
+      "full_name": "Portage County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictportcli",
+      "short_name": "Port Clinton Municipal Court",
+      "full_name": "Port Clinton Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictportsmo",
+      "short_name": "Portsmouth Municipal Court",
+      "full_name": "Portsmouth Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictravenna",
+      "short_name": "Ravenna Municipal Court",
+      "full_name": "Ravenna Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictrockyri",
+      "short_name": "Rocky River Municipal Court",
+      "full_name": "Rocky River Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictshakerh",
+      "short_name": "Shaker Heights Municipal Court",
+      "full_name": "Shaker Heights Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictsidney",
+      "short_name": "Sidney Municipal Court",
+      "full_name": "Sidney Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictsoutheu",
+      "short_name": "South Euclid Municipal Court",
+      "full_name": "South Euclid Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictspringf",
+      "short_name": "Springfield Municipal Court",
+      "full_name": "Springfield Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictstruthe",
+      "short_name": "Struthers Municipal Court",
+      "full_name": "Struthers Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictsummit",
+      "short_name": "Summit County Municipal Court",
+      "full_name": "Summit County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictsylvani",
+      "short_name": "Sylvania Municipal Court",
+      "full_name": "Sylvania Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicttiffin",
+      "short_name": "Tiffin Municipal Court",
+      "full_name": "Tiffin Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicttoledo",
+      "short_name": "Toledo Municipal Court",
+      "full_name": "Toledo Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunicttrumbul",
+      "short_name": "Trumbull County Municipal Court",
+      "full_name": "Trumbull County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictuppersa",
+      "short_name": "Upper Sandusky Municipal Court",
+      "full_name": "Upper Sandusky Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictvandali",
+      "short_name": "Municipal Court of Vandalia",
+      "full_name": "Municipal Court of Vandalia",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictvanwert",
+      "short_name": "Van Wert County Municipal Court",
+      "full_name": "Van Wert County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictwadswor",
+      "short_name": "Wadsworth Municipal Court",
+      "full_name": "Wadsworth Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictwarren",
+      "short_name": "Warren County Municipal Court",
+      "full_name": "Warren County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictwayne",
+      "short_name": "Wayne County Municipal Court",
+      "full_name": "Wayne County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictwilloug",
+      "short_name": "Willoughby Municipal Court",
+      "full_name": "Willoughby Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictxenia",
+      "short_name": "Xenia Municipal Court",
+      "full_name": "Xenia Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohmunictzanesvi",
+      "short_name": "Zanesville Municipal Court",
+      "full_name": "Zanesville Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobct",
+      "short_name": "Ohio Probate Court",
+      "full_name": "Ohio Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctallen",
+      "short_name": "Allen County Probate Court",
+      "full_name": "Allen County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctashtabu",
+      "short_name": "Ashtabula County Probate Court",
+      "full_name": "Ashtabula County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctauglaiz",
+      "short_name": "Auglaize County Probate Court",
+      "full_name": "Auglaize County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctbelmont",
+      "short_name": "Belmont County Probate Court",
+      "full_name": "Belmont County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctbutler",
+      "short_name": "Butler County Probate Court",
+      "full_name": "Butler County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctchampai",
+      "short_name": "Champaign County Probate Court",
+      "full_name": "Champaign County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctclark",
+      "short_name": "Clark County Probate Court",
+      "full_name": "Clark County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctclarke",
+      "short_name": "Clarke County Probate Court",
+      "full_name": "Clarke County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctclermon",
+      "short_name": "Clermont County Probate Court",
+      "full_name": "Clermont County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctclinton",
+      "short_name": "Clinton County Probate Court",
+      "full_name": "Clinton County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctcolumbi",
+      "short_name": "Columbiana County Probate Court",
+      "full_name": "Columbiana County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctcuyahog",
+      "short_name": "Cuyahoga County Probate Court",
+      "full_name": "Cuyahoga County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctdarke",
+      "short_name": "Darke County Probate Court",
+      "full_name": "Darke County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcterie",
+      "short_name": "Erie County Probate Court",
+      "full_name": "Erie County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctfairfie",
+      "short_name": "Fairfield County Probate Court",
+      "full_name": "Fairfield County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctfayette",
+      "short_name": "Fayette County Probate Court",
+      "full_name": "Fayette County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctfrankli",
+      "short_name": "Ohio Probate Court of Franklin County",
+      "full_name": "Ohio Probate Court of Franklin County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctfulton",
+      "short_name": "Fulton County Probate Court",
+      "full_name": "Fulton County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctgeauga",
+      "short_name": "Geauga County Probate Court",
+      "full_name": "Geauga County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctgreene",
+      "short_name": "Greene County Probate Court",
+      "full_name": "Greene County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcthamilto",
+      "short_name": "Hamilton County Probate Court",
+      "full_name": "Hamilton County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcthancock",
+      "short_name": "Hancock County Probate Court",
+      "full_name": "Hancock County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcthardin",
+      "short_name": "Hardin County Probate Court",
+      "full_name": "Hardin County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctharriso",
+      "short_name": "Harrison County Probate Court",
+      "full_name": "Harrison County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcthenry",
+      "short_name": "Henry County Probate Court",
+      "full_name": "Henry County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcthighlan",
+      "short_name": "Highland County Probate Court",
+      "full_name": "Highland County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcthuron",
+      "short_name": "Huron County Probate Court",
+      "full_name": "Huron County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctjackson",
+      "short_name": "Jackson County Probate Court",
+      "full_name": "Jackson County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctjeffers",
+      "short_name": "Jefferson County Probate Court",
+      "full_name": "Jefferson County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctknox",
+      "short_name": "Knox County Probate Court",
+      "full_name": "Knox County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctlake",
+      "short_name": "Lake County Probate Court",
+      "full_name": "Lake County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctlicking",
+      "short_name": "Licking County Probate Court",
+      "full_name": "Licking County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctlorain",
+      "short_name": "Lorain County Probate Court",
+      "full_name": "Lorain County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctlucas",
+      "short_name": "Lucas County Probate Court",
+      "full_name": "Lucas County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmadison",
+      "short_name": "Madison County Probate Court",
+      "full_name": "Madison County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmahonin",
+      "short_name": "Mahoning County Probate Court",
+      "full_name": "Mahoning County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmarion",
+      "short_name": "Marion County Probate Court",
+      "full_name": "Marion County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmeigs",
+      "short_name": "Meigs County Probate Court",
+      "full_name": "Meigs County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmercer",
+      "short_name": "Mercer County Probate Court",
+      "full_name": "Mercer County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmiami",
+      "short_name": "Miami County Probate Court",
+      "full_name": "Miami County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmontgom",
+      "short_name": "Montgomery County Probate Court",
+      "full_name": "Montgomery County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmorgan",
+      "short_name": "Morgan County Probate Court",
+      "full_name": "Morgan County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctmusking",
+      "short_name": "Muskingum County Probate Court",
+      "full_name": "Muskingum County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctnoble",
+      "short_name": "Noble County Probate Court",
+      "full_name": "Noble County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctperry",
+      "short_name": "Perry County Probate Court",
+      "full_name": "Perry County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctpike",
+      "short_name": "Pike County Probate Court",
+      "full_name": "Pike County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctportage",
+      "short_name": "Portage County Probate Court",
+      "full_name": "Portage County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctpreble",
+      "short_name": "Preble County Probate Court",
+      "full_name": "Preble County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctputnam",
+      "short_name": "Putnam County Probate Court",
+      "full_name": "Putnam County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctross",
+      "short_name": "Ross County Probate Court",
+      "full_name": "Ross County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctsandusk",
+      "short_name": "Sandusky County Probate Court",
+      "full_name": "Sandusky County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctscioto",
+      "short_name": "Scioto County Probate Court",
+      "full_name": "Scioto County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctseneca",
+      "short_name": "Seneca County Probate Court",
+      "full_name": "Seneca County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctshelby",
+      "short_name": "Shelby County Probate Court",
+      "full_name": "Shelby County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctstark",
+      "short_name": "Stark County Probate Court",
+      "full_name": "Stark County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctsummit",
+      "short_name": "Summit County Probate Court",
+      "full_name": "Summit County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcttrumbul",
+      "short_name": "Trumbull County Probate Court",
+      "full_name": "Trumbull County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobcttuscara",
+      "short_name": "Tuscarawas County Probate Court",
+      "full_name": "Tuscarawas County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctunion",
+      "short_name": "Union County Probate Court",
+      "full_name": "Union County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctvanwer",
+      "short_name": "Van Wert County Probate Court",
+      "full_name": "Van Wert County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctwarren",
+      "short_name": "Warren County Probate Court",
+      "full_name": "Warren County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctwashing",
+      "short_name": "Washington County Probate Court",
+      "full_name": "Washington County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohprobctwayne",
+      "short_name": "Wayne County Probate Court",
+      "full_name": "Wayne County Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctinsolv",
+      "short_name": "Ohio County Court of Insovency",
+      "full_name": "Ohio County Court of Insovency",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctinsolvcuyah",
+      "short_name": "Cuyahoga County Court of Insolvency",
+      "full_name": "Cuyahoga County Court of Insolvency",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctinsolvhamil",
+      "short_name": "Hamilton County Court of Insolvency",
+      "full_name": "Hamilton County Court of Insolvency",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctnp",
+      "short_name": "Ohio Court of Nisi Prius",
+      "full_name": "Ohio Court of Nisi Prius",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiosuperct",
+      "short_name": "Ohio Superior Court",
+      "full_name": "Ohio Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohsuperctcinci",
+      "short_name": "Ohio Superior Court, Cincinnati",
+      "full_name": "Ohio Superior Court, Cincinnati",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiopuc",
+      "short_name": "Ohio Public Utilities Commission",
+      "full_name": "Ohio Public Utilities Commission",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiorac",
+      "short_name": "Ohio State Racing Commission",
+      "full_name": "Ohio State Racing Commission",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiotax",
+      "short_name": "Board of Tax Appeals of Ohio Department of Taxation",
+      "full_name": "Board of Tax Appeals of Ohio Department of Taxation",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiobar",
+      "short_name": "Board of Commissioners On The Unauthorized Practice of Law State of Ohio",
+      "full_name": "Board of Commissioners On The Unauthorized Practice of Law State of Ohio",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiocivright",
+      "short_name": "Ohio Civil Rights Commission",
+      "full_name": "Ohio Civil Rights Commission",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctcl",
+      "short_name": "Ohio Court of Claims",
+      "full_name": "Ohio Court of Claims",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctcompl",
+      "short_name": "Court of Common Pleas of Ohio",
+      "full_name": "Court Of Common Pleas Of Ohio",
+      "jurisdiction": "ST",
+      "start_date": "1787-01-01",
+      "end_date": null
+    }
+  ]
+}

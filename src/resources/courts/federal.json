@@ -1,0 +1,1023 @@
+{
+  "generated_at": "2025-09-04T20:12:27.893Z",
+  "total_courts": 127,
+  "api_version": "v4",
+  "courts": [
+    {
+      "id": "scotus",
+      "short_name": "Supreme Court",
+      "full_name": "Supreme Court of the United States",
+      "jurisdiction": "F",
+      "start_date": "1789-09-24",
+      "end_date": null
+    },
+    {
+      "id": "ca1",
+      "short_name": "First Circuit",
+      "full_name": "Court of Appeals for the First Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca2",
+      "short_name": "Second Circuit",
+      "full_name": "Court of Appeals for the Second Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca3",
+      "short_name": "Third Circuit",
+      "full_name": "Court of Appeals for the Third Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca4",
+      "short_name": "Fourth Circuit",
+      "full_name": "Court of Appeals for the Fourth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca5",
+      "short_name": "Fifth Circuit",
+      "full_name": "Court of Appeals for the Fifth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca6",
+      "short_name": "Sixth Circuit",
+      "full_name": "Court of Appeals for the Sixth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca7",
+      "short_name": "Seventh Circuit",
+      "full_name": "Court of Appeals for the Seventh Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca8",
+      "short_name": "Eighth Circuit",
+      "full_name": "Court of Appeals for the Eighth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca9",
+      "short_name": "Ninth Circuit",
+      "full_name": "Court of Appeals for the Ninth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca10",
+      "short_name": "Tenth Circuit",
+      "full_name": "Court of Appeals for the Tenth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1929-02-28",
+      "end_date": null
+    },
+    {
+      "id": "ca11",
+      "short_name": "Eleventh Circuit",
+      "full_name": "Court of Appeals for the Eleventh Circuit",
+      "jurisdiction": "F",
+      "start_date": "1980-10-14",
+      "end_date": null
+    },
+    {
+      "id": "cadc",
+      "short_name": "D.C. Circuit",
+      "full_name": "Court of Appeals for the D.C. Circuit",
+      "jurisdiction": "F",
+      "start_date": "1893-02-09",
+      "end_date": null
+    },
+    {
+      "id": "cafc",
+      "short_name": "Federal Circuit",
+      "full_name": "Court of Appeals for the Federal Circuit",
+      "jurisdiction": "F",
+      "start_date": "1982-04-02",
+      "end_date": null
+    },
+    {
+      "id": "caca",
+      "short_name": "California Circuit",
+      "full_name": "Circuit Court for California",
+      "jurisdiction": "F",
+      "start_date": "1804-10-01",
+      "end_date": "1812-04-30"
+    },
+    {
+      "id": "circtndfl",
+      "short_name": "United States Circuit Court for the Northern District of Florida",
+      "full_name": "United States Circuit Court for the Northern District of Florida",
+      "jurisdiction": "F",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "circtsdfl",
+      "short_name": "United States Circuit Court for the Southern District of Florida",
+      "full_name": "United States Circuit Court for the Southern District of Florida",
+      "jurisdiction": "F",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "uscirct",
+      "short_name": "U.S. Circuit Court",
+      "full_name": "United States Circuit Court",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdal",
+      "short_name": "U.S. Circuit Court for the District of Alabama",
+      "full_name": "U.S. Circuit Court for the District of Alabama",
+      "jurisdiction": "F",
+      "start_date": "1873-01-01",
+      "end_date": "1874-12-31"
+    },
+    {
+      "id": "circtmdal",
+      "short_name": "U.S. Circuit Court for the District of Middle Alabama",
+      "full_name": "U.S. Circuit Court for the District of Middle Alabama",
+      "jurisdiction": "F",
+      "start_date": "1839-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtndal",
+      "short_name": "U.S. Circuit Court for the District of Northern Alabama",
+      "full_name": "U.S. Circuit Court for the District of Northern Alabama",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdal",
+      "short_name": "U.S. Circuit Court for the District of Southern Alabama",
+      "full_name": "U.S. Circuit Court for the District of Southern Alabama",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdar",
+      "short_name": "U.S. Circuit Court for the District of Arkansas",
+      "full_name": "U.S. Circuit Court for the District of Arkansas",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1851-12-31"
+    },
+    {
+      "id": "circtedar",
+      "short_name": "U.S. Circuit Court for the District of Eastern Arkansas",
+      "full_name": "U.S. Circuit Court for the District of Eastern Arkansas",
+      "jurisdiction": "F",
+      "start_date": "1851-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdar",
+      "short_name": "U.S. Circuit Court for the District of Western Arkansas",
+      "full_name": "U.S. Circuit Court for the District of Western Arkansas",
+      "jurisdiction": "F",
+      "start_date": "1851-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdterrar",
+      "short_name": "U.S. Circuit Court for the District of Territory of Arkansas",
+      "full_name": "U.S. Circuit Court for the District of Territory of Arkansas",
+      "jurisdiction": "F",
+      "start_date": "1819-01-01",
+      "end_date": "1836-12-31"
+    },
+    {
+      "id": "circtdca",
+      "short_name": "U.S. Circuit Court for the District of California",
+      "full_name": "U.S. Circuit Court for the District of California",
+      "jurisdiction": "F",
+      "start_date": "1855-01-01",
+      "end_date": "1863-12-31"
+    },
+    {
+      "id": "circtndca",
+      "short_name": "U.S. Circuit Court for the District of Northern California",
+      "full_name": "U.S. Circuit Court for the District of Northern California",
+      "jurisdiction": "F",
+      "start_date": "1863-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdca",
+      "short_name": "U.S. Circuit Court for the District of Southern California",
+      "full_name": "U.S. Circuit Court for the District of Southern California",
+      "jurisdiction": "F",
+      "start_date": "1863-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdco",
+      "short_name": "U.S. Circuit Court for the District of Colorado",
+      "full_name": "U.S. Circuit Court for the District of Colorado",
+      "jurisdiction": "F",
+      "start_date": "1876-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdct",
+      "short_name": "U.S. Circuit Court for the District of Connecticut",
+      "full_name": "U.S. Circuit Court for the District of Connecticut",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdel",
+      "short_name": "Circuit Court of Delaware",
+      "full_name": "U.S. Circuit Court for the District of Delaware",
+      "jurisdiction": "F",
+      "start_date": "1789-09-24",
+      "end_date": "1912-01-01"
+    },
+    {
+      "id": "circtdga",
+      "short_name": "U.S. Circuit Court for the District of Georgia",
+      "full_name": "U.S. Circuit Court for the District of Georgia",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1848-12-31"
+    },
+    {
+      "id": "circtndga",
+      "short_name": "U.S. Circuit Court for the Northern District of Georgia",
+      "full_name": "U.S. Circuit Court for the Northern District of Georgia",
+      "jurisdiction": "F",
+      "start_date": "1848-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdga",
+      "short_name": "U.S. Circuit Court for the Southern District of Georgia",
+      "full_name": "U.S. Circuit Court for the Southern District of Georgia",
+      "jurisdiction": "F",
+      "start_date": "1848-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdid",
+      "short_name": "U.S. Circuit Court for the District of Idaho",
+      "full_name": "U.S. Circuit Court for the District of Idaho",
+      "jurisdiction": "F",
+      "start_date": "1890-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdil",
+      "short_name": "U.S. Circuit Court for the District of Illinois",
+      "full_name": "U.S. Circuit Court for the District of Illinois",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1855-12-31"
+    },
+    {
+      "id": "circtedil",
+      "short_name": "U.S. Circuit Court for the Eastern District of Illinois",
+      "full_name": "U.S. Circuit Court for the Eastern District of Illinois",
+      "jurisdiction": "F",
+      "start_date": "1905-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtndil",
+      "short_name": "U.S. Circuit Court for the Northern District of Illnois",
+      "full_name": "U.S. Circuit Court for the Northern District of Illnois",
+      "jurisdiction": "F",
+      "start_date": "1855-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdil",
+      "short_name": "U.S. Circuit Court for the Southern District of Illnois",
+      "full_name": "U.S. Circuit Court for the Southern District of Illnois",
+      "jurisdiction": "F",
+      "start_date": "1855-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdin",
+      "short_name": "U.S. Circuit Court for the District of Indiana",
+      "full_name": "U.S. Circuit Court for the District of Indiana",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtnia",
+      "short_name": "U.S. Circuit Court for the District of Northern Iowa",
+      "full_name": "U.S. Circuit Court for the District of Northern Iowa",
+      "jurisdiction": "F",
+      "start_date": "1882-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdia",
+      "short_name": "U.S. Circuit Court for the Southern District of Iowa",
+      "full_name": "U.S. Circuit Court for the Southern District of Iowa",
+      "jurisdiction": "F",
+      "start_date": "1882-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdia",
+      "short_name": "U.S. Circuit Court for the District of Iowa",
+      "full_name": "U.S. Circuit Court for the District of Iowa",
+      "jurisdiction": "F",
+      "start_date": "1862-01-01",
+      "end_date": "1882-12-31"
+    },
+    {
+      "id": "circtdks",
+      "short_name": "U.S. Circuit Court for the District of Kansas",
+      "full_name": "U.S. Circuit Court for the District of Kansas",
+      "jurisdiction": "F",
+      "start_date": "1862-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedky",
+      "short_name": "U.S. Circuit Court for the District of Eastern Kentucky",
+      "full_name": "U.S. Circuit Court for the District of Eastern Kentucky",
+      "jurisdiction": "F",
+      "start_date": "1901-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdky",
+      "short_name": "U.S. Circuit Court for the District of Kentucky",
+      "full_name": "U.S. Circuit Court for the District of Kentucky",
+      "jurisdiction": "F",
+      "start_date": "1807-01-01",
+      "end_date": "1901-12-31"
+    },
+    {
+      "id": "circtwdky",
+      "short_name": "U.S. Circuit Court for the District of Western Kentucky",
+      "full_name": "U.S. Circuit Court for the District of Western Kentucky",
+      "jurisdiction": "F",
+      "start_date": "1901-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedla",
+      "short_name": "U.S. Circuit Court for the District of Eastern Louisiana",
+      "full_name": "U.S. Circuit Court for the District of Eastern Louisiana",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdla",
+      "short_name": "U.S. Circuit Court for the District of Louisiana",
+      "full_name": "U.S. Circuit Court for the District of Louisiana",
+      "jurisdiction": "F",
+      "start_date": "1845-01-01",
+      "end_date": "1849-12-31"
+    },
+    {
+      "id": "circtwdla",
+      "short_name": "U.S. Circuit Court for the District of Western Louisiana",
+      "full_name": "U.S. Circuit Court for the District of Western Louisiana",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdme",
+      "short_name": "U.S. Circuit Court for the District of Maine",
+      "full_name": "U.S. Circuit Court for the District of Maine",
+      "jurisdiction": "F",
+      "start_date": "1820-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdmd",
+      "short_name": "U.S. Circuit Court for the District of Maryland",
+      "full_name": "U.S. Circuit Court for the District of Maryland",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdma",
+      "short_name": "U.S. Circuit Court for the District of Massachusetts",
+      "full_name": "U.S. Circuit Court for the District of Massachusetts",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedmi",
+      "short_name": "U.S. Circuit Court for the District of Eastern Michigan",
+      "full_name": "U.S. Circuit Court for the District of Eastern Michigan",
+      "jurisdiction": "F",
+      "start_date": "1863-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdmi",
+      "short_name": "U.S. Circuit Court for the District of Western Michigan",
+      "full_name": "U.S. Circuit Court for the District of Western Michigan",
+      "jurisdiction": "F",
+      "start_date": "1863-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdmi",
+      "short_name": "U.S. Circuit Court for the District of Michigan",
+      "full_name": "U.S. Circuit Court for the District of Michigan",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1862-12-31"
+    },
+    {
+      "id": "circtdmn",
+      "short_name": "U.S. Circuit Court for the District of Minnesota",
+      "full_name": "U.S. Circuit Court for the District of Minnesota",
+      "jurisdiction": "F",
+      "start_date": "1862-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtmissterr",
+      "short_name": "U.S. Circuit Court for the Mississippi Territory",
+      "full_name": "U.S. Circuit Court for the Mississippi Territory",
+      "jurisdiction": "F",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "circtdms",
+      "short_name": "U.S. Circuit Court for the District of Mississippi",
+      "full_name": "U.S. Circuit Court for the District of Mississippi",
+      "jurisdiction": "F",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "circtndms",
+      "short_name": "U.S. Circuit Court for the District of Northern Mississippi",
+      "full_name": "U.S. Circuit Court for the District of Northern Mississippi",
+      "jurisdiction": "F",
+      "start_date": "1838-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdms",
+      "short_name": "U.S. Circuit Court for the District of Southern Mississippi",
+      "full_name": "U.S. Circuit Court for the District of Southern Mississippi",
+      "jurisdiction": "F",
+      "start_date": "1838-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedmo",
+      "short_name": "U.S. Circuit Court for the District of Eastern Missouri",
+      "full_name": "U.S. Circuit Court for the District of Eastern Missouri",
+      "jurisdiction": "F",
+      "start_date": "1857-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdmo",
+      "short_name": "U.S. Circuit Court for the District of Missouri",
+      "full_name": "U.S. Circuit Court for the District of Missouri",
+      "jurisdiction": "F",
+      "start_date": "1837-01-01",
+      "end_date": "1872-12-31"
+    },
+    {
+      "id": "circtwdmo",
+      "short_name": "U.S. Circuit Court for the District of Western Missouri",
+      "full_name": "U.S. Circuit Court for the District of Western Missouri",
+      "jurisdiction": "F",
+      "start_date": "1857-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdmt",
+      "short_name": "U.S. Circuit Court for the District of Montana",
+      "full_name": "U.S. Circuit Court for the District of Montana",
+      "jurisdiction": "F",
+      "start_date": "1889-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdne",
+      "short_name": "U.S. Circuit Court for the District of Nebraska",
+      "full_name": "U.S. Circuit Court for the District of Nebraska",
+      "jurisdiction": "F",
+      "start_date": "1867-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdnv",
+      "short_name": "U.S. Circuit Court for the District of Nevada",
+      "full_name": "U.S. Circuit Court for the District of Nevada",
+      "jurisdiction": "F",
+      "start_date": "1865-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdnh",
+      "short_name": "U.S. Circuit Court for the District of New Hampshire",
+      "full_name": "U.S. Circuit Court for the District of New Hampshire",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdnj",
+      "short_name": "U.S. Circuit Court for the District of New Jersey",
+      "full_name": "U.S. Circuit Court for the District of New Jersey",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtny",
+      "short_name": "U.S. Circuit Court for New York",
+      "full_name": "U.S. Circuit Court for New York",
+      "jurisdiction": "F",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "circtdalbanyny",
+      "short_name": "U.S. Circuit Court for the District of Albany New York",
+      "full_name": "U.S. Circuit Court for the District of Albany New York",
+      "jurisdiction": "F",
+      "start_date": "1801-01-01",
+      "end_date": "1802-12-31"
+    },
+    {
+      "id": "circtedny",
+      "short_name": "U.S. Circuit Court for the District of Eastern New York",
+      "full_name": "U.S. Circuit Court for the District of Eastern New York",
+      "jurisdiction": "F",
+      "start_date": "1865-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtndny",
+      "short_name": "U.S. Circuit Court for the District of Northern New York",
+      "full_name": "U.S. Circuit Court for the District of Northern New York",
+      "jurisdiction": "F",
+      "start_date": "1814-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdny",
+      "short_name": "U.S. Circuit Court for the District of Southern New York",
+      "full_name": "U.S. Circuit Court for the District of Southern New York",
+      "jurisdiction": "F",
+      "start_date": "1814-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdny",
+      "short_name": "U.S. Circuit Court for the District of Western New York",
+      "full_name": "U.S. Circuit Court for the District of Western New York",
+      "jurisdiction": "F",
+      "start_date": "1900-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtednc",
+      "short_name": "U.S. Circuit Court for the District of Eastern North Carolina",
+      "full_name": "U.S. Circuit Court for the District of Eastern North Carolina",
+      "jurisdiction": "F",
+      "start_date": "1872-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtnc",
+      "short_name": "Circuit Court of North Carolina",
+      "full_name": "U.S. Circuit Court for the District of North Carolina",
+      "jurisdiction": "F",
+      "start_date": "1790-06-04",
+      "end_date": "1912-01-01"
+    },
+    {
+      "id": "circtcapefearnc",
+      "short_name": "U.S. Circuit Court District of Cape Fear (North Carolina)",
+      "full_name": "U.S. Circuit Court District of Cape Fear (North Carolina)",
+      "jurisdiction": "F",
+      "start_date": "1801-01-01",
+      "end_date": "1872-12-31"
+    },
+    {
+      "id": "circtdedenton",
+      "short_name": "U.S. Circuit Court District of Edenton (North Carolina)",
+      "full_name": "U.S. Circuit Court District of Edenton (North Carolina)",
+      "jurisdiction": "F",
+      "start_date": "1794-01-01",
+      "end_date": "1797-12-31"
+    },
+    {
+      "id": "circtdnewbern",
+      "short_name": "U.S. Circuit Court District of New Bern (North Carolina)",
+      "full_name": "U.S. Circuit Court District of New Bern (North Carolina)",
+      "jurisdiction": "F",
+      "start_date": "1794-01-01",
+      "end_date": "1797-12-31"
+    },
+    {
+      "id": "circtdwilm",
+      "short_name": "U.S. Circuit Court District of Wilmington (North Carolina)",
+      "full_name": "U.S. Circuit Court District of Wilmington (North Carolina)",
+      "jurisdiction": "F",
+      "start_date": "1794-01-01",
+      "end_date": "1797-12-31"
+    },
+    {
+      "id": "circtdalb",
+      "short_name": "U.S. Circuit Court District of Albemarle (North Carolina)",
+      "full_name": "U.S. Circuit Court District of Albemarle (North Carolina)",
+      "jurisdiction": "F",
+      "start_date": "1801-01-01",
+      "end_date": "1872-12-31"
+    },
+    {
+      "id": "circtdpamptico",
+      "short_name": "U.S. Circuit Court District of Pamptico (North Carolina)",
+      "full_name": "U.S. Circuit Court District of Pamptico (North Carolina)",
+      "jurisdiction": "F",
+      "start_date": "1801-01-01",
+      "end_date": "1872-12-31"
+    },
+    {
+      "id": "circtwdnc",
+      "short_name": "U.S. Circuit Court for the District of Western North Carolina",
+      "full_name": "U.S. Circuit Court for the District of Western North Carolina",
+      "jurisdiction": "F",
+      "start_date": "1872-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdnd",
+      "short_name": "U.S. Circuit Court for the District of North Dakota",
+      "full_name": "U.S. Circuit Court for the District of North Dakota",
+      "jurisdiction": "F",
+      "start_date": "1889-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtndoh",
+      "short_name": "U.S. Circuit Court for the District of Northern Ohio",
+      "full_name": "U.S. Circuit Court for the District of Northern Ohio",
+      "jurisdiction": "F",
+      "start_date": "1855-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdoh",
+      "short_name": "U.S. Circuit Court for the District of Southern Ohio",
+      "full_name": "U.S. Circuit Court for the District of Southern Ohio",
+      "jurisdiction": "F",
+      "start_date": "1855-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdoh",
+      "short_name": "U.S. Circuit Court for the District of Ohio",
+      "full_name": "U.S. Circuit Court for the District of Ohio",
+      "jurisdiction": "F",
+      "start_date": "1801-01-01",
+      "end_date": "1855-12-31"
+    },
+    {
+      "id": "circtedok",
+      "short_name": "U.S. Circuit Court for the District of Eastern Oklahoma",
+      "full_name": "U.S. Circuit Court for the District of Eastern Oklahoma",
+      "jurisdiction": "F",
+      "start_date": "1906-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdok",
+      "short_name": "U.S. Circuit Court for the District of Western Oklahoma",
+      "full_name": "U.S. Circuit Court for the District of Western Oklahoma",
+      "jurisdiction": "F",
+      "start_date": "1906-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdor",
+      "short_name": "U.S. Circuit Court for the District of Oregon",
+      "full_name": "U.S. Circuit Court for the District of Oregon",
+      "jurisdiction": "F",
+      "start_date": "1863-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedpa",
+      "short_name": "U.S. Circuit Court for the District of Eastern Pennsylvania",
+      "full_name": "U.S. Circuit Court for the District of Eastern Pennsylvania",
+      "jurisdiction": "F",
+      "start_date": "1818-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtmdpa",
+      "short_name": "U.S. Circuit Court for the District of Middle Pennsylvania",
+      "full_name": "U.S. Circuit Court for the District of Middle Pennsylvania",
+      "jurisdiction": "F",
+      "start_date": "1901-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdpa",
+      "short_name": "U.S. Circuit Court for the District of Pennsylvania",
+      "full_name": "U.S. Circuit Court for the District of Pennsylvania",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1818-12-31"
+    },
+    {
+      "id": "circtwdpa",
+      "short_name": "U.S. Circuit Court for the District of Western Pennsylvania",
+      "full_name": "U.S. Circuit Court for the District of Western Pennsylvania",
+      "jurisdiction": "F",
+      "start_date": "1818-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdri",
+      "short_name": "U.S. Circuit Court for the District of Rhode Island",
+      "full_name": "U.S. Circuit Court for the District of Rhode Island",
+      "jurisdiction": "F",
+      "start_date": "1790-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdsc",
+      "short_name": "U.S. Circuit Court for the District of South Carolina",
+      "full_name": "U.S. Circuit Court for the District of South Carolina",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedsc",
+      "short_name": "United States Circuit Court for the Eastern District of South Carolina",
+      "full_name": "United States Circuit Court for the Eastern District of South Carolina",
+      "jurisdiction": "F",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "circtdsd",
+      "short_name": "U.S. Circuit Court for the District of South Dakota",
+      "full_name": "U.S. Circuit Court for the District of South Dakota",
+      "jurisdiction": "F",
+      "start_date": "1889-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedtn",
+      "short_name": "U.S. Circuit Court for the District of Eastern Tennessee",
+      "full_name": "U.S. Circuit Court for the District of Eastern Tennessee",
+      "jurisdiction": "F",
+      "start_date": "1808-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtmdtn",
+      "short_name": "U.S. Circuit Court for the District of Middle Tennessee",
+      "full_name": "U.S. Circuit Court for the District of Middle Tennessee",
+      "jurisdiction": "F",
+      "start_date": "1839-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circttenn",
+      "short_name": "Circuit Court of Tennessee",
+      "full_name": "U.S. Circuit Court for the District of Tennessee",
+      "jurisdiction": "F",
+      "start_date": "1807-02-24",
+      "end_date": "1912-01-01"
+    },
+    {
+      "id": "circtwdtn",
+      "short_name": "U.S. Circuit Court for the District of Western Tennessee",
+      "full_name": "U.S. Circuit Court for the District of Western Tennessee",
+      "jurisdiction": "F",
+      "start_date": "1808-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdtx",
+      "short_name": "U.S. Circuit Court for the District of Texas",
+      "full_name": "U.S. Circuit Court for the District of Texas",
+      "jurisdiction": "F",
+      "start_date": "1845-12-29",
+      "end_date": "1857-02-21"
+    },
+    {
+      "id": "circtedtx",
+      "short_name": "U.S. Circuit Court for the District of Eastern Texas",
+      "full_name": "U.S. Circuit Court for the District of Eastern Texas",
+      "jurisdiction": "F",
+      "start_date": "1862-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtndtx",
+      "short_name": "U.S. Circuit Court for the District of Northern Texas",
+      "full_name": "U.S. Circuit Court for the District of Northern Texas",
+      "jurisdiction": "F",
+      "start_date": "1879-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdtex",
+      "short_name": "U.S. Circuit Court for the District of Southern Texas",
+      "full_name": "U.S. Circuit Court for the District of Southern Texas",
+      "jurisdiction": "F",
+      "start_date": "1902-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdtex",
+      "short_name": "U.S. Circuit Court for the District of Western Texas",
+      "full_name": "U.S. Circuit Court for the District of Western Texas",
+      "jurisdiction": "F",
+      "start_date": "1862-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdut",
+      "short_name": "U.S. Circuit Court for the District of Utah",
+      "full_name": "U.S. Circuit Court for the District of Utah",
+      "jurisdiction": "F",
+      "start_date": "1894-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdvt",
+      "short_name": "U.S. Circuit Court for the District of Vermont",
+      "full_name": "U.S. Circuit Court for the District of Vermont",
+      "jurisdiction": "F",
+      "start_date": "1791-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdva",
+      "short_name": "U.S. Circuit Court for the District of Virginia",
+      "full_name": "U.S. Circuit Court for the District of Virginia",
+      "jurisdiction": "F",
+      "start_date": "1789-01-01",
+      "end_date": "1819-12-31"
+    },
+    {
+      "id": "circtedva",
+      "short_name": "U.S. Circuit Court for the District of Eastern Virginia",
+      "full_name": "U.S. Circuit Court for the District of Eastern Virginia",
+      "jurisdiction": "F",
+      "start_date": "1819-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdva",
+      "short_name": "U.S. Circuit Court for the District of Western Virginia",
+      "full_name": "U.S. Circuit Court for the District of Western Virginia",
+      "jurisdiction": "F",
+      "start_date": "1819-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtedwa",
+      "short_name": "U.S. Circuit Court for the District of Eastern Washington",
+      "full_name": "U.S. Circuit Court for the District of Eastern Washington",
+      "jurisdiction": "F",
+      "start_date": "1905-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdwa",
+      "short_name": "U.S. Circuit Court for the District of Washington",
+      "full_name": "U.S. Circuit Court for the District of Washington",
+      "jurisdiction": "F",
+      "start_date": "1889-01-01",
+      "end_date": "1905-12-31"
+    },
+    {
+      "id": "circtwdwa",
+      "short_name": "U.S. Circuit Court for the District of Western Washington",
+      "full_name": "U.S. Circuit Court for the District of Western Washington",
+      "jurisdiction": "F",
+      "start_date": "1905-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtddc",
+      "short_name": "U.S. Circuit Court for the District of District of Columbia",
+      "full_name": "U.S. Circuit Court for the District of District of Columbia",
+      "jurisdiction": "F",
+      "start_date": "1801-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtndwv",
+      "short_name": "U.S. Circuit Court for the District of Northern West Virginia",
+      "full_name": "U.S. Circuit Court for the District of Northern West Virginia",
+      "jurisdiction": "F",
+      "start_date": "1901-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtsdwv",
+      "short_name": "U.S. Circuit Court for the District of Southern West Virginia",
+      "full_name": "U.S. Circuit Court for the District of Southern West Virginia",
+      "jurisdiction": "F",
+      "start_date": "1901-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdwv",
+      "short_name": "U.S. Circuit Court for the District of West Virginia",
+      "full_name": "U.S. Circuit Court for the District of West Virginia",
+      "jurisdiction": "F",
+      "start_date": "1864-01-01",
+      "end_date": "1901-12-31"
+    },
+    {
+      "id": "circtedwi",
+      "short_name": "U.S. Circuit Court for the District of Eastern Wisconsin",
+      "full_name": "U.S. Circuit Court for the District of Eastern Wisconsin",
+      "jurisdiction": "F",
+      "start_date": "1870-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtwdwi",
+      "short_name": "U.S. Circuit Court for the District of Western Wisconsin",
+      "full_name": "U.S. Circuit Court for the District of Western Wisconsin",
+      "jurisdiction": "F",
+      "start_date": "1870-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "circtdwi",
+      "short_name": "U.S. Circuit Court for the District of Wisconsin",
+      "full_name": "U.S. Circuit Court for the District of Wisconsin",
+      "jurisdiction": "F",
+      "start_date": "1862-01-01",
+      "end_date": "1870-12-31"
+    },
+    {
+      "id": "circtdwy",
+      "short_name": "U.S. Circuit Court for the District of Wyoming",
+      "full_name": "U.S. Circuit Court for the District of Wyoming",
+      "jurisdiction": "F",
+      "start_date": "1890-01-01",
+      "end_date": "1911-12-31"
+    },
+    {
+      "id": "indcirct",
+      "short_name": "Indiana Circuit Court",
+      "full_name": "Indiana Circuit Court",
+      "jurisdiction": "F",
+      "start_date": "1819-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ctappindterr",
+      "short_name": "Court Of Appeals Of Indian Territory",
+      "full_name": "Court Of Appeals Of Indian Territory",
+      "jurisdiction": "F",
+      "start_date": "1889-01-01",
+      "end_date": "1907-12-31"
+    }
+  ]
+}

@@ -2,10 +2,14 @@ import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
+  ListResourcesRequestSchema,
+  ReadResourceRequestSchema,
   Tool,
+  Resource,
 } from "@modelcontextprotocol/sdk/types.js";
 import axios, { AxiosInstance } from "axios";
 import { z } from "zod";
+import { CourtResourceManager } from "./court-resource-manager.js";
 
 // Configuration schema for the MCP server
 export const configSchema = z.object({
@@ -92,23 +96,11 @@ interface CourtInfo {
   end_date?: string;
 }
 
-interface CourtCache {
-  [key: string]: CourtInfo[];
-  federal: CourtInfo[];
-  state: CourtInfo[];
-  "federal-bankruptcy": CourtInfo[];
-  military: CourtInfo[];
-  special: CourtInfo[];
-  all: CourtInfo[];
-}
 
 
 class CourtListenerMCPServer {
   private server: Server;
   private axiosInstance: AxiosInstance;
-  private courtCache?: CourtCache;
-  private cacheExpiry?: Date;
-  private readonly CACHE_DURATION = 15 * 24 * 60 * 60 * 1000; // 15 days
 
   constructor(apiKey: string = "") {
     this.server = new Server(
@@ -119,6 +111,7 @@ class CourtListenerMCPServer {
       {
         capabilities: {
           tools: {},
+          resources: {},
         },
       },
     );
@@ -133,6 +126,27 @@ class CourtListenerMCPServer {
   }
 
   private setupHandlers(): void {
+    // Resource handlers
+    this.server.setRequestHandler(ListResourcesRequestSchema, async () => ({
+      resources: CourtResourceManager.listResources(),
+    }));
+
+    this.server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
+      try {
+        const resourceContent = CourtResourceManager.readResource(request.params.uri);
+        return {
+          contents: [{
+            uri: request.params.uri,
+            mimeType: "application/json",
+            text: resourceContent
+          }]
+        };
+      } catch (error) {
+        throw new Error(`Failed to read resource: ${error instanceof Error ? error.message : String(error)}`);
+      }
+    });
+
+    // Tool handlers
     this.server.setRequestHandler(ListToolsRequestSchema, async () => ({
       tools: [
         {
@@ -551,302 +565,23 @@ class CourtListenerMCPServer {
     );
   }
 
-  private async discoverCourts(): Promise<Record<string, any>[]> {
-    try {
-      const allCourts: Record<string, any>[] = [];
-      let page = 1;
-      let hasMore = true;
 
-      console.log("Discovering courts from CourtListener API...");
 
-      while (hasMore && allCourts.length < 4000) {
-        // Safety limit
-        const response = await this.axiosInstance.get("/courts/", {
-          params: { page, page_size: 200 },
-        });
 
-        const { results, next } = response.data;
-        allCourts.push(...results);
-        hasMore = !!next;
-        page++;
-
-        if (page % 5 === 0) {
-          console.log(`Discovered ${allCourts.length} courts so far...`);
-        }
-      }
-
-      console.log(`Total courts discovered: ${allCourts.length}`);
-      return allCourts;
-    } catch (error) {
-      console.error("Failed to discover courts:", error);
-      return [];
-    }
-  }
-
-  private categorizeCourtsByJurisdiction(
-    courts: Record<string, any>[],
-  ): CourtCache {
-    const categorized: CourtCache = {
-      federal: [],
-      state: [],
-      "federal-bankruptcy": [],
-      military: [],
-      special: [],
-      all: [],
-    };
-
-    courts.forEach((court) => {
-      // Skip courts without proper data
-      if (!court.id || !court.jurisdiction) {
-        return;
-      }
-
-      const courtInfo: CourtInfo = {
-        id: court.id,
-        short_name: court.short_name || court.id,
-        full_name: court.full_name || court.short_name || court.id,
-        jurisdiction: court.jurisdiction,
-        start_date: court.start_date,
-        end_date: court.end_date,
-      };
-
-      categorized.all.push(courtInfo);
-
-      switch (court.jurisdiction) {
-        case "F":
-          categorized.federal.push(courtInfo);
-          break;
-        case "ST":
-          categorized.state.push(courtInfo);
-          break;
-        case "FB":
-          categorized["federal-bankruptcy"].push(courtInfo);
-          break;
-        case "MA":
-          categorized.military.push(courtInfo);
-          break;
-        case "FS":
-          categorized.special.push(courtInfo);
-          break;
-        default:
-          // For unknown jurisdiction types, still add to special
-          categorized.special.push(courtInfo);
-          break;
-      }
-    });
-
-    console.log(`Categorized courts:
-      Total: ${categorized.all.length}
-      Federal: ${categorized.federal.length}
-      State: ${categorized.state.length}
-      Federal Bankruptcy: ${categorized["federal-bankruptcy"].length}
-      Military: ${categorized.military.length}
-      Special: ${categorized.special.length}`);
-
-    return categorized;
-  }
-
-  private async ensureCourtCache(): Promise<void> {
-    const now = new Date();
-
-    if (!this.courtCache || !this.cacheExpiry || now > this.cacheExpiry) {
-      console.log("Refreshing court cache...");
-      const courts = await this.discoverCourts();
-      this.courtCache = this.categorizeCourtsByJurisdiction(courts);
-      this.cacheExpiry = new Date(now.getTime() + this.CACHE_DURATION);
-      console.log(`Cached ${this.courtCache.all.length} courts`);
-    }
-  }
-
-  private findCourtsByState(stateName: string): string[] {
-    if (!this.courtCache) return [];
-
-    const stateAbbreviations: Record<string, string[]> = {
-      california: ["ca", "cal"],
-      newyork: ["ny"],
-      "new-york": ["ny"],
-      texas: ["tx", "tex"],
-      florida: ["fl", "fla"],
-      illinois: ["il", "ill"],
-      ohio: ["oh"],
-      pennsylvania: ["pa"],
-      michigan: ["mi"],
-      georgia: ["ga"],
-      northcarolina: ["nc"],
-      "north-carolina": ["nc"],
-      newjersey: ["nj"],
-      "new-jersey": ["nj"],
-      virginia: ["va"],
-      washington: ["wa"],
-      arizona: ["az"],
-      massachusetts: ["ma"],
-      tennessee: ["tn", "tenn"],
-      indiana: ["in"],
-      missouri: ["mo"],
-      maryland: ["md"],
-      wisconsin: ["wi"],
-      colorado: ["co"],
-      minnesota: ["mn"],
-      southcarolina: ["sc"],
-      "south-carolina": ["sc"],
-      alabama: ["al"],
-      louisiana: ["la"],
-      kentucky: ["ky"],
-      oregon: ["or"],
-      oklahoma: ["ok"],
-      connecticut: ["ct", "conn"],
-      utah: ["ut"],
-      iowa: ["ia"],
-      nevada: ["nv"],
-      arkansas: ["ar"],
-      mississippi: ["ms"],
-      kansas: ["ks"],
-      newmexico: ["nm"],
-      "new-mexico": ["nm"],
-      nebraska: ["ne"],
-      westvirginia: ["wv"],
-      "west-virginia": ["wv"],
-      idaho: ["id"],
-      hawaii: ["hi"],
-      newhampshire: ["nh"],
-      "new-hampshire": ["nh"],
-      maine: ["me"],
-      montana: ["mt"],
-      rhodeisland: ["ri"],
-      "rhode-island": ["ri"],
-      delaware: ["de"],
-      southdakota: ["sd"],
-      "south-dakota": ["sd"],
-      northdakota: ["nd"],
-      "north-dakota": ["nd"],
-      alaska: ["ak"],
-      vermont: ["vt"],
-      wyoming: ["wy"],
-    };
-
-    // Also check the original input before normalization
-    const stateCodes = stateAbbreviations[stateName] || stateAbbreviations[stateName.replace(/[-_\s]/g, "")] || [stateName];
-
-    return this.courtCache.state
-      .filter((court) => {
-        const courtId = court.id.toLowerCase();
-        return stateCodes.some((code) => courtId.startsWith(code));
-      })
-      .map((c) => c.id);
-  }
 
   private suggestSimilarJurisdictions(input: string): string[] {
-    if (!this.courtCache) return [];
-
-    const suggestions: string[] = [];
-    const normalized = input.toLowerCase();
-
-    // Find similar court names (limit to avoid huge lists)
-    this.courtCache.all.slice(0, 100).forEach((court) => {
-      if (
-        court.short_name.toLowerCase().includes(normalized) ||
-        court.full_name.toLowerCase().includes(normalized)
-      ) {
-        suggestions.push(court.id);
-      }
-    });
-
-    // Add common alternatives and state name suggestions
-    if (normalized.includes("fed")) suggestions.push("federal");
-    if (normalized.includes("state")) suggestions.push("state");
-    if (normalized.includes("supreme")) suggestions.push("scotus");
-    if (normalized.includes("ca") && !normalized.includes("cal"))
-      suggestions.push("california");
-    if (normalized.includes("ny")) suggestions.push("new-york");
-    if (normalized.includes("south") && normalized.includes("carolina"))
-      suggestions.push("south-carolina");
-    if (normalized.includes("north") && normalized.includes("carolina"))
-      suggestions.push("north-carolina");
-    if (normalized.includes("south") && normalized.includes("dakota"))
-      suggestions.push("south-dakota");
-    if (normalized.includes("north") && normalized.includes("dakota"))
-      suggestions.push("north-dakota");
-    if (normalized.includes("new") && normalized.includes("jersey"))
-      suggestions.push("new-jersey");
-    if (normalized.includes("new") && normalized.includes("mexico"))
-      suggestions.push("new-mexico");
-    if (normalized.includes("west") && normalized.includes("virginia"))
-      suggestions.push("west-virginia");
-    if (normalized.includes("new") && normalized.includes("hampshire"))
-      suggestions.push("new-hampshire");
-    if (normalized.includes("rhode") && normalized.includes("island"))
-      suggestions.push("rhode-island");
-
-    return [...new Set(suggestions)].slice(0, 5); // Limit suggestions, remove duplicates
+    return CourtResourceManager.suggestSimilarJurisdictions(input);
   }
 
-  private async resolveJurisdiction(jurisdiction: string): Promise<string[]> {
-    await this.ensureCourtCache();
-
-    if (!this.courtCache) {
-      throw new Error("Court cache not available");
+  private resolveJurisdiction(jurisdiction: string): string[] {
+    // No async needed! Pure function using resources
+    const courtIds = CourtResourceManager.resolveJurisdiction(jurisdiction);
+    
+    if (courtIds.length === 0) {
+      throw new Error(`Unrecognized jurisdiction: ${jurisdiction}`);
     }
-
-    const normalized = jurisdiction.toLowerCase().replace(/[-_\s]/g, "");
-    const lowerOriginal = jurisdiction.toLowerCase();
-
-    // Handle special cases
-    switch (normalized) {
-      case "all":
-        return []; // Empty = no filter = all courts
-
-      case "federal":
-        return this.courtCache.federal.map((c) => c.id);
-
-      case "state":
-        return this.courtCache.state.map((c) => c.id);
-
-      case "federalbankruptcy":
-      case "bankruptcy":
-        return this.courtCache["federal-bankruptcy"].map((c) => c.id);
-
-      case "military":
-        return this.courtCache.military.map((c) => c.id);
-
-      case "special":
-        return this.courtCache.special.map((c) => c.id);
-    }
-
-    // Handle comma-separated court IDs
-    if (jurisdiction.includes(",")) {
-      const courtIds = jurisdiction.split(",").map((id) => id.trim());
-      const validIds = courtIds.filter((id) =>
-        this.courtCache!.all.some((c) => c.id === id),
-      );
-      return validIds;
-    }
-
-    // Handle single court ID (exact match)
-    if (this.courtCache.all.some((c) => c.id === jurisdiction)) {
-      return [jurisdiction];
-    }
-
-    // Handle state names - try both normalized and hyphenated versions
-    let stateResults = this.findCourtsByState(lowerOriginal);
-    if (stateResults.length === 0) {
-      stateResults = this.findCourtsByState(normalized);
-    }
-    if (stateResults.length > 0) {
-      return stateResults;
-    }
-
-    // Handle partial matches in court names
-    const partialMatches = this.courtCache.all.filter(
-      (court) =>
-        court.short_name.toLowerCase().includes(normalized) ||
-        court.full_name.toLowerCase().includes(normalized),
-    );
-
-    if (partialMatches.length > 0) {
-      return partialMatches.slice(0, 50).map((c) => c.id); // Limit to avoid huge lists
-    }
-
-    throw new Error(`Unrecognized jurisdiction: ${jurisdiction}`);
+    
+    return courtIds;
   }
 
   private async searchCasesByProblem(args: SearchArgs) {
@@ -899,7 +634,7 @@ class CourtListenerMCPServer {
       // Resolve jurisdiction to court IDs
       let targetCourts: string[];
       try {
-        targetCourts = await this.resolveJurisdiction(jurisdiction);
+        targetCourts = this.resolveJurisdiction(jurisdiction);
       } catch (error) {
         const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
         return {
@@ -1249,7 +984,7 @@ class CourtListenerMCPServer {
       // Resolve jurisdiction to court IDs
       let targetCourts: string[];
       try {
-        targetCourts = await this.resolveJurisdiction(jurisdiction);
+        targetCourts = this.resolveJurisdiction(jurisdiction);
       } catch (error) {
         const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
         return {
@@ -1443,32 +1178,27 @@ class CourtListenerMCPServer {
     // Resolve jurisdiction to court IDs
     let targetCourts: string[];
     try {
-      targetCourts = await this.resolveJurisdiction(jurisdiction);
+      targetCourts = this.resolveJurisdiction(jurisdiction);
 
       // Apply court level filtering if specific courts were resolved
       if (targetCourts.length > 0 && court_level !== "all") {
-        // Filter by court level using court cache
-        await this.ensureCourtCache();
-        if (this.courtCache) {
-          const courtsByLevel = this.courtCache.all.filter((court) => {
-            if (court_level === "trial" && court.jurisdiction === "ST")
-              return true;
-            if (
-              court_level === "appellate" &&
-              (court.id.includes("app") || court.id.includes("ca"))
-            )
-              return true;
-            if (
-              court_level === "supreme" &&
-              (court.id === "scotus" || court.id.includes("supreme"))
-            )
-              return true;
-            return false;
-          });
-          targetCourts = targetCourts.filter((id) =>
-            courtsByLevel.some((c) => c.id === id),
-          );
-        }
+        // Simple heuristic filtering by court level based on court ID patterns
+        targetCourts = targetCourts.filter((id) => {
+          const lowerCourt = id.toLowerCase();
+          if (court_level === "trial") {
+            // Trial courts are typically district courts or state trial courts
+            return lowerCourt.includes("d") && !lowerCourt.includes("ca") && !lowerCourt.includes("scotus");
+          }
+          if (court_level === "appellate") {
+            // Appellate courts include circuit courts
+            return lowerCourt.includes("ca") || lowerCourt.includes("app");
+          }
+          if (court_level === "supreme") {
+            // Supreme courts
+            return lowerCourt === "scotus" || lowerCourt.includes("supreme");
+          }
+          return true;
+        });
       }
     } catch (error) {
       const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
@@ -1623,7 +1353,7 @@ class CourtListenerMCPServer {
       let targetCourts: string[] = [];
       if (jurisdiction && !court) {
         try {
-          targetCourts = await this.resolveJurisdiction(jurisdiction);
+          targetCourts = this.resolveJurisdiction(jurisdiction);
         } catch (error) {
           // If jurisdiction resolution fails, continue without filter
           console.warn(`Could not resolve jurisdiction ${jurisdiction}, searching all judges`);
@@ -1761,7 +1491,7 @@ class CourtListenerMCPServer {
     let targetCourts: string[] = [];
     if (jurisdiction) {
       try {
-        targetCourts = await this.resolveJurisdiction(jurisdiction);
+        targetCourts = this.resolveJurisdiction(jurisdiction);
       } catch (error) {
         // If jurisdiction resolution fails, continue without filter
         console.warn(`Could not resolve jurisdiction ${jurisdiction}, searching all courts`);
@@ -1862,7 +1592,7 @@ class CourtListenerMCPServer {
       // Resolve jurisdiction to court IDs
       let targetCourts: string[];
       try {
-        targetCourts = await this.resolveJurisdiction(jurisdiction);
+        targetCourts = this.resolveJurisdiction(jurisdiction);
       } catch (error) {
         const suggestions = this.suggestSimilarJurisdictions(jurisdiction);
         return {
@@ -1909,18 +1639,14 @@ class CourtListenerMCPServer {
       });
       const proceduralCases = response.data.results.slice(0, 10);
 
-      // Get court information if available
-      await this.ensureCourtCache();
+      // Get court information if available (simplified without cache)
       let courtInfo = null;
-      if (court && this.courtCache) {
-        const foundCourt = this.courtCache.all.find((c) => c.id === court);
-        if (foundCourt) {
-          courtInfo = {
-            court_id: foundCourt.id,
-            court_name: foundCourt.full_name,
-            court_type: foundCourt.jurisdiction,
-          };
-        }
+      if (court) {
+        courtInfo = {
+          court_id: court,
+          court_name: `Court ${court}`,
+          court_type: "Unknown",
+        };
       }
 
       // Determine appropriate court level based on claim amount

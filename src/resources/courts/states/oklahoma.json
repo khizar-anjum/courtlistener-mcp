@@ -1,0 +1,132 @@
+{
+  "state": "oklahoma",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 13,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "okeb",
+      "oknb",
+      "okwb"
+    ],
+    "local": [
+      "oked",
+      "oknd",
+      "okwd",
+      "okd",
+      "okla",
+      "oklacivapp",
+      "oklacrimapp",
+      "oklajeap",
+      "oklacoj",
+      "oklaag"
+    ]
+  },
+  "courts": [
+    {
+      "id": "okeb",
+      "short_name": "E.D. Oklahoma",
+      "full_name": "United States Bankruptcy Court, E.D. Oklahoma",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oknb",
+      "short_name": "N.D. Oklahoma",
+      "full_name": "United States Bankruptcy Court, N.D. Oklahoma",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okwb",
+      "short_name": "W.D. Oklahoma",
+      "full_name": "United States Bankruptcy Court, W.D. Oklahoma",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oked",
+      "short_name": "E.D. Oklahoma",
+      "full_name": "District Court, E.D. Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oknd",
+      "short_name": "N.D. Oklahoma",
+      "full_name": "District Court, N.D. Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okwd",
+      "short_name": "W.D. Oklahoma",
+      "full_name": "District Court, W.D. Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okd",
+      "short_name": "United States District Court for the District of Oklahoma",
+      "full_name": "United States District Court for the District of Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okla",
+      "short_name": "Supreme Court of Oklahoma",
+      "full_name": "Supreme Court of Oklahoma",
+      "jurisdiction": "S",
+      "start_date": "1884-01-01",
+      "end_date": null
+    },
+    {
+      "id": "oklacivapp",
+      "short_name": "Court of Civil Appeals of Oklahoma",
+      "full_name": "Court of Civil Appeals of Oklahoma",
+      "jurisdiction": "SA",
+      "start_date": "1968-01-01",
+      "end_date": null
+    },
+    {
+      "id": "oklacrimapp",
+      "short_name": "Court of Criminal Appeals of Oklahoma",
+      "full_name": "Court of Criminal Appeals of Oklahoma",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oklajeap",
+      "short_name": "Oklahoma Judicial Ethics Advisory Panel",
+      "full_name": "Oklahoma Judicial Ethics Advisory Panel",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oklacoj",
+      "short_name": "Court on the Judiciary of Oklahoma",
+      "full_name": "Court on the Judiciary of Oklahoma",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oklaag",
+      "short_name": "Oklahoma Attorney General Reports",
+      "full_name": "Oklahoma Attorney General Reports",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

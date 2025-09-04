@@ -1,10 +1,24 @@
 # CourtListener Legal Research MCP Server
 
-A specialized Model Context Protocol (MCP) server implemented in **TypeScript** that helps LLMs provide legal research and analysis by enabling intelligent case law search and deep investigation capabilities across **all 3,353+ courts** in the CourtListener database - including federal, state, local, bankruptcy, and military courts.
+A high-performance Model Context Protocol (MCP) server implemented in **TypeScript** that provides instant legal research capabilities across **all 3,352 U.S. courts**. Built with a resource-based architecture for zero-latency jurisdiction resolution and comprehensive case law analysis.
 
 ## Overview
 
-This advanced MCP server transforms how LLMs interact with legal databases by providing 8 specialized tools for comprehensive legal research. It combines intelligent search algorithms, outcome analysis, and procedural guidance to support effective legal research across various areas of law.
+This MCP server revolutionizes legal research by combining **instant court data access** with powerful CourtListener API integration. The resource-based architecture eliminates API overhead for jurisdiction resolution while providing comprehensive legal research tools.
+
+## 🚀 Architecture Highlights
+
+### **Resource-Based Design**
+- **Zero API calls** for jurisdiction resolution (instant access to 3,352 courts)
+- **Static resource files** for all court metadata (version controlled)
+- **MCP resource browsing** - Clients can explore available jurisdictions
+- **Offline capability** for court data access
+
+### **Performance Benefits**
+- ⚡ **Instant server startup** (no blocking discovery)
+- 🎯 **Deterministic behavior** (same resources = same results)
+- 💾 **No memory overhead** from court caching
+- 🔋 **Rate limit preservation** for actual searches
 
 ## Key Features
 
@@ -13,7 +27,7 @@ This advanced MCP server transforms how LLMs interact with legal databases by pr
 - Automated legal concept extraction
 - Precedent similarity analysis
 - Citation network exploration
-- **Dynamic court discovery** - Access to all 3,353+ courts
+- **Instant jurisdiction resolution** across all 3,352 courts
 
 ### 📊 **Strategic Analysis Tools**
 - Case outcome pattern analysis
@@ -27,11 +41,10 @@ This advanced MCP server transforms how LLMs interact with legal databases by pr
 - Court jurisdiction analysis
 - Filing strategy recommendations
 
-### 🎯 **Data Optimization**
-- Intelligent text truncation to preserve context
-- Flexible jurisdiction targeting across all courts
-- Rate limit management with 15-day court cache
-- Error-resilient operations
+### 📚 **MCP Resources (Browse via Client)**
+- Complete court listings by category (federal, state, bankruptcy, military)
+- Individual state court resources (all 50 states)
+- Jurisdiction mappings for flexible search targeting
 
 ## Quick Start
 
@@ -40,36 +53,44 @@ This advanced MCP server transforms how LLMs interact with legal databases by pr
 1. **Node.js 18+** installed
 2. **CourtListener API key** (get from https://www.courtlistener.com/api/)
 
-### Installation
+### Installation & Setup
 
 ```bash
 cd courtlistener-mcp
 
 # Install dependencies
 npm install
+
+# Configure API key in .env file
+echo 'COURTLISTENER_API_KEY="your_api_key_here"' > .env
+
+# Generate court resources (first-time setup)
+npm run generate-courts
 ```
 
-### Configuration
+### Running the Server
 
 ```bash
-# Option 1: Environment variable
-export COURTLISTENER_API_KEY="your_api_key_here"
+# Development mode with auto-reload
+npm run dev
 
-# Option 2: Create .env file
-cp .env.example .env
-# Edit .env and add your API key
+# Production build
+npm run build
 ```
 
-### Run Server
+### Updating Court Data
 
 ```bash
-npm start
+# Refresh court database from CourtListener API
+npm run update-courts
 ```
+
+The court data is relatively static, so monthly updates are typically sufficient.
 
 ## Comprehensive Jurisdiction Support
 
-### 🏛️ **Dynamic Court Discovery**
-The server automatically discovers and caches information about all 3,353+ courts in the CourtListener database, including:
+### 🏛️ **Instant Court Access**
+The server provides instant access to all 3,352 courts through static resource files:
 
 - **Federal Courts**: Supreme Court, Circuit Courts (1st-11th, DC, Federal), District Courts
 - **State Courts**: All 50 states' supreme, appellate, and trial courts  
@@ -184,6 +205,27 @@ Users can specify jurisdictions in multiple ways:
   - `time_period`: Analysis timeframe (last-6months, last-year, last-2years)
   - `trend_type`: Type of trend analysis (outcomes, filing-patterns, new-precedents)
 
+## Available MCP Resources
+
+The server exposes browsable resources that clients can discover:
+
+### Court Resources
+- `courtlistener://courts/all` - All 3,352 courts with metadata
+- `courtlistener://courts/federal` - 127 federal courts
+- `courtlistener://courts/state` - 2,618 state courts  
+- `courtlistener://courts/bankruptcy` - 95 bankruptcy courts
+- `courtlistener://courts/military` - 11 military courts
+- `courtlistener://courts/special` - 501 special/administrative courts
+
+### State-Specific Resources
+- `courtlistener://courts/states/california` - California courts
+- `courtlistener://courts/states/texas` - Texas courts
+- `courtlistener://courts/states/new-york` - New York courts
+- ... (all 50 states available)
+
+### Jurisdiction Mappings
+- `courtlistener://jurisdictions/court-mappings` - Maps input strings to court IDs
+
 ## MCP Client Integration
 
 Add to your Claude Desktop or MCP client settings:
@@ -224,15 +266,16 @@ To prevent LLM context window overflow:
 - **Optimization**: Field selection, intelligent caching, batch operations
 - **Monitoring**: Built-in rate limit tracking and warnings
 
-## Court Discovery & Caching
+## Resource Architecture
 
-### Dynamic Court Discovery
-The server automatically discovers and caches all 3,353+ courts in the CourtListener database:
+### Static Court Resources
+The server uses pre-generated resource files for instant court access:
 
-- **Cache Duration**: 15 days (optimized for mostly static court data)
-- **Discovery Process**: ~17-20 API calls on first load
-- **Court Categories**: Federal, State, Bankruptcy, Military, Special courts
-- **Automatic Updates**: Cache refreshes periodically to capture new courts
+- **3,352 Courts**: Complete U.S. court system in static JSON files
+- **Zero Latency**: No API calls needed for jurisdiction resolution
+- **50 State Files**: Individual resources for each state's courts
+- **Version Controlled**: All court data tracked in git
+- **Monthly Updates**: Simple command to refresh from CourtListener API
 
 ### Court Level Recommendations
 Based on claim amounts, the system recommends appropriate court levels:
@@ -363,11 +406,45 @@ When searching for procedural rules:
 }
 ```
 
+## Performance & Architecture Benefits
+
+### Resource-Based Architecture Advantages
+- **Instant Startup**: Server ready immediately (no 3-5 second discovery delay)
+- **Zero API Overhead**: Court metadata requires no API calls
+- **Deterministic**: Same resources always produce same results
+- **Git-Tracked**: All court data versioned and reviewable
+- **Offline Capable**: Court resolution works without internet
+- **Memory Efficient**: No in-memory court cache needed
+
+### API Usage Optimization
+- **Rate Limit Preservation**: API calls reserved for actual searches
+- **Predictable Performance**: No variable discovery delays
+- **Reduced Complexity**: Eliminated cache expiry and refresh logic
+
+## Maintenance & Updates
+
+### Court Data Management
+```bash
+# Update court resources from CourtListener API
+npm run update-courts
+
+# Validate resource file integrity  
+npm run validate-resources
+
+# Generate courts with specific API key
+COURTLISTENER_API_KEY="your_key" npm run generate-courts
+```
+
+### Update Schedule
+- **Monthly**: Run `npm run update-courts` to capture new courts
+- **Automatic**: Can be automated via CI/CD (GitHub Actions example in docs)
+- **Version Control**: All updates tracked in git for review
+
 ## Data Sources
 
 CourtListener aggregates legal data from:
 - **All U.S. Courts**: Federal, state, local, and specialized courts
-- **3,353+ Courts**: Complete coverage of the U.S. legal system
+- **3,352 Courts**: Complete coverage of the U.S. legal system  
 - **Historical & Current**: Cases from founding to present day
 
 

@@ -1,0 +1,89 @@
+{
+  "state": "connecticut",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 8,
+  "court_types": {
+    "federal": [
+      "ctappindterr"
+    ],
+    "state": [
+      "ctchansc"
+    ],
+    "bankruptcy": [
+      "ctb"
+    ],
+    "local": [
+      "ctd",
+      "conn",
+      "connappct",
+      "connsuperct",
+      "connworkcompcom"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ctb",
+      "short_name": "D. Connecticut",
+      "full_name": "United States Bankruptcy Court, D. Connecticut",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ctd",
+      "short_name": "D. Connecticut",
+      "full_name": "District Court, D. Connecticut",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "conn",
+      "short_name": "Supreme Court of Connecticut",
+      "full_name": "Supreme Court of Connecticut",
+      "jurisdiction": "S",
+      "start_date": "1784-01-01",
+      "end_date": null
+    },
+    {
+      "id": "connappct",
+      "short_name": "Connecticut Appellate Court",
+      "full_name": "Connecticut Appellate Court",
+      "jurisdiction": "SA",
+      "start_date": "1983-10-04",
+      "end_date": null
+    },
+    {
+      "id": "connsuperct",
+      "short_name": "Connecticut Superior Court",
+      "full_name": "Connecticut Superior Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "connworkcompcom",
+      "short_name": "Connecticut Compensation Review Board",
+      "full_name": "Connecticut Compensation Review Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ctappindterr",
+      "short_name": "Court Of Appeals Of Indian Territory",
+      "full_name": "Court Of Appeals Of Indian Territory",
+      "jurisdiction": "F",
+      "start_date": "1889-01-01",
+      "end_date": "1907-12-31"
+    },
+    {
+      "id": "ctchansc",
+      "short_name": "Court of Chancery of South Carolina",
+      "full_name": "Court of Chancery of South Carolina",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

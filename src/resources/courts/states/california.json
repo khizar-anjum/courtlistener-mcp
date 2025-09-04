@@ -1,0 +1,1628 @@
+{
+  "state": "california",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 179,
+  "court_types": {
+    "federal": [
+      "ca1",
+      "ca2",
+      "ca3",
+      "ca4",
+      "ca5",
+      "ca6",
+      "ca7",
+      "ca8",
+      "ca9",
+      "ca10",
+      "ca11",
+      "cadc",
+      "cafc",
+      "caca"
+    ],
+    "state": [
+      "calsuperct",
+      "calsuppctala",
+      "calsuppctalp",
+      "calsuppctama",
+      "calsuppctbut",
+      "calsuppctcal",
+      "calsuppctcol",
+      "calsuppctcc",
+      "calsuppctdn",
+      "calsuppcted",
+      "calsuppctfre",
+      "calsuppctgle",
+      "calsuppcthum",
+      "calsuppctimp",
+      "calsuppctiny",
+      "calsuppctker",
+      "calsuppctkin",
+      "calsuppctlak",
+      "calsuppctlas",
+      "calsuppctla",
+      "calsuppctmad",
+      "calsuppctmrn",
+      "calsuppctmpa",
+      "calsuppctmen",
+      "calsuppctmer",
+      "calsuppctmod",
+      "calsuppctmno",
+      "calsuppctmon",
+      "calsuppctnap",
+      "calsuppctnev",
+      "calsuppctora",
+      "calsuppctpla",
+      "calsuppctplu",
+      "calsuppctriv",
+      "calsuppctsac",
+      "calsuppctsbt",
+      "calsuppctsbd",
+      "calsuppctsd",
+      "calsuppctsf",
+      "calsuppctsj",
+      "calsuppctslo",
+      "calsuppctsm",
+      "calsuppctsb",
+      "calsuppctscl",
+      "calsuppctscr",
+      "calsuppctsha",
+      "calsuppctsie",
+      "calsuppctsis",
+      "calsuppctsol",
+      "calsuppctson",
+      "calsuppctsta",
+      "calsuppctsut",
+      "calsuppctteh",
+      "calsuppcttri",
+      "calsuppcttul",
+      "calsuppcttuo",
+      "calsuppctven",
+      "calsuppctyol",
+      "calsuppctyub",
+      "calmunct",
+      "calmunctala",
+      "calmunctalp",
+      "calmunctama",
+      "calmunctbut",
+      "calmunctcal",
+      "calmunctcol",
+      "calmunctcc",
+      "calmunctdn",
+      "calmuncted",
+      "calmunctfre",
+      "calmunctgle",
+      "calmuncthum",
+      "calmunctimp",
+      "calmunctiny",
+      "calmunctker",
+      "calmunctkin",
+      "calmunctlak",
+      "calmunctlas",
+      "calmunctla",
+      "calmunctmad",
+      "calmunctmrn",
+      "calmunctmpa",
+      "calmunctmen",
+      "calmunctmer",
+      "calmunctmod",
+      "calmunctmno",
+      "calmunctmon",
+      "calmunctnap",
+      "calmunctnev",
+      "calmunctora",
+      "calmunctpla",
+      "calmunctplu",
+      "calmunctriv",
+      "calmunctsac",
+      "calmunctsbt",
+      "calmunctsbd",
+      "calmunctsd",
+      "calmunctsf",
+      "calmunctsj",
+      "calmunctslo",
+      "calmunctsm",
+      "calmunctsb",
+      "calmunctscl",
+      "calmunctscr",
+      "calmunctsha",
+      "calmunctsie",
+      "calmunctsis",
+      "calmunctsol",
+      "calmunctson",
+      "calmunctsta",
+      "calmunctsut",
+      "calmunctteh",
+      "calmuncttri",
+      "calmuncttul",
+      "calmuncttuo",
+      "calmunctven",
+      "calmunctyol",
+      "calmunctyub",
+      "caljustct",
+      "caljustctbut",
+      "caljustctcol",
+      "caljustctfre",
+      "caljustctgle",
+      "caljustcthum",
+      "caljustctker",
+      "caljustctkin",
+      "caljustctlak",
+      "caljustctla",
+      "caljustctmad",
+      "caljustctmpa",
+      "caljustctmen",
+      "caljustctmno",
+      "caljustctnev",
+      "caljustctpla",
+      "caljustctplu",
+      "caljustctsbt",
+      "caljustctsbd",
+      "caljustctsis",
+      "caljustcttul",
+      "caljustcttuo",
+      "caldistct"
+    ],
+    "bankruptcy": [
+      "cacb",
+      "caeb",
+      "canb",
+      "casb"
+    ],
+    "local": [
+      "cavc",
+      "californiad",
+      "cacd",
+      "caed",
+      "cand",
+      "casd",
+      "canalzoned",
+      "cal",
+      "calctapp",
+      "calappdeptsuper",
+      "calctapp1d",
+      "calctapp2d",
+      "calctapp3d",
+      "calctapp4d",
+      "calctapp5d",
+      "calctapp6d",
+      "calag",
+      "caluneinsappbd",
+      "calofcadmhrg",
+      "caljp"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ca1",
+      "short_name": "First Circuit",
+      "full_name": "Court of Appeals for the First Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca2",
+      "short_name": "Second Circuit",
+      "full_name": "Court of Appeals for the Second Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca3",
+      "short_name": "Third Circuit",
+      "full_name": "Court of Appeals for the Third Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca4",
+      "short_name": "Fourth Circuit",
+      "full_name": "Court of Appeals for the Fourth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca5",
+      "short_name": "Fifth Circuit",
+      "full_name": "Court of Appeals for the Fifth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca6",
+      "short_name": "Sixth Circuit",
+      "full_name": "Court of Appeals for the Sixth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca7",
+      "short_name": "Seventh Circuit",
+      "full_name": "Court of Appeals for the Seventh Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca8",
+      "short_name": "Eighth Circuit",
+      "full_name": "Court of Appeals for the Eighth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca9",
+      "short_name": "Ninth Circuit",
+      "full_name": "Court of Appeals for the Ninth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1891-03-03",
+      "end_date": null
+    },
+    {
+      "id": "ca10",
+      "short_name": "Tenth Circuit",
+      "full_name": "Court of Appeals for the Tenth Circuit",
+      "jurisdiction": "F",
+      "start_date": "1929-02-28",
+      "end_date": null
+    },
+    {
+      "id": "ca11",
+      "short_name": "Eleventh Circuit",
+      "full_name": "Court of Appeals for the Eleventh Circuit",
+      "jurisdiction": "F",
+      "start_date": "1980-10-14",
+      "end_date": null
+    },
+    {
+      "id": "cadc",
+      "short_name": "D.C. Circuit",
+      "full_name": "Court of Appeals for the D.C. Circuit",
+      "jurisdiction": "F",
+      "start_date": "1893-02-09",
+      "end_date": null
+    },
+    {
+      "id": "cafc",
+      "short_name": "Federal Circuit",
+      "full_name": "Court of Appeals for the Federal Circuit",
+      "jurisdiction": "F",
+      "start_date": "1982-04-02",
+      "end_date": null
+    },
+    {
+      "id": "cavc",
+      "short_name": "Veterans Claims",
+      "full_name": "United States Court of Appeals for Veterans Claims",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cacb",
+      "short_name": "C.D. California",
+      "full_name": "United States Bankruptcy Court, C.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caeb",
+      "short_name": "E.D. California",
+      "full_name": "United States Bankruptcy Court, E.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "canb",
+      "short_name": "N.D. California",
+      "full_name": "United States Bankruptcy Court, N.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "casb",
+      "short_name": "S.D. California",
+      "full_name": "United States Bankruptcy Court, S.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "californiad",
+      "short_name": "D. California",
+      "full_name": "District Court, D. California",
+      "jurisdiction": "FD",
+      "start_date": "1866-07-27",
+      "end_date": "1886-08-05"
+    },
+    {
+      "id": "cacd",
+      "short_name": "C.D. California",
+      "full_name": "District Court, C.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caed",
+      "short_name": "E.D. California",
+      "full_name": "District Court, E.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cand",
+      "short_name": "N.D. California",
+      "full_name": "District Court, N.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "casd",
+      "short_name": "S.D. California",
+      "full_name": "District Court, S.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caca",
+      "short_name": "California Circuit",
+      "full_name": "Circuit Court for California",
+      "jurisdiction": "F",
+      "start_date": "1804-10-01",
+      "end_date": "1812-04-30"
+    },
+    {
+      "id": "canalzoned",
+      "short_name": "District Court, Canal Zone",
+      "full_name": "District Court, Canal Zone",
+      "jurisdiction": "FD",
+      "start_date": "1937-07-26",
+      "end_date": "1982-03-31"
+    },
+    {
+      "id": "cal",
+      "short_name": "California Supreme Court",
+      "full_name": "California Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1849-01-01",
+      "end_date": null
+    },
+    {
+      "id": "calctapp",
+      "short_name": "California Court of Appeal",
+      "full_name": "California Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1905-04-10",
+      "end_date": null
+    },
+    {
+      "id": "calappdeptsuper",
+      "short_name": "Appellate Division of the Superior Court of California",
+      "full_name": "Appellate Division of the Superior Court of California",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp1d",
+      "short_name": "California Court of Appeals, 1st District",
+      "full_name": "California Court of Appeal, 1st District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp2d",
+      "short_name": "California Court of Appeals, 2nd District",
+      "full_name": "California Court of Appeal, 2nd District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp3d",
+      "short_name": "California Court of Appeals, 3rd District",
+      "full_name": "California Court of Appeal, 3rd District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp4d",
+      "short_name": "California Court of Appeals, 4th District",
+      "full_name": "California Court of Appeal, 4th District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp5d",
+      "short_name": "California Court of Appeals, 5th District",
+      "full_name": "California Court of Appeal, 5th District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp6d",
+      "short_name": "California Court of Appeals, 6th District",
+      "full_name": "California Court of Appeal, 6th District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calag",
+      "short_name": "California Attorney General Reports",
+      "full_name": "California Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuperct",
+      "short_name": "California Superior Court",
+      "full_name": "California Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctala",
+      "short_name": "California Superior Court, Alameda County",
+      "full_name": "Superior Court of California, County of Alameda",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctalp",
+      "short_name": "California Superior Court, Alpine County",
+      "full_name": "Superior Court of California, County of Alpine",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctama",
+      "short_name": "California Superior Court, Amador County",
+      "full_name": "Superior Court of California, County of Amador",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctbut",
+      "short_name": "California Superior Court, Butte County",
+      "full_name": "Superior Court of California, County of Butte",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctcal",
+      "short_name": "California Superior Court, Calaveras County",
+      "full_name": "Superior Court of California, County of Calaveras",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctcol",
+      "short_name": "California Superior Court, Colusa County",
+      "full_name": "Superior Court of California, County of Colusa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctcc",
+      "short_name": "California Superior Court, Contra Costa County",
+      "full_name": "Superior Court of California, County of Contra Costa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctdn",
+      "short_name": "California Superior Court, Del Norte County",
+      "full_name": "Superior Court of California, County of Del Norte",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppcted",
+      "short_name": "California Superior Court, El Dorado County",
+      "full_name": "Superior Court of California, County of El Dorado",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctfre",
+      "short_name": "California Superior Court, Fresno County",
+      "full_name": "Superior Court of California, County of Fresno",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctgle",
+      "short_name": "California Superior Court, Glenn County",
+      "full_name": "Superior Court of California, County of Glenn",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppcthum",
+      "short_name": "California Superior Court, Humboldt County",
+      "full_name": "Superior Court of California, County of Humboldt",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctimp",
+      "short_name": "California Superior Court, Imperial County",
+      "full_name": "Superior Court of California, County of Imperial",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctiny",
+      "short_name": "California Superior Court, Inyo County",
+      "full_name": "Superior Court of California, County of Inyo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctker",
+      "short_name": "California Superior Court, Kern County",
+      "full_name": "Superior Court of California, County of Kern",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctkin",
+      "short_name": "California Superior Court, Kings County",
+      "full_name": "Superior Court of California, County of Kings",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctlak",
+      "short_name": "California Superior Court, Lake County",
+      "full_name": "Superior Court of California, County of Lake",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctlas",
+      "short_name": "California Superior Court, Lassen County",
+      "full_name": "Superior Court of California, County of Lassen",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctla",
+      "short_name": "California Superior Court, Los Angeles County",
+      "full_name": "Superior Court of California, County of Los Angeles",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmad",
+      "short_name": "California Superior Court, Madera County",
+      "full_name": "Superior Court of California, County of Madera",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmrn",
+      "short_name": "California Superior Court, Marin County",
+      "full_name": "Superior Court of California, County of Marin",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmpa",
+      "short_name": "California Superior Court, Mariposa County",
+      "full_name": "Superior Court of California, County of Mariposa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmen",
+      "short_name": "California Superior Court, Mendocino County",
+      "full_name": "Superior Court of California, County of Mendocino",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmer",
+      "short_name": "California Superior Court, Merced County",
+      "full_name": "Superior Court of California, County of Merced",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmod",
+      "short_name": "California Superior Court, Modoc County",
+      "full_name": "Superior Court of California, County of Modoc",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmno",
+      "short_name": "California Superior Court, Mono County",
+      "full_name": "Superior Court of California, County of Mono",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctmon",
+      "short_name": "California Superior Court, Monterey County",
+      "full_name": "Superior Court of California, County of Monterey",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctnap",
+      "short_name": "California Superior Court, Napa County",
+      "full_name": "Superior Court of California, County of Napa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctnev",
+      "short_name": "California Superior Court, Nevada County",
+      "full_name": "Superior Court of California, County of Nevada",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctora",
+      "short_name": "California Superior Court, Orange County",
+      "full_name": "Superior Court of California, County of Orange",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctpla",
+      "short_name": "California Superior Court, Placer County",
+      "full_name": "Superior Court of California, County of Placer",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctplu",
+      "short_name": "California Superior Court, Plumas County",
+      "full_name": "Superior Court of California, County of Plumas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctriv",
+      "short_name": "California Superior Court, Riverside County",
+      "full_name": "Superior Court of California, County of Riverside",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsac",
+      "short_name": "California Superior Court, Sacramento County",
+      "full_name": "Superior Court of California, County of Sacramento",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsbt",
+      "short_name": "California Superior Court, San Benito County",
+      "full_name": "Superior Court of California, County of San Benito",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsbd",
+      "short_name": "California Superior Court, San Bernardino County",
+      "full_name": "Superior Court of California, County of San Bernardino",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsd",
+      "short_name": "California Superior Court, San Diego County",
+      "full_name": "Superior Court of California, County of San Diego",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsf",
+      "short_name": "California Superior Court, San Francisco County",
+      "full_name": "Superior Court of California, County of San Francisco",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsj",
+      "short_name": "California Superior Court, San Joaquin County",
+      "full_name": "Superior Court of California, County of San Joaquin",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctslo",
+      "short_name": "California Superior Court, San Luis Obispo County",
+      "full_name": "Superior Court of California, County of San Luis Obispo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsm",
+      "short_name": "California Superior Court, San Mateo County",
+      "full_name": "Superior Court of California, County of San Mateo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsb",
+      "short_name": "California Superior Court, Santa Barbara County",
+      "full_name": "Superior Court of California, County of Santa Barbara",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctscl",
+      "short_name": "California Superior Court, Santa Clara County",
+      "full_name": "Superior Court of California, County of Santa Clara",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctscr",
+      "short_name": "California Superior Court, Santa Cruz County",
+      "full_name": "Superior Court of California, County of Santa Cruz",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsha",
+      "short_name": "California Superior Court, Shasta County",
+      "full_name": "Superior Court of California, County of Shasta",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsie",
+      "short_name": "California Superior Court, Sierra County",
+      "full_name": "Superior Court of California, County of Sierra",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsis",
+      "short_name": "California Superior Court, Siskiyou County",
+      "full_name": "Superior Court of California, County of Siskiyou",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsol",
+      "short_name": "California Superior Court, Solano County",
+      "full_name": "Superior Court of California, County of Solano",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctson",
+      "short_name": "California Superior Court, Sonoma County",
+      "full_name": "Superior Court of California, County of Sonoma",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsta",
+      "short_name": "California Superior Court, Stanislaus County",
+      "full_name": "Superior Court of California, County of Stanislaus",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctsut",
+      "short_name": "California Superior Court, Sutter County",
+      "full_name": "Superior Court of California, County of Sutter",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctteh",
+      "short_name": "California Superior Court, Tehama County",
+      "full_name": "Superior Court of California, County of Tehama",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppcttri",
+      "short_name": "California Superior Court, Trinity County",
+      "full_name": "Superior Court of California, County of Trinity",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppcttul",
+      "short_name": "California Superior Court, Tulare County",
+      "full_name": "Superior Court of California, County of Tulare",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppcttuo",
+      "short_name": "California Superior Court, Tuolumne County",
+      "full_name": "Superior Court of California, County of Tuolumne",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctven",
+      "short_name": "California Superior Court, Ventura County",
+      "full_name": "Superior Court of California, County of Ventura",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctyol",
+      "short_name": "California Superior Court, Yolo County",
+      "full_name": "Superior Court of California, County of Yolo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calsuppctyub",
+      "short_name": "California Superior Court, Yuba County",
+      "full_name": "Superior Court of California, County of Yuba",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calmunct",
+      "short_name": "Municipal Court of California",
+      "full_name": "Municipal Court of California",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calmunctala",
+      "short_name": "California Municipal Court, Alameda County",
+      "full_name": "Municipal Court of California, County of Alameda",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctalp",
+      "short_name": "California Municipal Court, Alpine County",
+      "full_name": "Municipal Court of California, County of Alpine",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctama",
+      "short_name": "California Municipal Court, Amador County",
+      "full_name": "Municipal Court of California, County of Amador",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctbut",
+      "short_name": "California Municipal Court, Butte County",
+      "full_name": "Municipal Court of California, County of Butte",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctcal",
+      "short_name": "California Municipal Court, Calaveras County",
+      "full_name": "Municipal Court of California, County of Calaveras",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctcol",
+      "short_name": "California Municipal Court, Colusa County",
+      "full_name": "Municipal Court of California, County of Colusa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctcc",
+      "short_name": "California Municipal Court, Contra Costa County",
+      "full_name": "Municipal Court of California, County of Contra Costa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctdn",
+      "short_name": "California Municipal Court, Del Norte County",
+      "full_name": "Municipal Court of California, County of Del Norte",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmuncted",
+      "short_name": "California Municipal Court, El Dorado County",
+      "full_name": "Municipal Court of California, County of El Dorado",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctfre",
+      "short_name": "California Municipal Court, Fresno County",
+      "full_name": "Municipal Court of California, County of Fresno",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctgle",
+      "short_name": "California Municipal Court, Glenn County",
+      "full_name": "Municipal Court of California, County of Glenn",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmuncthum",
+      "short_name": "California Municipal Court, Humboldt County",
+      "full_name": "Municipal Court of California, County of Humboldt",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctimp",
+      "short_name": "California Municipal Court, Imperial County",
+      "full_name": "Municipal Court of California, County of Imperial",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctiny",
+      "short_name": "California Municipal Court, Inyo County",
+      "full_name": "Municipal Court of California, County of Inyo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctker",
+      "short_name": "California Municipal Court, Kern County",
+      "full_name": "Municipal Court of California, County of Kern",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctkin",
+      "short_name": "California Municipal Court, Kings County",
+      "full_name": "Municipal Court of California, County of Kings",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctlak",
+      "short_name": "California Municipal Court, Lake County",
+      "full_name": "Municipal Court of California, County of Lake",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctlas",
+      "short_name": "California Municipal Court, Lassen County",
+      "full_name": "Municipal Court of California, County of Lassen",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctla",
+      "short_name": "California Municipal Court, Los Angeles County",
+      "full_name": "Municipal Court of California, County of Los Angeles",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmad",
+      "short_name": "California Municipal Court, Madera County",
+      "full_name": "Municipal Court of California, County of Madera",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmrn",
+      "short_name": "California Municipal Court, Marin County",
+      "full_name": "Municipal Court of California, County of Marin",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmpa",
+      "short_name": "California Municipal Court, Mariposa County",
+      "full_name": "Municipal Court of California, County of Mariposa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmen",
+      "short_name": "California Municipal Court, Mendocino County",
+      "full_name": "Municipal Court of California, County of Mendocino",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmer",
+      "short_name": "California Municipal Court, Merced County",
+      "full_name": "Municipal Court of California, County of Merced",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmod",
+      "short_name": "California Municipal Court, Modoc County",
+      "full_name": "Municipal Court of California, County of Modoc",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmno",
+      "short_name": "California Municipal Court, Mono County",
+      "full_name": "Municipal Court of California, County of Mono",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctmon",
+      "short_name": "California Municipal Court, Monterey County",
+      "full_name": "Municipal Court of California, County of Monterey",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctnap",
+      "short_name": "California Municipal Court, Napa County",
+      "full_name": "Municipal Court of California, County of Napa",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctnev",
+      "short_name": "California Municipal Court, Nevada County",
+      "full_name": "Municipal Court of California, County of Nevada",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctora",
+      "short_name": "California Municipal Court, Orange County",
+      "full_name": "Municipal Court of California, County of Orange",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctpla",
+      "short_name": "California Municipal Court, Placer County",
+      "full_name": "Municipal Court of California, County of Placer",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctplu",
+      "short_name": "California Municipal Court, Plumas County",
+      "full_name": "Municipal Court of California, County of Plumas",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctriv",
+      "short_name": "California Municipal Court, Riverside County",
+      "full_name": "Municipal Court of California, County of Riverside",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsac",
+      "short_name": "California Municipal Court, Sacramento County",
+      "full_name": "Municipal Court of California, County of Sacramento",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsbt",
+      "short_name": "California Municipal Court, San Benito County",
+      "full_name": "Municipal Court of California, County of San Benito",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsbd",
+      "short_name": "California Municipal Court, San Bernardino County",
+      "full_name": "Municipal Court of California, County of San Bernardino",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsd",
+      "short_name": "California Municipal Court, San Diego County",
+      "full_name": "Municipal Court of California, County of San Diego",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsf",
+      "short_name": "California Municipal Court, San Francisco County",
+      "full_name": "Municipal Court of California, County of San Francisco",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsj",
+      "short_name": "California Municipal Court, San Joaquin County",
+      "full_name": "Municipal Court of California, County of San Joaquin",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctslo",
+      "short_name": "California Municipal Court, San Luis Obispo County",
+      "full_name": "Municipal Court of California, County of San Luis Obispo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsm",
+      "short_name": "California Municipal Court, San Mateo County",
+      "full_name": "Municipal Court of California, County of San Mateo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsb",
+      "short_name": "California Municipal Court, Santa Barbara County",
+      "full_name": "Municipal Court of California, County of Santa Barbara",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctscl",
+      "short_name": "California Municipal Court, Santa Clara County",
+      "full_name": "Municipal Court of California, County of Santa Clara",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctscr",
+      "short_name": "California Municipal Court, Santa Cruz County",
+      "full_name": "Municipal Court of California, County of Santa Cruz",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsha",
+      "short_name": "California Municipal Court, Shasta County",
+      "full_name": "Municipal Court of California, County of Shasta",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsie",
+      "short_name": "California Municipal Court, Sierra County",
+      "full_name": "Municipal Court of California, County of Sierra",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsis",
+      "short_name": "California Municipal Court, Siskiyou County",
+      "full_name": "Municipal Court of California, County of Siskiyou",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsol",
+      "short_name": "California Municipal Court, Solano County",
+      "full_name": "Municipal Court of California, County of Solano",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctson",
+      "short_name": "California Municipal Court, Sonoma County",
+      "full_name": "Municipal Court of California, County of Sonoma",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsta",
+      "short_name": "California Municipal Court, Stanislaus County",
+      "full_name": "Municipal Court of California, County of Stanislaus",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctsut",
+      "short_name": "California Municipal Court, Sutter County",
+      "full_name": "Municipal Court of California, County of Sutter",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctteh",
+      "short_name": "California Municipal Court, Tehama County",
+      "full_name": "Municipal Court of California, County of Tehama",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmuncttri",
+      "short_name": "California Municipal Court, Trinity County",
+      "full_name": "Municipal Court of California, County of Trinity",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmuncttul",
+      "short_name": "California Municipal Court, Tulare County",
+      "full_name": "Municipal Court of California, County of Tulare",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmuncttuo",
+      "short_name": "California Municipal Court, Tuolumne County",
+      "full_name": "Municipal Court of California, County of Tuolumne",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctven",
+      "short_name": "California Municipal Court, Ventura County",
+      "full_name": "Municipal Court of California, County of Ventura",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctyol",
+      "short_name": "California Municipal Court, Yolo County",
+      "full_name": "Municipal Court of California, County of Yolo",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "calmunctyub",
+      "short_name": "California Municipal Court, Yuba County",
+      "full_name": "Municipal Court of California, County of Yuba",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustct",
+      "short_name": "Califonia Justice Court",
+      "full_name": "Califonia Justice Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caljustctbut",
+      "short_name": "California Justice Court, Butte County",
+      "full_name": "California Justice Court, Butte County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctcol",
+      "short_name": "California Justice Court, Colusa County",
+      "full_name": "California Justice Court, Colusa County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctfre",
+      "short_name": "California Justice Court, Fresno County",
+      "full_name": "California Justice Court, Fresno County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctgle",
+      "short_name": "California Justice Court, Glenn County",
+      "full_name": "California Justice Court, Glenn County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustcthum",
+      "short_name": "California Justice Court, Humboldt County",
+      "full_name": "California Justice Court, Humboldt County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctker",
+      "short_name": "California Justice Court, Kern County",
+      "full_name": "California Justice Court, Kern County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctkin",
+      "short_name": "California Justice Court, Kings County",
+      "full_name": "California Justice Court, Kings County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctlak",
+      "short_name": "California Justice Court, Lake County",
+      "full_name": "California Justice Court, Lake County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctla",
+      "short_name": "California Justice Court, Los Angeles County",
+      "full_name": "California Justice Court, Los Angeles County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctmad",
+      "short_name": "California Justice Court, Madera County",
+      "full_name": "California Justice Court, Madera County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctmpa",
+      "short_name": "California Justice Court, Mariposa County",
+      "full_name": "California Justice Court, Mariposa County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctmen",
+      "short_name": "California Justice Court, Mendocino County",
+      "full_name": "California Justice Court, Mendocino County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctmno",
+      "short_name": "California Justice Court, Mono County",
+      "full_name": "California Justice Court, Mono County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctnev",
+      "short_name": "California Justice Court, Nevada County",
+      "full_name": "California Justice Court, Nevada County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctpla",
+      "short_name": "California Justice Court, Placer County",
+      "full_name": "California Justice Court, Placer County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctplu",
+      "short_name": "California Justice Court, Plumas County",
+      "full_name": "California Justice Court, Plumas County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctsbt",
+      "short_name": "California Justice Court, San Benito County",
+      "full_name": "California Justice Court, San Benito County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctsbd",
+      "short_name": "California Justice Court, San Bernardino County",
+      "full_name": "California Justice Court, San Bernardino County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustctsis",
+      "short_name": "California Justice Court, Siskiyou County",
+      "full_name": "California Justice Court, Siskiyou County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustcttul",
+      "short_name": "California Justice Court, Tulare County",
+      "full_name": "California Justice Court, Tulare County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caljustcttuo",
+      "short_name": "California Justice Court, Tuolumne County",
+      "full_name": "California Justice Court, Tuolumne County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "2001-01-01"
+    },
+    {
+      "id": "caldistct",
+      "short_name": "Cal. District Court",
+      "full_name": "California District Court",
+      "jurisdiction": "ST",
+      "start_date": "1849-01-01",
+      "end_date": "1879-12-31"
+    },
+    {
+      "id": "caluneinsappbd",
+      "short_name": "Cal. Unemp. Ins. App. Bd.",
+      "full_name": "California Unemployment Insurance Appeals Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calofcadmhrg",
+      "short_name": "Cal. Ofc. of Admin. Hrg.",
+      "full_name": "California Office of Administrative Hearings",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caljp",
+      "short_name": "State of California Commission On Judicial Performance",
+      "full_name": "State of California Commission On Judicial Performance",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

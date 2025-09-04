@@ -1,0 +1,196 @@
+{
+  "state": "missouri",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 20,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "montereydistct"
+    ],
+    "bankruptcy": [
+      "moeb",
+      "mowb"
+    ],
+    "local": [
+      "mod",
+      "moed",
+      "mowd",
+      "mo",
+      "moctapp",
+      "moctapped",
+      "moctappsd",
+      "moctappwd",
+      "moag",
+      "mont",
+      "monttc",
+      "montag",
+      "moheganctapp",
+      "moheganct",
+      "mohegangct",
+      "mohegangctapp",
+      "moheganelders"
+    ]
+  },
+  "courts": [
+    {
+      "id": "moeb",
+      "short_name": "E.D. Missouri",
+      "full_name": "United States Bankruptcy Court, E.D. Missouri",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mowb",
+      "short_name": "W.D. Missouri",
+      "full_name": "United States Bankruptcy Court, W.D. Missouri",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mod",
+      "short_name": "D. Missouri",
+      "full_name": "District Court, D. Missouri",
+      "jurisdiction": "FD",
+      "start_date": "1822-03-16",
+      "end_date": "1857-03-03"
+    },
+    {
+      "id": "moed",
+      "short_name": "E.D. Missouri",
+      "full_name": "District Court, E.D. Missouri",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mowd",
+      "short_name": "W.D. Missouri",
+      "full_name": "District Court, W.D. Missouri",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "montereydistct",
+      "short_name": "Monterey District Court",
+      "full_name": "Monterey District Court",
+      "jurisdiction": "ST",
+      "start_date": "1849-01-01",
+      "end_date": "1879-12-31"
+    },
+    {
+      "id": "mo",
+      "short_name": "Supreme Court of Missouri",
+      "full_name": "Supreme Court of Missouri",
+      "jurisdiction": "S",
+      "start_date": "1821-01-01",
+      "end_date": null
+    },
+    {
+      "id": "moctapp",
+      "short_name": "Missouri Court of Appeals",
+      "full_name": "Missouri Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1820-01-01",
+      "end_date": null
+    },
+    {
+      "id": "moctapped",
+      "short_name": "Mo. Ct. of App, East. Dist.",
+      "full_name": "Missouri Court of Appeals, Eastern District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moctappsd",
+      "short_name": "Mo. Ct. App., So. Dist.",
+      "full_name": "Missouri Court of Appeals, Southern District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moctappwd",
+      "short_name": "Mo. Ct. App., West. Dist.",
+      "full_name": "Missouri Court of Appeals, Western District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moag",
+      "short_name": "Missouri Attorney General Reports",
+      "full_name": "Missouri Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mont",
+      "short_name": "Montana Supreme Court",
+      "full_name": "Montana Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1864-01-01",
+      "end_date": null
+    },
+    {
+      "id": "monttc",
+      "short_name": "Montana Tax Appeal Board",
+      "full_name": "Montana Tax Appeal Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "montag",
+      "short_name": "Montana Attorney General Reports",
+      "full_name": "Montana Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moheganctapp",
+      "short_name": "Mohegan Tribal Court of Appeals",
+      "full_name": "Mohegan Tribal Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moheganct",
+      "short_name": "Mohegan Trial Court",
+      "full_name": "Mohegan Trial Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mohegangct",
+      "short_name": "Mohegan Gaming Disputes Trial Court",
+      "full_name": "Mohegan Gaming Disputes Trial Court",
+      "jurisdiction": "TRX",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mohegangctapp",
+      "short_name": "Mohegan Gaming Disputes Court of Appeals",
+      "full_name": "Mohegan Gaming Disputes Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moheganelders",
+      "short_name": "Council of Elders of the Mohegan Tribe",
+      "full_name": "Council of Elders of the Mohegan Tribe",
+      "jurisdiction": "TRX",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

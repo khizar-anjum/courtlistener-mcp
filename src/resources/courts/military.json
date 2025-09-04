@@ -1,0 +1,95 @@
+{
+  "generated_at": "2025-09-04T20:12:27.893Z",
+  "total_courts": 11,
+  "api_version": "v4",
+  "courts": [
+    {
+      "id": "afcca",
+      "short_name": "Air Force Court of Criminal Appeals",
+      "full_name": "United States Air Force Court of Criminal Appeals",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usafctmilrev",
+      "short_name": "U S Air Force Court of Military Review",
+      "full_name": "U S Air Force Court of Military Review",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "armfor",
+      "short_name": "Court of Appeals for the Armed Forces",
+      "full_name": "Court of Appeals for the Armed Forces",
+      "jurisdiction": "MA",
+      "start_date": "1951-05-31",
+      "end_date": null
+    },
+    {
+      "id": "cma",
+      "short_name": "United States Court of Military Appeals",
+      "full_name": "United States Court of Military Appeals",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "acca",
+      "short_name": "Army Court of Criminal Appeals",
+      "full_name": "Army Court of Criminal Appeals",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usarmymilrev",
+      "short_name": "U.S. Army Court of Military Review",
+      "full_name": "U.S. Army Court of Military Review",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "uscgcoca",
+      "short_name": "U S Coast Guard Court of Criminal Appeals",
+      "full_name": "U S Coast Guard Court of Criminal Appeals",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cgcomilrev",
+      "short_name": "U S Coast Guard Court of Military Review",
+      "full_name": "U S Coast Guard Court of Military Review",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mc",
+      "short_name": "Military Commission Review",
+      "full_name": "United States Court of Military Commission Review",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmcca",
+      "short_name": "Navy-Marine Corps Court of Criminal Appeals",
+      "full_name": "Navy-Marine Corps Court of Criminal Appeals",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usnmcmilrev",
+      "short_name": "U.S. Navy-Marine Corps Court of Military Review",
+      "full_name": "U.S. Navy-Marine Corps Court of Military Review",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

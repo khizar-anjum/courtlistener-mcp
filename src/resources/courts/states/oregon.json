@@ -1,0 +1,313 @@
+{
+  "state": "oregon",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 33,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "orcc",
+      "orccbaker",
+      "orccbenton",
+      "orccclackamas",
+      "orccclatsop",
+      "orcccolumbia",
+      "orcccoos",
+      "orccdeschutes",
+      "orccdouglas",
+      "orccjackson",
+      "orccjosephine",
+      "orccklamath",
+      "orcclake",
+      "orcclane",
+      "orcclincoln",
+      "orcclinn",
+      "orccmalheur",
+      "orccmarion",
+      "orccmorrow",
+      "orccmultnomah",
+      "orccpolk",
+      "orcctillamook",
+      "orccumatilla",
+      "orccunion",
+      "orccwasco",
+      "orccwashington",
+      "orccyamhill"
+    ],
+    "bankruptcy": [
+      "orb"
+    ],
+    "local": [
+      "orld",
+      "ord",
+      "or",
+      "orctapp",
+      "ortc"
+    ]
+  },
+  "courts": [
+    {
+      "id": "orb",
+      "short_name": "D. Oregon",
+      "full_name": "United States Bankruptcy Court, D. Oregon",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orld",
+      "short_name": "Orleans District Court",
+      "full_name": "District Court, Orleans",
+      "jurisdiction": "FD",
+      "start_date": "1804-03-26",
+      "end_date": "1812-04-08"
+    },
+    {
+      "id": "ord",
+      "short_name": "D. Oregon",
+      "full_name": "District Court, D. Oregon",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "or",
+      "short_name": "Oregon Supreme Court",
+      "full_name": "Oregon Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "orctapp",
+      "short_name": "Court of Appeals of Oregon",
+      "full_name": "Court of Appeals of Oregon",
+      "jurisdiction": "SA",
+      "start_date": "1969-07-01",
+      "end_date": null
+    },
+    {
+      "id": "ortc",
+      "short_name": "Oregon Tax Court",
+      "full_name": "Oregon Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcc",
+      "short_name": "Oregon County Circuit Courts",
+      "full_name": "Oregon County Circuit Courts",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccbaker",
+      "short_name": "Baker County Circuit Court, Oregon",
+      "full_name": "Baker County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccbenton",
+      "short_name": "Benton County Circuit Court, Oregon",
+      "full_name": "Benton County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccclackamas",
+      "short_name": "Clackamas County Circuit Court, Oregon",
+      "full_name": "Clackamas County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccclatsop",
+      "short_name": "Clatsop County Circuit Court, Oregon",
+      "full_name": "Clatsop County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcccolumbia",
+      "short_name": "Columbia County Circuit Court, Oregon",
+      "full_name": "Columbia County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcccoos",
+      "short_name": "Coos County Circuit Court, Oregon",
+      "full_name": "Coos County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccdeschutes",
+      "short_name": "Deschutes County Circuit Court, Oregon",
+      "full_name": "Deschutes County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccdouglas",
+      "short_name": "Douglas County Circuit Court, Oregon",
+      "full_name": "Douglas County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccjackson",
+      "short_name": "Jackson County Circuit Court, Oregon",
+      "full_name": "Jackson County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccjosephine",
+      "short_name": "Josephine County Circuit Court, Oregon",
+      "full_name": "Josephine County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccklamath",
+      "short_name": "Klamath County Circuit Court, Oregon",
+      "full_name": "Klamath County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcclake",
+      "short_name": "Lake County Circuit Court, Oregon",
+      "full_name": "Lake County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcclane",
+      "short_name": "Lane County Circuit Court, Oregon",
+      "full_name": "Lane County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcclincoln",
+      "short_name": "Lincoln County Circuit Court, Oregon",
+      "full_name": "Lincoln County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcclinn",
+      "short_name": "Linn County Circuit Court, Oregon",
+      "full_name": "Linn County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccmalheur",
+      "short_name": "Malheur County Circuit Court, Oregon",
+      "full_name": "Malheur County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccmarion",
+      "short_name": "Marion County Circuit Court, Oregon",
+      "full_name": "Marion County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccmorrow",
+      "short_name": "Morrow County Circuit Court, Oregon",
+      "full_name": "Morrow County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccmultnomah",
+      "short_name": "Multnomah County Circuit Court, Oregon",
+      "full_name": "Multnomah County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccpolk",
+      "short_name": "Polk County Circuit Court, Oregon",
+      "full_name": "Polk County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orcctillamook",
+      "short_name": "Tillamook County Circuit Court, Oregon",
+      "full_name": "Tillamook County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccumatilla",
+      "short_name": "Umatilla County Circuit Court, Oregon",
+      "full_name": "Umatilla County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccunion",
+      "short_name": "Union County Circuit Court, Oregon",
+      "full_name": "Union County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccwasco",
+      "short_name": "Wasco County Circuit Court, Oregon",
+      "full_name": "Wasco County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccwashington",
+      "short_name": "Washington County Circuit Court, Oregon",
+      "full_name": "Washington County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orccyamhill",
+      "short_name": "Yamhill County Circuit Court, Oregon",
+      "full_name": "Yamhill County Circuit Court, Oregon",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

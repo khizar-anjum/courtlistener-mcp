@@ -1,0 +1,115 @@
+{
+  "state": "maryland",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 11,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "mdcirctctbalt",
+      "mdcityctbalt",
+      "mdorphanctbalt",
+      "mdsuperctbalt"
+    ],
+    "bankruptcy": [
+      "mdb"
+    ],
+    "local": [
+      "mdd",
+      "md",
+      "mdctspecapp",
+      "mdch",
+      "mdgenct",
+      "mdag"
+    ]
+  },
+  "courts": [
+    {
+      "id": "mdb",
+      "short_name": "D. Maryland",
+      "full_name": "United States Bankruptcy Court, D. Maryland",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdd",
+      "short_name": "D. Maryland",
+      "full_name": "District Court, D. Maryland",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "md",
+      "short_name": "Court of Appeals of Maryland",
+      "full_name": "Court of Appeals of Maryland",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "mdctspecapp",
+      "short_name": "Court of Special Appeals of Maryland",
+      "full_name": "Court of Special Appeals of Maryland",
+      "jurisdiction": "SA",
+      "start_date": "1967-01-01",
+      "end_date": null
+    },
+    {
+      "id": "mdch",
+      "short_name": "Maryland Chancery Ct",
+      "full_name": "High Court of Chancery of Maryland",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1854-06-04"
+    },
+    {
+      "id": "mdgenct",
+      "short_name": "General Court of Maryland",
+      "full_name": "General Court of Maryland",
+      "jurisdiction": "SS",
+      "start_date": "1778-01-01",
+      "end_date": "1805-12-31"
+    },
+    {
+      "id": "mdag",
+      "short_name": "Maryland Attorney General Reports",
+      "full_name": "Maryland Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdcirctctbalt",
+      "short_name": "Baltimore City Circuit Court",
+      "full_name": "Baltimore City Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdcityctbalt",
+      "short_name": "Baltimore City Court",
+      "full_name": "Baltimore City Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdorphanctbalt",
+      "short_name": "Baltimore City Orphans' Court",
+      "full_name": "Baltimore City Orphans' Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdsuperctbalt",
+      "short_name": "Baltimore City Superior Court",
+      "full_name": "Baltimore City Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

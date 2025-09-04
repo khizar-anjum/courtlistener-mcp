@@ -1,0 +1,844 @@
+{
+  "state": "new-jersey",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 92,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "njsuper",
+      "njsuperatlantic",
+      "njsuperbergen",
+      "njsuperburlingt",
+      "njsupercamden",
+      "njsupercapemay",
+      "njsupercumberla",
+      "njsuperessex",
+      "njsupergloucest",
+      "njsuperhudson",
+      "njsuperhunterdo",
+      "njsupermercer",
+      "njsupermiddlese",
+      "njsupermonmouth",
+      "njsupermorris",
+      "njsuperocean",
+      "njsuperpassaic",
+      "njsupersalem",
+      "njsupersussex",
+      "njsuperwarren",
+      "njfamct",
+      "njfamctbergen",
+      "njfamctcamden",
+      "njfamctcapemay",
+      "njfamctcumberla",
+      "njfamctessex",
+      "njfamcthudson",
+      "njfamctmiddlese",
+      "njfamctmonmouth",
+      "njfamctmorris",
+      "njfamctpassaic",
+      "njfamctsalem",
+      "njfamctsomerset",
+      "njfamctsussex",
+      "njfamctunion",
+      "njlaborcomp",
+      "njmunict",
+      "njmunictbyram",
+      "njmunictdumont",
+      "njmunicthacken",
+      "njmunictnewark",
+      "njmunictprince",
+      "njmunictsussex",
+      "njpuc",
+      "njqrtsessessex",
+      "njqrtsessmorris",
+      "njrecct",
+      "njsurrct",
+      "njsurrctatlanti",
+      "njsurrctbergen",
+      "njsurrctcamden",
+      "njsurrctcapemay",
+      "njsurrctessex",
+      "njsurrcthudson",
+      "njsurrctmiddles",
+      "njsurrctmonmout",
+      "njsurrctsomerse",
+      "njsurrctwarren",
+      "njcirct",
+      "njcirctcumberla",
+      "njcirctessex",
+      "njcirctgloucest",
+      "njcirctmercer",
+      "njcirctmiddlese",
+      "njcirctunion",
+      "njcirctwarren",
+      "njctcompl",
+      "njoytermct"
+    ],
+    "bankruptcy": [
+      "njb"
+    ],
+    "local": [
+      "njd",
+      "nj",
+      "njsuperctappdiv",
+      "njlawbkconf",
+      "njreccthoboken",
+      "njrecctmontcl",
+      "njspecstatct",
+      "njcirctatlantic",
+      "njcirctbergen",
+      "njcirctburlingt",
+      "njcirctcamden",
+      "njcirctcapemay",
+      "njcircthudson",
+      "njcirctmonmouth",
+      "njcirctmorris",
+      "njcirctocean",
+      "njcirctpassaic",
+      "njcirctsomerset",
+      "njcirctsussex",
+      "njctpardons",
+      "njtaxct",
+      "njcommned",
+      "njch"
+    ]
+  },
+  "courts": [
+    {
+      "id": "njb",
+      "short_name": "D. New Jersey",
+      "full_name": "United States Bankruptcy Court, D. New Jersey",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njd",
+      "short_name": "D. New Jersey",
+      "full_name": "District Court, D. New Jersey",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": null
+    },
+    {
+      "id": "nj",
+      "short_name": "Supreme Court of New Jersey",
+      "full_name": "Supreme Court of New Jersey",
+      "jurisdiction": "S",
+      "start_date": "1776-01-01",
+      "end_date": null
+    },
+    {
+      "id": "njsuperctappdiv",
+      "short_name": "New Jersey Superior Court App Division",
+      "full_name": "New Jersey Superior Court Appellate Division",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuper",
+      "short_name": "New Jersey Superior Court",
+      "full_name": "New Jersey Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperatlantic",
+      "short_name": "Atlantic County Superior Court",
+      "full_name": "Atlantic County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperbergen",
+      "short_name": "Bergen County Superior Court",
+      "full_name": "Bergen County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperburlingt",
+      "short_name": "Burlington County Superior Court",
+      "full_name": "Burlington County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupercamden",
+      "short_name": "Camden County Superior Court",
+      "full_name": "Camden County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupercapemay",
+      "short_name": "Cape May County Superior Court",
+      "full_name": "Cape May County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupercumberla",
+      "short_name": "Cumberland County Superior Court",
+      "full_name": "Cumberland County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperessex",
+      "short_name": "Essex County Superior Court",
+      "full_name": "Essex County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupergloucest",
+      "short_name": "Gloucester County Superior Court",
+      "full_name": "Gloucester County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperhudson",
+      "short_name": "Hudson County Superior Court",
+      "full_name": "Hudson County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperhunterdo",
+      "short_name": "Hunterdon County Superior Court",
+      "full_name": "Hunterdon County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupermercer",
+      "short_name": "Mercer County Superior Court",
+      "full_name": "Mercer County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupermiddlese",
+      "short_name": "Middlesex County Superior Court",
+      "full_name": "Middlesex County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupermonmouth",
+      "short_name": "Monmouth County Superior Court",
+      "full_name": "Monmouth County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupermorris",
+      "short_name": "Morris County Superior Court",
+      "full_name": "Morris County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperocean",
+      "short_name": "Ocean County Superior Court",
+      "full_name": "Ocean County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperpassaic",
+      "short_name": "Passaic County Superior Court",
+      "full_name": "Passaic County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupersalem",
+      "short_name": "Salem County Superior Court",
+      "full_name": "Salem County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsupersussex",
+      "short_name": "Sussex County Superior Court",
+      "full_name": "Sussex County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsuperwarren",
+      "short_name": "Warren County Superior Court",
+      "full_name": "Warren County Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamct",
+      "short_name": "New Jersey Family Court",
+      "full_name": "New Jersey Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctbergen",
+      "short_name": "Bergen County Family Court",
+      "full_name": "Bergen County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctcamden",
+      "short_name": "Camden County Family Court",
+      "full_name": "Camden County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctcapemay",
+      "short_name": "Cape May County Family Court",
+      "full_name": "Cape May County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctcumberla",
+      "short_name": "Cumberland County Family Court",
+      "full_name": "Cumberland County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctessex",
+      "short_name": "Essex County Family Court",
+      "full_name": "Essex County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamcthudson",
+      "short_name": "Hudson County Family Court",
+      "full_name": "Hudson County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctmiddlese",
+      "short_name": "Middlesex County Family Court",
+      "full_name": "Middlesex County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctmonmouth",
+      "short_name": "Monmouth County Family Court",
+      "full_name": "Monmouth County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctmorris",
+      "short_name": "Morris County Family Court",
+      "full_name": "Morris County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctpassaic",
+      "short_name": "Passaic County Family Court",
+      "full_name": "Passaic County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctsalem",
+      "short_name": "Salem County Family Court",
+      "full_name": "Salem County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctsomerset",
+      "short_name": "Somerset County Family Court",
+      "full_name": "Somerset County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctsussex",
+      "short_name": "Sussex County Family Court",
+      "full_name": "Sussex County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njfamctunion",
+      "short_name": "Union County Family Court",
+      "full_name": "Union County Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njlaborcomp",
+      "short_name": "New Jersey Department of Labor Workmen's Compensation Bureau",
+      "full_name": "New Jersey Department of Labor Workmen's Compensation Bureau",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njlawbkconf",
+      "short_name": "New Jersey Lawyers and Bankers Conference Committee",
+      "full_name": "New Jersey Lawyers and Bankers Conference Committee",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunict",
+      "short_name": "Municipal Courts of New Jersey",
+      "full_name": "Municipal Courts of New Jersey",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunictbyram",
+      "short_name": "Byram Township Municipal Court",
+      "full_name": "Byram Township Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunictdumont",
+      "short_name": "Borough of Dumont Municipal Court",
+      "full_name": "Borough of Dumont Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunicthacken",
+      "short_name": "Hackensack City Municipal Court",
+      "full_name": "Hackensack City Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunictnewark",
+      "short_name": "Newark Municipal Court",
+      "full_name": "Newark Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunictprince",
+      "short_name": "Borough of Princeton Municipal Court",
+      "full_name": "Borough of Princeton Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njmunictsussex",
+      "short_name": "Sussex County Municipal Court",
+      "full_name": "Sussex County Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njpuc",
+      "short_name": "New Jersey Public Utilities Commission",
+      "full_name": "New Jersey Public Utilities Commission",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njqrtsessessex",
+      "short_name": "Essex County Court of Quarter Sessions of New Jersey",
+      "full_name": "Essex County Court of Quarter Sessions of New Jersey",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njqrtsessmorris",
+      "short_name": "Morris County Court of Quarter Sessions",
+      "full_name": "Morris County Court of Quarter Sessions",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njrecct",
+      "short_name": "New Jersey Recorder's Court",
+      "full_name": "New Jersey Recorder's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njreccthoboken",
+      "short_name": "Hoboken City Recorder's Court.",
+      "full_name": "Hoboken City Recorder's Court.",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njrecctmontcl",
+      "short_name": "Montclair Town Recorder's Court",
+      "full_name": "Montclair Town Recorder's Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njspecstatct",
+      "short_name": "New Jersey Special Statutory Court",
+      "full_name": "New Jersey Special Statutory Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrct",
+      "short_name": "New Jersey Surrogate's Court",
+      "full_name": "New Jersey Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctatlanti",
+      "short_name": "Atlantic County Surrogate's Court",
+      "full_name": "Atlantic County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctbergen",
+      "short_name": "Bergen County Surrogate's Court",
+      "full_name": "Bergen County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctcamden",
+      "short_name": "Camden County Surrogate's Court",
+      "full_name": "Camden County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctcapemay",
+      "short_name": "Cape May County Surrogate's Court",
+      "full_name": "Cape May County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctessex",
+      "short_name": "Essex County Surrogate's Court",
+      "full_name": "Essex County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrcthudson",
+      "short_name": "Hudson County Surrogate's Court",
+      "full_name": "Hudson County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctmiddles",
+      "short_name": "Middlesex County Surrogate's Court",
+      "full_name": "Middlesex County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctmonmout",
+      "short_name": "Monmouth County Surrogate's Court",
+      "full_name": "Monmouth County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctsomerse",
+      "short_name": "Somerset County Surrogate's Court",
+      "full_name": "Somerset County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njsurrctwarren",
+      "short_name": "Warren County Surrogate's Court",
+      "full_name": "Warren County Surrogate's Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirct",
+      "short_name": "New Jersey Circuit Court",
+      "full_name": "New Jersey Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctatlantic",
+      "short_name": "Atlantic County Circuit Court, N.J.",
+      "full_name": "Atlantic County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctbergen",
+      "short_name": "Bergen County Circuit Court, N.J.",
+      "full_name": "Bergen County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctburlingt",
+      "short_name": "Burlington County Circuit Court, N.J.",
+      "full_name": "Burlington County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctcamden",
+      "short_name": "Camden County Circuit Court, N.J.",
+      "full_name": "Camden County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctcapemay",
+      "short_name": "Cape May County Circuit Court, N.J.",
+      "full_name": "Cape May County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctcumberla",
+      "short_name": "Cumberland County Circuit Court, N.J.",
+      "full_name": "Cumberland County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctessex",
+      "short_name": "Essex County Circuit Court, N.J.",
+      "full_name": "Essex County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctgloucest",
+      "short_name": "Gloucester County Circuit Court, N.J.",
+      "full_name": "Gloucester County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcircthudson",
+      "short_name": "Hudson County Circuit Court, N.J.",
+      "full_name": "Hudson County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctmercer",
+      "short_name": "Mercer County Circuit Court, N.J.",
+      "full_name": "Mercer County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctmiddlese",
+      "short_name": "Middlesex County Circuit Court, N.J.",
+      "full_name": "Middlesex County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctmonmouth",
+      "short_name": "Monmouth County Circuit Court, N.J.",
+      "full_name": "Monmouth County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctmorris",
+      "short_name": "Morris County Circuit Court, N.J.",
+      "full_name": "Morris County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctocean",
+      "short_name": "Ocean County Circuit Court, N.J.",
+      "full_name": "Ocean County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctpassaic",
+      "short_name": "Passaic County Circuit Court, N.J.",
+      "full_name": "Passaic County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctsomerset",
+      "short_name": "Somerset County Circuit Court, N.J.",
+      "full_name": "Somerset County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctsussex",
+      "short_name": "Sussex County Circuit Court, N.J.",
+      "full_name": "Sussex County Circuit Court, N.J.",
+      "jurisdiction": "St",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njctpardons",
+      "short_name": "New Jersey Court of Pardons",
+      "full_name": "New Jersey Court of Pardons",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctunion",
+      "short_name": "Union County Circuit Court, N.J.",
+      "full_name": "Union County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctwarren",
+      "short_name": "Warren County Circuit Court, N.J.",
+      "full_name": "Warren County Circuit Court, N.J.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njctcompl",
+      "short_name": "Ct. of Common Pleas of NJ",
+      "full_name": "Court of Common Pleas of New Jersey",
+      "jurisdiction": "ST",
+      "start_date": "1704-01-01",
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njtaxct",
+      "short_name": "New Jersey Tax Court",
+      "full_name": "New Jersey Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcommned",
+      "short_name": "Commissioner of Education, N.J.",
+      "full_name": "Commissioner of Education, N.J.",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njch",
+      "short_name": "New Jersey Court of Chancery",
+      "full_name": "New Jersey Court of Chancery",
+      "jurisdiction": "SA",
+      "start_date": "1684-01-01",
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njoytermct",
+      "short_name": "Court of Oyer And Terminer of New Jersey",
+      "full_name": "Court of Oyer And Terminer of New Jersey",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

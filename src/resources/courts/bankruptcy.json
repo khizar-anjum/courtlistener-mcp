@@ -1,0 +1,767 @@
+{
+  "generated_at": "2025-09-04T20:12:27.893Z",
+  "total_courts": 95,
+  "api_version": "v4",
+  "courts": [
+    {
+      "id": "almb",
+      "short_name": "M.D. Alabama",
+      "full_name": "United States Bankruptcy Court, M.D. Alabama",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "alnb",
+      "short_name": "N.D. Alabama",
+      "full_name": "United States Bankruptcy Court, N.D. Alabama",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "alsb",
+      "short_name": "S.D. Alabama",
+      "full_name": "United States Bankruptcy Court, S.D. Alabama",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "akb",
+      "short_name": "D. Alaska",
+      "full_name": "United States Bankruptcy Court, D. Alaska",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arb",
+      "short_name": "D. Arizona",
+      "full_name": "United States Bankruptcy Court, D. Arizona",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "areb",
+      "short_name": "E.D. Arkansas",
+      "full_name": "United States Bankruptcy Court, E.D. Arkansas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arwb",
+      "short_name": "W.D. Arkansas",
+      "full_name": "United States Bankruptcy Court, W.D. Arkansas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cacb",
+      "short_name": "C.D. California",
+      "full_name": "United States Bankruptcy Court, C.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caeb",
+      "short_name": "E.D. California",
+      "full_name": "United States Bankruptcy Court, E.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "canb",
+      "short_name": "N.D. California",
+      "full_name": "United States Bankruptcy Court, N.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "casb",
+      "short_name": "S.D. California",
+      "full_name": "United States Bankruptcy Court, S.D. California",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cob",
+      "short_name": "D. Colorado",
+      "full_name": "United States Bankruptcy Court, D. Colorado",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ctb",
+      "short_name": "D. Connecticut",
+      "full_name": "United States Bankruptcy Court, D. Connecticut",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "deb",
+      "short_name": "D. Delaware",
+      "full_name": "United States Bankruptcy Court, D. Delaware",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "dcb",
+      "short_name": "District of Columbia",
+      "full_name": "United States Bankruptcy Court, District of Columbia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "flmb",
+      "short_name": "M.D. Florida",
+      "full_name": "United States Bankruptcy Court, M.D. Florida",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "flnb",
+      "short_name": "N.D. Florida",
+      "full_name": "United States Bankruptcy Court, N.D. Florida",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "flsb",
+      "short_name": "S.D. Florida",
+      "full_name": "United States Bankruptcy Court, S.D. Florida.",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gamb",
+      "short_name": "M.D. Georgia",
+      "full_name": "United States Bankruptcy Court, M.D. Georgia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ganb",
+      "short_name": "N.D. Georgia",
+      "full_name": "United States Bankruptcy Court, N.D. Georgia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasb",
+      "short_name": "S.D. Georgia",
+      "full_name": "United States Bankruptcy Court, S.D. Georgia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "hib",
+      "short_name": "D. Hawaii",
+      "full_name": "United States Bankruptcy Court, D. Hawaii",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "idb",
+      "short_name": "D. Idaho",
+      "full_name": "United States Bankruptcy Court, D. Idaho",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilcb",
+      "short_name": "C.D. Illinois",
+      "full_name": "United States Bankruptcy Court, C.D. Illinois",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilnb",
+      "short_name": "N.D. Illinois",
+      "full_name": "United States Bankruptcy Court, N.D. Illinois",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilsb",
+      "short_name": "S.D. Illinois",
+      "full_name": "United States Bankruptcy Court, S.D. Illinois",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "innb",
+      "short_name": "N.D. Indiana",
+      "full_name": "United States Bankruptcy Court, N.D. Indiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "insb",
+      "short_name": "S.D. Indiana",
+      "full_name": "United States Bankruptcy Court, S.D. Indiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ianb",
+      "short_name": "N.D. Iowa",
+      "full_name": "United States Bankruptcy Court, N.D. Iowa",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "iasb",
+      "short_name": "S.D. Iowa",
+      "full_name": "United States Bankruptcy Court, S.D. Iowa",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ksb",
+      "short_name": "D. Kansas",
+      "full_name": "United States Bankruptcy Court, D. Kansas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kyeb",
+      "short_name": "E.D. Kentucky",
+      "full_name": "United States Bankruptcy Court, E.D. Kentucky",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kywb",
+      "short_name": "W.D. Kentucky",
+      "full_name": "United States Bankruptcy Court, W.D. Kentucky",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "laeb",
+      "short_name": "E.D. Louisiana",
+      "full_name": "United States Bankruptcy Court, E.D. Louisiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lamb",
+      "short_name": "M.D. Louisiana",
+      "full_name": "United States Bankruptcy Court, M.D. Louisiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lawb",
+      "short_name": "W.D. Louisiana",
+      "full_name": "United States Bankruptcy Court, W.D. Louisiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "meb",
+      "short_name": "D. Maine",
+      "full_name": "United States Bankruptcy Court, D. Maine",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdb",
+      "short_name": "D. Maryland",
+      "full_name": "United States Bankruptcy Court, D. Maryland",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mab",
+      "short_name": "D. Massachusetts",
+      "full_name": "United States Bankruptcy Court, D. Massachusetts",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mieb",
+      "short_name": "E.D. Michigan",
+      "full_name": "United States Bankruptcy Court, E.D. Michigan",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "miwb",
+      "short_name": "W.D. Michigan",
+      "full_name": "United States Bankruptcy Court, W.D. Michigan",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mnb",
+      "short_name": "D. Minnesota",
+      "full_name": "United States Bankruptcy Court, D. Minnesota",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "msnb",
+      "short_name": "N.D. Mississippi",
+      "full_name": "United States Bankruptcy Court, N.D. Mississippi",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mssb",
+      "short_name": "S.D. Mississippi",
+      "full_name": "United States Bankruptcy Court, S.D. Mississippi",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moeb",
+      "short_name": "E.D. Missouri",
+      "full_name": "United States Bankruptcy Court, E.D. Missouri",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mowb",
+      "short_name": "W.D. Missouri",
+      "full_name": "United States Bankruptcy Court, W.D. Missouri",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mtb",
+      "short_name": "D. Montana",
+      "full_name": "United States Bankruptcy Court, D. Montana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nebraskab",
+      "short_name": "D. Nebraska",
+      "full_name": "United States Bankruptcy Court, D. Nebraska",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nvb",
+      "short_name": "D. Nevada",
+      "full_name": "United States Bankruptcy Court, D. Nevada",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nhb",
+      "short_name": "D. New Hampshire",
+      "full_name": "United States Bankruptcy Court, D. New Hampshire",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njb",
+      "short_name": "D. New Jersey",
+      "full_name": "United States Bankruptcy Court, D. New Jersey",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmb",
+      "short_name": "D. New Mexico",
+      "full_name": "United States Bankruptcy Court, D. New Mexico",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyeb",
+      "short_name": "E.D. New York",
+      "full_name": "United States Bankruptcy Court, E.D. New York",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nynb",
+      "short_name": "N.D. New York",
+      "full_name": "United States Bankruptcy Court, N.D. New York",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nysb",
+      "short_name": "S.D. New York",
+      "full_name": "United States Bankruptcy Court, S.D. New York",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nywb",
+      "short_name": "W.D. New York",
+      "full_name": "United States Bankruptcy Court, W.D. New York",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nceb",
+      "short_name": "E.D. North Carolina",
+      "full_name": "United States Bankruptcy Court, E.D. North Carolina",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncmb",
+      "short_name": "M.D. North Carolina",
+      "full_name": "United States Bankruptcy Court, M.D. North Carolina",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncwb",
+      "short_name": "W.D. North Carolina",
+      "full_name": "United States Bankruptcy Court, W.D. North Carolina",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ndb",
+      "short_name": "D. North Dakota",
+      "full_name": "United States Bankruptcy Court, D. North Dakota",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohnb",
+      "short_name": "N.D. Ohio",
+      "full_name": "United States Bankruptcy Court, N.D. Ohio",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohsb",
+      "short_name": "S.D. Ohio",
+      "full_name": "United States Bankruptcy Court, S.D. Ohio",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okeb",
+      "short_name": "E.D. Oklahoma",
+      "full_name": "United States Bankruptcy Court, E.D. Oklahoma",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oknb",
+      "short_name": "N.D. Oklahoma",
+      "full_name": "United States Bankruptcy Court, N.D. Oklahoma",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okwb",
+      "short_name": "W.D. Oklahoma",
+      "full_name": "United States Bankruptcy Court, W.D. Oklahoma",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orb",
+      "short_name": "D. Oregon",
+      "full_name": "United States Bankruptcy Court, D. Oregon",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paeb",
+      "short_name": "E.D. Pennsylvania",
+      "full_name": "United States Bankruptcy Court, E.D. Pennsylvania",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pamb",
+      "short_name": "M.D. Pennsylvania",
+      "full_name": "United States Bankruptcy Court, M.D. Pennsylvania",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pawb",
+      "short_name": "W.D. Pennsylvania",
+      "full_name": "United States Bankruptcy Court, W.D. Pennsylvania",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "rib",
+      "short_name": "D. Rhode Island",
+      "full_name": "United States Bankruptcy Court, D. Rhode Island",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "scb",
+      "short_name": "D. South Carolina",
+      "full_name": "United States Bankruptcy Court, D. South Carolina",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sdb",
+      "short_name": "D. South Dakota",
+      "full_name": "United States Bankruptcy Court, D. South Dakota",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tneb",
+      "short_name": "E.D. Tennessee",
+      "full_name": "United States Bankruptcy Court, E.D. Tennessee",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tnmb",
+      "short_name": "M.D. Tennessee",
+      "full_name": "United States Bankruptcy Court, M.D. Tennessee",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tnwb",
+      "short_name": "W.D. Tennessee",
+      "full_name": "United States Bankruptcy Court, W.D. Tennessee",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tennesseeb",
+      "short_name": "D. Tennessee",
+      "full_name": "United States Bankruptcy Court, D. Tennessee",
+      "jurisdiction": "FB",
+      "start_date": "1797-01-01",
+      "end_date": "1801-01-01"
+    },
+    {
+      "id": "txeb",
+      "short_name": "E.D. Texas",
+      "full_name": "United States Bankruptcy Court, E.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txnb",
+      "short_name": "N.D. Texas",
+      "full_name": "United States Bankruptcy Court, N.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txsb",
+      "short_name": "S.D. Texas",
+      "full_name": "United States Bankruptcy Court, S.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txwb",
+      "short_name": "W.D. Texas",
+      "full_name": "United States Bankruptcy Court, W.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "utb",
+      "short_name": "D. Utah",
+      "full_name": "United States Bankruptcy Court, D. Utah",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vtb",
+      "short_name": "D. Vermont",
+      "full_name": "United States Bankruptcy Court, D. Vermont",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaeb",
+      "short_name": "E.D. Virginia",
+      "full_name": "United States Bankruptcy Court, E.D. Virginia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vawb",
+      "short_name": "W.D. Virginia",
+      "full_name": "United States Bankruptcy Court, W.D. Virginia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "waeb",
+      "short_name": "E.D. Washington",
+      "full_name": "United States Bankruptcy Court, E.D. Washington",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wawb",
+      "short_name": "W.D. Washington",
+      "full_name": "United States Bankruptcy Court, W.D. Washington",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wvnb",
+      "short_name": "N.D. West Virginia",
+      "full_name": "United States Bankruptcy Court, N.D. West Virginia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wvsb",
+      "short_name": "S.D. West Virginia",
+      "full_name": "United States Bankruptcy Court, S.D. West Virginia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wieb",
+      "short_name": "E.D. Wisconsin",
+      "full_name": "United States Bankruptcy Court, E.D. Wisconsin",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wiwb",
+      "short_name": "W.D. Wisconsin",
+      "full_name": "United States Bankruptcy Court, W.D. Wisconsin",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wyb",
+      "short_name": "D. Wyoming",
+      "full_name": "United States Bankruptcy Court, D. Wyoming",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gub",
+      "short_name": "D. Guam",
+      "full_name": "United States Bankruptcy Court, D. Guam",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmib",
+      "short_name": "Northern Mariana Islands",
+      "full_name": "United States Bankruptcy Court, Northern Mariana Islands",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "prb",
+      "short_name": "D. Puerto Rico",
+      "full_name": "United States Bankruptcy Court, D. Puerto Rico",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vib",
+      "short_name": "D. Virgin Islands",
+      "full_name": "United States Bankruptcy Court, D. Virgin Islands",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

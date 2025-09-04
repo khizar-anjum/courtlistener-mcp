@@ -1,0 +1,51 @@
+{
+  "state": "utah",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 4,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "utb"
+    ],
+    "local": [
+      "utd",
+      "utah",
+      "utahctapp"
+    ]
+  },
+  "courts": [
+    {
+      "id": "utb",
+      "short_name": "D. Utah",
+      "full_name": "United States Bankruptcy Court, D. Utah",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "utd",
+      "short_name": "D. Utah",
+      "full_name": "District Court, D. Utah",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "utah",
+      "short_name": "Utah Supreme Court",
+      "full_name": "Utah Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1850-01-01",
+      "end_date": null
+    },
+    {
+      "id": "utahctapp",
+      "short_name": "Court of Appeals of Utah",
+      "full_name": "Court of Appeals of Utah",
+      "jurisdiction": "SA",
+      "start_date": "1987-01-17",
+      "end_date": null
+    }
+  ]
+}

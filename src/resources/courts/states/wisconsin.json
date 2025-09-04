@@ -1,0 +1,87 @@
+{
+  "state": "wisconsin",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 8,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "wieb",
+      "wiwb"
+    ],
+    "local": [
+      "wisd",
+      "wied",
+      "wiwd",
+      "wis",
+      "wisctapp",
+      "wisag"
+    ]
+  },
+  "courts": [
+    {
+      "id": "wieb",
+      "short_name": "E.D. Wisconsin",
+      "full_name": "United States Bankruptcy Court, E.D. Wisconsin",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wiwb",
+      "short_name": "W.D. Wisconsin",
+      "full_name": "United States Bankruptcy Court, W.D. Wisconsin",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wisd",
+      "short_name": "D. Wisconsin",
+      "full_name": "District Court, D. Wisconsin",
+      "jurisdiction": "FD",
+      "start_date": "1848-05-29",
+      "end_date": "1870-06-30"
+    },
+    {
+      "id": "wied",
+      "short_name": "E.D. Wisconsin",
+      "full_name": "District Court, E.D. Wisconsin",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wiwd",
+      "short_name": "W.D. Wisconsin",
+      "full_name": "District Court, W.D. Wisconsin",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wis",
+      "short_name": "Wisconsin Supreme Court",
+      "full_name": "Wisconsin Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1836-01-01",
+      "end_date": null
+    },
+    {
+      "id": "wisctapp",
+      "short_name": "Court of Appeals of Wisconsin",
+      "full_name": "Court of Appeals of Wisconsin",
+      "jurisdiction": "SA",
+      "start_date": "1978-08-01",
+      "end_date": null
+    },
+    {
+      "id": "wisag",
+      "short_name": "Wisconsin Attorney General Reports",
+      "full_name": "Wisconsin Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

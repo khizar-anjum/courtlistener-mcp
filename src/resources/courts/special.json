@@ -1,0 +1,4015 @@
+{
+  "generated_at": "2025-09-04T20:12:27.893Z",
+  "total_courts": 501,
+  "api_version": "v4",
+  "courts": [
+    {
+      "id": "ag",
+      "short_name": "Attorneys General",
+      "full_name": "United States Attorneys General",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "asbca",
+      "short_name": "Armed Services Board of Contract Appeals",
+      "full_name": "Armed Services Board of Contract Appeals",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cc",
+      "short_name": "Court of Claims",
+      "full_name": "United States Court of Claims",
+      "jurisdiction": "FS",
+      "start_date": "1855-02-24",
+      "end_date": "1992-10-29"
+    },
+    {
+      "id": "uscfc",
+      "short_name": "Federal Claims",
+      "full_name": "United States Court of Federal Claims",
+      "jurisdiction": "FS",
+      "start_date": "1982-04-02",
+      "end_date": null
+    },
+    {
+      "id": "com",
+      "short_name": "Commerce Court",
+      "full_name": "Commerce Court",
+      "jurisdiction": "FS",
+      "start_date": "1910-01-01",
+      "end_date": "1913-01-01"
+    },
+    {
+      "id": "ccpa",
+      "short_name": "Customs and Patent Appeals",
+      "full_name": "Court of Customs and Patent Appeals",
+      "jurisdiction": "FS",
+      "start_date": "1909-08-05",
+      "end_date": "1982-04-02"
+    },
+    {
+      "id": "cusc",
+      "short_name": "U.S. Customs Court",
+      "full_name": "United States Customs Court",
+      "jurisdiction": "FS",
+      "start_date": "1926-01-01",
+      "end_date": "1980-01-01"
+    },
+    {
+      "id": "tax",
+      "short_name": "U.S. Tax Court",
+      "full_name": "United States Tax Court",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bta",
+      "short_name": "Board of Tax Appeals",
+      "full_name": "United States Board of Tax Appeals",
+      "jurisdiction": "FS",
+      "start_date": "1924-01-01",
+      "end_date": "1942-12-31"
+    },
+    {
+      "id": "bia",
+      "short_name": "Board of Immigration Appeals",
+      "full_name": "Board of Immigration Appeals",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "olc",
+      "short_name": "Office of Legal Counsel",
+      "full_name": "Department of Justice Office of Legal Counsel",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "padeptjust",
+      "short_name": "Pennsylvania Department of Justice",
+      "full_name": "Pennsylvania Department of Justice",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "philadeptjust",
+      "short_name": "Philadelphia Department of Justice",
+      "full_name": "Philadelphia Department of Justice",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "deptinterior",
+      "short_name": "Department of Interior",
+      "full_name": "Department of Interior",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "uslandoffice",
+      "short_name": "United States Land Office",
+      "full_name": "United States Land Office",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ussurveyor",
+      "short_name": "United States Surveyor",
+      "full_name": "United States Surveyor",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mspb",
+      "short_name": "Merit Systems Protection Board",
+      "full_name": "Merit Systems Protection Board",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cavc",
+      "short_name": "Veterans Claims",
+      "full_name": "United States Court of Appeals for Veterans Claims",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bva",
+      "short_name": "Board of Veterans' Appeals",
+      "full_name": "Board of Veterans' Appeals",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "eca",
+      "short_name": "Emergency Court of Appeals",
+      "full_name": "Emergency Court of Appeals",
+      "jurisdiction": "FS",
+      "start_date": "1942-01-30",
+      "end_date": "1962-04-18"
+    },
+    {
+      "id": "tecoa",
+      "short_name": "Temporary Emergency Court of Appeals",
+      "full_name": "Temporary Emergency Court of Appeals",
+      "jurisdiction": "FS",
+      "start_date": "1971-12-01",
+      "end_date": "1992-10-29"
+    },
+    {
+      "id": "fiscr",
+      "short_name": "Foreign Intelligence Surveillance Court of Review",
+      "full_name": "Foreign Intelligence Surveillance Court of Review",
+      "jurisdiction": "FS",
+      "start_date": "1978-10-25",
+      "end_date": null
+    },
+    {
+      "id": "fisc",
+      "short_name": "Foreign Intelligence Surveillance Court",
+      "full_name": "Foreign Intelligence Surveillance Court",
+      "jurisdiction": "FS",
+      "start_date": "1978-10-25",
+      "end_date": null
+    },
+    {
+      "id": "reglrailreorgct",
+      "short_name": "Special Court under the Regional Rail Reorganization Act",
+      "full_name": "Special Court under the Regional Rail Reorganization Act",
+      "jurisdiction": "FS",
+      "start_date": "1973-01-01",
+      "end_date": "1996-03-01"
+    },
+    {
+      "id": "cit",
+      "short_name": "Court of International Trade",
+      "full_name": "United States Court of International Trade",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usberlinct",
+      "short_name": "United States Court of Berlin",
+      "full_name": " United States Court of Berlin",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bap1",
+      "short_name": "First Circuit",
+      "full_name": "Bankruptcy Appellate Panel of the First Circuit",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bap2",
+      "short_name": "Second Circuit",
+      "full_name": "Bankruptcy Appellate Panel of the Second Circuit",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bap6",
+      "short_name": "Sixth Circuit",
+      "full_name": "Bankruptcy Appellate Panel of the Sixth Circuit",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bap8",
+      "short_name": "Eighth Circuit",
+      "full_name": "United States Bankruptcy Appellate Panel for the Eighth Circuit",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bap9",
+      "short_name": "Ninth Circuit",
+      "full_name": "United States Bankruptcy Appellate Panel for the Ninth Circuit",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bap10",
+      "short_name": "Tenth Circuit",
+      "full_name": "Bankruptcy Appellate Panel of the Tenth Circuit",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bapme",
+      "short_name": "D. Maine",
+      "full_name": "Bankruptcy Appellate Panel, D. Maine",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "bapma",
+      "short_name": "Massachusetts",
+      "full_name": "Bankruptcy Appellate Panel of Massachusetts",
+      "jurisdiction": "FBP",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usdistct",
+      "short_name": "U.S. District Court",
+      "full_name": "United States District Court",
+      "jurisdiction": "FD",
+      "start_date": "1789-01-01",
+      "end_date": null
+    },
+    {
+      "id": "dcd",
+      "short_name": "District of Columbia",
+      "full_name": "District Court, District of Columbia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ald",
+      "short_name": "D. Alabama",
+      "full_name": "District Court, D. Alabama",
+      "jurisdiction": "FD",
+      "start_date": "1820-04-21",
+      "end_date": "1824-03-10"
+    },
+    {
+      "id": "almd",
+      "short_name": "M.D. Alabama",
+      "full_name": "District Court, M.D. Alabama",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "alnd",
+      "short_name": "N.D. Alabama",
+      "full_name": "District Court, N.D. Alabama",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "alsd",
+      "short_name": "S.D. Alabama",
+      "full_name": "District Court, S.D. Alabama",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "akd",
+      "short_name": "D. Alaska",
+      "full_name": "District Court, D. Alaska",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "azd",
+      "short_name": "D. Arizona",
+      "full_name": "District Court, D. Arizona",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ared",
+      "short_name": "E.D. Arkansas",
+      "full_name": "District Court, E.D. Arkansas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arwd",
+      "short_name": "W.D. Arkansas",
+      "full_name": "District Court, W.D. Arkansas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ard",
+      "short_name": "United States District Court for the District of Arkansas",
+      "full_name": "United States District Court for the District of Arkansas",
+      "jurisdiction": "FD",
+      "start_date": "1836-06-15",
+      "end_date": "1851-03-03"
+    },
+    {
+      "id": "californiad",
+      "short_name": "D. California",
+      "full_name": "District Court, D. California",
+      "jurisdiction": "FD",
+      "start_date": "1866-07-27",
+      "end_date": "1886-08-05"
+    },
+    {
+      "id": "cacd",
+      "short_name": "C.D. California",
+      "full_name": "District Court, C.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caed",
+      "short_name": "E.D. California",
+      "full_name": "District Court, E.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cand",
+      "short_name": "N.D. California",
+      "full_name": "District Court, N.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "casd",
+      "short_name": "S.D. California",
+      "full_name": "District Court, S.D. California",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cod",
+      "short_name": "D. Colorado",
+      "full_name": "District Court, D. Colorado",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ctd",
+      "short_name": "D. Connecticut",
+      "full_name": "District Court, D. Connecticut",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ded",
+      "short_name": "D. Delaware",
+      "full_name": "District Court, D. Delaware",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fld",
+      "short_name": "D. Florida",
+      "full_name": "District Court, D. Florida",
+      "jurisdiction": "FD",
+      "start_date": "1845-03-03",
+      "end_date": "1847-02-23"
+    },
+    {
+      "id": "flmd",
+      "short_name": "M.D. Florida",
+      "full_name": "District Court, M.D. Florida",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "flnd",
+      "short_name": "N.D. Florida",
+      "full_name": "District Court, N.D. Florida",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "flsd",
+      "short_name": "S.D. Florida",
+      "full_name": "District Court, S.D. Florida",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "superctsdfla",
+      "short_name": "Superior Court, S. D. Florida",
+      "full_name": "Superior Court, S. D. Florida",
+      "jurisdiction": "FD",
+      "start_date": "1828-01-01",
+      "end_date": "1845-12-31"
+    },
+    {
+      "id": "gad",
+      "short_name": "D. Georgia",
+      "full_name": "District Court, D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1848-08-11"
+    },
+    {
+      "id": "gamd",
+      "short_name": "M.D. Georgia",
+      "full_name": "District Court, M.D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gand",
+      "short_name": "N.D. Georgia",
+      "full_name": "District Court, N.D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasd",
+      "short_name": "S.D. Georgia",
+      "full_name": "District Court, S.D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "hid",
+      "short_name": "D. Hawaii",
+      "full_name": "District Court, D. Hawaii",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "idd",
+      "short_name": "D. Idaho",
+      "full_name": "District Court, D. Idaho",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilcd",
+      "short_name": "C.D. Illinois",
+      "full_name": "District Court, C.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilnd",
+      "short_name": "N.D. Illinois",
+      "full_name": "District Court, N.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilsd",
+      "short_name": "S.D. Illinois",
+      "full_name": "District Court, S.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "illinoised",
+      "short_name": "E.D. Illinois",
+      "full_name": "District Court, E.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": "1905-03-03",
+      "end_date": "1978-10-02"
+    },
+    {
+      "id": "illinoisd",
+      "short_name": "D. Illinois",
+      "full_name": "District Court, D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": "1819-03-03",
+      "end_date": "1855-02-13"
+    },
+    {
+      "id": "innd",
+      "short_name": "N.D. Indiana",
+      "full_name": "District Court, N.D. Indiana",
+      "jurisdiction": "FD",
+      "start_date": "1928-04-21",
+      "end_date": null
+    },
+    {
+      "id": "insd",
+      "short_name": "S.D. Indiana",
+      "full_name": "District Court, S.D. Indiana",
+      "jurisdiction": "FD",
+      "start_date": "1928-04-21",
+      "end_date": null
+    },
+    {
+      "id": "indianad",
+      "short_name": "D. Indiana",
+      "full_name": "District Court, D. Indiana",
+      "jurisdiction": "FD",
+      "start_date": "1817-03-03",
+      "end_date": "1928-04-21"
+    },
+    {
+      "id": "iad",
+      "short_name": "D. Iowa",
+      "full_name": "District Court, D. Iowa",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": "1882-07-20"
+    },
+    {
+      "id": "iand",
+      "short_name": "N.D. Iowa",
+      "full_name": "District Court, N.D. Iowa",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "iasd",
+      "short_name": "S.D. Iowa",
+      "full_name": "District Court, S.D. Iowa",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ksd",
+      "short_name": "D. Kansas",
+      "full_name": "District Court, D. Kansas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kyd",
+      "short_name": "D. Kentucky",
+      "full_name": "District Court, D. Kentucky",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1901-02-12"
+    },
+    {
+      "id": "kyed",
+      "short_name": "E.D. Kentucky",
+      "full_name": "District Court, E.D. Kentucky",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kywd",
+      "short_name": "W.D. Kentucky",
+      "full_name": "District Court, W.D. Kentucky",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lad",
+      "short_name": "D. Louisiana",
+      "full_name": "District Court, D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": "1812-04-08",
+      "end_date": "1881-03-03"
+    },
+    {
+      "id": "laed",
+      "short_name": "E.D. Louisiana",
+      "full_name": "District Court, E.D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lamd",
+      "short_name": "M.D. Louisiana",
+      "full_name": "District Court, M.D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lawd",
+      "short_name": "W.D. Louisiana",
+      "full_name": "District Court, W.D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "orld",
+      "short_name": "Orleans District Court",
+      "full_name": "District Court, Orleans",
+      "jurisdiction": "FD",
+      "start_date": "1804-03-26",
+      "end_date": "1812-04-08"
+    },
+    {
+      "id": "med",
+      "short_name": "D. Maine",
+      "full_name": "District Court, D. Maine",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mdd",
+      "short_name": "D. Maryland",
+      "full_name": "District Court, D. Maryland",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mad",
+      "short_name": "D. Massachusetts",
+      "full_name": "District Court, D. Massachusetts",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "michd",
+      "short_name": "D. Michigan",
+      "full_name": "District Court, D. Michigan",
+      "jurisdiction": "FD",
+      "start_date": "1836-07-01",
+      "end_date": "1863-02-24"
+    },
+    {
+      "id": "mied",
+      "short_name": "E.D. Michigan",
+      "full_name": "District Court, E.D. Michigan",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "miwd",
+      "short_name": "W.D. Michigan",
+      "full_name": "District Court, W.D. Michigan",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mnd",
+      "short_name": "D. Minnesota",
+      "full_name": "District Court, D. Minnesota",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "missd",
+      "short_name": "D. Mississippi",
+      "full_name": "District Court, D. Mississippi",
+      "jurisdiction": "FD",
+      "start_date": "1818-04-03",
+      "end_date": "1838-06-18"
+    },
+    {
+      "id": "msnd",
+      "short_name": "N.D. Mississippi",
+      "full_name": "District Court, N.D. Mississippi",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mssd",
+      "short_name": "S.D. Mississippi",
+      "full_name": "District Court, S.D. Mississippi",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mod",
+      "short_name": "D. Missouri",
+      "full_name": "District Court, D. Missouri",
+      "jurisdiction": "FD",
+      "start_date": "1822-03-16",
+      "end_date": "1857-03-03"
+    },
+    {
+      "id": "moed",
+      "short_name": "E.D. Missouri",
+      "full_name": "District Court, E.D. Missouri",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mowd",
+      "short_name": "W.D. Missouri",
+      "full_name": "District Court, W.D. Missouri",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mtd",
+      "short_name": "D. Montana",
+      "full_name": "District Court, D. Montana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ned",
+      "short_name": "D. Nebraska",
+      "full_name": "District Court, D. Nebraska",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nvd",
+      "short_name": "D. Nevada",
+      "full_name": "District Court, D. Nevada",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nhd",
+      "short_name": "D. New Hampshire",
+      "full_name": "District Court, D. New Hampshire",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njd",
+      "short_name": "D. New Jersey",
+      "full_name": "District Court, D. New Jersey",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": null
+    },
+    {
+      "id": "nmd",
+      "short_name": "D. New Mexico",
+      "full_name": "District Court, D. New Mexico",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyd",
+      "short_name": "D. New York",
+      "full_name": "District Court, D. New York",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1814-04-09"
+    },
+    {
+      "id": "nyed",
+      "short_name": "E.D. New York",
+      "full_name": "District Court, E.D. New York",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nynd",
+      "short_name": "N.D. New York",
+      "full_name": "District Court, N.D. New York",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nysd",
+      "short_name": "S.D. New York",
+      "full_name": "District Court, S.D. New York",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nywd",
+      "short_name": "W.D. New York",
+      "full_name": "District Court, W.D. New York",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nced",
+      "short_name": "E.D. North Carolina",
+      "full_name": "District Court, E.D. North Carolina",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncmd",
+      "short_name": "M.D. North Carolina",
+      "full_name": "District Court, M.D. North Carolina",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncwd",
+      "short_name": "W.D. North Carolina",
+      "full_name": "District Court, W.D. North Carolina",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ndd",
+      "short_name": "D. North Dakota",
+      "full_name": "District Court, D. North Dakota",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncd",
+      "short_name": "D. North Carolina",
+      "full_name": "District Court, D. North Carolina",
+      "jurisdiction": "FD",
+      "start_date": "1790-06-04",
+      "end_date": "1802-04-29"
+    },
+    {
+      "id": "ohnd",
+      "short_name": "N.D. Ohio",
+      "full_name": "District Court, N.D. Ohio",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohsd",
+      "short_name": "S.D. Ohio",
+      "full_name": "District Court, S.D. Ohio",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiod",
+      "short_name": "D. Ohio",
+      "full_name": "District Court, D. Ohio",
+      "jurisdiction": "FD",
+      "start_date": "1803-02-19",
+      "end_date": "1855-02-10"
+    },
+    {
+      "id": "oked",
+      "short_name": "E.D. Oklahoma",
+      "full_name": "District Court, E.D. Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oknd",
+      "short_name": "N.D. Oklahoma",
+      "full_name": "District Court, N.D. Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okwd",
+      "short_name": "W.D. Oklahoma",
+      "full_name": "District Court, W.D. Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ord",
+      "short_name": "D. Oregon",
+      "full_name": "District Court, D. Oregon",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paed",
+      "short_name": "E.D. Pennsylvania",
+      "full_name": "District Court, E.D. Pennsylvania",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pamd",
+      "short_name": "M.D. Pennsylvania",
+      "full_name": "District Court, M.D. Pennsylvania",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pawd",
+      "short_name": "W.D. Pennsylvania",
+      "full_name": "District Court, W.D. Pennsylvania",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pennsylvaniad",
+      "short_name": "D. Pennsylvania",
+      "full_name": "District Court, D. Pennsylvania",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1818-04-20"
+    },
+    {
+      "id": "rid",
+      "short_name": "D. Rhode Island",
+      "full_name": "District Court, D. Rhode Island",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "scd",
+      "short_name": "D. South Carolina",
+      "full_name": "District Court, D. South Carolina",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "southcarolinaed",
+      "short_name": "E.D. South Carolina",
+      "full_name": "District Court, E.D. South Carolina",
+      "jurisdiction": "FD",
+      "start_date": "1823-02-21",
+      "end_date": "1965-10-07"
+    },
+    {
+      "id": "southcarolinawd",
+      "short_name": "W.D. South Carolina",
+      "full_name": "District Court, W.D. South Carolina",
+      "jurisdiction": "FD",
+      "start_date": "1823-02-21",
+      "end_date": "1965-10-07"
+    },
+    {
+      "id": "sdd",
+      "short_name": "D. South Dakota",
+      "full_name": "District Court, D. South Dakota",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tned",
+      "short_name": "E.D. Tennessee",
+      "full_name": "District Court, E.D. Tennessee",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tnmd",
+      "short_name": "M.D. Tennessee",
+      "full_name": "District Court, M.D. Tennessee",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tnwd",
+      "short_name": "W.D. Tennessee",
+      "full_name": "District Court, W.D. Tennessee",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tennessed",
+      "short_name": "D. Tennessee",
+      "full_name": "District Court, D. Tennessee",
+      "jurisdiction": "FD",
+      "start_date": "1797-01-31",
+      "end_date": "1839-06-18"
+    },
+    {
+      "id": "texd",
+      "short_name": "D. Texas",
+      "full_name": "District Court, D. Texas",
+      "jurisdiction": "FD",
+      "start_date": "1845-12-29",
+      "end_date": "1857-02-21"
+    },
+    {
+      "id": "txed",
+      "short_name": "E.D. Texas",
+      "full_name": "District Court, E.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txnd",
+      "short_name": "N.D. Texas",
+      "full_name": "District Court, N.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txsd",
+      "short_name": "S.D. Texas",
+      "full_name": "District Court, S.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txwd",
+      "short_name": "W.D. Texas",
+      "full_name": "District Court, W.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "utd",
+      "short_name": "D. Utah",
+      "full_name": "District Court, D. Utah",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vtd",
+      "short_name": "D. Vermont",
+      "full_name": "District Court, D. Vermont",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vad",
+      "short_name": "D. Virginia",
+      "full_name": "District Court, D. Virginia",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1819-02-04"
+    },
+    {
+      "id": "vaed",
+      "short_name": "E.D. Virginia",
+      "full_name": "District Court, E.D. Virginia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vawd",
+      "short_name": "W.D. Virginia",
+      "full_name": "District Court, W.D. Virginia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "washd",
+      "short_name": "D. Washington",
+      "full_name": "District Court, D. Washington",
+      "jurisdiction": "FD",
+      "start_date": "1890-04-05",
+      "end_date": "1905-03-02"
+    },
+    {
+      "id": "waed",
+      "short_name": "E.D. Washington",
+      "full_name": "District Court, E.D. Washington",
+      "jurisdiction": "FD",
+      "start_date": "1905-03-02",
+      "end_date": null
+    },
+    {
+      "id": "wawd",
+      "short_name": "W.D. Washington",
+      "full_name": "District Court, W.D. Washington",
+      "jurisdiction": "FD",
+      "start_date": "1905-03-02",
+      "end_date": null
+    },
+    {
+      "id": "wvad",
+      "short_name": "D. West Virginia",
+      "full_name": "District Court, D. West Virginia",
+      "jurisdiction": "FD",
+      "start_date": "1864-06-11",
+      "end_date": "1901-01-22"
+    },
+    {
+      "id": "wvnd",
+      "short_name": "N.D. West Virginia",
+      "full_name": "District Court, N.D. West Virginia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wvsd",
+      "short_name": "S.D. West Virginia",
+      "full_name": "District Court, S.D. West Virginia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wisd",
+      "short_name": "D. Wisconsin",
+      "full_name": "District Court, D. Wisconsin",
+      "jurisdiction": "FD",
+      "start_date": "1848-05-29",
+      "end_date": "1870-06-30"
+    },
+    {
+      "id": "wied",
+      "short_name": "E.D. Wisconsin",
+      "full_name": "District Court, E.D. Wisconsin",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wiwd",
+      "short_name": "W.D. Wisconsin",
+      "full_name": "District Court, W.D. Wisconsin",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wyd",
+      "short_name": "D. Wyoming",
+      "full_name": "District Court, D. Wyoming",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "canalzoned",
+      "short_name": "District Court, Canal Zone",
+      "full_name": "District Court, Canal Zone",
+      "jurisdiction": "FD",
+      "start_date": "1937-07-26",
+      "end_date": "1982-03-31"
+    },
+    {
+      "id": "gud",
+      "short_name": "D. Guam",
+      "full_name": "District Court, D. Guam",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmid",
+      "short_name": "Northern Mariana Islands",
+      "full_name": "District Court, Northern Mariana Islands",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "prd",
+      "short_name": "D. Puerto Rico",
+      "full_name": "District Court, D. Puerto Rico",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vid",
+      "short_name": "Virgin Islands",
+      "full_name": "District Court, Virgin Islands",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okd",
+      "short_name": "United States District Court for the District of Oklahoma",
+      "full_name": "United States District Court for the District of Oklahoma",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ala",
+      "short_name": "Supreme Court of Alabama",
+      "full_name": "Supreme Court of Alabama",
+      "jurisdiction": "S",
+      "start_date": "1819-01-01",
+      "end_date": null
+    },
+    {
+      "id": "alactapp",
+      "short_name": "Alabama Court of Appeals",
+      "full_name": "Alabama Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1911-01-01",
+      "end_date": "1969-01-01"
+    },
+    {
+      "id": "alacrimapp",
+      "short_name": "Court of Criminal Appeals of Alabama",
+      "full_name": "Court of Criminal Appeals of Alabama",
+      "jurisdiction": "SA",
+      "start_date": "1969-01-01",
+      "end_date": null
+    },
+    {
+      "id": "alacivapp",
+      "short_name": "Court of Civil Appeals of Alabama",
+      "full_name": "Court of Civil Appeals of Alabama",
+      "jurisdiction": "SA",
+      "start_date": "1969-01-01",
+      "end_date": null
+    },
+    {
+      "id": "alaska",
+      "short_name": "Alaska Supreme Court",
+      "full_name": "Alaska Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1959-01-03",
+      "end_date": null
+    },
+    {
+      "id": "alaskactapp",
+      "short_name": "Court of Appeals of Alaska",
+      "full_name": "Court of Appeals of Alaska",
+      "jurisdiction": "SA",
+      "start_date": "1980-07-01",
+      "end_date": null
+    },
+    {
+      "id": "ariz",
+      "short_name": "Arizona Supreme Court",
+      "full_name": "Arizona Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1912-01-01",
+      "end_date": null
+    },
+    {
+      "id": "arizctapp",
+      "short_name": "Court of Appeals of Arizona",
+      "full_name": "Court of Appeals of Arizona",
+      "jurisdiction": "SA",
+      "start_date": "1965-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ariztaxct",
+      "short_name": "Arizona Tax Court",
+      "full_name": "Arizona Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ark",
+      "short_name": "Supreme Court of Arkansas",
+      "full_name": "Supreme Court of Arkansas",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "arkctapp",
+      "short_name": "Court of Appeals of Arkansas",
+      "full_name": "Court of Appeals of Arkansas",
+      "jurisdiction": "SA",
+      "start_date": "1979-08-08",
+      "end_date": null
+    },
+    {
+      "id": "arkworkcompcom",
+      "short_name": "Arkansas Workers' Compensation Commission",
+      "full_name": "Arkansas Workers' Compensation Commission",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arkag",
+      "short_name": "Arkansas Attorney General Reports",
+      "full_name": "Arkansas Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cal",
+      "short_name": "California Supreme Court",
+      "full_name": "California Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1849-01-01",
+      "end_date": null
+    },
+    {
+      "id": "calctapp",
+      "short_name": "California Court of Appeal",
+      "full_name": "California Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1905-04-10",
+      "end_date": null
+    },
+    {
+      "id": "calappdeptsuper",
+      "short_name": "Appellate Division of the Superior Court of California",
+      "full_name": "Appellate Division of the Superior Court of California",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp1d",
+      "short_name": "California Court of Appeals, 1st District",
+      "full_name": "California Court of Appeal, 1st District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp2d",
+      "short_name": "California Court of Appeals, 2nd District",
+      "full_name": "California Court of Appeal, 2nd District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp3d",
+      "short_name": "California Court of Appeals, 3rd District",
+      "full_name": "California Court of Appeal, 3rd District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp4d",
+      "short_name": "California Court of Appeals, 4th District",
+      "full_name": "California Court of Appeal, 4th District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp5d",
+      "short_name": "California Court of Appeals, 5th District",
+      "full_name": "California Court of Appeal, 5th District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calctapp6d",
+      "short_name": "California Court of Appeals, 6th District",
+      "full_name": "California Court of Appeal, 6th District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calag",
+      "short_name": "California Attorney General Reports",
+      "full_name": "California Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caluneinsappbd",
+      "short_name": "Cal. Unemp. Ins. App. Bd.",
+      "full_name": "California Unemployment Insurance Appeals Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "calofcadmhrg",
+      "short_name": "Cal. Ofc. of Admin. Hrg.",
+      "full_name": "California Office of Administrative Hearings",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "caljp",
+      "short_name": "State of California Commission On Judicial Performance",
+      "full_name": "State of California Commission On Judicial Performance",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "colo",
+      "short_name": "Supreme Court of Colorado",
+      "full_name": "Supreme Court of Colorado",
+      "jurisdiction": "S",
+      "start_date": "1876-08-01",
+      "end_date": null
+    },
+    {
+      "id": "coloctapp",
+      "short_name": "Colorado Court of Appeals",
+      "full_name": "Colorado Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1970-01-01",
+      "end_date": null
+    },
+    {
+      "id": "coregsalina",
+      "short_name": "Salina Register and Receiver",
+      "full_name": "Salina Register and Receiver",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "coloworkcompcom",
+      "short_name": "Colorado Industrial Claim Appeals Office",
+      "full_name": "Colorado Industrial Claim Appeals Office",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "coloag",
+      "short_name": "Colorado Attorney General Reports",
+      "full_name": "Colorado Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "conn",
+      "short_name": "Supreme Court of Connecticut",
+      "full_name": "Supreme Court of Connecticut",
+      "jurisdiction": "S",
+      "start_date": "1784-01-01",
+      "end_date": null
+    },
+    {
+      "id": "connappct",
+      "short_name": "Connecticut Appellate Court",
+      "full_name": "Connecticut Appellate Court",
+      "jurisdiction": "SA",
+      "start_date": "1983-10-04",
+      "end_date": null
+    },
+    {
+      "id": "connsuperct",
+      "short_name": "Connecticut Superior Court",
+      "full_name": "Connecticut Superior Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "connworkcompcom",
+      "short_name": "Connecticut Compensation Review Board",
+      "full_name": "Connecticut Compensation Review Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "del",
+      "short_name": "Supreme Court of Delaware",
+      "full_name": "Supreme Court of Delaware",
+      "jurisdiction": "S",
+      "start_date": "1832-01-01",
+      "end_date": null
+    },
+    {
+      "id": "delch",
+      "short_name": "Court of Chancery of Delaware",
+      "full_name": "Court of Chancery of Delaware",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delorphct",
+      "short_name": "Delaware Orphan's Court",
+      "full_name": "Orphan's Court of Delaware",
+      "jurisdiction": "SA",
+      "start_date": "1683-01-01",
+      "end_date": "1970-12-31"
+    },
+    {
+      "id": "delsuperct",
+      "short_name": "Superior Court of Delaware",
+      "full_name": "Superior Court of Delaware",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delctcompl",
+      "short_name": "Delaware Court of Common Pleas",
+      "full_name": "Delaware Court of Common Pleas",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delfamct",
+      "short_name": "Delaware Family Court",
+      "full_name": "Delaware Family Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "deljudct",
+      "short_name": "Court on the Judiciary of Delaware",
+      "full_name": "Court on the Judiciary of Delaware.",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "dc",
+      "short_name": "District of Columbia Court of Appeals",
+      "full_name": "District of Columbia Court of Appeals",
+      "jurisdiction": "S",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "dcorphanct",
+      "short_name": "District of Columbia Orphans' Court",
+      "full_name": "District of Columbia Orphans' Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fla",
+      "short_name": "Supreme Court of Florida",
+      "full_name": "Supreme Court of Florida",
+      "jurisdiction": "S",
+      "start_date": "1845-01-01",
+      "end_date": null
+    },
+    {
+      "id": "fladistctapp",
+      "short_name": "District Court of Appeal of Florida",
+      "full_name": "District Court of Appeal of Florida",
+      "jurisdiction": "SA",
+      "start_date": "1957-01-01",
+      "end_date": null
+    },
+    {
+      "id": "fladistctapp1",
+      "short_name": "Florida First District Court of Appeal",
+      "full_name": "Florida First District Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1957-01-01",
+      "end_date": null
+    },
+    {
+      "id": "fladistctapp2",
+      "short_name": "Florida Second District Court of Appeal",
+      "full_name": "Florida Second District Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1957-01-01",
+      "end_date": null
+    },
+    {
+      "id": "fladistctapp3",
+      "short_name": "Florida Third District Court of Appeal",
+      "full_name": "Florida Third District Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1957-01-01",
+      "end_date": null
+    },
+    {
+      "id": "fladistctapp4",
+      "short_name": "Florida Fourth District Court of Appeal",
+      "full_name": "Florida Fourth District Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1957-01-01",
+      "end_date": null
+    },
+    {
+      "id": "fladistctapp5",
+      "short_name": "Florida Fifth District Court of Appeal",
+      "full_name": "Florida Fifth District Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1957-01-01",
+      "end_date": null
+    },
+    {
+      "id": "flapubserv",
+      "short_name": "Florida Public Service Commission",
+      "full_name": "Florida Public Service Commission",
+      "jurisdiction": "SS",
+      "start_date": "1887-01-01",
+      "end_date": null
+    },
+    {
+      "id": "flaindcommn",
+      "short_name": "Florida Industrial Commission",
+      "full_name": "Florida Industrial Commission",
+      "jurisdiction": "SS",
+      "start_date": "1935-01-01",
+      "end_date": "1969-12-31"
+    },
+    {
+      "id": "flarealestcommn",
+      "short_name": "Florida Real Estate Commission",
+      "full_name": "Florida Real Estate Commission",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "dadectypropbd",
+      "short_name": "Dade County Property Appraisal Adjustment Board",
+      "full_name": "Dade County Property Appraisal Adjustment Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fladepthrehabil",
+      "short_name": "Florida Department of Health and Rehabilitative Services",
+      "full_name": "Florida Department of Health and Rehabilitative Services",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "jaxcivservbd",
+      "short_name": "Jacksonville Civil Service Board",
+      "full_name": "Jacksonville Civil Service Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fladeptenvreg",
+      "short_name": "State of Florida Department of Environmental Regulation",
+      "full_name": "State of Florida Department of Environmental Regulation",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fladeptrev",
+      "short_name": "State of Florida Department of Revenue",
+      "full_name": "State of Florida Department of Revenue",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fladivadminhrg",
+      "short_name": "State of Florida Division of Administrative Hearings",
+      "full_name": "State of Florida Division of Administrative Hearings",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "flaag",
+      "short_name": "Florida Attorney General Reports",
+      "full_name": "Florida Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ga",
+      "short_name": "Supreme Court of Georgia",
+      "full_name": "Supreme Court of Georgia",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "gactapp",
+      "short_name": "Court of Appeals of Georgia",
+      "full_name": "Court of Appeals of Georgia",
+      "jurisdiction": "SA",
+      "start_date": "1906-11-06",
+      "end_date": null
+    },
+    {
+      "id": "gaoyertermct",
+      "short_name": "Georgia Court of Oyer and Terminer",
+      "full_name": "Georgia Court of Oyer and Terminer",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "haw",
+      "short_name": "Hawaii Supreme Court",
+      "full_name": "Hawaii Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1840-10-08",
+      "end_date": null
+    },
+    {
+      "id": "hawapp",
+      "short_name": "Hawaii Intermediate Court of Appeals",
+      "full_name": "Hawaii Intermediate Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1979-11-06",
+      "end_date": null
+    },
+    {
+      "id": "idaho",
+      "short_name": "Idaho Supreme Court",
+      "full_name": "Idaho Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1863-01-01",
+      "end_date": null
+    },
+    {
+      "id": "idahoctapp",
+      "short_name": "Idaho Court of Appeals",
+      "full_name": "Idaho Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1982-01-04",
+      "end_date": null
+    },
+    {
+      "id": "ill",
+      "short_name": "Illinois Supreme Court",
+      "full_name": "Illinois Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "illappct",
+      "short_name": "Appellate Court of Illinois",
+      "full_name": "Appellate Court of Illinois",
+      "jurisdiction": "SA",
+      "start_date": "1877-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ind",
+      "short_name": "Indiana Supreme Court",
+      "full_name": "Indiana Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1816-01-01",
+      "end_date": null
+    },
+    {
+      "id": "indctapp",
+      "short_name": "Indiana Court of Appeals",
+      "full_name": "Indiana Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1891-01-01",
+      "end_date": null
+    },
+    {
+      "id": "indtc",
+      "short_name": "Indiana Tax Court",
+      "full_name": "Indiana Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "iowa",
+      "short_name": "Supreme Court of Iowa",
+      "full_name": "Supreme Court of Iowa",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "iowactapp",
+      "short_name": "Court of Appeals of Iowa",
+      "full_name": "Court of Appeals of Iowa",
+      "jurisdiction": "SA",
+      "start_date": "1976-07-01",
+      "end_date": null
+    },
+    {
+      "id": "kan",
+      "short_name": "Supreme Court of Kansas",
+      "full_name": "Supreme Court of Kansas",
+      "jurisdiction": "S",
+      "start_date": "1854-01-01",
+      "end_date": null
+    },
+    {
+      "id": "kanctapp",
+      "short_name": "Court of Appeals of Kansas",
+      "full_name": "Court of Appeals of Kansas",
+      "jurisdiction": "SA",
+      "start_date": "1977-01-10",
+      "end_date": null
+    },
+    {
+      "id": "kanag",
+      "short_name": "Kansas Attorney General Reports",
+      "full_name": "Kansas Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ky",
+      "short_name": "Kentucky Supreme Court",
+      "full_name": "Kentucky Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1976-01-01",
+      "end_date": null
+    },
+    {
+      "id": "kyctapp",
+      "short_name": "Court of Appeals of Kentucky",
+      "full_name": "Court of Appeals of Kentucky",
+      "jurisdiction": "SA",
+      "start_date": "1976-01-01",
+      "end_date": null
+    },
+    {
+      "id": "kyctapphigh",
+      "short_name": "Court of Appeals of Kentucky (pre-1976)",
+      "full_name": "Court of Appeals of Kentucky (pre-1976)",
+      "jurisdiction": "S",
+      "start_date": "1792-01-01",
+      "end_date": "1975-12-31"
+    },
+    {
+      "id": "la",
+      "short_name": "Supreme Court of Louisiana",
+      "full_name": "Supreme Court of Louisiana",
+      "jurisdiction": "S",
+      "start_date": "1813-01-01",
+      "end_date": null
+    },
+    {
+      "id": "lacterrapp",
+      "short_name": "Louisiana Court of Errors and Appeals",
+      "full_name": "Louisiana Court of Errors and Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1843-01-01",
+      "end_date": "1846-12-31"
+    },
+    {
+      "id": "usprovctla",
+      "short_name": "United States Provisional Court for the State of Louisiana",
+      "full_name": "United States Provisional Court for the State of Louisiana",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lactapp",
+      "short_name": "Louisiana Court of Appeal",
+      "full_name": "Louisiana Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1879-01-01",
+      "end_date": null
+    },
+    {
+      "id": "laag",
+      "short_name": "Louisiana Attorney General Reports",
+      "full_name": "Louisiana Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "me",
+      "short_name": "Supreme Judicial Court of Maine",
+      "full_name": "Supreme Judicial Court of Maine",
+      "jurisdiction": "S",
+      "start_date": "1830-01-01",
+      "end_date": null
+    },
+    {
+      "id": "md",
+      "short_name": "Court of Appeals of Maryland",
+      "full_name": "Court of Appeals of Maryland",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "mdctspecapp",
+      "short_name": "Court of Special Appeals of Maryland",
+      "full_name": "Court of Special Appeals of Maryland",
+      "jurisdiction": "SA",
+      "start_date": "1967-01-01",
+      "end_date": null
+    },
+    {
+      "id": "mdch",
+      "short_name": "Maryland Chancery Ct",
+      "full_name": "High Court of Chancery of Maryland",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1854-06-04"
+    },
+    {
+      "id": "mdgenct",
+      "short_name": "General Court of Maryland",
+      "full_name": "General Court of Maryland",
+      "jurisdiction": "SS",
+      "start_date": "1778-01-01",
+      "end_date": "1805-12-31"
+    },
+    {
+      "id": "mdag",
+      "short_name": "Maryland Attorney General Reports",
+      "full_name": "Maryland Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mass",
+      "short_name": "Massachusetts Supreme Judicial Court",
+      "full_name": "Massachusetts Supreme Judicial Court",
+      "jurisdiction": "S",
+      "start_date": "1692-01-01",
+      "end_date": null
+    },
+    {
+      "id": "massappct",
+      "short_name": "Massachusetts Appeals Court",
+      "full_name": "Massachusetts Appeals Court",
+      "jurisdiction": "SA",
+      "start_date": "1972-10-06",
+      "end_date": null
+    },
+    {
+      "id": "massdistctapp",
+      "short_name": "Mass. Dist. Ct., App. Div.",
+      "full_name": "Massachusetts District Court, Appellate Division",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masssuperct",
+      "short_name": "Massachusetts Superior Court",
+      "full_name": "Massachusetts Superior Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "massdistct",
+      "short_name": "Massachusetts District Court",
+      "full_name": "Massachusetts District Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masslandct",
+      "short_name": "Massachusetts Land Court",
+      "full_name": "Massachusetts Land Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masstaxbd",
+      "short_name": "Massachusetts Appellate Tax Board",
+      "full_name": "Massachusetts Appellate Tax Board",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masshserep",
+      "short_name": "Massachusetts House of Representatives",
+      "full_name": "Massachusetts House of Representatives",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "maworkcompcom",
+      "short_name": "Massachusetts Department of Industrial Accidents",
+      "full_name": "Massachusetts Department of Industrial Accidents",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mich",
+      "short_name": "Michigan Supreme Court",
+      "full_name": "Michigan Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1837-01-01",
+      "end_date": null
+    },
+    {
+      "id": "michctapp",
+      "short_name": "Michigan Court of Appeals",
+      "full_name": "Michigan Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1964-01-01",
+      "end_date": null
+    },
+    {
+      "id": "michchanct",
+      "short_name": "Michigan Court of Chancery",
+      "full_name": "Michigan Court of Chancery",
+      "jurisdiction": "SA",
+      "start_date": "1836-01-01",
+      "end_date": "1847-12-31"
+    },
+    {
+      "id": "michrecdetroit",
+      "short_name": "Detroit Recorder's Court",
+      "full_name": "Detroit Recorder's Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "minn",
+      "short_name": "Supreme Court of Minnesota",
+      "full_name": "Supreme Court of Minnesota",
+      "jurisdiction": "S",
+      "start_date": "1858-05-24",
+      "end_date": null
+    },
+    {
+      "id": "minnctapp",
+      "short_name": "Court of Appeals of Minnesota",
+      "full_name": "Court of Appeals of Minnesota",
+      "jurisdiction": "SA",
+      "start_date": "1983-11-01",
+      "end_date": null
+    },
+    {
+      "id": "minnag",
+      "short_name": "Minnesota Attorney General Reports",
+      "full_name": "Minnesota Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "miss",
+      "short_name": "Mississippi Supreme Court",
+      "full_name": "Mississippi Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "missctapp",
+      "short_name": "Court of Appeals of Mississippi",
+      "full_name": "Court of Appeals of Mississippi",
+      "jurisdiction": "SA",
+      "start_date": "1995-01-01",
+      "end_date": null
+    },
+    {
+      "id": "mo",
+      "short_name": "Supreme Court of Missouri",
+      "full_name": "Supreme Court of Missouri",
+      "jurisdiction": "S",
+      "start_date": "1821-01-01",
+      "end_date": null
+    },
+    {
+      "id": "moctapp",
+      "short_name": "Missouri Court of Appeals",
+      "full_name": "Missouri Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1820-01-01",
+      "end_date": null
+    },
+    {
+      "id": "moctapped",
+      "short_name": "Mo. Ct. of App, East. Dist.",
+      "full_name": "Missouri Court of Appeals, Eastern District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moctappsd",
+      "short_name": "Mo. Ct. App., So. Dist.",
+      "full_name": "Missouri Court of Appeals, Southern District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moctappwd",
+      "short_name": "Mo. Ct. App., West. Dist.",
+      "full_name": "Missouri Court of Appeals, Western District",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moag",
+      "short_name": "Missouri Attorney General Reports",
+      "full_name": "Missouri Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mont",
+      "short_name": "Montana Supreme Court",
+      "full_name": "Montana Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1864-01-01",
+      "end_date": null
+    },
+    {
+      "id": "monttc",
+      "short_name": "Montana Tax Appeal Board",
+      "full_name": "Montana Tax Appeal Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "montag",
+      "short_name": "Montana Attorney General Reports",
+      "full_name": "Montana Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "neb",
+      "short_name": "Nebraska Supreme Court",
+      "full_name": "Nebraska Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1854-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nebctapp",
+      "short_name": "Nebraska Court of Appeals",
+      "full_name": "Nebraska Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1991-11-06",
+      "end_date": null
+    },
+    {
+      "id": "nebag",
+      "short_name": "Nebraska Attorney General Reports",
+      "full_name": "Nebraska Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nev",
+      "short_name": "Nevada Supreme Court",
+      "full_name": "Nevada Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1864-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nevapp",
+      "short_name": "Court of Appeals of Nevada",
+      "full_name": "Court of Appeals of Nevada",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nh",
+      "short_name": "Supreme Court of New Hampshire",
+      "full_name": "Supreme Court of New Hampshire",
+      "jurisdiction": "S",
+      "start_date": "1776-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nhprivycounnh",
+      "short_name": "New Hampshire Committee of the Privy Council",
+      "full_name": "New Hampshire Committee of the Privy Council",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nj",
+      "short_name": "Supreme Court of New Jersey",
+      "full_name": "Supreme Court of New Jersey",
+      "jurisdiction": "S",
+      "start_date": "1776-01-01",
+      "end_date": null
+    },
+    {
+      "id": "njsuperctappdiv",
+      "short_name": "New Jersey Superior Court App Division",
+      "full_name": "New Jersey Superior Court Appellate Division",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njlawbkconf",
+      "short_name": "New Jersey Lawyers and Bankers Conference Committee",
+      "full_name": "New Jersey Lawyers and Bankers Conference Committee",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njreccthoboken",
+      "short_name": "Hoboken City Recorder's Court.",
+      "full_name": "Hoboken City Recorder's Court.",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njrecctmontcl",
+      "short_name": "Montclair Town Recorder's Court",
+      "full_name": "Montclair Town Recorder's Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njspecstatct",
+      "short_name": "New Jersey Special Statutory Court",
+      "full_name": "New Jersey Special Statutory Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcirctatlantic",
+      "short_name": "Atlantic County Circuit Court, N.J.",
+      "full_name": "Atlantic County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctbergen",
+      "short_name": "Bergen County Circuit Court, N.J.",
+      "full_name": "Bergen County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctburlingt",
+      "short_name": "Burlington County Circuit Court, N.J.",
+      "full_name": "Burlington County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctcamden",
+      "short_name": "Camden County Circuit Court, N.J.",
+      "full_name": "Camden County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctcapemay",
+      "short_name": "Cape May County Circuit Court, N.J.",
+      "full_name": "Cape May County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcircthudson",
+      "short_name": "Hudson County Circuit Court, N.J.",
+      "full_name": "Hudson County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctmonmouth",
+      "short_name": "Monmouth County Circuit Court, N.J.",
+      "full_name": "Monmouth County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctmorris",
+      "short_name": "Morris County Circuit Court, N.J.",
+      "full_name": "Morris County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctocean",
+      "short_name": "Ocean County Circuit Court, N.J.",
+      "full_name": "Ocean County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctpassaic",
+      "short_name": "Passaic County Circuit Court, N.J.",
+      "full_name": "Passaic County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctsomerset",
+      "short_name": "Somerset County Circuit Court, N.J.",
+      "full_name": "Somerset County Circuit Court, N.J.",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "njcirctsussex",
+      "short_name": "Sussex County Circuit Court, N.J.",
+      "full_name": "Sussex County Circuit Court, N.J.",
+      "jurisdiction": "St",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njctpardons",
+      "short_name": "New Jersey Court of Pardons",
+      "full_name": "New Jersey Court of Pardons",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njtaxct",
+      "short_name": "New Jersey Tax Court",
+      "full_name": "New Jersey Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njcommned",
+      "short_name": "Commissioner of Education, N.J.",
+      "full_name": "Commissioner of Education, N.J.",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "njch",
+      "short_name": "New Jersey Court of Chancery",
+      "full_name": "New Jersey Court of Chancery",
+      "jurisdiction": "SA",
+      "start_date": "1684-01-01",
+      "end_date": "1947-12-31"
+    },
+    {
+      "id": "nm",
+      "short_name": "New Mexico Supreme Court",
+      "full_name": "New Mexico Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nmctapp",
+      "short_name": "New Mexico Court of Appeals",
+      "full_name": "New Mexico Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1966-04-01",
+      "end_date": null
+    },
+    {
+      "id": "ny",
+      "short_name": "New York Court of Appeals",
+      "full_name": "New York Court of Appeals",
+      "jurisdiction": "S",
+      "start_date": "1777-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nyctassizes",
+      "short_name": "New York Court of Assizes",
+      "full_name": "New York Court of Assizes",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyjudct",
+      "short_name": "New York Court on the Judiciary",
+      "full_name": "New York Court on the Judiciary",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nycterr",
+      "short_name": "Court for the Trial of Impeachments and Correction of Errors",
+      "full_name": "Court for the Trial of Impeachments and Correction of Errors",
+      "jurisdiction": "SS",
+      "start_date": "1777-01-01",
+      "end_date": "1846-12-31"
+    },
+    {
+      "id": "nycommnapp",
+      "short_name": "Commission of Appeals",
+      "full_name": "Commission of Appeals",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyconct",
+      "short_name": "Constitutional Court of New York",
+      "full_name": "Constitutional Court of New York",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyarbct",
+      "short_name": "Court Of Arbitration Of The Chamber Of Commerce Of New York",
+      "full_name": "Court Of Arbitration Of The Chamber Of Commerce Of New York",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nystateassembly",
+      "short_name": "New York State Assembly",
+      "full_name": "New York State Assembly",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyexecchamber",
+      "short_name": "New York Executive Chamber",
+      "full_name": "New York Executive Chamber",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nymarct",
+      "short_name": "New York Marine Court",
+      "full_name": "New York Marine Court",
+      "jurisdiction": "SS",
+      "start_date": "1807-01-01",
+      "end_date": "1883-12-31"
+    },
+    {
+      "id": "nyoytermct",
+      "short_name": "Court Of Oyer And Terminer New York",
+      "full_name": "Court Of Oyer And Terminer New York",
+      "jurisdiction": "SA",
+      "start_date": "1788-01-01",
+      "end_date": "1895-12-31"
+    },
+    {
+      "id": "nychanct",
+      "short_name": "New York Court of Chancery",
+      "full_name": "New York Court of Chancery",
+      "jurisdiction": "S",
+      "start_date": "1701-01-01",
+      "end_date": "1847-12-31"
+    },
+    {
+      "id": "nychanctsara",
+      "short_name": "Saratoga Chancery Court",
+      "full_name": "Saratoga Chancery Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyspecsessyonk",
+      "short_name": "Yonkers Court of Special Sessions",
+      "full_name": "Yonkers Court of Special Sessions",
+      "jurisdiction": "SS",
+      "start_date": "1732-01-01",
+      "end_date": "1962-08-31"
+    },
+    {
+      "id": "nyappdiv",
+      "short_name": "Appellate Division of the Supreme Court of New York",
+      "full_name": "Appellate Division of the Supreme Court of the State of New York",
+      "jurisdiction": "SA",
+      "start_date": "1896-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nyappterm",
+      "short_name": "Appellate Terms of the Supreme Court of New York",
+      "full_name": "Appellate Terms of the Supreme Court of New York",
+      "jurisdiction": "SA",
+      "start_date": "1896-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nyfamct",
+      "short_name": "New York Family Court",
+      "full_name": "New York Family Court",
+      "jurisdiction": "SS",
+      "start_date": "1962-09-01",
+      "end_date": null
+    },
+    {
+      "id": "nysurct",
+      "short_name": "New York Surrogate's Court",
+      "full_name": "New York Surrogate's Court",
+      "jurisdiction": "SS",
+      "start_date": "1896-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nycivct",
+      "short_name": "Civil Court of the City of New York",
+      "full_name": "Civil Court of the City of New York",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nycrimct",
+      "short_name": "Criminal Court of the City of New York",
+      "full_name": "Criminal Court of the City of New York",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyclaimsct",
+      "short_name": "New York State Court of Claims",
+      "full_name": "New York Court of Claims",
+      "jurisdiction": "SS",
+      "start_date": "1817-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nyag",
+      "short_name": "New York Attorney General Reports",
+      "full_name": "New York Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nyhospcommn",
+      "short_name": "New York State Hospital Commission",
+      "full_name": "New York State Hospital Commission",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nc",
+      "short_name": "Supreme Court of North Carolina",
+      "full_name": "Supreme Court of North Carolina",
+      "jurisdiction": "S",
+      "start_date": "1799-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ncctapp",
+      "short_name": "Court of Appeals of North Carolina",
+      "full_name": "Court of Appeals of North Carolina",
+      "jurisdiction": "SA",
+      "start_date": "1968-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ncsuperct",
+      "short_name": "Superior Court of North Carolina",
+      "full_name": "Superior Court of North Carolina",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncbizct",
+      "short_name": "North Carolina Business Court",
+      "full_name": "North Carolina Business Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ncworkcompcom",
+      "short_name": "North Carolina Industrial Commission",
+      "full_name": "North Carolina Industrial Commission",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nd",
+      "short_name": "North Dakota Supreme Court",
+      "full_name": "North Dakota Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1861-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ndctapp",
+      "short_name": "North Dakota Court of Appeals",
+      "full_name": "North Dakota Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1987-09-01",
+      "end_date": null
+    },
+    {
+      "id": "dakotasup",
+      "short_name": "Supreme Court of Dakota",
+      "full_name": "Supreme Court Of The Territory Of Dakota",
+      "jurisdiction": "S",
+      "start_date": "1861-01-01",
+      "end_date": "1889-10-01"
+    },
+    {
+      "id": "ohio",
+      "short_name": "Ohio Supreme Court",
+      "full_name": "Ohio Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ohioctapp",
+      "short_name": "Ohio Court of Appeals",
+      "full_name": "Ohio Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1912-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ohctinsolvcuyah",
+      "short_name": "Cuyahoga County Court of Insolvency",
+      "full_name": "Cuyahoga County Court of Insolvency",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohctinsolvhamil",
+      "short_name": "Hamilton County Court of Insolvency",
+      "full_name": "Hamilton County Court of Insolvency",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiorac",
+      "short_name": "Ohio State Racing Commission",
+      "full_name": "Ohio State Racing Commission",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiotax",
+      "short_name": "Board of Tax Appeals of Ohio Department of Taxation",
+      "full_name": "Board of Tax Appeals of Ohio Department of Taxation",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiobar",
+      "short_name": "Board of Commissioners On The Unauthorized Practice of Law State of Ohio",
+      "full_name": "Board of Commissioners On The Unauthorized Practice of Law State of Ohio",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohiocivright",
+      "short_name": "Ohio Civil Rights Commission",
+      "full_name": "Ohio Civil Rights Commission",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ohioctcl",
+      "short_name": "Ohio Court of Claims",
+      "full_name": "Ohio Court of Claims",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "okla",
+      "short_name": "Supreme Court of Oklahoma",
+      "full_name": "Supreme Court of Oklahoma",
+      "jurisdiction": "S",
+      "start_date": "1884-01-01",
+      "end_date": null
+    },
+    {
+      "id": "oklacivapp",
+      "short_name": "Court of Civil Appeals of Oklahoma",
+      "full_name": "Court of Civil Appeals of Oklahoma",
+      "jurisdiction": "SA",
+      "start_date": "1968-01-01",
+      "end_date": null
+    },
+    {
+      "id": "oklacrimapp",
+      "short_name": "Court of Criminal Appeals of Oklahoma",
+      "full_name": "Court of Criminal Appeals of Oklahoma",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oklajeap",
+      "short_name": "Oklahoma Judicial Ethics Advisory Panel",
+      "full_name": "Oklahoma Judicial Ethics Advisory Panel",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oklacoj",
+      "short_name": "Court on the Judiciary of Oklahoma",
+      "full_name": "Court on the Judiciary of Oklahoma",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oklaag",
+      "short_name": "Oklahoma Attorney General Reports",
+      "full_name": "Oklahoma Attorney General Reports",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "or",
+      "short_name": "Oregon Supreme Court",
+      "full_name": "Oregon Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "orctapp",
+      "short_name": "Court of Appeals of Oregon",
+      "full_name": "Court of Appeals of Oregon",
+      "jurisdiction": "SA",
+      "start_date": "1969-07-01",
+      "end_date": null
+    },
+    {
+      "id": "ortc",
+      "short_name": "Oregon Tax Court",
+      "full_name": "Oregon Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pa",
+      "short_name": "Supreme Court of Pennsylvania",
+      "full_name": "Supreme Court of Pennsylvania",
+      "jurisdiction": "S",
+      "start_date": "1722-05-22",
+      "end_date": null
+    },
+    {
+      "id": "pasuperct",
+      "short_name": "Superior Court of Pennsylvania",
+      "full_name": "Superior Court of Pennsylvania",
+      "jurisdiction": "SA",
+      "start_date": "1895-01-01",
+      "end_date": null
+    },
+    {
+      "id": "pacommwct",
+      "short_name": "Commonwealth Court of Pennsylvania",
+      "full_name": "Commonwealth Court of Pennsylvania",
+      "jurisdiction": "SA",
+      "start_date": "1968-01-01",
+      "end_date": null
+    },
+    {
+      "id": "cjdpa",
+      "short_name": "Judicial Discipline of Pennsylvania",
+      "full_name": "Court of Judicial Discipline of Pennsylvania",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paadmct",
+      "short_name": "Pennsylvania Admiralty Court",
+      "full_name": "Pennsylvania Admiralty Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pennctqtrsess",
+      "short_name": "Pennsylvania Court of Quarter Sessions",
+      "full_name": "Pennsylvania Court of Quarter Sessions",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "pajuvct",
+      "short_name": "Penn. Juv. Court",
+      "full_name": "Pennsylvania Juvenile Courts",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "philaelecct",
+      "short_name": "Philadelphia Election Court",
+      "full_name": "Philadelphia Election Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "philarec",
+      "short_name": "Recorder of Philadelphia",
+      "full_name": "Recorder of Philadelphia",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paag",
+      "short_name": "Pennsylvania Office of the Attorney General",
+      "full_name": "Pennsylvania Office of the Attorney General",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paarbpnlhc",
+      "short_name": "Pennsylvania Arbitration Panels for Health Care",
+      "full_name": "Pennsylvania Arbitration Panels for Health Care",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paenvhrbd",
+      "short_name": "Pennsylvania Environmental Hearing Board",
+      "full_name": "Pennsylvania Environmental Hearing Board",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "padepted",
+      "short_name": "Pennsylvania Department of Education",
+      "full_name": "Pennsylvania Department of Education",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "padeptpubwel",
+      "short_name": "Pennsylvania Department of Public Welfare",
+      "full_name": "Pennsylvania Department of Public Welfare",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "paparolebd",
+      "short_name": "Pennsylvania Board of Parole",
+      "full_name": "Pennsylvania Board of Parole",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ri",
+      "short_name": "Supreme Court of Rhode Island",
+      "full_name": "Supreme Court of Rhode Island",
+      "jurisdiction": "S",
+      "start_date": "1747-01-01",
+      "end_date": null
+    },
+    {
+      "id": "risuperct",
+      "short_name": "Superior Court of Rhode Island",
+      "full_name": "Superior Court of Rhode Island",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "riviceadmct",
+      "short_name": "Rhode Island Vice Admiralty Court",
+      "full_name": "Rhode Island Vice Admiralty Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sc",
+      "short_name": "Supreme Court of South Carolina",
+      "full_name": "Supreme Court of South Carolina",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "scctapp",
+      "short_name": "Court of Appeals of South Carolina",
+      "full_name": "Court of Appeals of South Carolina",
+      "jurisdiction": "SA",
+      "start_date": "1983-01-01",
+      "end_date": null
+    },
+    {
+      "id": "admiraltyctsc",
+      "short_name": "South Carolina Admiralty Court",
+      "full_name": "South Carolina Admiralty Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sd",
+      "short_name": "South Dakota Supreme Court",
+      "full_name": "South Dakota Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1889-01-01",
+      "end_date": null
+    },
+    {
+      "id": "tenn",
+      "short_name": "Tennessee Supreme Court",
+      "full_name": "Tennessee Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1790-01-01",
+      "end_date": null
+    },
+    {
+      "id": "tennctapp",
+      "short_name": "Court of Appeals of Tennessee",
+      "full_name": "Court of Appeals of Tennessee",
+      "jurisdiction": "SA",
+      "start_date": "1925-01-01",
+      "end_date": null
+    },
+    {
+      "id": "tenncrimapp",
+      "short_name": "Court of Criminal Appeals of Tennessee",
+      "full_name": "Court of Criminal Appeals of Tennessee",
+      "jurisdiction": "SA",
+      "start_date": "1925-01-01",
+      "end_date": null
+    },
+    {
+      "id": "tennworkcompcl",
+      "short_name": "Tennessee Court of Workers' Comp. Claims",
+      "full_name": "Tennessee Court of Workers' Compensation Claims",
+      "jurisdiction": "SS",
+      "start_date": "2013-01-01",
+      "end_date": null
+    },
+    {
+      "id": "tennworkcompapp",
+      "short_name": "Tennessee Workers' Comp. Appeals Board",
+      "full_name": "Tennessee Workers' Compensation Appeals Board",
+      "jurisdiction": "SS",
+      "start_date": "2013-01-01",
+      "end_date": null
+    },
+    {
+      "id": "tennsuperct",
+      "short_name": "Tennessee Superior Court for Law and Equity",
+      "full_name": "Tennessee Superior Court for Law and Equity",
+      "jurisdiction": "SA",
+      "start_date": "1796-01-01",
+      "end_date": "1809-12-31"
+    },
+    {
+      "id": "tex",
+      "short_name": "Texas Supreme Court",
+      "full_name": "Texas Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1840-01-01",
+      "end_date": null
+    },
+    {
+      "id": "texcommnapp",
+      "short_name": "Texas Commission of Appeals",
+      "full_name": "Texas Commission of Appeals",
+      "jurisdiction": "SS",
+      "start_date": "1918-01-01",
+      "end_date": "1945-12-31"
+    },
+    {
+      "id": "texrevtrib",
+      "short_name": "Texas Court of Review Tribunal",
+      "full_name": "Texas Court of Review Tribunal",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texapp",
+      "short_name": "Court of Appeals of Texas",
+      "full_name": "Court of Appeals of Texas",
+      "jurisdiction": "SA",
+      "start_date": "1891-01-01",
+      "end_date": null
+    },
+    {
+      "id": "texcrimapp",
+      "short_name": "Court of Criminal Appeals of Texas",
+      "full_name": "Court of Criminal Appeals of Texas",
+      "jurisdiction": "S",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texreview",
+      "short_name": "Texas Special Court of Review",
+      "full_name": "Texas Special Court of Review",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texjpml",
+      "short_name": "Texas Judicial Panel on Multidistrict Litigation",
+      "full_name": "Texas Judicial Panel on Multidistrict Litigation",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texag",
+      "short_name": "Texas Attorney General Reports",
+      "full_name": "Texas Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp1",
+      "short_name": "Tex. App. Ct., 1st Dist. (Houston)",
+      "full_name": "Texas Court of Appeals, 1st District (Houston)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp2",
+      "short_name": "Tex. App. Ct., 2nd Dist. (Fort Worth)",
+      "full_name": "Texas Court of Appeals, 2nd District (Fort Worth)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp3",
+      "short_name": "Tex. App. Ct., 3rd Dist. (Austin)",
+      "full_name": "Texas Court of Appeals, 3rd District (Austin)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp4",
+      "short_name": "Tex. App. Ct., 4th Dist. (San Antonio)",
+      "full_name": "Texas Court of Appeals, 4th District (San Antonio)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp5",
+      "short_name": "Tex. App. Ct., 5th Dist. (Dallas)",
+      "full_name": "Texas Court of Appeals, 5th District (Dallas)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp6",
+      "short_name": "Tex. App. Ct., 6th Dist. (Texarkana)",
+      "full_name": "Texas Court of Appeals, 6th District (Texarkana)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp7",
+      "short_name": "Tex. App. Ct., 7th Dist. (Amarillo)",
+      "full_name": "Texas Court of Appeals, 7th District (Amarillo)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp8",
+      "short_name": "Tex. App. Ct., 8th Dist. (El Paso)",
+      "full_name": "Texas Court of Appeals, 8th District (El Paso)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp9",
+      "short_name": "Tex. App. Ct., 9th Dist. (Beaumont)",
+      "full_name": "Texas Court of Appeals, 9th District (Beaumont)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp10",
+      "short_name": "Tex. App. Ct., 10th Dist. (Waco)",
+      "full_name": "Texas Court of Appeals, 10th District (Waco)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp11",
+      "short_name": "Tex. App. Ct., 11th Dist. (Eastland)",
+      "full_name": "Texas Court of Appeals, 11th District (Eastland)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp12",
+      "short_name": "Tex. App. Ct., 12th Dist. (Tyler)",
+      "full_name": "Texas Court of Appeals, 12th District (Tyler)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp13A",
+      "short_name": "Tex. App. Ct., 13th Dist. (Corpus Christi)",
+      "full_name": "Texas Court of Appeals, 13th District (Corpus Christi)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp13B",
+      "short_name": "Tex. App. Ct., 13th Dist. (Edinburg)",
+      "full_name": "Texas Court of Appeals, 13th District (Edinburg)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp14",
+      "short_name": "Tex. App. Ct., 14th Dist. (Houston)",
+      "full_name": "Texas Court of Appeals, 14th District (Houston)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "utah",
+      "short_name": "Utah Supreme Court",
+      "full_name": "Utah Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1850-01-01",
+      "end_date": null
+    },
+    {
+      "id": "utahctapp",
+      "short_name": "Court of Appeals of Utah",
+      "full_name": "Court of Appeals of Utah",
+      "jurisdiction": "SA",
+      "start_date": "1987-01-17",
+      "end_date": null
+    },
+    {
+      "id": "slcregrec",
+      "short_name": "Salt Lake City Register and Receiver",
+      "full_name": "Salt Lake City Register and Receiver",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vt",
+      "short_name": "Supreme Court of Vermont",
+      "full_name": "Supreme Court of Vermont",
+      "jurisdiction": "S",
+      "start_date": "1778-01-01",
+      "end_date": null
+    },
+    {
+      "id": "vtsuperct",
+      "short_name": "Vermont Superior Court",
+      "full_name": "Vermont Superior Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "va",
+      "short_name": "Supreme Court of Virginia",
+      "full_name": "Supreme Court of Virginia",
+      "jurisdiction": "S",
+      "start_date": "1779-01-01",
+      "end_date": null
+    },
+    {
+      "id": "vagensess",
+      "short_name": "General Court of Virginia",
+      "full_name": "General Court of Virginia",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vactapp",
+      "short_name": "Court of Appeals of Virginia",
+      "full_name": "Court of Appeals of Virginia",
+      "jurisdiction": "SA",
+      "start_date": "1985-01-01",
+      "end_date": null
+    },
+    {
+      "id": "wash",
+      "short_name": "Washington Supreme Court",
+      "full_name": "Washington Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1889-01-01",
+      "end_date": null
+    },
+    {
+      "id": "washctapp",
+      "short_name": "Court of Appeals of Washington",
+      "full_name": "Court of Appeals of Washington",
+      "jurisdiction": "SA",
+      "start_date": "1969-01-01",
+      "end_date": null
+    },
+    {
+      "id": "washag",
+      "short_name": "Washington Attorney General Reports",
+      "full_name": "Washington Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "washterr",
+      "short_name": "Washington Territory",
+      "full_name": "Washington Territory",
+      "jurisdiction": "SS",
+      "start_date": "1853-03-02",
+      "end_date": "1889-11-11"
+    },
+    {
+      "id": "wva",
+      "short_name": "West Virginia Supreme Court",
+      "full_name": "West Virginia Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1863-01-01",
+      "end_date": null
+    },
+    {
+      "id": "wvactapp",
+      "short_name": "Int. Ct. of App. of W.Va.",
+      "full_name": "Intermediate Court of Appeals of West Virginia",
+      "jurisdiction": "SA",
+      "start_date": "2022-07-01",
+      "end_date": null
+    },
+    {
+      "id": "wis",
+      "short_name": "Wisconsin Supreme Court",
+      "full_name": "Wisconsin Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1836-01-01",
+      "end_date": null
+    },
+    {
+      "id": "wisctapp",
+      "short_name": "Court of Appeals of Wisconsin",
+      "full_name": "Court of Appeals of Wisconsin",
+      "jurisdiction": "SA",
+      "start_date": "1978-08-01",
+      "end_date": null
+    },
+    {
+      "id": "wisag",
+      "short_name": "Wisconsin Attorney General Reports",
+      "full_name": "Wisconsin Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wyo",
+      "short_name": "Wyoming Supreme Court",
+      "full_name": "Wyoming Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1921-01-01",
+      "end_date": null
+    },
+    {
+      "id": "guam",
+      "short_name": "Supreme Court of Guam",
+      "full_name": "Supreme Court of Guam",
+      "jurisdiction": "TS",
+      "start_date": "1996-01-01",
+      "end_date": null
+    },
+    {
+      "id": "superctguam",
+      "short_name": "Superior Court of Guam",
+      "full_name": "Superior Court of Guam",
+      "jurisdiction": "TA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmariana",
+      "short_name": "Sup. Ct. of the Comm. of the N. Mariana Islands",
+      "full_name": "Supreme Court of The Commonwealth of The Northern Mariana Islands",
+      "jurisdiction": "TS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cnmisuperct",
+      "short_name": "Northern Mariana Islands Commonwealth Superior Court",
+      "full_name": "Northern Mariana Islands Commonwealth Superior Court",
+      "jurisdiction": "TT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cnmitrialct",
+      "short_name": "Northern Mariana Islands Commonwealth Trial Court",
+      "full_name": "Northern Mariana Islands Commonwealth Trial Court",
+      "jurisdiction": "TT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "prsupreme",
+      "short_name": "Supreme Court of Puerto Rico",
+      "full_name": "Supreme Court of Puerto Rico",
+      "jurisdiction": "TS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "prapp",
+      "short_name": "Tribunal De Apelaciones De Puerto Rico/Court of Appeals of Puerto Rico",
+      "full_name": "Tribunal De Apelaciones De Puerto Rico/Court of Appeals of Puerto Rico",
+      "jurisdiction": "TA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "virginislands",
+      "short_name": "Supreme Court of The Virgin Islands",
+      "full_name": "Supreme Court of The Virgin Islands",
+      "jurisdiction": "TS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "visuper",
+      "short_name": "Superior Court of The Virgin Islands",
+      "full_name": "Superior Court of The Virgin Islands",
+      "jurisdiction": "TT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vimunict",
+      "short_name": "Municipal Court of The Virgin Islands",
+      "full_name": "Municipal Court of The Virgin Islands",
+      "jurisdiction": "TT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vipolct",
+      "short_name": "Police Court of The Virgin Islands",
+      "full_name": "Police Court of The Virgin Islands",
+      "jurisdiction": "TT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "amsamoa",
+      "short_name": "High Court of American Samoa",
+      "full_name": "High Court of American Samoa",
+      "jurisdiction": "TS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "amsamoatc",
+      "short_name": "American Samoa District Court",
+      "full_name": "American Samoa District Court",
+      "jurisdiction": "TT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usjc",
+      "short_name": "U.S. Judicial Conference Committee",
+      "full_name": "United States Judicial Conference Committee",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "jpml",
+      "short_name": "Judicial Panel on Multidistrict Litigation",
+      "full_name": "United States Judicial Panel on Multidistrict Litigation",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun",
+      "short_name": "Circuit Judicial Councils",
+      "full_name": "Circuit Judicial Councils",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun2",
+      "short_name": "Judicial Council of The Second Circuit",
+      "full_name": "Judicial Council of The Second Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun3",
+      "short_name": "Judicial Council of The Third Circuit",
+      "full_name": "Judicial Council of The Third Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun5",
+      "short_name": "Judicial Council of The Fifth Circuit",
+      "full_name": "Judicial Council of The Fifth Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun6",
+      "short_name": "Judicial Council of The Sixth Circuit",
+      "full_name": "Judicial Council of The Sixth Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun7",
+      "short_name": "Judicial Council of The Seventh Circuit",
+      "full_name": "Judicial Council of The Seventh Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun8",
+      "short_name": "Judicial Council of The Eighth Circuit",
+      "full_name": "Judicial Council of The Eighth Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun9",
+      "short_name": "Judicial Council of The Ninth Circuit",
+      "full_name": "Judicial Council of The Ninth Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoun10",
+      "short_name": "Judicial Council of The Tenth Circuit",
+      "full_name": "Judicial Council of The Tenth Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "judcoundc",
+      "short_name": "Judicial Council of the District of Columbia Circuit",
+      "full_name": "Judicial Council of the District of Columbia Circuit",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "usjudconfcomdis",
+      "short_name": "United States Judicial Conference Committee on Judicial Conduct and Disability",
+      "full_name": "United States Judicial Conference Committee on Judicial Conduct and Disability",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sttex",
+      "short_name": "Special Tribunals of Texas",
+      "full_name": "United States Special Tribunal of Texas",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "stp",
+      "short_name": "Special Tribunals of Pennsylvania",
+      "full_name": "United States Special Tribunals of Pennsylvania",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "fcc",
+      "short_name": "Decisions of the Federal Communications Commission",
+      "full_name": "Decisions of the Federal Communications Commission",
+      "jurisdiction": "C",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kingsbench",
+      "short_name": "Court of King's Bench",
+      "full_name": "Court of King's Bench",
+      "jurisdiction": "I",
+      "start_date": "1200-01-01",
+      "end_date": "1873-12-31"
+    },
+    {
+      "id": "houseoflordsuk",
+      "short_name": "House of Lords (UK)",
+      "full_name": "House of Lords (UK)",
+      "jurisdiction": "I",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "highctjchuk",
+      "short_name": "High Court of Justice, Chancery Division",
+      "full_name": "High Court of Justice, Chancery Division",
+      "jurisdiction": "I",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cherokee",
+      "short_name": "Cherokee Nation Supreme Court",
+      "full_name": "Cherokee Nation Supreme Court",
+      "jurisdiction": "TRS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cherokeeapp",
+      "short_name": "Cherokee Nation Judicial Appeals Tribunal",
+      "full_name": "Cherokee Nation Judicial Appeals Tribunal",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cherokeetribct",
+      "short_name": "Cherokee Indian Trib. Ct.",
+      "full_name": "Cherokee Indian Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "cheyrsiouxctapp",
+      "short_name": "Cheyenne River Sioux Tribal Court of Appeals",
+      "full_name": "Cheyenne River Sioux Tribal Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "colvctapp",
+      "short_name": "Colville Confederated Court of Appeals",
+      "full_name": "Colville Confederated Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "coquct",
+      "short_name": "Coquille Indian Tribal Court",
+      "full_name": "Coquille Indian Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "echerkokee",
+      "short_name": "Eastern Band of Cherokee Indians Supreme Court",
+      "full_name": "Eastern Band of Cherokee Indians Supreme Court",
+      "jurisdiction": "TRS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "echerokeect",
+      "short_name": "Eastern Band of Cherokee Indians Tribal Court",
+      "full_name": "Eastern Band of Cherokee Indians Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ftmcdowctapp",
+      "short_name": "Fort McDowell Yavapai Nation Tribal Court of Appeals",
+      "full_name": "Fort McDowell Yavapai Nation Tribal Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ftmcdowell",
+      "short_name": "Fort McDowell Supreme Court",
+      "full_name": "Fort McDowell Supreme Court",
+      "jurisdiction": "TRS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ftpeckctapp",
+      "short_name": "Fort Peck Appellate Court",
+      "full_name": "Fort Peck Appellate Court",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ftpecktrialct",
+      "short_name": "Fort Peck Tribal Court",
+      "full_name": "Fort Peck Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "grrondectapp",
+      "short_name": "Grand Ronde Court of Appeals",
+      "full_name": "Grand Ronde Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "grrondect",
+      "short_name": "Grand Ronde Tribal Court",
+      "full_name": "Grand Ronde Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "grtravbandctapp",
+      "short_name": "Grand Traverse Band of Ottawa & Chippewa Indians Tribal Appellate Court",
+      "full_name": "Grand Traverse Band of Ottawa & Chippewa Indians Tribal Appellate Court",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "grtravbandct",
+      "short_name": "Grand Traverse Band of Ottawa and Chippewa Indians Tribal Court",
+      "full_name": "Grand Traverse Band of Ottawa and Chippewa Indians Tribal Court",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "hochunk",
+      "short_name": "Ho-Chunk Nation Supreme Court",
+      "full_name": "Ho-Chunk Nation Supreme Court",
+      "jurisdiction": "TRS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "hochunkct",
+      "short_name": "Ho-Chunk Nation Trial Court",
+      "full_name": "Ho-Chunk Nation Trial Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "hopiappct",
+      "short_name": "Hopi Appellate Court",
+      "full_name": "Hopi Appellate Court",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "leechojibtr",
+      "short_name": "Leech Lake Band of Ojibwe Tribal Court",
+      "full_name": "Leech Lake Band of Ojibwe Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lrbottawactapp",
+      "short_name": "Little River Band of Ottawa Indians Tribal Court of Appeals",
+      "full_name": "Little River Band of Ottawa Indians Tribal Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lrbottawact",
+      "short_name": "Little River Band of Ottawa Indians Tribal Court",
+      "full_name": "Little River Band of Ottawa Indians Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "odawactapp",
+      "short_name": "Little Traverse Bay Bands of Odawa Indians Tribal Appellate Court",
+      "full_name": "Little Traverse Bay Bands of Odawa Indians Tribal Appellate Court",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moheganctapp",
+      "short_name": "Mohegan Tribal Court of Appeals",
+      "full_name": "Mohegan Tribal Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moheganct",
+      "short_name": "Mohegan Trial Court",
+      "full_name": "Mohegan Trial Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mohegangct",
+      "short_name": "Mohegan Gaming Disputes Trial Court",
+      "full_name": "Mohegan Gaming Disputes Trial Court",
+      "jurisdiction": "TRX",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mohegangctapp",
+      "short_name": "Mohegan Gaming Disputes Court of Appeals",
+      "full_name": "Mohegan Gaming Disputes Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "moheganelders",
+      "short_name": "Council of Elders of the Mohegan Tribe",
+      "full_name": "Council of Elders of the Mohegan Tribe",
+      "jurisdiction": "TRX",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "navajo",
+      "short_name": "Navajo Nation Supreme Court",
+      "full_name": "Navajo Nation Supreme Court",
+      "jurisdiction": "TRS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "navajoctapp",
+      "short_name": "Navajo Nation Ct. App.",
+      "full_name": "Navajo Nation Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "navajofamct",
+      "short_name": "Navajo Nation Family Court",
+      "full_name": "Navajo Nation Family Court",
+      "jurisdiction": "TRX",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "navajochildct",
+      "short_name": "Navajo Nation Children's Court",
+      "full_name": "Navajo Nation Children's Court",
+      "jurisdiction": "TRX",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oneidactapp",
+      "short_name": "Oneida Appellate Court",
+      "full_name": "Oneida Appellate Court",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "oneidatrialct",
+      "short_name": "Oneida Tribal Judicial System, Trial Court",
+      "full_name": "Oneida Tribal Judicial System, Trial Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sacfoxsupct",
+      "short_name": "Sac and Fox Nation Supreme Court",
+      "full_name": "Sac and Fox Nation Supreme Court",
+      "jurisdiction": "TRS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sacfoxdistct",
+      "short_name": "Sac and Fox Nation District Court",
+      "full_name": "Sac and Fox Nation District Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "salishctapp",
+      "short_name": "Confederated Salish & Kootenai Court of Appeals",
+      "full_name": "Confederated Salish & Kootenai Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "shoaraphotr",
+      "short_name": "Shoshone and Arapaho Tribal Court",
+      "full_name": "Shoshone and Arapaho Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "swinomishappct",
+      "short_name": "Swinomish Tribal Court of Appeals",
+      "full_name": "Swinomish Tribal Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "swinomishtr",
+      "short_name": "Swinomish Tribal Court",
+      "full_name": "Swinomish Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tulalipctapp",
+      "short_name": "Tulalip Court of Appeals",
+      "full_name": "Tulalip Court of Appeals",
+      "jurisdiction": "TRA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "webchippewatr",
+      "short_name": "White Earth Band of Chippewa Tribal Court",
+      "full_name": "White Earth Band of Chippewa Tribal Court",
+      "jurisdiction": "TRT",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

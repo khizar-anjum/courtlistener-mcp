@@ -1,0 +1,87 @@
+{
+  "state": "new-mexico",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 8,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "nmb",
+      "nmib"
+    ],
+    "local": [
+      "nmcca",
+      "nmd",
+      "nmid",
+      "nm",
+      "nmctapp",
+      "nmariana"
+    ]
+  },
+  "courts": [
+    {
+      "id": "nmcca",
+      "short_name": "Navy-Marine Corps Court of Criminal Appeals",
+      "full_name": "Navy-Marine Corps Court of Criminal Appeals",
+      "jurisdiction": "MA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmb",
+      "short_name": "D. New Mexico",
+      "full_name": "United States Bankruptcy Court, D. New Mexico",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmib",
+      "short_name": "Northern Mariana Islands",
+      "full_name": "United States Bankruptcy Court, Northern Mariana Islands",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmd",
+      "short_name": "D. New Mexico",
+      "full_name": "District Court, D. New Mexico",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nmid",
+      "short_name": "Northern Mariana Islands",
+      "full_name": "District Court, Northern Mariana Islands",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nm",
+      "short_name": "New Mexico Supreme Court",
+      "full_name": "New Mexico Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nmctapp",
+      "short_name": "New Mexico Court of Appeals",
+      "full_name": "New Mexico Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1966-04-01",
+      "end_date": null
+    },
+    {
+      "id": "nmariana",
+      "short_name": "Sup. Ct. of the Comm. of the N. Mariana Islands",
+      "full_name": "Supreme Court of The Commonwealth of The Northern Mariana Islands",
+      "jurisdiction": "TS",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

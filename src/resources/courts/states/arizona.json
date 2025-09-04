@@ -1,0 +1,23 @@
+{
+  "state": "arizona",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 1,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [],
+    "local": [
+      "azd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "azd",
+      "short_name": "D. Arizona",
+      "full_name": "District Court, D. Arizona",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

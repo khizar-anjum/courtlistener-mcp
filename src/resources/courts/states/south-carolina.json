@@ -1,0 +1,61 @@
+{
+  "state": "south-carolina",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 5,
+  "court_types": {
+    "federal": [
+      "scotus"
+    ],
+    "state": [],
+    "bankruptcy": [
+      "scb"
+    ],
+    "local": [
+      "scd",
+      "sc",
+      "scctapp"
+    ]
+  },
+  "courts": [
+    {
+      "id": "scotus",
+      "short_name": "Supreme Court",
+      "full_name": "Supreme Court of the United States",
+      "jurisdiction": "F",
+      "start_date": "1789-09-24",
+      "end_date": null
+    },
+    {
+      "id": "scb",
+      "short_name": "D. South Carolina",
+      "full_name": "United States Bankruptcy Court, D. South Carolina",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "scd",
+      "short_name": "D. South Carolina",
+      "full_name": "District Court, D. South Carolina",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sc",
+      "short_name": "Supreme Court of South Carolina",
+      "full_name": "Supreme Court of South Carolina",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "scctapp",
+      "short_name": "Court of Appeals of South Carolina",
+      "full_name": "Court of Appeals of South Carolina",
+      "jurisdiction": "SA",
+      "start_date": "1983-01-01",
+      "end_date": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "state": "south-dakota",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 3,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "sdb"
+    ],
+    "local": [
+      "sdd",
+      "sd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "sdb",
+      "short_name": "D. South Dakota",
+      "full_name": "United States Bankruptcy Court, D. South Dakota",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sdd",
+      "short_name": "D. South Dakota",
+      "full_name": "District Court, D. South Dakota",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "sd",
+      "short_name": "South Dakota Supreme Court",
+      "full_name": "South Dakota Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1889-01-01",
+      "end_date": null
+    }
+  ]
+}

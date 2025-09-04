@@ -1,0 +1,51 @@
+{
+  "state": "idaho",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 4,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "idb"
+    ],
+    "local": [
+      "idd",
+      "idaho",
+      "idahoctapp"
+    ]
+  },
+  "courts": [
+    {
+      "id": "idb",
+      "short_name": "D. Idaho",
+      "full_name": "United States Bankruptcy Court, D. Idaho",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "idd",
+      "short_name": "D. Idaho",
+      "full_name": "District Court, D. Idaho",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "idaho",
+      "short_name": "Idaho Supreme Court",
+      "full_name": "Idaho Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1863-01-01",
+      "end_date": null
+    },
+    {
+      "id": "idahoctapp",
+      "short_name": "Idaho Court of Appeals",
+      "full_name": "Idaho Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1982-01-04",
+      "end_date": null
+    }
+  ]
+}

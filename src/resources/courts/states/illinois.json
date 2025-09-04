@@ -1,0 +1,124 @@
+{
+  "state": "illinois",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 12,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "ilclaimsct",
+      "illcirct"
+    ],
+    "bankruptcy": [
+      "ilcb",
+      "ilnb",
+      "ilsb"
+    ],
+    "local": [
+      "ilcd",
+      "ilnd",
+      "ilsd",
+      "illinoised",
+      "illinoisd",
+      "ill",
+      "illappct"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ilcb",
+      "short_name": "C.D. Illinois",
+      "full_name": "United States Bankruptcy Court, C.D. Illinois",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilnb",
+      "short_name": "N.D. Illinois",
+      "full_name": "United States Bankruptcy Court, N.D. Illinois",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilsb",
+      "short_name": "S.D. Illinois",
+      "full_name": "United States Bankruptcy Court, S.D. Illinois",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilcd",
+      "short_name": "C.D. Illinois",
+      "full_name": "District Court, C.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilnd",
+      "short_name": "N.D. Illinois",
+      "full_name": "District Court, N.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ilsd",
+      "short_name": "S.D. Illinois",
+      "full_name": "District Court, S.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "illinoised",
+      "short_name": "E.D. Illinois",
+      "full_name": "District Court, E.D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": "1905-03-03",
+      "end_date": "1978-10-02"
+    },
+    {
+      "id": "illinoisd",
+      "short_name": "D. Illinois",
+      "full_name": "District Court, D. Illinois",
+      "jurisdiction": "FD",
+      "start_date": "1819-03-03",
+      "end_date": "1855-02-13"
+    },
+    {
+      "id": "ill",
+      "short_name": "Illinois Supreme Court",
+      "full_name": "Illinois Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "illappct",
+      "short_name": "Appellate Court of Illinois",
+      "full_name": "Appellate Court of Illinois",
+      "jurisdiction": "SA",
+      "start_date": "1877-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ilclaimsct",
+      "short_name": "Court of Claims of Illinois",
+      "full_name": "Court of Claims of Illinois",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "illcirct",
+      "short_name": "Illinois Circuit Court",
+      "full_name": "Illinois Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

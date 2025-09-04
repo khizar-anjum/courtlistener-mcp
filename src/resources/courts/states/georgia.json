@@ -1,0 +1,475 @@
+{
+  "state": "georgia",
+  "generated_at": "2025-09-04T20:12:27.921Z",
+  "total_courts": 51,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "gasuperct",
+      "gasuperctburke",
+      "gasuperctcarrol",
+      "gasuperctchatha",
+      "gasuperctclark",
+      "gasuperctclarke",
+      "gasuperctcobb",
+      "gasuperctcolumb",
+      "gasuperctcoweta",
+      "gasuperctdecatu",
+      "gasuperctdekalb",
+      "gasuperctearl",
+      "gasuperctelbert",
+      "gasuperctfay",
+      "gasuperctfrankl",
+      "gasuperctgwin",
+      "gasupercthabers",
+      "gasupercthall",
+      "gasupercthancoc",
+      "gasuperctharris",
+      "gasuperctheard",
+      "gasupercthous",
+      "gasuperctlee",
+      "gasuperctliber",
+      "gasuperctlincol",
+      "gasuperctmacon",
+      "gasuperctmari",
+      "gasuperctmeriw",
+      "gasuperctmuscog",
+      "gasuperctogleth",
+      "gasuperctpike",
+      "gasuperctrand",
+      "gasuperctrichm",
+      "gasuperctserive",
+      "gasuperctsumter",
+      "gasupercttalb",
+      "gasupercttallia",
+      "gasupercttroup",
+      "gasuperctwalton",
+      "gasuperctwashin",
+      "gasuperctwilkes"
+    ],
+    "bankruptcy": [
+      "gamb",
+      "ganb",
+      "gasb"
+    ],
+    "local": [
+      "gad",
+      "gamd",
+      "gand",
+      "gasd",
+      "ga",
+      "gactapp",
+      "gaoyertermct"
+    ]
+  },
+  "courts": [
+    {
+      "id": "gamb",
+      "short_name": "M.D. Georgia",
+      "full_name": "United States Bankruptcy Court, M.D. Georgia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ganb",
+      "short_name": "N.D. Georgia",
+      "full_name": "United States Bankruptcy Court, N.D. Georgia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasb",
+      "short_name": "S.D. Georgia",
+      "full_name": "United States Bankruptcy Court, S.D. Georgia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gad",
+      "short_name": "D. Georgia",
+      "full_name": "District Court, D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1848-08-11"
+    },
+    {
+      "id": "gamd",
+      "short_name": "M.D. Georgia",
+      "full_name": "District Court, M.D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gand",
+      "short_name": "N.D. Georgia",
+      "full_name": "District Court, N.D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasd",
+      "short_name": "S.D. Georgia",
+      "full_name": "District Court, S.D. Georgia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ga",
+      "short_name": "Supreme Court of Georgia",
+      "full_name": "Supreme Court of Georgia",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "gactapp",
+      "short_name": "Court of Appeals of Georgia",
+      "full_name": "Court of Appeals of Georgia",
+      "jurisdiction": "SA",
+      "start_date": "1906-11-06",
+      "end_date": null
+    },
+    {
+      "id": "gaoyertermct",
+      "short_name": "Georgia Court of Oyer and Terminer",
+      "full_name": "Georgia Court of Oyer and Terminer",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperct",
+      "short_name": "Georgia Superior Court",
+      "full_name": "Georgia Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctburke",
+      "short_name": "Burke County Superior Court, Ga.",
+      "full_name": "Burke County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctcarrol",
+      "short_name": "Carroll County Superior Court, Ga.",
+      "full_name": "Carroll County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctchatha",
+      "short_name": "Chatham Superior Court, Ga.",
+      "full_name": "Chatham Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctclark",
+      "short_name": "Clark County Superior Court, Ga.",
+      "full_name": "Clark County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctclarke",
+      "short_name": "Clarke County Superior Court, Ga.",
+      "full_name": "Clarke County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctcobb",
+      "short_name": "Cobb County Superior Court, Ga.",
+      "full_name": "Cobb County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctcolumb",
+      "short_name": "Columbia County Superior Court, Ga.",
+      "full_name": "Columbia County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctcoweta",
+      "short_name": "Coweta County Superior Court, Ga.",
+      "full_name": "Coweta County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctdecatu",
+      "short_name": "Decatur County Superior Court, Ga.",
+      "full_name": "Decatur County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctdekalb",
+      "short_name": "DeKalb County Superior Court, Ga.",
+      "full_name": "DeKalb County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctearl",
+      "short_name": "Early County Superior Court, Ga.",
+      "full_name": "Early County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctelbert",
+      "short_name": "Elbert County Superior Court, Ga.",
+      "full_name": "Elbert County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctfay",
+      "short_name": "Fayette Superior Court, Ga.",
+      "full_name": "Fayette Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctfrankl",
+      "short_name": "Franklin County Superior Court, Ga.",
+      "full_name": "Franklin County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctgwin",
+      "short_name": "Gwinnett County Superior Court, Ga.",
+      "full_name": "Gwinnett County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercthabers",
+      "short_name": "Habersham County Superior Court, Ga.",
+      "full_name": "Habersham County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercthall",
+      "short_name": "Hall County Superior Court, Ga.",
+      "full_name": "Hall County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercthancoc",
+      "short_name": "Hancock County Superior Court, Ga.",
+      "full_name": "Hancock County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctharris",
+      "short_name": "Harris County Superior Court, Ga.",
+      "full_name": "Harris County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctheard",
+      "short_name": "Heard County Superior Court, Ga.",
+      "full_name": "Heard County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercthous",
+      "short_name": "Houston Superior Court, Ga.",
+      "full_name": "Houston Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctlee",
+      "short_name": "Lee County Superior Court, Ga.",
+      "full_name": "Lee County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctliber",
+      "short_name": "Liberty County Superior Court, Ga.",
+      "full_name": "Liberty County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctlincol",
+      "short_name": "Lincoln County Superior Court, Ga.",
+      "full_name": "Lincoln County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctmacon",
+      "short_name": "Macon County Superior Court, Ga.",
+      "full_name": "Macon County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctmari",
+      "short_name": "Marion County Superior Court, Ga.",
+      "full_name": "Marion County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctmeriw",
+      "short_name": "Meriwether County Superior Court, Ga.",
+      "full_name": "Meriwether County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctmuscog",
+      "short_name": "Muscogee County Superior Court, Ga.",
+      "full_name": "Muscogee County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctogleth",
+      "short_name": "Oglethorpe County Superior Court, Ga.",
+      "full_name": "Oglethorpe County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctpike",
+      "short_name": "Pike Superior Court, Ga.",
+      "full_name": "Pike Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctrand",
+      "short_name": "Randolph County Superior Court, Ga.",
+      "full_name": "Randolph County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctrichm",
+      "short_name": "Richmond Superior Court, Ga.",
+      "full_name": "Richmond Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctserive",
+      "short_name": "Seriven County Superior Court, Ga.",
+      "full_name": "Seriven County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctsumter",
+      "short_name": "Sumter County Superior Court, Ga.",
+      "full_name": "Sumter County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercttalb",
+      "short_name": "Talbot County Superior Court, Ga.",
+      "full_name": "Talbot County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercttallia",
+      "short_name": "Talliaferro County Superior Court, Ga.",
+      "full_name": "Talliaferro County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasupercttroup",
+      "short_name": "Troup County Superior Court, Ga.",
+      "full_name": "Troup County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctwalton",
+      "short_name": "Walton County Superior Court, Ga.",
+      "full_name": "Walton County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctwashin",
+      "short_name": "Washington County Superior Court, Ga.",
+      "full_name": "Washington County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "gasuperctwilkes",
+      "short_name": "Wilkes County Superior Court, Ga.",
+      "full_name": "Wilkes County Superior Court, Ga.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}
