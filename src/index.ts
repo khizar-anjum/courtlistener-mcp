@@ -664,6 +664,7 @@ class CourtListenerMCPServer {
     const stateAbbreviations: Record<string, string[]> = {
       california: ["ca", "cal"],
       newyork: ["ny"],
+      "new-york": ["ny"],
       texas: ["tx", "tex"],
       florida: ["fl", "fla"],
       illinois: ["il", "ill"],
@@ -672,7 +673,9 @@ class CourtListenerMCPServer {
       michigan: ["mi"],
       georgia: ["ga"],
       northcarolina: ["nc"],
+      "north-carolina": ["nc"],
       newjersey: ["nj"],
+      "new-jersey": ["nj"],
       virginia: ["va"],
       washington: ["wa"],
       arizona: ["az"],
@@ -685,6 +688,7 @@ class CourtListenerMCPServer {
       colorado: ["co"],
       minnesota: ["mn"],
       southcarolina: ["sc"],
+      "south-carolina": ["sc"],
       alabama: ["al"],
       louisiana: ["la"],
       kentucky: ["ky"],
@@ -698,23 +702,30 @@ class CourtListenerMCPServer {
       mississippi: ["ms"],
       kansas: ["ks"],
       newmexico: ["nm"],
+      "new-mexico": ["nm"],
       nebraska: ["ne"],
       westvirginia: ["wv"],
+      "west-virginia": ["wv"],
       idaho: ["id"],
       hawaii: ["hi"],
       newhampshire: ["nh"],
+      "new-hampshire": ["nh"],
       maine: ["me"],
       montana: ["mt"],
       rhodeisland: ["ri"],
+      "rhode-island": ["ri"],
       delaware: ["de"],
       southdakota: ["sd"],
+      "south-dakota": ["sd"],
       northdakota: ["nd"],
+      "north-dakota": ["nd"],
       alaska: ["ak"],
       vermont: ["vt"],
       wyoming: ["wy"],
     };
 
-    const stateCodes = stateAbbreviations[stateName] || [stateName];
+    // Also check the original input before normalization
+    const stateCodes = stateAbbreviations[stateName] || stateAbbreviations[stateName.replace(/[-_\s]/g, "")] || [stateName];
 
     return this.courtCache.state
       .filter((court) => {
@@ -740,13 +751,31 @@ class CourtListenerMCPServer {
       }
     });
 
-    // Add common alternatives
+    // Add common alternatives and state name suggestions
     if (normalized.includes("fed")) suggestions.push("federal");
     if (normalized.includes("state")) suggestions.push("state");
     if (normalized.includes("supreme")) suggestions.push("scotus");
     if (normalized.includes("ca") && !normalized.includes("cal"))
       suggestions.push("california");
     if (normalized.includes("ny")) suggestions.push("new-york");
+    if (normalized.includes("south") && normalized.includes("carolina"))
+      suggestions.push("south-carolina");
+    if (normalized.includes("north") && normalized.includes("carolina"))
+      suggestions.push("north-carolina");
+    if (normalized.includes("south") && normalized.includes("dakota"))
+      suggestions.push("south-dakota");
+    if (normalized.includes("north") && normalized.includes("dakota"))
+      suggestions.push("north-dakota");
+    if (normalized.includes("new") && normalized.includes("jersey"))
+      suggestions.push("new-jersey");
+    if (normalized.includes("new") && normalized.includes("mexico"))
+      suggestions.push("new-mexico");
+    if (normalized.includes("west") && normalized.includes("virginia"))
+      suggestions.push("west-virginia");
+    if (normalized.includes("new") && normalized.includes("hampshire"))
+      suggestions.push("new-hampshire");
+    if (normalized.includes("rhode") && normalized.includes("island"))
+      suggestions.push("rhode-island");
 
     return [...new Set(suggestions)].slice(0, 5); // Limit suggestions, remove duplicates
   }
@@ -759,6 +788,7 @@ class CourtListenerMCPServer {
     }
 
     const normalized = jurisdiction.toLowerCase().replace(/[-_\s]/g, "");
+    const lowerOriginal = jurisdiction.toLowerCase();
 
     // Handle special cases
     switch (normalized) {
@@ -796,8 +826,11 @@ class CourtListenerMCPServer {
       return [jurisdiction];
     }
 
-    // Handle state names
-    const stateResults = this.findCourtsByState(normalized);
+    // Handle state names - try both normalized and hyphenated versions
+    let stateResults = this.findCourtsByState(lowerOriginal);
+    if (stateResults.length === 0) {
+      stateResults = this.findCourtsByState(normalized);
+    }
     if (stateResults.length > 0) {
       return stateResults;
     }
