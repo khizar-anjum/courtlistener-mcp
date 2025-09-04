@@ -7,7 +7,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "npx @smithery/cli dev",
-		"build": "npx @smithery/cli build",
+		"build": "npx @smithery/cli build && npm run copy-resources",
+		"copy-resources": "cp -r src/resources .smithery/ 2>/dev/null || mkdir -p .smithery && cp -r src/resources .smithery/",
 		"generate-courts": "tsx scripts/generate-court-resources.ts",
 		"validate-resources": "tsx scripts/generate-court-resources.ts --validate-only",
 		"update-courts": "tsx scripts/generate-court-resources.ts"

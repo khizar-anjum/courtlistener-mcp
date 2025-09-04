@@ -1,9 +1,28 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Get directory path compatible with both ESM and CJS
+function getCurrentDir(): string {
+  // Try ESM approach first
+  try {
+    if (typeof import.meta !== 'undefined' && import.meta.url) {
+      const { fileURLToPath } = require('url');
+      return path.dirname(fileURLToPath(import.meta.url));
+    }
+  } catch {
+    // Fall through to CJS approach
+  }
+  
+  // Fallback to CJS approach
+  if (typeof __dirname !== 'undefined') {
+    return __dirname;
+  }
+  
+  // Last resort: use process.cwd() and assume src directory
+  return path.join(process.cwd(), 'src');
+}
+
+const currentDir = getCurrentDir();
 
 interface Resource {
   uri: string;
@@ -13,7 +32,7 @@ interface Resource {
 }
 
 export class CourtResourceManager {
-  private static readonly RESOURCES_DIR = path.join(__dirname, 'resources');
+  private static readonly RESOURCES_DIR = path.join(currentDir, 'resources');
   
   static listResources(): Resource[] {
     const resources: Resource[] = [

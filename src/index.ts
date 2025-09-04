@@ -695,10 +695,15 @@ class CourtListenerMCPServer {
           break;
       }
 
+      // CourtListener search API requires court filtering via query string, not court parameter
+      const courtFilter = targetCourts.length > 0 
+        ? ` AND court_id:(${targetCourts.join(' OR ')})` 
+        : '';
+      const finalQuery = searchQueryFinal + courtFilter;
+
       const params = {
-        q: searchQueryFinal,
+        q: finalQuery,
         type: "o",
-        ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
         ...dateFilter,
         cited_gt: 0,
         page_size: Math.min(limit * 2, 40),
@@ -1029,10 +1034,15 @@ class CourtListenerMCPServer {
 
       const searchQuery = searchTerms.join(" OR ");
 
+      // Use OR logic for court filtering in query parameter
+      const courtFilter = targetCourts.length > 0 
+        ? ` AND court_id:(${targetCourts.join(' OR ')})` 
+        : '';
+      const finalQuery = searchQuery + courtFilter;
+
       const params = {
-        q: searchQuery,
+        q: finalQuery,
         type: "o",
-        ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
         cited_gt: citation_threshold - 1,
         page_size: limit + 5,
         fields: "id,case_name,court,date_filed,citation_count,snippet",
@@ -1230,10 +1240,15 @@ class CourtListenerMCPServer {
     }
 
     try {
+      // Use OR logic for court filtering in query parameter
+      const courtFilter = targetCourts.length > 0 
+        ? ` AND court_id:(${targetCourts.join(' OR ')})` 
+        : '';
+      const finalQuery = `"${case_type}"` + courtFilter;
+
       const params = {
-        q: `"${case_type}"`,
+        q: finalQuery,
         type: "r",
-        ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
         ...dateFilter,
         page_size: 50,
         fields: "id,case_name,court,date_filed,date_terminated,nature_of_suit",
@@ -1399,19 +1414,18 @@ class CourtListenerMCPServer {
 
       const judgeId = selectedJudge.id;
 
+      // Use OR logic for court filtering in query parameter
+      const courtFilter = court ? ` AND court_id:(${court})` :
+        targetCourts.length > 0 ? ` AND court_id:(${targetCourts.join(' OR ')})` : '';
+      const finalQuery = case_type + courtFilter;
+
       const opinionParams: any = {
         author: judgeId,
-        q: case_type,
+        q: finalQuery,
         type: "o",
         page_size: 20,
         fields: "id,case_name,court,date_filed,type",
       };
-
-      if (court) {
-        opinionParams.court = court;
-      } else if (targetCourts.length > 0) {
-        opinionParams.court = targetCourts.join(",");
-      }
 
       const opinionResponse = await this.axiosInstance.get("/search/", {
         params: opinionParams,
@@ -1511,10 +1525,15 @@ class CourtListenerMCPServer {
 
     for (const citation of citations.slice(0, 10)) {
       try {
+        // Use OR logic for court filtering in query parameter
+        const courtFilter = targetCourts.length > 0 
+          ? ` AND court_id:(${targetCourts.join(' OR ')})` 
+          : '';
+        const finalQuery = `"${citation}"` + courtFilter;
+
         const searchParams = {
-          q: `"${citation}"`,
+          q: finalQuery,
           type: "o",
-          ...(targetCourts.length > 0 && { court: targetCourts.join(",") }),
           page_size: 5,
           fields: "id,case_name,court,date_filed,citation_count,snippet",
         };
@@ -1624,10 +1643,15 @@ class CourtListenerMCPServer {
       // If specific court provided, use it; otherwise use resolved courts
       const searchCourts = court ? [court] : targetCourts;
 
+      // Use OR logic for court filtering in query parameter
+      const courtFilter = searchCourts.length > 0 
+        ? ` AND court_id:(${searchCourts.join(' OR ')})` 
+        : '';
+      const finalQuery = `"${case_type}" AND (procedure OR filing OR requirement OR "civil procedure" OR "rules of court")` + courtFilter;
+
       // Search for procedural cases
       const searchParams = {
-        q: `"${case_type}" AND (procedure OR filing OR requirement OR "civil procedure" OR "rules of court")`,
-        ...(searchCourts.length > 0 && { court: searchCourts.join(",") }),
+        q: finalQuery,
         type: "o",
         page_size: 20,
         fields: "id,case_name,court,date_filed,snippet",
