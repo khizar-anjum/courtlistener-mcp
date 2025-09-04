@@ -1,10 +1,10 @@
 # CourtListener Legal Research MCP Server
 
-A specialized Model Context Protocol (MCP) server implemented in **Node.js** that helps LLMs provide legal advice based on precedents by enabling intelligent case law search and deep investigation capabilities for consumer grievances under $10k in New York State.
+A specialized Model Context Protocol (MCP) server implemented in **TypeScript** that helps LLMs provide legal research and analysis by enabling intelligent case law search and deep investigation capabilities across various jurisdictions including New York, California, and Federal courts.
 
 ## Overview
 
-This advanced MCP server transforms how LLMs interact with legal databases by providing 8 specialized tools for comprehensive legal research. Designed specifically for consumer law in New York State, it combines intelligent search algorithms, outcome analysis, and procedural guidance to support effective legal advice.
+This advanced MCP server transforms how LLMs interact with legal databases by providing 8 specialized tools for comprehensive legal research. It combines intelligent search algorithms, outcome analysis, and procedural guidance to support effective legal research across various areas of law.
 
 ## Key Features
 
@@ -71,15 +71,17 @@ npm start
 **Purpose**: Find relevant cases using LLM-generated search keywords for precise legal research
 - LLM extracts optimal legal keywords from problem descriptions
 - Advanced relevance scoring and result ranking
-- Focuses on NY consumer law under $10k with intelligent court targeting
+- Intelligent court targeting across multiple jurisdictions
 - **Parameters**:
   - `search_keywords` (required): Array of legal terms extracted by LLM (1-10 terms)
   - `problem_summary`: Brief problem context for reference (optional)
-  - `case_type`: Consumer issue type (consumer, small-claims, landlord-tenant, etc.)
+  - `case_type`: Legal issue type (consumer, contract, employment, civil-rights, etc.)
   - `date_range`: Time preference (recent-2years, established-precedent, all-time)
   - `limit`: Number of cases to return (1-20, default: 10)
+  - `jurisdiction` (required): Jurisdiction to search ("new-york", "california", "federal")
+  - `court_level`: Court level filter (trial, appellate, supreme, all)
 
-**LLM Usage**: The LLM should analyze the client's problem and extract 3-7 relevant legal keywords like `["breach of warranty", "consumer protection", "defective product"]` before calling this function.
+**LLM Usage**: The LLM should analyze the client's problem and extract 3-7 relevant legal keywords like `["breach of contract", "negligence", "damages"]` before calling this function. Always specify the jurisdiction where the legal issue occurred.
 
 ### 📋 get_case_details
 **Purpose**: Deep dive into specific cases for comprehensive precedent analysis
@@ -258,7 +260,8 @@ The LLM should follow this pattern when using the MCP server:
     "search_keywords": ["breach of warranty", "defective product", "consumer protection", "merchantability"],
     "problem_summary": "Laptop failed after 3 months, manufacturer denying warranty coverage",
     "case_type": "warranty",
-    "date_range": "recent-2years"
+    "date_range": "recent-2years",
+    "jurisdiction": "new-york"
   }
 }
 ```
@@ -275,7 +278,8 @@ The LLM should follow this pattern when using the MCP server:
   "arguments": {
     "search_keywords": ["rent withholding", "habitability", "landlord tenant", "mold", "eviction defense"],
     "problem_summary": "Tenant withholding rent due to mold, facing eviction",
-    "case_type": "landlord-tenant"
+    "case_type": "landlord-tenant",
+    "jurisdiction": "california"
   }
 }
 ```

@@ -24,6 +24,8 @@ interface SearchArgs {
   case_type?: string;
   date_range?: "recent-2years" | "established-precedent" | "all-time";
   limit?: number;
+  jurisdiction?: string;
+  court_level?: "trial" | "appellate" | "supreme" | "all";
 }
 
 interface CaseDetailsArgs {
@@ -36,12 +38,14 @@ interface SimilarPrecedentsArgs {
   legal_concepts?: string[];
   citation_threshold?: number;
   limit?: number;
+  jurisdiction?: string;
 }
 
 interface AnalyzeCaseOutcomesArgs {
   case_type: string;
   court_level?: "trial" | "appellate" | "all";
   date_range?: "last-year" | "last-2years" | "last-5years";
+  jurisdiction?: string;
 }
 
 interface JudgeAnalysisArgs {
@@ -127,7 +131,7 @@ class CourtListenerMCPServer {
                 type: "array",
                 items: { type: "string" },
                 description:
-                  'Array of legal search terms extracted by LLM from problem description (e.g., ["breach of warranty", "consumer protection", "defective product"])',
+                  'Array of legal search terms extracted by LLM from problem description (e.g., ["breach of contract", "negligence", "damages"])',
                 minItems: 1,
                 maxItems: 10,
               },
@@ -139,7 +143,7 @@ class CourtListenerMCPServer {
               },
               case_type: {
                 type: "string",
-                description: "Type of consumer issue",
+                description: "Type of legal issue",
                 enum: [
                   "consumer",
                   "small-claims",
@@ -149,6 +153,15 @@ class CourtListenerMCPServer {
                   "debt-collection",
                   "auto",
                   "employment",
+                  "civil-rights",
+                  "corporate",
+                  "criminal",
+                  "family",
+                  "immigration",
+                  "intellectual-property",
+                  "personal-injury",
+                  "real-estate",
+                  "tax",
                 ],
               },
               date_range: {
@@ -163,6 +176,17 @@ class CourtListenerMCPServer {
                 minimum: 1,
                 maximum: 20,
                 default: 10,
+              },
+              jurisdiction: {
+                type: "string",
+                description:
+                  "Jurisdiction to search (e.g., 'new-york', 'california', 'federal'). If not specified, the server will request this information.",
+              },
+              court_level: {
+                type: "string",
+                description: "Level of courts to search",
+                enum: ["trial", "appellate", "supreme", "all"],
+                default: "all",
               },
             },
             required: ["search_keywords"],
@@ -204,7 +228,7 @@ class CourtListenerMCPServer {
                 type: "array",
                 items: { type: "string" },
                 description:
-                  'Key legal concepts to match (e.g., ["breach of warranty", "consumer protection"])',
+                  'Key legal concepts to match (e.g., ["breach of contract", "negligence"])',
               },
               citation_threshold: {
                 type: "number",
@@ -217,6 +241,11 @@ class CourtListenerMCPServer {
                 minimum: 1,
                 maximum: 15,
                 default: 8,
+              },
+              jurisdiction: {
+                type: "string",
+                description:
+                  "Jurisdiction to search for similar cases (e.g., 'new-york', 'california', 'federal'). If not specified, the server will request this information.",
               },
             },
             required: ["reference_case_id"],
@@ -231,7 +260,7 @@ class CourtListenerMCPServer {
             properties: {
               case_type: {
                 type: "string",
-                description: "Type of consumer issue to analyze",
+                description: "Type of legal issue to analyze",
               },
               court_level: {
                 type: "string",
@@ -244,6 +273,11 @@ class CourtListenerMCPServer {
                 description: "Time period for analysis",
                 enum: ["last-year", "last-2years", "last-5years"],
                 default: "last-2years",
+              },
+              jurisdiction: {
+                type: "string",
+                description:
+                  "Jurisdiction to analyze cases in (e.g., 'new-york', 'california', 'federal'). If not specified, the server will request this information.",
               },
             },
             required: ["case_type"],
@@ -263,7 +297,7 @@ class CourtListenerMCPServer {
               case_type: {
                 type: "string",
                 description:
-                  "Area of law to analyze (e.g., consumer protection, small claims)",
+                  "Area of law to analyze (e.g., contract disputes, small claims, employment law)",
               },
               court: {
                 type: "string",
@@ -298,13 +332,13 @@ class CourtListenerMCPServer {
         {
           name: "get_procedural_requirements",
           description:
-            "Find procedural rules and filing requirements for case type in NY courts",
+            "Find procedural rules and filing requirements for specific case types in NY courts",
           inputSchema: {
             type: "object",
             properties: {
               case_type: {
                 type: "string",
-                description: "Type of consumer complaint",
+                description: "Type of legal complaint or case",
               },
               court: {
                 type: "string",
@@ -406,27 +440,96 @@ class CourtListenerMCPServer {
     });
   }
 
-  private getNYCourts(): CourtInfo {
-    return {
-      primary: [
-        "ny-civ-ct",
-        "ny-city-ct-buffalo",
-        "ny-city-ct-rochester",
-        "ny-city-ct-syracuse",
-        "ny-city-ct-albany",
-        "ny-city-ct-yonkers",
-        "ny-dist-ct-nassau",
-        "ny-dist-ct-suffolk",
-      ],
-      secondary: [
-        "ny-supreme-ct",
-        "ny-app-div-1st",
-        "ny-app-div-2nd",
-        "ny-app-div-3rd",
-        "ny-app-div-4th",
-        "ny-ct-app",
-      ],
+  private getJurisdictionCourts(
+    jurisdiction?: string,
+    courtLevel: string = "all",
+  ): string[] {
+    // If no jurisdiction provided, return empty array to trigger validation error
+    if (!jurisdiction) {
+      return [];
+    }
+
+    const normalizedJurisdiction = jurisdiction
+      .toLowerCase()
+      .replace(/[-_\s]/g, "");
+
+    // Define court mappings by jurisdiction
+    const jurisdictionMappings: Record<
+      string,
+      { trial: string[]; appellate: string[]; supreme: string[] }
+    > = {
+      newyork: {
+        trial: [
+          "ny-civ-ct",
+          "ny-city-ct-buffalo",
+          "ny-city-ct-rochester",
+          "ny-city-ct-syracuse",
+          "ny-city-ct-albany",
+          "ny-city-ct-yonkers",
+          "ny-dist-ct-nassau",
+          "ny-dist-ct-suffolk",
+        ],
+        appellate: [
+          "ny-app-div-1st",
+          "ny-app-div-2nd",
+          "ny-app-div-3rd",
+          "ny-app-div-4th",
+        ],
+        supreme: ["ny-supreme-ct", "ny-ct-app"],
+      },
+      california: {
+        trial: ["ca-superior-ct", "ca-municipal-ct"],
+        appellate: [
+          "ca-ct-app-1st",
+          "ca-ct-app-2nd",
+          "ca-ct-app-3rd",
+          "ca-ct-app-4th",
+          "ca-ct-app-5th",
+          "ca-ct-app-6th",
+        ],
+        supreme: ["cal", "ca"],
+      },
+      federal: {
+        trial: ["ald", "akd", "azd", "ard", "cacd", "caed", "cand", "casd"],
+        appellate: [
+          "ca1",
+          "ca2",
+          "ca3",
+          "ca4",
+          "ca5",
+          "ca6",
+          "ca7",
+          "ca8",
+          "ca9",
+          "ca10",
+          "ca11",
+          "cadc",
+          "cafc",
+        ],
+        supreme: ["scotus"],
+      },
     };
+
+    const courtData = jurisdictionMappings[normalizedJurisdiction];
+    if (!courtData) {
+      return []; // Will trigger validation error for unsupported jurisdiction
+    }
+
+    switch (courtLevel) {
+      case "trial":
+        return courtData.trial;
+      case "appellate":
+        return courtData.appellate;
+      case "supreme":
+        return courtData.supreme;
+      case "all":
+      default:
+        return [
+          ...courtData.trial,
+          ...courtData.appellate,
+          ...courtData.supreme,
+        ];
+    }
   }
 
   private validateSearchKeywords(keywords: string[]): string[] {
@@ -491,19 +594,80 @@ class CourtListenerMCPServer {
       case_type,
       date_range = "recent-2years",
       limit = 10,
+      jurisdiction,
+      court_level = "all",
     } = args;
 
     try {
+      // Validate jurisdiction is provided
+      if (!jurisdiction) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(
+                {
+                  error: "Jurisdiction is required for case search",
+                  message:
+                    'Please specify which jurisdiction to search in (e.g., "new-york", "california", "federal")',
+                  supported_jurisdictions: [
+                    "new-york",
+                    "california",
+                    "federal",
+                  ],
+                  example: {
+                    search_keywords: search_keywords,
+                    jurisdiction: "new-york",
+                    court_level: "all",
+                  },
+                },
+                null,
+                2,
+              ),
+            },
+          ],
+        };
+      }
+
       const validKeywords = this.validateSearchKeywords(search_keywords);
+
+      // Get courts for the specified jurisdiction
+      const targetCourts = this.getJurisdictionCourts(
+        jurisdiction,
+        court_level,
+      );
+      if (targetCourts.length === 0) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(
+                {
+                  error: `Unsupported jurisdiction: ${jurisdiction}`,
+                  message: "Please use one of the supported jurisdictions",
+                  supported_jurisdictions: [
+                    "new-york",
+                    "california",
+                    "federal",
+                  ],
+                  example: {
+                    search_keywords: search_keywords,
+                    jurisdiction: "new-york",
+                    court_level: court_level,
+                  },
+                },
+                null,
+                2,
+              ),
+            },
+          ],
+        };
+      }
 
       const primaryTerms = validKeywords.slice(0, 5);
       const searchQuery = primaryTerms.map((term) => `"${term}"`).join(" OR ");
 
-      const enhancedQuery = validKeywords.some((k) =>
-        k.toLowerCase().includes("consumer"),
-      )
-        ? searchQuery
-        : `(${searchQuery}) AND (consumer OR "consumer protection")`;
+      const searchQueryFinal = searchQuery;
 
       let dateFilter: Record<string, string> = {};
       const currentDate = new Date();
@@ -524,11 +688,10 @@ class CourtListenerMCPServer {
           break;
       }
 
-      const nyCourts = this.getNYCourts();
-      const courtFilter = nyCourts.primary.join(",");
+      const courtFilter = targetCourts.join(",");
 
       const params = {
-        q: enhancedQuery,
+        q: searchQueryFinal,
         type: "o",
         court: courtFilter,
         ...dateFilter,
@@ -589,9 +752,11 @@ class CourtListenerMCPServer {
               {
                 search_strategy: {
                   keywords_used: validKeywords,
-                  query_constructed: enhancedQuery,
+                  query_constructed: searchQueryFinal,
                   date_range_applied: date_range,
-                  courts_searched: "NY primary consumer courts",
+                  jurisdiction: jurisdiction,
+                  court_level: court_level,
+                  courts_searched: targetCourts.length,
                 },
                 problem_context: problem_summary || "No summary provided",
                 search_results: {
@@ -619,15 +784,12 @@ class CourtListenerMCPServer {
               {
                 error: `Search failed: ${error instanceof Error ? error.message : String(error)}`,
                 suggestion:
-                  'Ensure search_keywords is an array of 1-10 legal terms. Example: ["breach of warranty", "consumer protection", "defective product"]',
+                  'Ensure search_keywords is an array of 1-10 legal terms. Example: ["breach of contract", "negligence", "damages"]',
                 example_usage: {
-                  search_keywords: [
-                    "breach of warranty",
-                    "consumer protection",
-                  ],
+                  search_keywords: ["breach of contract", "negligence"],
                   problem_summary:
-                    "Client purchased defective car, dealer refuses warranty repair",
-                  case_type: "warranty",
+                    "Contract dispute involving failure to deliver services",
+                  case_type: "contract",
                 },
               },
               null,
@@ -774,9 +936,71 @@ class CourtListenerMCPServer {
       legal_concepts = [],
       citation_threshold = 1,
       limit = 8,
+      jurisdiction,
     } = args;
 
     try {
+      // Validate jurisdiction is provided
+      if (!jurisdiction) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(
+                {
+                  error:
+                    "Jurisdiction is required for finding similar precedents",
+                  message:
+                    'Please specify which jurisdiction to search in (e.g., "new-york", "california", "federal")',
+                  supported_jurisdictions: [
+                    "new-york",
+                    "california",
+                    "federal",
+                  ],
+                  example: {
+                    reference_case_id: reference_case_id,
+                    jurisdiction: "new-york",
+                    legal_concepts: legal_concepts,
+                  },
+                },
+                null,
+                2,
+              ),
+            },
+          ],
+        };
+      }
+
+      // Get courts for the specified jurisdiction
+      const targetCourts = this.getJurisdictionCourts(jurisdiction, "all");
+      if (targetCourts.length === 0) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(
+                {
+                  error: `Unsupported jurisdiction: ${jurisdiction}`,
+                  message: "Please use one of the supported jurisdictions",
+                  supported_jurisdictions: [
+                    "new-york",
+                    "california",
+                    "federal",
+                  ],
+                  example: {
+                    reference_case_id: reference_case_id,
+                    jurisdiction: "new-york",
+                    legal_concepts: legal_concepts,
+                  },
+                },
+                null,
+                2,
+              ),
+            },
+          ],
+        };
+      }
+
       const referenceResponse = await this.axiosInstance.get(
         `/clusters/${reference_case_id}/`,
       );
@@ -791,12 +1015,11 @@ class CourtListenerMCPServer {
         .slice(0, 5);
 
       const searchQuery = searchTerms.join(" OR ");
-      const nyCourts = this.getNYCourts();
 
       const params = {
         q: searchQuery,
         type: "o",
-        court: [...nyCourts.primary, ...nyCourts.secondary].join(","),
+        court: targetCourts.join(","),
         cited_gt: citation_threshold - 1,
         page_size: limit + 5,
         fields: "id,case_name,court,date_filed,citation_count,snippet",
@@ -835,7 +1058,8 @@ class CourtListenerMCPServer {
                 search_strategy: {
                   legal_concepts_used: searchTerms,
                   citation_threshold,
-                  courts_searched: "NY primary and secondary courts",
+                  jurisdiction: jurisdiction,
+                  courts_searched: targetCourts.length,
                 },
                 similar_cases: results,
                 analysis_note: `Found ${results.length} similar cases. Cases with higher citation counts have stronger precedential value.`,
@@ -868,7 +1092,12 @@ class CourtListenerMCPServer {
   }
 
   private async analyzeCaseOutcomes(args: AnalyzeCaseOutcomesArgs) {
-    const { case_type, court_level = "all", date_range = "last-2years" } = args;
+    const {
+      case_type,
+      court_level = "all",
+      date_range = "last-2years",
+      jurisdiction,
+    } = args;
 
     let dateFilter: Record<string, string> = {};
     const currentDate = new Date();
@@ -907,7 +1136,7 @@ class CourtListenerMCPServer {
 
     try {
       const params = {
-        q: `"${case_type}" OR consumer`,
+        q: `"${case_type}"`,
         type: "r",
         court: courtsToSearch.join(","),
         ...dateFilter,
