@@ -1,0 +1,27 @@
+{
+  "name": "courtlistener-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for CourtListener REST API integration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "mcp",
+    "courtlistener",
+    "legal",
+    "case-law"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+}
