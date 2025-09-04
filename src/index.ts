@@ -1,17 +1,22 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
   Tool,
 } from "@modelcontextprotocol/sdk/types.js";
 import axios, { AxiosInstance } from "axios";
-import dotenv from "dotenv";
+import { z } from "zod";
 
-dotenv.config();
+// Configuration schema for the MCP server
+export const configSchema = z.object({
+  courtlistener_api_key: z
+    .string()
+    .optional()
+    .describe("CourtListener API key for enhanced access"),
+  debug: z.boolean().default(false).describe("Enable debug logging"),
+});
 
 const COURTLISTENER_API_BASE = "https://www.courtlistener.com/api/rest/v4";
-const API_KEY = process.env.COURTLISTENER_API_KEY || "";
 
 interface SearchArgs {
   search_keywords: string[];
@@ -86,7 +91,7 @@ class CourtListenerMCPServer {
   private server: Server;
   private axiosInstance: AxiosInstance;
 
-  constructor() {
+  constructor(apiKey: string = "") {
     this.server = new Server(
       {
         name: "courtlistener-mcp",
@@ -103,7 +108,7 @@ class CourtListenerMCPServer {
     this.axiosInstance = axios.create({
       baseURL: COURTLISTENER_API_BASE,
       headers: {
-        Authorization: API_KEY ? `Token ${API_KEY}` : undefined,
+        Authorization: apiKey ? `Token ${apiKey}` : undefined,
       },
     });
   }
@@ -1477,7 +1482,7 @@ class CourtListenerMCPServer {
                 legal_area,
                 time_period,
                 trend_type,
-                error: `Trend analysis failed: ${error instanceof Error ? error.message : String(error)}`,
+                error: `Trend trend analysis failed: ${error instanceof Error ? error.message : String(error)}`,
                 suggestion:
                   "Try a different legal area or extend the time period for more data",
               },
@@ -1490,12 +1495,19 @@ class CourtListenerMCPServer {
     }
   }
 
-  async run(): Promise<void> {
-    const transport = new StdioServerTransport();
-    await this.server.connect(transport);
-    console.error("CourtListener MCP Server running...");
+  getServer(): Server {
+    return this.server;
   }
 }
 
-const server = new CourtListenerMCPServer();
-server.run().catch(console.error);
+// Export default function that matches Smithery's expected format
+export default function createServer({
+  config,
+}: {
+  config: z.infer<typeof configSchema>;
+}) {
+  const apiKey =
+    config.courtlistener_api_key || process.env.COURTLISTENER_API_KEY || "";
+  const server = new CourtListenerMCPServer(apiKey);
+  return server.getServer();
+}
