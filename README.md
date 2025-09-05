@@ -1,453 +1,227 @@
 # CourtListener Legal Research MCP Server
 
-A high-performance Model Context Protocol (MCP) server implemented in **TypeScript** that provides instant legal research capabilities across **all 3,352 U.S. courts**. Built with a resource-based architecture for zero-latency jurisdiction resolution and comprehensive case law analysis.
+A Model Context Protocol (MCP) server providing AI agents instant access to legal research across **all 3,352 U.S. courts** via CourtListener API.
 
-## Overview
-
-This MCP server revolutionizes legal research by combining **instant court data access** with powerful CourtListener API integration. The resource-based architecture eliminates API overhead for jurisdiction resolution while providing comprehensive legal research tools.
-
-## 🚀 Architecture Highlights
-
-### **Resource-Based Design**
-- **Zero API calls** for jurisdiction resolution (instant access to 3,352 courts)
-- **Static resource files** for all court metadata (version controlled)
-- **MCP resource browsing** - Clients can explore available jurisdictions
-- **Offline capability** for court data access
-
-### **Performance Benefits**
-- ⚡ **Instant server startup** (no blocking discovery)
-- 🎯 **Deterministic behavior** (same resources = same results)
-- 💾 **No memory overhead** from court caching
-- 🔋 **Rate limit preservation** for actual searches
-
-## Key Features
-
-### 🔍 **Intelligent Case Discovery**
-- Natural language problem-to-case matching
-- Automated legal concept extraction
-- Precedent similarity analysis
-- Citation network exploration
-- **Instant jurisdiction resolution** across all 3,352 courts
-
-### 📊 **Strategic Analysis Tools**
-- Case outcome pattern analysis
-- Judge behavior insights
-- Legal trend tracking
-- Success probability assessment
-
-### 🛠️ **Practical Legal Support**
-- Citation validation and expansion
-- Procedural requirement guidance
-- Court jurisdiction analysis
-- Filing strategy recommendations
-
-### 📚 **MCP Resources (Browse via Client)**
-- Complete court listings by category (federal, state, bankruptcy, military)
-- Individual state court resources (all 50 states)
-- Jurisdiction mappings for flexible search targeting
+**Powered by [CourtListener](https://www.courtlistener.com/)** - The premier open legal database democratizing access to court data with exceptional API documentation and comprehensive coverage of the U.S. legal system.
 
 ## Quick Start
 
-### Prerequisites
-
-1. **Node.js 18+** installed
-2. **CourtListener API key** (get from https://www.courtlistener.com/api/)
-
-### Installation & Setup
-
 ```bash
-cd courtlistener-mcp
-
-# Install dependencies
+# Install and setup
 npm install
-
-# Configure API key in .env file
-echo 'COURTLISTENER_API_KEY="your_api_key_here"' > .env
-
-# Generate court resources (first-time setup)
+echo 'COURTLISTENER_API_KEY="your_api_key"' > .env
 npm run generate-courts
-```
 
-### Running the Server
-
-```bash
-# Development mode with auto-reload
+# Run
 npm run dev
-
-# Production build
-npm run build
 ```
 
-### Updating Court Data
+Get your free API key from: https://www.courtlistener.com/api/
 
-```bash
-# Refresh court database from CourtListener API
-npm run update-courts
-```
-
-The court data is relatively static, so monthly updates are typically sufficient.
-
-## Comprehensive Jurisdiction Support
-
-### 🏛️ **Instant Court Access**
-The server provides instant access to all 3,352 courts through static resource files:
-
-- **Federal Courts**: Supreme Court, Circuit Courts (1st-11th, DC, Federal), District Courts
-- **State Courts**: All 50 states' supreme, appellate, and trial courts  
-- **Local Courts**: Municipal, county, city courts nationwide
-- **Specialized Courts**: Bankruptcy, military, administrative courts
-
-### 🎯 **Flexible Jurisdiction Options**
-Users can specify jurisdictions in multiple ways:
-
-| Input Format | Example | Description |
-|-------------|---------|-------------|
-| **All Courts** | `"all"` | Search across all 3,353+ courts |
-| **Court Type** | `"federal"`, `"state"` | All courts of specific type |
-| **State Name** | `"california"`, `"new-york"`, `"texas"` | All courts in specific state |
-| **Specific Court** | `"scotus"`, `"ca9"`, `"cal"` | Individual court by ID |
-| **Multiple Courts** | `"ca9,scotus,cal"` | Comma-separated list |
-| **Specialized** | `"federal-bankruptcy"`, `"military"` | Courts by specialization |
-
-### 🧠 **Intelligent Error Handling**
-- **Smart suggestions** for misspelled jurisdictions
-- **Partial matching** for court names and abbreviations
-- **Clear examples** showing proper usage formats
+> 💡 **About CourtListener**: A non-profit legal database providing free access to millions of legal documents, court opinions, and PACER data. Their excellent API documentation and comprehensive data coverage make legal research accessible to everyone.
 
 ## Available Tools
 
-### 🔍 search_cases_by_problem
-**Purpose**: Find relevant cases using LLM-generated search keywords for precise legal research
-- LLM extracts optimal legal keywords from problem descriptions
-- Advanced relevance scoring and result ranking
-- Intelligent court targeting across multiple jurisdictions
-- **Parameters**:
-  - `search_keywords` (required): Array of legal terms extracted by LLM (1-10 terms)
-  - `problem_summary`: Brief problem context for reference (optional)
-  - `case_type`: Legal issue type (consumer, contract, employment, civil-rights, etc.)
-  - `date_range`: Time preference (recent-2years, established-precedent, all-time)
-  - `limit`: Number of cases to return (1-20, default: 10)
-  - `jurisdiction` (required): Jurisdiction to search (see table above for all options)
-  - `court_level`: Court level filter (trial, appellate, supreme, all)
+### **Core Legal Research Tools**
+*CourtListener opinion database - all 3,352 courts*
 
-**LLM Usage**: The LLM should analyze the client's problem and extract 3-7 relevant legal keywords like `["breach of contract", "negligence", "damages"]` before calling this function. Always specify the jurisdiction where the legal issue occurred.
+#### 🔍 search_cases_by_problem
+Find relevant cases using natural language legal problems
+- **Parameters**: `search_keywords[]`, `jurisdiction`, `case_type`, `date_range`, `limit`
 
-### 📋 get_case_details
-**Purpose**: Deep dive into specific cases for comprehensive precedent analysis
-- Combines docket, cluster, and opinion data intelligently
-- Smart text truncation with expansion options
-- Includes precedential value assessment
-- **Parameters**:
-  - `case_id` (required): Case ID from search results
-  - `include_full_text`: Include complete opinion text (may be large)
+#### 📋 get_case_details  
+Deep dive into specific cases with full opinion text
+- **Parameters**: `case_id`, `include_full_text`
 
-### 🔗 find_similar_precedents
-**Purpose**: Discover cases with similar legal reasoning or outcomes
-- Uses citation networks and legal concept matching
-- Filters by precedential authority and relevance
-- **Parameters**:
-  - `reference_case_id` (required): Base case to find similar cases
-  - `legal_concepts`: Key legal concepts to match
-  - `citation_threshold`: Minimum citation count for authority
-  - `limit`: Number of similar cases (1-15, default: 8)
-  - `jurisdiction` (required): Jurisdiction to search for similar cases
+#### 🔗 find_similar_precedents
+Discover cases with similar legal reasoning
+- **Parameters**: `reference_case_id`, `jurisdiction`, `legal_concepts`, `limit`
 
-### 📊 analyze_case_outcomes
-**Purpose**: Analyze outcome patterns to predict success likelihood
-- Statistical analysis of similar cases
-- Court-specific success rates and duration analysis
-- Strategic insights for case positioning
-- **Parameters**:
-  - `case_type` (required): Type of legal issue
-  - `court_level`: Trial vs appellate analysis
-  - `date_range`: Time period for analysis
-  - `jurisdiction` (required): Jurisdiction to analyze
+#### 📊 analyze_case_outcomes
+Analyze outcome patterns for success prediction  
+- **Parameters**: `case_type`, `jurisdiction`, `court_level`, `date_range`
 
-### ⚖️ get_judge_analysis
-**Purpose**: Understand judge's typical rulings for strategic positioning
-- Historical decision pattern analysis
-- Case type preferences and tendencies
-- Strategic recommendations for specific judges
-- **Parameters**:
-  - `judge_name` (required): Full name of judge
-  - `case_type` (required): Area of law to analyze
-  - `court`: Specific court identifier (optional)
-  - `jurisdiction`: Jurisdiction to help identify correct judge (optional)
+#### ⚖️ get_judge_analysis
+Understand judge's ruling patterns for strategy
+- **Parameters**: `judge_name`, `case_type`, `court`, `jurisdiction`
 
-### ✅ validate_citations
-**Purpose**: Verify and expand legal citations with related case discovery
-- Citation format validation and verification
-- Automatic discovery of related cases
-- Context relevance assessment
-- **Parameters**:
-  - `citations` (required): Array of citations to verify
-  - `context_text`: Surrounding legal argument for relevance (optional)
-  - `jurisdiction`: Jurisdiction to improve search accuracy (optional)
+#### ✅ validate_citations
+Verify and expand legal citations
+- **Parameters**: `citations[]`, `context_text`, `jurisdiction`
 
-### 📝 get_procedural_requirements
-**Purpose**: Find filing requirements and procedural rules for any jurisdiction
-- Court jurisdiction analysis based on claim amount
-- Court level recommendations based on dispute value
-- Procedural precedent discovery from relevant cases
-- **Parameters**:
-  - `case_type` (required): Type of legal complaint
-  - `jurisdiction` (required): Jurisdiction for procedural rules
-  - `court`: Specific court identifier (optional)
-  - `claim_amount`: Dollar amount for jurisdiction analysis (optional)
+#### 📝 get_procedural_requirements
+Find filing requirements and court rules
+- **Parameters**: `case_type`, `jurisdiction`, `court`, `claim_amount`
 
-### 📈 track_legal_trends
-**Purpose**: Identify recent trends in case law for strategic advantage
-- Filing pattern analysis and outcome trends
-- Emerging precedent identification
-- Strategic timing recommendations
-- **Parameters**:
-  - `legal_area` (required): Area of law to analyze
-  - `time_period`: Analysis timeframe (last-6months, last-year, last-2years)
-  - `trend_type`: Type of trend analysis (outcomes, filing-patterns, new-precedents)
+#### 📈 track_legal_trends
+Identify trends in case law
+- **Parameters**: `legal_area`, `time_period`, `trend_type`
 
-## Available MCP Resources
+### **RECAP Archive Integration** 🔒
+*Federal PACER data via CourtListener's RECAP Archive*
 
-The server exposes browsable resources that clients can discover:
+> **Premium Access**: Some functions require CourtListener premium subscription
+> - 🔒 **PREMIUM REQUIRED** | 📊 **BASIC ACCESS**
 
-### Court Resources
-- `courtlistener://courts/all` - All 3,352 courts with metadata
-- `courtlistener://courts/federal` - 127 federal courts
-- `courtlistener://courts/state` - 2,618 state courts  
-- `courtlistener://courts/bankruptcy` - 95 bankruptcy courts
-- `courtlistener://courts/military` - 11 military courts
-- `courtlistener://courts/special` - 501 special/administrative courts
+#### 📊 search_pacer_dockets (Basic)
+Search federal court dockets from PACER
+- **Parameters**: `case_name`, `court`, `date_range`, `party_name`, `nature_of_suit`
 
-### State-Specific Resources
-- `courtlistener://courts/states/california` - California courts
-- `courtlistener://courts/states/texas` - Texas courts
-- `courtlistener://courts/states/new-york` - New York courts
-- ... (all 50 states available)
+#### 📊 search_parties_attorneys (Basic) 
+Track attorney representation patterns
+- **Parameters**: `party_name`, `attorney_name`, `firm_name`, `court`, `date_range`
 
-### Jurisdiction Mappings
-- `courtlistener://jurisdictions/court-mappings` - Maps input strings to court IDs
+#### 📊 track_case_status (Basic)
+Monitor case status and recent activity
+- **Parameters**: `docket_id`, `include_recent_activity`, `status_history`
 
-## MCP Client Integration
+#### 🔒 get_docket_entries (Premium)
+Detailed timeline of case filings and orders
+- **Parameters**: `docket_id`, `entry_type`, `limit`
 
-Add to your Claude Desktop or MCP client settings:
+#### 🔒 analyze_case_timeline (Premium)
+Deep case progression analysis with activity patterns
+- **Parameters**: `docket_id`, `analysis_type`, `include_documents`
+
+#### 🔒 get_case_documents (Premium)
+Access documents with full text extraction
+- **Parameters**: `docket_id`, `document_type`, `include_text`, `limit`
+
+## Available Resources
+
+Browse via MCP client:
+- `courtlistener://courts/all` - All 3,352 courts
+- `courtlistener://courts/federal` - Federal courts  
+- `courtlistener://courts/state` - State courts
+- `courtlistener://courts/states/{state}` - State-specific courts
+- `courtlistener://jurisdictions/court-mappings` - Jurisdiction mappings
+
+## Jurisdiction Options
+
+| Input | Description | Example |
+|-------|-------------|---------|
+| `"all"` | All courts | Search nationwide |
+| `"federal"` | Federal courts | Circuit, District courts |
+| `"california"` | State courts | All CA courts |
+| `"scotus"` | Specific court | Supreme Court |
+| `"ca9,nysd"` | Multiple courts | 9th Circuit + NY Southern |
+
+## MCP Client Setup
+
+Add to Claude Desktop or MCP client:
 
 ```json
 {
   "mcpServers": {
     "courtlistener": {
-      "command": "node",
-      "args": ["/home/khizar/Documents/courtlistener-mcp/index.js"],
+      "command": "node", 
+      "args": ["/path/to/courtlistener-mcp/index.js"],
       "env": {
-        "COURTLISTENER_API_KEY": "your_api_key_here"
+        "COURTLISTENER_API_KEY": "your_api_key"
       }
     }
   }
 }
 ```
 
-## Data Management & Context Optimization
+## Usage Examples
 
-### Intelligent Truncation Strategy
-To prevent LLM context window overflow:
-- **Case excerpts**: 200-500 characters with key information
-- **Opinion text**: 1000-5000 characters (expandable with include_full_text)
-- **Search results**: Limited to 10-20 items with clear truncation indicators
-- **Expansion options**: Clear instructions for getting full content when needed
-
-### Error Handling & Reliability
-- Comprehensive error messages with troubleshooting guidance
-- Fallback strategies for failed API calls
-- Input validation with helpful suggestions
-- Graceful degradation when services are unavailable
-
-## API Rate Limits & Performance
-
-- **Authenticated**: 5,000 requests/hour
-- **Unauthenticated**: 100 requests/day (testing only)
-- **Optimization**: Field selection, intelligent caching, batch operations
-- **Monitoring**: Built-in rate limit tracking and warnings
-
-## Resource Architecture
-
-### Static Court Resources
-The server uses pre-generated resource files for instant court access:
-
-- **3,352 Courts**: Complete U.S. court system in static JSON files
-- **Zero Latency**: No API calls needed for jurisdiction resolution
-- **50 State Files**: Individual resources for each state's courts
-- **Version Controlled**: All court data tracked in git
-- **Monthly Updates**: Simple command to refresh from CourtListener API
-
-### Court Level Recommendations
-Based on claim amounts, the system recommends appropriate court levels:
-
-- **Small Claims** ($0-$10,000): Small claims or limited jurisdiction courts
-- **District/State** ($10,000-$75,000): State trial courts or district courts  
-- **Superior/Federal** ($75,000+): Superior/Supreme courts or federal courts
-
-### Jurisdiction Resolution
-The system intelligently resolves various jurisdiction formats:
-
-- State names are mapped to all courts in that state
-- Court type keywords ("federal", "bankruptcy") return all matching courts
-- Partial matches and common abbreviations are supported
-- Multiple courts can be specified with comma separation
-
-## LLM Integration Examples
-
-### Keyword Extraction Workflow
-The LLM should follow this pattern when using the MCP server:
-
-1. **Analyze client problem** → Extract legal keywords
-2. **Call search_cases_by_problem** → With extracted keywords
-3. **Review results** → Call get_case_details for promising cases
-4. **Expand research** → Use find_similar_precedents for related cases
-
-### Example Usage Scenarios
-
-#### Scenario 1: Defective Product Warranty
-**Client Problem**: "I bought a laptop that stopped working after 3 months. The manufacturer won't honor the warranty and claims it's user damage, but I never dropped it."
-
-**LLM Analysis**: Extract keywords → `["breach of warranty", "defective product", "consumer protection", "merchantability"]`
-
-**MCP Call**:
+### Case Research Workflow
 ```javascript
+// 1. Search for cases
 {
   "tool": "search_cases_by_problem",
   "arguments": {
-    "search_keywords": ["breach of warranty", "defective product", "consumer protection", "merchantability"],
-    "problem_summary": "Laptop failed after 3 months, manufacturer denying warranty coverage",
-    "case_type": "warranty",
-    "date_range": "recent-2years",
-    "jurisdiction": "california" // Can also use "all", "federal", "ca", "scotus", etc.
+    "search_keywords": ["breach of warranty", "defective product"],
+    "jurisdiction": "california",
+    "case_type": "warranty"
   }
 }
-```
 
-#### Additional Jurisdiction Examples:
-```javascript
-// Search all courts nationwide
-{ "jurisdiction": "all" }
-
-// Search only federal courts  
-{ "jurisdiction": "federal" }
-
-// Search specific court
-{ "jurisdiction": "scotus" }
-
-// Search multiple specific courts
-{ "jurisdiction": "ca9,scotus,cal" }
-
-// Search all Texas courts
-{ "jurisdiction": "texas" }
-```
-
-#### Scenario 2: Landlord-Tenant Dispute
-**Client Problem**: "My landlord is trying to evict me for non-payment but I've been withholding rent because of mold issues they refuse to fix."
-
-**LLM Analysis**: Extract keywords → `["rent withholding", "habitability", "landlord tenant", "mold", "eviction defense"]`
-
-**MCP Call**:
-```javascript
+// 2. Get case details
 {
-  "tool": "search_cases_by_problem",
+  "tool": "get_case_details", 
   "arguments": {
-    "search_keywords": ["rent withholding", "habitability", "landlord tenant", "mold", "eviction defense"],
-    "problem_summary": "Tenant withholding rent due to mold, facing eviction",
-    "case_type": "landlord-tenant",
-    "jurisdiction": "texas"  // Or any state where the issue occurred
+    "case_id": "12345",
+    "include_full_text": false
   }
 }
-```
 
-#### Scenario 3: Employment Discrimination
-**Client Problem**: "I was passed over for promotion three times despite excellent reviews. Younger, less experienced colleagues were promoted instead."
-
-**MCP Call**:
-```javascript
+// 3. Find similar cases
 {
-  "tool": "search_cases_by_problem",
+  "tool": "find_similar_precedents",
   "arguments": {
-    "search_keywords": ["age discrimination", "promotion denial", "disparate treatment", "ADEA"],
-    "case_type": "employment",
-    "jurisdiction": "federal"  // Federal courts for discrimination cases
+    "reference_case_id": "12345",
+    "jurisdiction": "federal"
   }
 }
 ```
 
-### Keyword Extraction Guidelines
-- **3-7 keywords** optimal for balanced precision/recall
-- **Use legal terminology** when possible (e.g., "merchantability" vs "quality")
-- **Include case type indicators** (warranty, contract, etc.)
-- **Add procedural terms** if relevant (dismissal, summary judgment, etc.)
-- **Combine specific and general terms** for comprehensive coverage
-
-### Best Practices
-
-#### Date Range Selection
-- **Recent precedents**: Use `recent-2years` for current legal trends
-- **Established law**: Use `established-precedent` for well-settled principles
-- **Comprehensive search**: Use `all-time` for historical perspective
-
-#### Jurisdiction Selection
-- **Start broad**: Begin with state or federal level searches
-- **Narrow down**: Use specific court IDs for targeted research
-- **Cross-jurisdictional**: Use `"all"` for nationwide precedent searches
-
-#### Procedural Requirements
-When searching for procedural rules:
+### PACER Research (Premium)
 ```javascript
+// Search PACER dockets
 {
-  "tool": "get_procedural_requirements",
+  "tool": "search_pacer_dockets",
   "arguments": {
-    "case_type": "breach of contract",
-    "jurisdiction": "florida",  // Specify the relevant jurisdiction
-    "claim_amount": 25000  // Optional: helps determine court level
+    "nature_of_suit": "contract",
+    "court": "federal"
+  }
+}
+
+// Analyze case timeline (Premium)
+{
+  "tool": "analyze_case_timeline",
+  "arguments": {
+    "docket_id": "67890",
+    "analysis_type": "all"
   }
 }
 ```
 
-## Performance & Architecture Benefits
+## Contributing
 
-### Resource-Based Architecture Advantages
-- **Instant Startup**: Server ready immediately (no 3-5 second discovery delay)
-- **Zero API Overhead**: Court metadata requires no API calls
-- **Deterministic**: Same resources always produce same results
-- **Git-Tracked**: All court data versioned and reviewable
-- **Offline Capable**: Court resolution works without internet
-- **Memory Efficient**: No in-memory court cache needed
-
-### API Usage Optimization
-- **Rate Limit Preservation**: API calls reserved for actual searches
-- **Predictable Performance**: No variable discovery delays
-- **Reduced Complexity**: Eliminated cache expiry and refresh logic
-
-## Maintenance & Updates
-
-### Court Data Management
+### Court Data Updates
 ```bash
-# Update court resources from CourtListener API
+# Update court resources
 npm run update-courts
 
-# Validate resource file integrity  
+# Validate resources  
 npm run validate-resources
-
-# Generate courts with specific API key
-COURTLISTENER_API_KEY="your_key" npm run generate-courts
 ```
 
-### Update Schedule
-- **Monthly**: Run `npm run update-courts` to capture new courts
-- **Automatic**: Can be automated via CI/CD (GitHub Actions example in docs)
-- **Version Control**: All updates tracked in git for review
+### Development
+```bash
+# Development mode
+npm run dev
 
-## Data Sources
+# Build production
+npm run build
+```
 
-CourtListener aggregates legal data from:
-- **All U.S. Courts**: Federal, state, local, and specialized courts
-- **3,352 Courts**: Complete coverage of the U.S. legal system  
-- **Historical & Current**: Cases from founding to present day
+### API Rate Limits
+- **Authenticated**: 5,000 requests/hour
+- **Unauthenticated**: 100 requests/day
 
+## Premium Access
 
+Basic API access provides all Core Legal Research tools plus limited PACER metadata. Premium access unlocks:
+- Detailed docket entry analysis
+- Full document text extraction  
+- Comprehensive timeline analysis
+- Advanced litigation intelligence
+
+Get premium access: https://www.courtlistener.com/help/api/rest/
+
+## Acknowledgments
+
+This project is made possible by [CourtListener](https://www.courtlistener.com/), a non-profit organization providing free access to legal data. Special thanks to:
+
+- **Exceptional API Design**: Clear, well-documented REST API with comprehensive field coverage
+- **Open Legal Data**: Free access to millions of court opinions, dockets, and legal documents
+- **RECAP Archive**: Democratizing access to PACER federal court data
+- **Community Impact**: Making legal research accessible beyond expensive commercial databases
+
+Support their mission: [Free Law Project](https://free.law/)
 
 ## License
 
