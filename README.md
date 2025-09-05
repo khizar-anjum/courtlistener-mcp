@@ -1,6 +1,11 @@
 # CourtListener Legal Research MCP Server
 
-A Model Context Protocol (MCP) server providing AI agents instant access to legal research across **3,352 U.S. courts** via CourtListener API.
+A powerful MCP server for legal research across **3,352 U.S. courts** using the CourtListener API.
+
+[![npm version](https://img.shields.io/npm/v/@khizar-anjum/courtlistener-mcp.svg)](https://www.npmjs.com/package/@khizar-anjum/courtlistener-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/@khizar-anjum/courtlistener-mcp.svg)](https://www.npmjs.com/package/@khizar-anjum/courtlistener-mcp)
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/khizar-anjum/courtlistener-mcp/ci.yml?branch=main)](https://github.com/khizar-anjum/courtlistener-mcp/actions)
 
 **Disclaimer:** This is an independent personal project and is not affiliated with, endorsed by, or sponsored by CourtListener or the Free Law Project.
 
@@ -69,8 +74,9 @@ Identify trends in case law
 > - 🔒 **PREMIUM REQUIRED** | 📊 **BASIC ACCESS**
 
 #### 📊 search_pacer_dockets (Basic)
-Search federal court dockets from PACER
+Search federal court dockets from PACER using full-text search
 - **Parameters**: `case_name`, `court`, `date_range`, `party_name`, `nature_of_suit`
+- **Functionality**: Uses proper search API endpoint for accurate, relevant results
 
 #### 📊 search_parties_attorneys (Basic)
 Track attorney representation patterns

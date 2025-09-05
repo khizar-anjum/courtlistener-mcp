@@ -519,7 +519,7 @@ class CourtListenerMCPServer {
         {
           name: "search_pacer_dockets",
           description:
-            "🔒 PREMIUM ACCESS REQUIRED | EXPERIMENTAL: Search federal court dockets from PACER via RECAP Archive. Find active and terminated cases with comprehensive party, attorney, and filing information. Note: This function requires CourtListener premium API access and is experimental - may not work with basic API keys.",
+            "📊 PACER SEARCH: Search federal court dockets from PACER via CourtListener's RECAP Archive. Find active and terminated cases with comprehensive party, attorney, and filing information. Search by case name, party name, or nature of suit across all federal courts or specific jurisdictions.",
           inputSchema: {
             type: "object",
             properties: {
@@ -529,7 +529,7 @@ class CourtListenerMCPServer {
               },
               court: {
                 type: "string", 
-                description: "Court identifier (e.g., 'cacd', 'nysd', 'dcd') or jurisdiction ('federal', 'bankruptcy')",
+                description: "Specific court identifier (e.g., 'ca3', 'cacd', 'nysd', 'dcd') OR jurisdiction name (e.g., 'federal', 'california', 'bankruptcy'). Court IDs are passed directly, jurisdiction names are resolved to multiple courts.",
               },
               date_range: {
                 type: "object",
@@ -541,7 +541,7 @@ class CourtListenerMCPServer {
               },
               party_name: {
                 type: "string",
-                description: "Name of a party involved in the case (plaintiff, defendant, etc.)",
+                description: "Name of a party involved in the case (plaintiff, defendant, etc.). Examples: 'Sean Combs', 'Microsoft Corporation', 'United States'",
               },
               nature_of_suit: {
                 type: "string",
@@ -850,6 +850,25 @@ class CourtListenerMCPServer {
     }
     
     return courtIds;
+  }
+
+  // Helper method for PACER functions to resolve both jurisdictions and court IDs
+  private resolveCourtForPacer(courtInput: string): string[] {
+    // First try to resolve as jurisdiction
+    try {
+      return this.resolveJurisdiction(courtInput);
+    } catch (error) {
+      // If it fails, check if it looks like a court ID (e.g., 'ca3', 'nysd', 'cacd')
+      // Court IDs are typically 2-6 characters, alphanumeric
+      const courtIdPattern = /^[a-z0-9]{2,6}$/i;
+      if (courtIdPattern.test(courtInput)) {
+        // Treat as a specific court ID for PACER search
+        return [courtInput.toLowerCase()];
+      } else {
+        // It's not a valid jurisdiction or court ID
+        throw new Error(`Invalid court identifier or jurisdiction: ${courtInput}`);
+      }
+    }
   }
 
   private async searchCasesByProblem(args: SearchArgs) {
@@ -2607,31 +2626,31 @@ class CourtListenerMCPServer {
       const queryParts: string[] = [];
 
       if (case_name) {
-        queryParts.push(`case_name:"${case_name}"`);
+        queryParts.push(`caseName:(${case_name})`);
       }
 
       if (party_name) {
-        queryParts.push(`party:"${party_name}"`);
+        queryParts.push(`party:(${party_name})`);
       }
 
       if (nature_of_suit) {
-        queryParts.push(`nature_of_suit:"${nature_of_suit}"`);
+        queryParts.push(`suitNature:(${nature_of_suit})`);
       }
 
       query = queryParts.join(" AND ");
 
-      // Build API parameters
+      // Build API parameters for PACER search
       const params: any = {
+        type: "r", // PACER dockets with nested documents
         q: query || "*", // Default to all if no specific query
         format: "json"
       };
 
       // Add court filter if specified
       if (court) {
-        const targetCourts = await this.resolveJurisdiction(court);
+        const targetCourts = this.resolveCourtForPacer(court);
         if (targetCourts.length > 0) {
-          const courtFilter = ` AND court_id:(${targetCourts.join(' OR ')})`;
-          params.q = (params.q === "*" ? "" : params.q) + courtFilter;
+          params.court = targetCourts.join(',');
         }
       }
 
@@ -2645,9 +2664,9 @@ class CourtListenerMCPServer {
         }
       }
 
-      // Case type filter (PACER dockets are primarily civil and criminal)
+      // Case type filter for search API
       if (case_type !== "all") {
-        // Map case types to nature of suit filters
+        // Map case types to search API fields
         const typeFilters: Record<string, string> = {
           civil: "civil",
           criminal: "criminal", 
@@ -2655,57 +2674,72 @@ class CourtListenerMCPServer {
         };
         
         if (typeFilters[case_type]) {
-          params.q += ` AND case_type:${typeFilters[case_type]}`;
+          // Add case type to the main query
+          const typeQuery = `chapter:(${typeFilters[case_type]})`;
+          params.q = params.q === "*" ? typeQuery : `${params.q} AND ${typeQuery}`;
         }
       }
 
-      // Set fields for comprehensive docket data
-      params.fields = "id,case_name,case_name_full,docket_number,court,date_filed,date_terminated,assigned_to,assigned_to_id,nature_of_suit,cause,party,attorney,firm,jury_demand,chapter,trustee_str";
+      // Search API returns predefined fields for type=r
 
-      const response = await this.axiosInstance.get(`/dockets/`, { params });
+      const response = await this.axiosInstance.get(`/search/`, { params });
       
-      const dockets = response.data.results || [];
+      const results = response.data.results || [];
 
       return {
         content: [
           {
             type: "text",
             text: JSON.stringify({
-              notice: "🔒 BASIC ACCESS: This function provides basic docket metadata. Premium access required for full PACER integration.",
+              notice: "📊 PACER SEARCH: Results from PACER dockets using CourtListener's RECAP Archive. Basic access provides comprehensive docket metadata.",
+              search_query: params.q,
+              court_filter: params.court || "all",
               total_found: response.data.count || 0,
-              returned_count: dockets.length,
-              dockets: dockets.slice(0, limit).map((docket: any) => ({
-                docket_id: docket.id,
-                case_name: docket.case_name,
-                case_name_full: docket.case_name_full || docket.case_name,
-                docket_number: docket.docket_number,
+              returned_count: results.length,
+              dockets: results.slice(0, limit).map((result: any) => ({
+                docket_id: result.docket_id,
+                case_name: result.caseName,
+                case_name_full: result.case_name_full || result.caseName,
+                docket_number: result.docketNumber,
                 court: {
-                  id: docket.court,
-                  name: docket.court // API should provide full court name
+                  id: result.court_id,
+                  name: result.court,
+                  citation_string: result.court_citation_string || ""
                 },
                 dates: {
-                  filed: docket.date_filed,
-                  terminated: docket.date_terminated || null,
-                  status: docket.date_terminated ? "Terminated" : "Active"
+                  filed: result.dateFiled,
+                  terminated: result.dateTerminated || null,
+                  status: result.dateTerminated ? "Terminated" : "Active"
                 },
                 assigned_judge: {
-                  name: docket.assigned_to || "N/A",
-                  id: docket.assigned_to_id || null
+                  name: result.assignedTo || "N/A",
+                  id: result.assigned_to_id || null
+                },
+                referred_judge: {
+                  name: result.referredTo || null,
+                  id: result.referred_to_id || null
                 },
                 case_details: {
-                  nature_of_suit: docket.nature_of_suit || "N/A",
-                  cause: docket.cause || "N/A",
-                  jury_demand: docket.jury_demand || "Unknown",
-                  chapter: docket.chapter || null // For bankruptcy cases
+                  nature_of_suit: result.suitNature || "N/A",
+                  cause: result.cause || "N/A",
+                  jury_demand: result.juryDemand || "Unknown",
+                  jurisdiction_type: result.jurisdictionType || "N/A",
+                  chapter: result.chapter || null // For bankruptcy cases
                 },
-                parties: Array.isArray(docket.party) ? docket.party : (docket.party ? [docket.party] : []),
-                attorneys: Array.isArray(docket.attorney) ? docket.attorney : (docket.attorney ? [docket.attorney] : []),
-                law_firms: Array.isArray(docket.firm) ? docket.firm : (docket.firm ? [docket.firm] : []),
-                trustee: docket.trustee_str || null,
-                recap_available: true,
+                parties: Array.isArray(result.party) ? result.party : (result.party ? [result.party] : []),
+                party_ids: Array.isArray(result.party_id) ? result.party_id : (result.party_id ? [result.party_id] : []),
+                attorneys: Array.isArray(result.attorney) ? result.attorney : (result.attorney ? [result.attorney] : []),
+                attorney_ids: Array.isArray(result.attorney_id) ? result.attorney_id : (result.attorney_id ? [result.attorney_id] : []),
+                law_firms: Array.isArray(result.firm) ? result.firm : (result.firm ? [result.firm] : []),
+                firm_ids: Array.isArray(result.firm_id) ? result.firm_id : (result.firm_id ? [result.firm_id] : []),
+                trustee: result.trustee_str || null,
+                pacer_case_id: result.pacer_case_id || null,
+                recap_documents: result.recap_documents || [],
+                more_documents: result.meta?.more_docs || false,
+                relevance_score: result.meta?.score?.bm25 || null,
                 urls: {
-                  courtlistener: `https://www.courtlistener.com/docket/${docket.id}/`,
-                  pacer_link: docket.pacer_url || null
+                  courtlistener: result.docket_absolute_url ? `https://www.courtlistener.com${result.docket_absolute_url}` : `https://www.courtlistener.com/docket/${result.docket_id}/`,
+                  pacer_link: null // Search API doesn't provide direct PACER links
                 }
               }))
             }, null, 2)
@@ -2815,7 +2849,7 @@ class CourtListenerMCPServer {
         };
 
         if (court) {
-          const targetCourts = await this.resolveJurisdiction(court);
+          const targetCourts = this.resolveCourtForPacer(court);
           if (targetCourts.length > 0) {
             partyParams.docket__court__in = targetCourts.join(',');
           }
@@ -2841,7 +2875,7 @@ class CourtListenerMCPServer {
         }
 
         if (court) {
-          const targetCourts = await this.resolveJurisdiction(court);
+          const targetCourts = this.resolveCourtForPacer(court);
           if (targetCourts.length > 0) {
             attorneyParams.docket__court__in = targetCourts.join(',');
           }
