@@ -2666,18 +2666,14 @@ class CourtListenerMCPServer {
 
       // Case type filter for search API
       if (case_type !== "all") {
-        // Map case types to search API fields
-        const typeFilters: Record<string, string> = {
-          civil: "civil",
-          criminal: "criminal", 
-          bankruptcy: "bankruptcy"
-        };
-        
-        if (typeFilters[case_type]) {
-          // Add case type to the main query
-          const typeQuery = `chapter:(${typeFilters[case_type]})`;
+        // Only use chapter field for bankruptcy cases, as it's bankruptcy-specific
+        // Civil and criminal cases don't use the chapter field in PACER searches
+        if (case_type === "bankruptcy") {
+          const typeQuery = `chapter:(bankruptcy)`;
           params.q = params.q === "*" ? typeQuery : `${params.q} AND ${typeQuery}`;
         }
+        // Note: Civil and criminal cases are not filtered by chapter field
+        // as this field is specific to bankruptcy proceedings only
       }
 
       // Search API returns predefined fields for type=r
@@ -3138,122 +3134,112 @@ class CourtListenerMCPServer {
     try {
       const { docket_id, include_recent_activity = true, status_history = false } = args;
 
-      // Get docket information
-      const docketResponse = await this.axiosInstance.get(`/dockets/${docket_id}/`, {
-        params: { 
-          format: "json", 
-          fields: "id,case_name,docket_number,court,date_filed,date_terminated,assigned_to,assigned_to_id,nature_of_suit,cause,jury_demand"
-        }
-      });
-      const docket = docketResponse.data;
+      // Use basic access search API instead of premium docket endpoints
+      const searchParams: any = {
+        type: "d", // Docket search
+        q: `id:${docket_id}`,
+        format: "json"
+      };
 
+      const searchResponse = await this.axiosInstance.get(`/search/`, { params: searchParams });
+      const results = searchResponse.data.results || [];
+      
+      if (results.length === 0) {
+        return {
+          content: [{
+            type: "text",
+            text: JSON.stringify({
+              error: `Docket not found: No docket with ID ${docket_id} found in public records`,
+              suggestion: "Verify the docket_id is correct. Note: Only publicly available PACER data is searchable."
+            }, null, 2)
+          }]
+        };
+      }
+
+      const docket = results[0];
+      
       const status: any = {
         docket_id,
         case_info: {
-          case_name: docket.case_name,
-          docket_number: docket.docket_number,
+          case_name: docket.caseName || docket.case_name,
+          docket_number: docket.docketNumber || docket.docket_number,
           court: docket.court,
-          assigned_judge: docket.assigned_to || "N/A"
+          court_id: docket.court_id,
+          assigned_judge: docket.assignedTo || docket.assigned_to || "N/A"
         },
         current_status: {
-          filing_date: docket.date_filed,
-          termination_date: docket.date_terminated,
-          is_active: !docket.date_terminated,
-          case_age_days: Math.floor((new Date().getTime() - new Date(docket.date_filed).getTime()) / (1000 * 60 * 60 * 24)),
-          case_type: docket.nature_of_suit || docket.cause || "Unknown"
+          filing_date: docket.dateFiled || docket.date_filed,
+          termination_date: docket.dateTerminated || docket.date_terminated,
+          is_active: !(docket.dateTerminated || docket.date_terminated),
+          case_type: docket.suitNature || docket.nature_of_suit || docket.cause || "Unknown",
+          cause: docket.cause || null,
+          jury_demand: docket.juryDemand || docket.jury_demand || null
         }
       };
 
+      // Calculate case age
+      if (status.current_status.filing_date) {
+        const filedDate = new Date(status.current_status.filing_date);
+        const today = new Date();
+        status.current_status.case_age_days = Math.floor((today.getTime() - filedDate.getTime()) / (1000 * 60 * 60 * 24));
+      }
+
+      // Basic activity assessment based on available public data
       if (include_recent_activity) {
-        // Get recent docket entries (last 30 days or last 10 entries)
-        const thirtyDaysAgo = new Date();
-        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-
-        const entriesParams: any = {
-          docket: docket_id,
+        // Search for recent documents related to this docket using basic search
+        const recentDocsParams: any = {
+          type: "rd", // RECAP documents
+          q: `docket_id:${docket_id}`,
           format: "json",
-          fields: "id,date_filed,entry_number,description,recap_documents",
-          ordering: "-date_filed",
-          date_filed__gte: thirtyDaysAgo.toISOString().split('T')[0]
+          order_by: "-date_created"
         };
 
-        const entriesResponse = await this.axiosInstance.get(`/docket-entries/`, { params: entriesParams });
-        let recentEntries = entriesResponse.data.results || [];
-
-        // If less than 5 entries in last 30 days, get last 10 entries regardless of date
-        if (recentEntries.length < 5) {
-          const allEntriesParams = {
-            docket: docket_id,
-            format: "json", 
-            fields: "id,date_filed,entry_number,description,recap_documents",
-            ordering: "-date_filed"
+        try {
+          const recentDocsResponse = await this.axiosInstance.get(`/search/`, { params: recentDocsParams });
+          const recentDocs = (recentDocsResponse.data.results || []).slice(0, 10);
+          
+          status.recent_activity = {
+            total_documents_found: recentDocsResponse.data.count || 0,
+            recent_documents: recentDocs.map((doc: any) => ({
+              document_number: doc.document_number || doc.documentNumber,
+              description: doc.short_description || doc.description,
+              date: doc.date_created || doc.dateCreated,
+              entry_number: doc.entry_number || doc.entryNumber
+            })),
+            activity_level: recentDocs.length > 5 ? "Active" : recentDocs.length > 0 ? "Low Activity" : "Minimal Activity",
+            last_activity_date: recentDocs.length > 0 ? recentDocs[0].date_created || recentDocs[0].dateCreated : status.current_status.filing_date
           };
-
-          const allEntriesResponse = await this.axiosInstance.get(`/docket-entries/`, { params: allEntriesParams });
-          recentEntries = (allEntriesResponse.data.results || []).slice(0, 10);
-        }
-
-        status.recent_activity = {
-          last_activity_date: recentEntries.length > 0 ? recentEntries[0].date_filed : docket.date_filed,
-          entries_last_30_days: recentEntries.length,
-          recent_entries: recentEntries.slice(0, 10).map((entry: any) => ({
-            date: entry.date_filed,
-            entry_number: entry.entry_number,
-            description: entry.description,
-            has_documents: entry.recap_documents && entry.recap_documents.length > 0
-          }))
-        };
-
-        // Activity level assessment
-        if (recentEntries.length === 0) {
-          status.activity_level = "Inactive";
-        } else if (recentEntries.length >= 10) {
-          status.activity_level = "Very Active";
-        } else if (recentEntries.length >= 5) {
-          status.activity_level = "Active";
-        } else {
-          status.activity_level = "Low Activity";
+        } catch (docError) {
+          // Fall back to basic status info if document search fails
+          status.recent_activity = {
+            activity_level: status.current_status.is_active ? "Unknown - Case Active" : "Case Terminated",
+            last_activity_date: status.current_status.termination_date || status.current_status.filing_date,
+            note: "Recent activity details require premium access. Showing basic case status only."
+          };
         }
       }
 
+      // Simplified status history based on public data
       if (status_history) {
-        // Get all entries to build status history
-        const allEntriesParams = {
-          docket: docket_id,
-          format: "json",
-          fields: "id,date_filed,entry_number,description",
-          ordering: "date_filed"
-        };
+        const timeline = [];
+        
+        if (status.current_status.filing_date) {
+          timeline.push({
+            status: "Case Filed",
+            date: status.current_status.filing_date,
+            description: "Case filed in court"
+          });
+        }
+        
+        if (status.current_status.termination_date) {
+          timeline.push({
+            status: "Case Terminated",
+            date: status.current_status.termination_date,
+            description: "Case closed/terminated"
+          });
+        }
 
-        const allEntriesResponse = await this.axiosInstance.get(`/docket-entries/`, { params: allEntriesParams });
-        const allEntries = allEntriesResponse.data.results || [];
-
-        // Identify status changes based on entry descriptions
-        const statusKeywords = [
-          { status: "Case Filed", keywords: ["complaint", "petition", "filed"] },
-          { status: "Answer Filed", keywords: ["answer", "response"] },
-          { status: "Discovery", keywords: ["discovery", "interrogatory", "deposition"] },
-          { status: "Motion Filed", keywords: ["motion"] },
-          { status: "Hearing Scheduled", keywords: ["hearing", "scheduled"] },
-          { status: "Trial", keywords: ["trial", "jury selection"] },
-          { status: "Judgment", keywords: ["judgment", "verdict", "decision"] },
-          { status: "Appeal", keywords: ["appeal", "appellate"] },
-          { status: "Settled", keywords: ["settlement", "dismissed"] },
-          { status: "Closed", keywords: ["closed", "terminated", "final"] }
-        ];
-
-        status.status_history = statusKeywords.map(statusItem => ({
-          status: statusItem.status,
-          entries: allEntries.filter((entry: any) => 
-            entry.description && statusItem.keywords.some(keyword => 
-              entry.description.toLowerCase().includes(keyword)
-            )
-          ).map((entry: any) => ({
-            date: entry.date_filed,
-            entry_number: entry.entry_number,
-            description: entry.description
-          }))
-        })).filter(statusItem => statusItem.entries.length > 0);
+        status.status_history = timeline;
       }
 
       return {
@@ -3261,7 +3247,7 @@ class CourtListenerMCPServer {
           {
             type: "text",
             text: JSON.stringify({
-              notice: "📊 BASIC ACCESS: This function provides basic status tracking. Premium access required for detailed docket entry analysis.",
+              notice: "📊 BASIC ACCESS: Case status tracking using publicly available PACER data. For detailed docket entries and premium features, contact CourtListener for API upgrade.",
               ...status
             }, null, 2)
           }
@@ -3273,7 +3259,15 @@ class CourtListenerMCPServer {
           type: "text",
           text: JSON.stringify({
             error: `Case status tracking failed: ${error instanceof Error ? error.message : String(error)}`,
-            suggestion: "Verify the docket_id is correct and accessible"
+            suggestion: "Verify the docket_id is correct. This function uses basic access and searches publicly available PACER data only.",
+            troubleshooting: {
+              api_access: "Using basic search API - no premium endpoints",
+              common_causes: [
+                "Docket ID does not exist in public RECAP archive",
+                "Case may be sealed or restricted",
+                "API authentication issue"
+              ]
+            }
           }, null, 2)
         }]
       };
