@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server providing AI agents instant access to legal research across **all 3,352 U.S. courts** via CourtListener API.
 
+![CourtListener MCP Demo](demo-hq.gif)
+
 **Powered by [CourtListener](https://www.courtlistener.com/)** - The premier open legal database democratizing access to court data with exceptional API documentation and comprehensive coverage of the U.S. legal system.
 
 ## Quick Start
