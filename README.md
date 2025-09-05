@@ -1,10 +1,12 @@
 # CourtListener Legal Research MCP Server
 
-A Model Context Protocol (MCP) server providing AI agents instant access to legal research across **all 3,352 U.S. courts** via CourtListener API.
+A Model Context Protocol (MCP) server providing AI agents instant access to legal research across **3,352 U.S. courts** via CourtListener API.
+
+**Disclaimer:** This is an independent personal project and is not affiliated with, endorsed by, or sponsored by CourtListener or the Free Law Project.
 
 ![CourtListener MCP Demo](demo-hq.gif)
 
-**Powered by [CourtListener](https://www.courtlistener.com/)** - The premier open legal database democratizing access to court data with exceptional API documentation and comprehensive coverage of the U.S. legal system.
+**Built using the [CourtListener API](https://www.courtlistener.com/)** - An open legal database democratizing access to court data with exceptional API documentation and comprehensive coverage of the U.S. legal system.
 
 ## Quick Start
 
@@ -14,24 +16,25 @@ npm install
 echo 'COURTLISTENER_API_KEY="your_api_key"' > .env
 npm run generate-courts
 
-# Run
+# Build and run
+npm run build
 npm run dev
 ```
 
 Get your free API key from: https://www.courtlistener.com/api/
 
-> 💡 **About CourtListener**: A non-profit legal database providing free access to millions of legal documents, court opinions, and PACER data. Their excellent API documentation and comprehensive data coverage make legal research accessible to everyone.
+> 💡 **About the CourtListener API**: A non-profit legal database providing free access to millions of legal documents, court opinions, and PACER data. The API's excellent documentation and comprehensive data coverage make legal research accessible to everyone.
 
 ## Available Tools
 
 ### **Core Legal Research Tools**
-*CourtListener opinion database - all 3,352 courts*
+*Accesses CourtListener's opinion database - all 3,352 courts*
 
 #### 🔍 search_cases_by_problem
 Find relevant cases using natural language legal problems
 - **Parameters**: `search_keywords[]`, `jurisdiction`, `case_type`, `date_range`, `limit`
 
-#### 📋 get_case_details  
+#### 📋 get_case_details
 Deep dive into specific cases with full opinion text
 - **Parameters**: `case_id`, `include_full_text`
 
@@ -40,7 +43,7 @@ Discover cases with similar legal reasoning
 - **Parameters**: `reference_case_id`, `jurisdiction`, `legal_concepts`, `limit`
 
 #### 📊 analyze_case_outcomes
-Analyze outcome patterns for success prediction  
+Analyze outcome patterns for success prediction
 - **Parameters**: `case_type`, `jurisdiction`, `court_level`, `date_range`
 
 #### ⚖️ get_judge_analysis
@@ -60,16 +63,16 @@ Identify trends in case law
 - **Parameters**: `legal_area`, `time_period`, `trend_type`
 
 ### **RECAP Archive Integration** 🔒
-*Federal PACER data via CourtListener's RECAP Archive*
+*Federal PACER data accessed via CourtListener's RECAP Archive*
 
-> **Premium Access**: Some functions require CourtListener premium subscription
+> **Premium Access**: Some functions require a CourtListener premium subscription
 > - 🔒 **PREMIUM REQUIRED** | 📊 **BASIC ACCESS**
 
 #### 📊 search_pacer_dockets (Basic)
 Search federal court dockets from PACER
 - **Parameters**: `case_name`, `court`, `date_range`, `party_name`, `nature_of_suit`
 
-#### 📊 search_parties_attorneys (Basic) 
+#### 📊 search_parties_attorneys (Basic)
 Track attorney representation patterns
 - **Parameters**: `party_name`, `attorney_name`, `firm_name`, `court`, `date_range`
 
@@ -93,7 +96,7 @@ Access documents with full text extraction
 
 Browse via MCP client:
 - `courtlistener://courts/all` - All 3,352 courts
-- `courtlistener://courts/federal` - Federal courts  
+- `courtlistener://courts/federal` - Federal courts
 - `courtlistener://courts/state` - State courts
 - `courtlistener://courts/states/{state}` - State-specific courts
 - `courtlistener://jurisdictions/court-mappings` - Jurisdiction mappings
@@ -116,8 +119,8 @@ Add to Claude Desktop or MCP client:
 {
   "mcpServers": {
     "courtlistener": {
-      "command": "node", 
-      "args": ["/path/to/courtlistener-mcp/index.js"],
+      "command": "node",
+      "args": ["/path/to/courtlistener-mcp/.smithery/index.ts"],
       "env": {
         "COURTLISTENER_API_KEY": "your_api_key"
       }
@@ -142,7 +145,7 @@ Add to Claude Desktop or MCP client:
 
 // 2. Get case details
 {
-  "tool": "get_case_details", 
+  "tool": "get_case_details",
   "arguments": {
     "case_id": "12345",
     "include_full_text": false
@@ -182,23 +185,7 @@ Add to Claude Desktop or MCP client:
 
 ## Contributing
 
-### Court Data Updates
-```bash
-# Update court resources
-npm run update-courts
-
-# Validate resources  
-npm run validate-resources
-```
-
-### Development
-```bash
-# Development mode
-npm run dev
-
-# Build production
-npm run build
-```
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to submit improvements, bug fixes, and new features.
 
 ### API Rate Limits
 - **Authenticated**: 5,000 requests/hour
@@ -208,7 +195,7 @@ npm run build
 
 Basic API access provides all Core Legal Research tools plus limited PACER metadata. Premium access unlocks:
 - Detailed docket entry analysis
-- Full document text extraction  
+- Full document text extraction
 - Comprehensive timeline analysis
 - Advanced litigation intelligence
 
@@ -216,14 +203,14 @@ Get premium access: https://www.courtlistener.com/help/api/rest/
 
 ## Acknowledgments
 
-This project is made possible by [CourtListener](https://www.courtlistener.com/), a non-profit organization providing free access to legal data. Special thanks to:
+This independent project uses the [CourtListener API](https://www.courtlistener.com/), created by the Free Law Project, a non-profit organization. We acknowledge and appreciate:
 
-- **Exceptional API Design**: Clear, well-documented REST API with comprehensive field coverage
+- **Their API Design**: Clear, well-documented REST API with comprehensive field coverage
 - **Open Legal Data**: Free access to millions of court opinions, dockets, and legal documents
 - **RECAP Archive**: Democratizing access to PACER federal court data
 - **Community Impact**: Making legal research accessible beyond expensive commercial databases
 
-Support their mission: [Free Law Project](https://free.law/)
+Consider supporting their mission: [Free Law Project](https://free.law/)
 
 ## License
 
