@@ -42,19 +42,35 @@ export class CourtResourceManager {
       path.join(currentDir, 'resources'),
       path.join(process.cwd(), '.smithery', 'resources'),
       path.join(process.cwd(), 'resources'),
+      path.join(process.cwd(), 'src', 'resources'),
+      // Docker/Smithery container paths
+      path.join('/app', 'src', 'resources'),
+      path.join('/app', 'resources'),
+      path.join('/app', '.smithery', 'resources'),
       // Fallback paths
       path.join(__dirname, 'resources'),
       path.join(__dirname, '..', 'resources'),
+      path.join(__dirname, '..', 'src', 'resources'),
     ];
     
+    console.error('🔍 [DEBUG] Resource path resolution:');
+    console.error(`   Current working directory: ${process.cwd()}`);
+    console.error(`   Current file directory: ${currentDir}`);
+    console.error(`   __dirname available: ${typeof __dirname !== 'undefined'}`);
+    
     for (const possiblePath of possiblePaths) {
-      if (fs.existsSync(possiblePath)) {
+      const exists = fs.existsSync(possiblePath);
+      console.error(`   ${exists ? '✅' : '❌'} ${possiblePath}`);
+      if (exists) {
+        console.error(`🎯 [DEBUG] Using resources directory: ${possiblePath}`);
         return possiblePath;
       }
     }
     
     // Default fallback
-    return path.join(currentDir, 'resources');
+    const fallback = path.join(currentDir, 'resources');
+    console.error(`⚠️ [DEBUG] Using fallback directory: ${fallback}`);
+    return fallback;
   }
   
   static listResources(): Resource[] {
@@ -114,9 +130,16 @@ export class CourtResourceManager {
   
   static readResource(uri: string): string {
     const filePath = this.uriToFilePath(uri);
+    console.error(`🔍 [DEBUG] Reading resource: ${uri}`);
+    console.error(`   Resolved file path: ${filePath}`);
+    console.error(`   File exists: ${fs.existsSync(filePath)}`);
+    
     if (!fs.existsSync(filePath)) {
+      console.error(`❌ [DEBUG] Resource not found: ${uri} at ${filePath}`);
       throw new Error(`Resource not found: ${uri}`);
     }
+    
+    console.error(`✅ [DEBUG] Successfully reading resource: ${uri}`);
     return fs.readFileSync(filePath, 'utf8');
   }
   
@@ -237,13 +260,16 @@ export class CourtResourceManager {
   // Utility method to resolve jurisdiction to court IDs (replacement for async version)
   static resolveJurisdiction(jurisdiction: string): string[] {
     try {
+      console.error(`🔍 [DEBUG] Resolving jurisdiction: ${jurisdiction}`);
       const mappingsContent = this.readResource('courtlistener://jurisdictions/court-mappings');
       const mappings = JSON.parse(mappingsContent);
       
       const lowerJurisdiction = jurisdiction.toLowerCase();
-      return mappings.mappings[lowerJurisdiction] || [];
+      const result = mappings.mappings[lowerJurisdiction] || [];
+      console.error(`✅ [DEBUG] Jurisdiction "${jurisdiction}" resolved to ${result.length} courts`);
+      return result;
     } catch (error) {
-      console.error(`Error resolving jurisdiction "${jurisdiction}":`, error);
+      console.error(`❌ [DEBUG] Error resolving jurisdiction "${jurisdiction}":`, error);
       return [];
     }
   }
