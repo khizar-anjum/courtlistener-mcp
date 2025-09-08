@@ -7,6 +7,8 @@ A powerful MCP server for legal research across **3,352 U.S. courts** using the 
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/khizar-anjum/courtlistener-mcp/ci.yml?branch=main)](https://github.com/khizar-anjum/courtlistener-mcp/actions)
 
+📦 **Available on:** [npm](https://www.npmjs.com/package/@khizar-anjum/courtlistener-mcp) | [Smithery](https://smithery.ai/server/@khizar-anjum/courtlistener-mcp)
+
 **Disclaimer:** This is an independent personal project and is not affiliated with, endorsed by, or sponsored by CourtListener or the Free Law Project.
 
 ![CourtListener MCP Demo](demo-hq.gif)
@@ -16,8 +18,15 @@ A powerful MCP server for legal research across **3,352 U.S. courts** using the 
 ## Quick Start
 
 ```bash
-# Install and setup
+# Install from npm
+npm install @khizar-anjum/courtlistener-mcp
+
+# Or install from source
+git clone https://github.com/khizar-anjum/courtlistener-mcp.git
+cd courtlistener-mcp
 npm install
+
+# Setup
 echo 'COURTLISTENER_API_KEY="your_api_key"' > .env
 npm run generate-courts
 
