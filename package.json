@@ -1,57 +1,57 @@
 {
-	"name": "@khizar-anjum/courtlistener-mcp",
-	"version": "0.1.0",
-	"description": "MCP server for legal research across 3,352 U.S. courts using the CourtListener API",
-	"main": ".smithery/index.js",
-	"module": "./src/index.ts",
-	"type": "module",
-	"scripts": {
-		"dev": "npx @smithery/cli dev",
-		"build": "npx @smithery/cli build && npm run copy-resources",
-		"copy-resources": "cp -r src/resources .smithery/ 2>/dev/null || mkdir -p .smithery && cp -r src/resources .smithery/",
-		"generate-courts": "tsx scripts/generate-court-resources.ts",
-		"validate-resources": "tsx scripts/generate-court-resources.ts --validate-only",
-		"update-courts": "tsx scripts/generate-court-resources.ts",
-		"prepublishOnly": "npm run build"
-	},
-	"keywords": [
-		"mcp",
-		"model-context-protocol",
-		"courtlistener",
-		"legal-research",
-		"law",
-		"court-cases",
-		"pacer",
-		"legal-api",
-		"us-courts"
-	],
-	"author": "Khizar Anjum",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/khizar-anjum/courtlistener-mcp.git"
-	},
-	"bugs": {
-		"url": "https://github.com/khizar-anjum/courtlistener-mcp/issues"
-	},
-	"homepage": "https://github.com/khizar-anjum/courtlistener-mcp#readme",
-	"files": [
-		".smithery/",
-		"README.md",
-		"LICENSE",
-		"CONTRIBUTING.md"
-	],
-	"engines": {
-		"node": ">=18.0.0"
-	},
-	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.17.4",
-		"axios": "^1.7.7",
-		"dotenv": "^17.2.2",
-		"zod": "^3.25.46"
-	},
-	"devDependencies": {
-		"@smithery/cli": "^1.2.4",
-		"tsx": "^4.19.4"
-	}
+  "name": "@khizar-anjum/courtlistener-mcp",
+  "version": "0.1.1",
+  "description": "MCP server for legal research across 3,352 U.S. courts using the CourtListener API",
+  "main": ".smithery/index.js",
+  "module": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "npx @smithery/cli dev",
+    "build": "npx @smithery/cli build && npm run copy-resources",
+    "copy-resources": "cp -r src/resources .smithery/ 2>/dev/null || mkdir -p .smithery && cp -r src/resources .smithery/",
+    "generate-courts": "tsx scripts/generate-court-resources.ts",
+    "validate-resources": "tsx scripts/generate-court-resources.ts --validate-only",
+    "update-courts": "tsx scripts/generate-court-resources.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "courtlistener",
+    "legal-research",
+    "law",
+    "court-cases",
+    "pacer",
+    "legal-api",
+    "us-courts"
+  ],
+  "author": "Khizar Anjum",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khizar-anjum/courtlistener-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khizar-anjum/courtlistener-mcp/issues"
+  },
+  "homepage": "https://github.com/khizar-anjum/courtlistener-mcp#readme",
+  "files": [
+    ".smithery/",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "axios": "^1.7.7",
+    "dotenv": "^17.2.2",
+    "zod": "^3.25.46"
+  },
+  "devDependencies": {
+    "@smithery/cli": "^1.2.4",
+    "tsx": "^4.19.4"
+  }
 }
