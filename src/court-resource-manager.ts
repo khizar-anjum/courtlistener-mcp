@@ -32,7 +32,30 @@ interface Resource {
 }
 
 export class CourtResourceManager {
-  private static readonly RESOURCES_DIR = path.join(currentDir, 'resources');
+  private static readonly RESOURCES_DIR = this.findResourcesDir();
+  
+  private static findResourcesDir(): string {
+    const possiblePaths = [
+      // Development: src/resources
+      path.join(currentDir, 'resources'),
+      // Built: .smithery/resources (for Smithery deployment)
+      path.join(currentDir, 'resources'),
+      path.join(process.cwd(), '.smithery', 'resources'),
+      path.join(process.cwd(), 'resources'),
+      // Fallback paths
+      path.join(__dirname, 'resources'),
+      path.join(__dirname, '..', 'resources'),
+    ];
+    
+    for (const possiblePath of possiblePaths) {
+      if (fs.existsSync(possiblePath)) {
+        return possiblePath;
+      }
+    }
+    
+    // Default fallback
+    return path.join(currentDir, 'resources');
+  }
   
   static listResources(): Resource[] {
     const resources: Resource[] = [
