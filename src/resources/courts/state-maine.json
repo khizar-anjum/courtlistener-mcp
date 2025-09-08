@@ -1,0 +1,52 @@
+{
+  "state": "maine",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 4,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "mesuperct"
+    ],
+    "bankruptcy": [
+      "meb"
+    ],
+    "local": [
+      "med",
+      "me"
+    ]
+  },
+  "courts": [
+    {
+      "id": "meb",
+      "short_name": "D. Maine",
+      "full_name": "United States Bankruptcy Court, D. Maine",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "med",
+      "short_name": "D. Maine",
+      "full_name": "District Court, D. Maine",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "me",
+      "short_name": "Supreme Judicial Court of Maine",
+      "full_name": "Supreme Judicial Court of Maine",
+      "jurisdiction": "S",
+      "start_date": "1830-01-01",
+      "end_date": null
+    },
+    {
+      "id": "mesuperct",
+      "short_name": "Maine Superior",
+      "full_name": "Superior Court of Maine",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

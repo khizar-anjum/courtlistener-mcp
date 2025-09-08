@@ -1,0 +1,61 @@
+{
+  "state": "new-hampshire",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 5,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "nhsuperct"
+    ],
+    "bankruptcy": [
+      "nhb"
+    ],
+    "local": [
+      "nhd",
+      "nh",
+      "nhprivycounnh"
+    ]
+  },
+  "courts": [
+    {
+      "id": "nhb",
+      "short_name": "D. New Hampshire",
+      "full_name": "United States Bankruptcy Court, D. New Hampshire",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nhd",
+      "short_name": "D. New Hampshire",
+      "full_name": "District Court, D. New Hampshire",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nh",
+      "short_name": "Supreme Court of New Hampshire",
+      "full_name": "Supreme Court of New Hampshire",
+      "jurisdiction": "S",
+      "start_date": "1776-01-01",
+      "end_date": null
+    },
+    {
+      "id": "nhprivycounnh",
+      "short_name": "New Hampshire Committee of the Privy Council",
+      "full_name": "New Hampshire Committee of the Privy Council",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nhsuperct",
+      "short_name": "Superior Court of New Hampshire",
+      "full_name": "Superior Court of New Hampshire",
+      "jurisdiction": "ST",
+      "start_date": "1629-01-01",
+      "end_date": "1776-07-03"
+    }
+  ]
+}

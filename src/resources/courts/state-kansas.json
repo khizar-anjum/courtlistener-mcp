@@ -1,0 +1,33 @@
+{
+  "state": "kansas",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 2,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "ksb"
+    ],
+    "local": [
+      "ksd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ksb",
+      "short_name": "D. Kansas",
+      "full_name": "United States Bankruptcy Court, D. Kansas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ksd",
+      "short_name": "D. Kansas",
+      "full_name": "District Court, D. Kansas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

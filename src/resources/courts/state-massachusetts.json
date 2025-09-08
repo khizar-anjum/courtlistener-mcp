@@ -1,0 +1,187 @@
+{
+  "state": "massachusetts",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 19,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "masssuperctbarn",
+      "masssuperctberk",
+      "masssuperctsuff",
+      "massdistctbos",
+      "massdistctbrook",
+      "mahousct",
+      "massland",
+      "maprobct"
+    ],
+    "bankruptcy": [
+      "mab"
+    ],
+    "local": [
+      "mad",
+      "mass",
+      "massappct",
+      "massdistctapp",
+      "masssuperct",
+      "massdistct",
+      "masslandct",
+      "masstaxbd",
+      "masshserep",
+      "maworkcompcom"
+    ]
+  },
+  "courts": [
+    {
+      "id": "mab",
+      "short_name": "D. Massachusetts",
+      "full_name": "United States Bankruptcy Court, D. Massachusetts",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mad",
+      "short_name": "D. Massachusetts",
+      "full_name": "District Court, D. Massachusetts",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mass",
+      "short_name": "Massachusetts Supreme Judicial Court",
+      "full_name": "Massachusetts Supreme Judicial Court",
+      "jurisdiction": "S",
+      "start_date": "1692-01-01",
+      "end_date": null
+    },
+    {
+      "id": "massappct",
+      "short_name": "Massachusetts Appeals Court",
+      "full_name": "Massachusetts Appeals Court",
+      "jurisdiction": "SA",
+      "start_date": "1972-10-06",
+      "end_date": null
+    },
+    {
+      "id": "massdistctapp",
+      "short_name": "Mass. Dist. Ct., App. Div.",
+      "full_name": "Massachusetts District Court, Appellate Division",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masssuperct",
+      "short_name": "Massachusetts Superior Court",
+      "full_name": "Massachusetts Superior Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masssuperctbarn",
+      "short_name": "Massachusetts Superior Court, Barnstable County",
+      "full_name": "Massachusetts Superior Court, Barnstable County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masssuperctberk",
+      "short_name": "Massachusetts Superior Court, Berkshire County",
+      "full_name": "Massachusetts Superior Court, Berkshire County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masssuperctsuff",
+      "short_name": "Massachusetts Superior Court, Suffolk County",
+      "full_name": "Massachusetts Superior Court, Suffolk County",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "massdistct",
+      "short_name": "Massachusetts District Court",
+      "full_name": "Massachusetts District Court",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "massdistctbos",
+      "short_name": "Boston Municipal Court",
+      "full_name": "Boston Municipal Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "massdistctbrook",
+      "short_name": "Brookline District Court",
+      "full_name": "Brookline District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mahousct",
+      "short_name": "Massachusetts Housing Court",
+      "full_name": "Massachusetts Housing Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "massland",
+      "short_name": "Massachusetts Land Court",
+      "full_name": "Massachusetts Land Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "maprobct",
+      "short_name": "Massachusetts Probate and Family Court",
+      "full_name": "Massachusetts Probate and Family Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masslandct",
+      "short_name": "Massachusetts Land Court",
+      "full_name": "Massachusetts Land Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masstaxbd",
+      "short_name": "Massachusetts Appellate Tax Board",
+      "full_name": "Massachusetts Appellate Tax Board",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "masshserep",
+      "short_name": "Massachusetts House of Representatives",
+      "full_name": "Massachusetts House of Representatives",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "maworkcompcom",
+      "short_name": "Massachusetts Department of Industrial Accidents",
+      "full_name": "Massachusetts Department of Industrial Accidents",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "state": "montana",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 2,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "mtb"
+    ],
+    "local": [
+      "mtd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "mtb",
+      "short_name": "D. Montana",
+      "full_name": "United States Bankruptcy Court, D. Montana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mtd",
+      "short_name": "D. Montana",
+      "full_name": "District Court, D. Montana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

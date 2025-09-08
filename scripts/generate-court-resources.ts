@@ -111,7 +111,6 @@ class CourtResourceGenerator {
     const dirs = [
       this.resourcesDir,
       path.join(this.resourcesDir, 'courts'),
-      path.join(this.resourcesDir, 'courts', 'states'),
       path.join(this.resourcesDir, 'jurisdictions')
     ];
 
@@ -296,7 +295,7 @@ class CourtResourceGenerator {
         courts: stateCourts,
       };
 
-      await this.writeJsonFile(`courts/states/${state}.json`, stateFile);
+      await this.writeJsonFile(`courts/state-${state}.json`, stateFile);
     }
 
     console.log('   ✅ Generated state-specific resource files');
@@ -564,15 +563,15 @@ class CourtResourceGenerator {
       }
     }
 
-    // Validate state files
-    const statesDir = path.join(this.resourcesDir, 'courts', 'states');
-    if (fs.existsSync(statesDir)) {
-      const stateFiles = fs.readdirSync(statesDir);
+    // Validate state files (now in courts/ directory with state- prefix)
+    const courtsDir = path.join(this.resourcesDir, 'courts');
+    if (fs.existsSync(courtsDir)) {
+      const stateFiles = fs.readdirSync(courtsDir).filter(file => file.startsWith('state-') && file.endsWith('.json'));
       console.log(`   📊 Found ${stateFiles.length} state files`);
       
       for (const stateFile of stateFiles.slice(0, 5)) { // Validate first 5 as sample
         try {
-          const content = fs.readFileSync(path.join(statesDir, stateFile), 'utf8');
+          const content = fs.readFileSync(path.join(courtsDir, stateFile), 'utf8');
           JSON.parse(content);
         } catch (error) {
           console.error(`   ❌ Invalid state file ${stateFile}:`, error);

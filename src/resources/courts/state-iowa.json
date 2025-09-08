@@ -1,0 +1,60 @@
+{
+  "state": "iowa",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 5,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "ianb",
+      "iasb"
+    ],
+    "local": [
+      "iad",
+      "iand",
+      "iasd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ianb",
+      "short_name": "N.D. Iowa",
+      "full_name": "United States Bankruptcy Court, N.D. Iowa",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "iasb",
+      "short_name": "S.D. Iowa",
+      "full_name": "United States Bankruptcy Court, S.D. Iowa",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "iad",
+      "short_name": "D. Iowa",
+      "full_name": "District Court, D. Iowa",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": "1882-07-20"
+    },
+    {
+      "id": "iand",
+      "short_name": "N.D. Iowa",
+      "full_name": "District Court, N.D. Iowa",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "iasd",
+      "short_name": "S.D. Iowa",
+      "full_name": "District Court, S.D. Iowa",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

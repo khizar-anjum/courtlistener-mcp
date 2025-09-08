@@ -1,0 +1,1177 @@
+{
+  "state": "virginia",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 129,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "vachanct",
+      "vacc",
+      "vaccaccomack",
+      "vaccalbemarle",
+      "vaccalexandria",
+      "vaccalleghany",
+      "vaccamelia",
+      "vaccamherst",
+      "vaccarlington",
+      "vaccaugusta",
+      "vaccbath",
+      "vaccbedford",
+      "vaccbotetourt",
+      "vaccbristol",
+      "vaccbrunswick",
+      "vaccbuchanan",
+      "vaccbuckingham",
+      "vacccampbell",
+      "vacccaroline",
+      "vacccarroll",
+      "vacccharles",
+      "vaccclarke",
+      "vacccharlottesv",
+      "vaccchesapeake",
+      "vaccchesterfiel",
+      "vacccolonialh",
+      "vacccraig",
+      "vaccculpeper",
+      "vaccdanville",
+      "vaccdickenson",
+      "vaccdinwiddie",
+      "vaccessex",
+      "vaccfairfax",
+      "vaccfauquier",
+      "vaccfloyd",
+      "vaccfluvanna",
+      "vaccfranklin",
+      "vaccfrederick",
+      "vaccfredericksb",
+      "vaccgiles",
+      "vaccgloucester",
+      "vaccgoochland",
+      "vaccgrayson",
+      "vaccgreene",
+      "vaccgreensville",
+      "vacchalifax",
+      "vacchampton",
+      "vacchanover",
+      "vacchenrico",
+      "vacchenry",
+      "vacchighland",
+      "vacchopewell",
+      "vaccisle",
+      "vacckinggeorge",
+      "vacckingwilliam",
+      "vacclancaster",
+      "vaccloudoun",
+      "vacclouisa",
+      "vacclynchburg",
+      "vaccmadison",
+      "vaccmartinsvill",
+      "vaccmathews",
+      "vaccmecklenburg",
+      "vaccmiddlesex",
+      "vaccmontgomery",
+      "vaccnelson",
+      "vaccnewkent",
+      "vaccnewportnew",
+      "vaccnorfolk",
+      "vaccnorthampton",
+      "vaccnorthumberl",
+      "vaccnottoway",
+      "vaccpage",
+      "vaccpatrick",
+      "vaccpetersburg",
+      "vaccpittsylvani",
+      "vaccportsmouth",
+      "vaccpowhatan",
+      "vaccprinceedwa",
+      "vaccprincegeo",
+      "vaccprincewill",
+      "vaccpulaski",
+      "vaccradford",
+      "vaccrappahannoc",
+      "vaccrichcity",
+      "vaccrichmondcty",
+      "vaccroanokecty",
+      "vaccrockbridge",
+      "vaccrockingham",
+      "vaccrussell",
+      "vaccsalem",
+      "vaccscott",
+      "vaccshenandoah",
+      "vaccsmyth",
+      "vaccsouthampton",
+      "vaccspotsylvani",
+      "vaccstafford",
+      "vaccstaunton",
+      "vaccsuffolk",
+      "vaccsurry",
+      "vaccsussex",
+      "vacctazewell",
+      "vaccvabeach",
+      "vaccwarren",
+      "vaccwashington",
+      "vaccwaynesboro",
+      "vaccwestmorelan",
+      "vaccwilliams",
+      "vaccwinchester",
+      "vaccwise",
+      "vaccwythe",
+      "vaccyork",
+      "vachanctnorf",
+      "vachanctrich",
+      "vacorpct",
+      "vacorpctradford",
+      "vacorpctsbris",
+      "vacorpctslynch",
+      "vacorpctsnorf",
+      "vacorpctwinche",
+      "vamedmalrevpan"
+    ],
+    "bankruptcy": [
+      "vaeb",
+      "vawb"
+    ],
+    "local": [
+      "vad",
+      "vaed",
+      "vawd",
+      "va",
+      "vagensess",
+      "vactapp"
+    ]
+  },
+  "courts": [
+    {
+      "id": "vaeb",
+      "short_name": "E.D. Virginia",
+      "full_name": "United States Bankruptcy Court, E.D. Virginia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vawb",
+      "short_name": "W.D. Virginia",
+      "full_name": "United States Bankruptcy Court, W.D. Virginia",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vad",
+      "short_name": "D. Virginia",
+      "full_name": "District Court, D. Virginia",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1819-02-04"
+    },
+    {
+      "id": "vaed",
+      "short_name": "E.D. Virginia",
+      "full_name": "District Court, E.D. Virginia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vawd",
+      "short_name": "W.D. Virginia",
+      "full_name": "District Court, W.D. Virginia",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "va",
+      "short_name": "Supreme Court of Virginia",
+      "full_name": "Supreme Court of Virginia",
+      "jurisdiction": "S",
+      "start_date": "1779-01-01",
+      "end_date": null
+    },
+    {
+      "id": "vagensess",
+      "short_name": "General Court of Virginia",
+      "full_name": "General Court of Virginia",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vactapp",
+      "short_name": "Court of Appeals of Virginia",
+      "full_name": "Court of Appeals of Virginia",
+      "jurisdiction": "SA",
+      "start_date": "1985-01-01",
+      "end_date": null
+    },
+    {
+      "id": "vachanct",
+      "short_name": "Virginia Chancery Court",
+      "full_name": "Virginia Chancery Court",
+      "jurisdiction": "ST",
+      "start_date": "1802-01-01",
+      "end_date": null
+    },
+    {
+      "id": "vacc",
+      "short_name": "Virginia Circuit Court",
+      "full_name": "Virginia Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccaccomack",
+      "short_name": "Accomack County Circuit Court",
+      "full_name": "Accomack County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccalbemarle",
+      "short_name": "Albemarle County Circuit Court",
+      "full_name": "Albemarle County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccalexandria",
+      "short_name": "Alexandria County Circuit Court",
+      "full_name": "Alexandria County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccalleghany",
+      "short_name": "Alleghany County Circuit Court",
+      "full_name": "Alleghany County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccamelia",
+      "short_name": "Amelia County Circuit Court",
+      "full_name": "Amelia County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccamherst",
+      "short_name": "Amherst County Circuit Court",
+      "full_name": "Amherst County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccarlington",
+      "short_name": "Arlington County Circuit Court",
+      "full_name": "Arlington County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccaugusta",
+      "short_name": "Augusta County Circuit Court",
+      "full_name": "Augusta County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbath",
+      "short_name": "Bath County Circuit Court",
+      "full_name": "Bath County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbedford",
+      "short_name": "Bedford County Circuit Court",
+      "full_name": "Bedford County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbotetourt",
+      "short_name": "Botetourt County Circuit Court",
+      "full_name": "Botetourt County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbristol",
+      "short_name": "Bristol County Circuit Court",
+      "full_name": "Bristol County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbrunswick",
+      "short_name": "Brunswick County Circuit Court",
+      "full_name": "Brunswick County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbuchanan",
+      "short_name": "Buchanan County Circuit Court",
+      "full_name": "Buchanan County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccbuckingham",
+      "short_name": "Buckingham County Circuit Court",
+      "full_name": "Buckingham County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccampbell",
+      "short_name": "Campbell County Circuit Court",
+      "full_name": "Campbell County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccaroline",
+      "short_name": "Caroline County Circuit Court",
+      "full_name": "Caroline County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccarroll",
+      "short_name": "Carroll County Circuit Court",
+      "full_name": "Carroll County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccharles",
+      "short_name": "Charles City County Circuit Court",
+      "full_name": "Charles City County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccclarke",
+      "short_name": "Clarke County Circuit Court",
+      "full_name": "Clarke County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccharlottesv",
+      "short_name": "Charlottesville County Circuit Court",
+      "full_name": "Charlottesville County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccchesapeake",
+      "short_name": "Chesapeake County Circuit Court",
+      "full_name": "Chesapeake County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccchesterfiel",
+      "short_name": "Chesterfield County Circuit Court",
+      "full_name": "Chesterfield County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccolonialh",
+      "short_name": "Colonial Heights County Circuit Court",
+      "full_name": "Colonial Heights County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacccraig",
+      "short_name": "Craig County Circuit Court",
+      "full_name": "Craig County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccculpeper",
+      "short_name": "Culpeper County Circuit Court",
+      "full_name": "Culpeper County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccdanville",
+      "short_name": "Danville County Circuit Court",
+      "full_name": "Danville County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccdickenson",
+      "short_name": "Dickenson County Circuit Court",
+      "full_name": "Dickenson County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccdinwiddie",
+      "short_name": "Dinwiddie County Circuit Court",
+      "full_name": "Dinwiddie County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccessex",
+      "short_name": "Essex County Circuit Court",
+      "full_name": "Essex County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfairfax",
+      "short_name": "Fairfax County Circuit Court",
+      "full_name": "Fairfax County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfauquier",
+      "short_name": "Fauquier County Circuit Court",
+      "full_name": "Fauquier County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfloyd",
+      "short_name": "Floyd County Circuit Court",
+      "full_name": "Floyd County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfluvanna",
+      "short_name": "Fluvanna County Circuit Court",
+      "full_name": "Fluvanna County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfranklin",
+      "short_name": "Franklin County Circuit Court",
+      "full_name": "Franklin County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfrederick",
+      "short_name": "Frederick County Circuit Court",
+      "full_name": "Frederick County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccfredericksb",
+      "short_name": "Fredericksburg County Circuit Court",
+      "full_name": "Fredericksburg County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccgiles",
+      "short_name": "Giles County Circuit Court",
+      "full_name": "Giles County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccgloucester",
+      "short_name": "Gloucester County Circuit Court",
+      "full_name": "Gloucester County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccgoochland",
+      "short_name": "Goochland County Circuit Court",
+      "full_name": "Goochland County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccgrayson",
+      "short_name": "Grayson County Circuit Court",
+      "full_name": "Grayson County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccgreene",
+      "short_name": "Greene County Circuit Court",
+      "full_name": "Greene County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccgreensville",
+      "short_name": "Greensville County Circuit Court",
+      "full_name": "Greensville County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchalifax",
+      "short_name": "Halifax County Circuit Court",
+      "full_name": "Halifax County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchampton",
+      "short_name": "Hampton County Circuit Court",
+      "full_name": "Hampton County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchanover",
+      "short_name": "Hanover County Circuit Court",
+      "full_name": "Hanover County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchenrico",
+      "short_name": "Henrico County Circuit Court",
+      "full_name": "Henrico County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchenry",
+      "short_name": "Henry County Circuit Court",
+      "full_name": "Henry County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchighland",
+      "short_name": "Highland County Circuit Court",
+      "full_name": "Highland County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacchopewell",
+      "short_name": "Hopewell County Circuit Court",
+      "full_name": "Hopewell County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccisle",
+      "short_name": "Isle of Wight County Circuit Court",
+      "full_name": "Isle of Wight County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacckinggeorge",
+      "short_name": "King George County Circuit Court",
+      "full_name": "King George County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacckingwilliam",
+      "short_name": "King William County Circuit Court",
+      "full_name": "King William County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacclancaster",
+      "short_name": "Lancaster County Circuit Court",
+      "full_name": "Lancaster County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccloudoun",
+      "short_name": "Loudoun County Circuit Court",
+      "full_name": "Loudoun County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacclouisa",
+      "short_name": "Louisa County Circuit Court",
+      "full_name": "Louisa County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacclynchburg",
+      "short_name": "Lynchburg County Circuit Court",
+      "full_name": "Lynchburg County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccmadison",
+      "short_name": "Madison County Circuit Court",
+      "full_name": "Madison County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccmartinsvill",
+      "short_name": "Martinsville County Circuit Court",
+      "full_name": "Martinsville County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccmathews",
+      "short_name": "Mathews County Circuit Court",
+      "full_name": "Mathews County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccmecklenburg",
+      "short_name": "Mecklenburg County Circuit Court",
+      "full_name": "Mecklenburg County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccmiddlesex",
+      "short_name": "Middlesex County Circuit Court",
+      "full_name": "Middlesex County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccmontgomery",
+      "short_name": "Montgomery County Circuit Court",
+      "full_name": "Montgomery County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnelson",
+      "short_name": "Nelson County Circuit Court",
+      "full_name": "Nelson County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnewkent",
+      "short_name": "New Kent County Circuit Court",
+      "full_name": "New Kent County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnewportnew",
+      "short_name": "Newport News County Circuit Court",
+      "full_name": "Newport News County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnorfolk",
+      "short_name": "Norfolk County Circuit Court",
+      "full_name": "Norfolk County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnorthampton",
+      "short_name": "Northampton County Circuit Court",
+      "full_name": "Northampton County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnorthumberl",
+      "short_name": "Northumberland County Circuit Court",
+      "full_name": "Northumberland County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccnottoway",
+      "short_name": "Nottoway County Circuit Court",
+      "full_name": "Nottoway County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccpage",
+      "short_name": "Page County Circuit Court",
+      "full_name": "Page County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccpatrick",
+      "short_name": "Patrick County Circuit Court",
+      "full_name": "Patrick County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccpetersburg",
+      "short_name": "Petersburg County Circuit Court",
+      "full_name": "Petersburg County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccpittsylvani",
+      "short_name": "Pittsylvania County Circuit Court",
+      "full_name": "Pittsylvania County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccportsmouth",
+      "short_name": "Portsmouth County Circuit Court",
+      "full_name": "Portsmouth County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccpowhatan",
+      "short_name": "Powhatan County Circuit Court",
+      "full_name": "Powhatan County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccprinceedwa",
+      "short_name": "Prince Edward County Circuit Court",
+      "full_name": "Prince Edward County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccprincegeo",
+      "short_name": "Prince George County Circuit Court",
+      "full_name": "Prince George County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccprincewill",
+      "short_name": "Prince William County Circuit Court",
+      "full_name": "Prince William County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccpulaski",
+      "short_name": "Pulaski County Circuit Court",
+      "full_name": "Pulaski County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccradford",
+      "short_name": "Radford County Circuit Court",
+      "full_name": "Radford County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccrappahannoc",
+      "short_name": "Rappahannock County Circuit Court",
+      "full_name": "Rappahannock County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccrichcity",
+      "short_name": "Richmond City Circuit Court",
+      "full_name": "Richmond City Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccrichmondcty",
+      "short_name": "Richmond County Circuit Court",
+      "full_name": "Richmond County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccroanokecty",
+      "short_name": "Roanoke County Circuit Court",
+      "full_name": "Roanoke County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccrockbridge",
+      "short_name": "Rockbridge County Circuit Court",
+      "full_name": "Rockbridge County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccrockingham",
+      "short_name": "Rockingham County Circuit Court",
+      "full_name": "Rockingham County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccrussell",
+      "short_name": "Russell County Circuit Court",
+      "full_name": "Russell County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccsalem",
+      "short_name": "Salem County Circuit Court",
+      "full_name": "Salem County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccscott",
+      "short_name": "Scott County Circuit Court",
+      "full_name": "Scott County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccshenandoah",
+      "short_name": "Shenandoah County Circuit Court",
+      "full_name": "Shenandoah County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccsmyth",
+      "short_name": "Smyth County Circuit Court",
+      "full_name": "Smyth County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccsouthampton",
+      "short_name": "Southampton County Circuit Court",
+      "full_name": "Southampton County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccspotsylvani",
+      "short_name": "Spotsylvania County Circuit Court",
+      "full_name": "Spotsylvania County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccstafford",
+      "short_name": "Stafford County Circuit Court",
+      "full_name": "Stafford County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccstaunton",
+      "short_name": "Staunton County Circuit Court",
+      "full_name": "Staunton County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccsuffolk",
+      "short_name": "Suffolk County Circuit Court",
+      "full_name": "Suffolk County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccsurry",
+      "short_name": "Surry County Circuit Court",
+      "full_name": "Surry County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccsussex",
+      "short_name": "Sussex County Circuit Court",
+      "full_name": "Sussex County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacctazewell",
+      "short_name": "Tazewell County Circuit Court",
+      "full_name": "Tazewell County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccvabeach",
+      "short_name": "Virginia Beach County Circuit Court",
+      "full_name": "Virginia Beach County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwarren",
+      "short_name": "Warren County Circuit Court",
+      "full_name": "Warren County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwashington",
+      "short_name": "Washington County Circuit Court",
+      "full_name": "Washington County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwaynesboro",
+      "short_name": "Waynesboro County Circuit Court",
+      "full_name": "Waynesboro County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwestmorelan",
+      "short_name": "Westmoreland County Circuit Court",
+      "full_name": "Westmoreland County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwilliams",
+      "short_name": "Williamsburg and James County Circuit Court",
+      "full_name": "Williamsburg and James County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwinchester",
+      "short_name": "Winchester County Circuit Court",
+      "full_name": "Winchester County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwise",
+      "short_name": "Wise & Norton County Circuit Court",
+      "full_name": "Wise & Norton County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccwythe",
+      "short_name": "Wythe County Circuit Court",
+      "full_name": "Wythe County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vaccyork",
+      "short_name": "York County Poquoson County Circuit Court",
+      "full_name": "York County Poquoson County Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vachanctnorf",
+      "short_name": "Norfolk Chancery Court, Virginia",
+      "full_name": "Norfolk Chancery Court, Virginia",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vachanctrich",
+      "short_name": "Richmond Chancery Court, Virginia",
+      "full_name": "Richmond Chancery Court, Virginia",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacorpct",
+      "short_name": "Virginia Corporation Court",
+      "full_name": "Virginia Coporation Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacorpctradford",
+      "short_name": "Radford Corporation Court, Va.",
+      "full_name": "Radford Corporation Court, Va.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacorpctsbris",
+      "short_name": "Bristol Corporation Court, Va.",
+      "full_name": "Bristol Corporation Court, Va.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacorpctslynch",
+      "short_name": "Lynchburg Corporation Court, Va.",
+      "full_name": "Lynchburg Corporation Court, Va.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacorpctsnorf",
+      "short_name": "South Norfolk Corporation Court, Va.",
+      "full_name": "South Norfolk Corporation Court, Va.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vacorpctwinche",
+      "short_name": "Winchester Corporation Court, Va.",
+      "full_name": "Winchester Corporation Court, Va.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "vamedmalrevpan",
+      "short_name": "Medical Malpractice Review Panel",
+      "full_name": "Medical Malpractice Review Panel",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

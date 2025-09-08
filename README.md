@@ -113,7 +113,7 @@ Browse via MCP client:
 - `courtlistener://courts/all` - All 3,352 courts
 - `courtlistener://courts/federal` - Federal courts
 - `courtlistener://courts/state` - State courts
-- `courtlistener://courts/states/{state}` - State-specific courts
+- `courtlistener://courts/state-{state}` - State-specific courts
 - `courtlistener://jurisdictions/court-mappings` - Jurisdiction mappings
 
 ## Jurisdiction Options

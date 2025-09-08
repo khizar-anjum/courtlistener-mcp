@@ -1,0 +1,502 @@
+{
+  "state": "kentucky",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 54,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "kycirct",
+      "kycirct1",
+      "kycirctballard",
+      "kycirct6",
+      "kycirctdaviess",
+      "kycirct12",
+      "kycircthenry",
+      "kycirct16",
+      "kycirctkenton",
+      "kycirct17",
+      "kycirctcampbell",
+      "kycirct20",
+      "kycirctgreenup",
+      "kycirct22",
+      "kycirctfayette",
+      "kycirct24",
+      "kycirctjohnson",
+      "kycirct26",
+      "kycirctharlan",
+      "kycirct27",
+      "kycirctknox",
+      "kycirct31",
+      "kycirctfloyd",
+      "kycirct32",
+      "kycirctboyd",
+      "kycirct38",
+      "kycirctedmonson",
+      "kycirctbutler",
+      "kycirct41",
+      "kycirctclay",
+      "kycirct42",
+      "kycirctcalloway",
+      "kycirct44",
+      "kycirctbell",
+      "kycirct48",
+      "kycirctfranklin",
+      "kycirct50",
+      "kycirctboyle",
+      "kycirct51",
+      "kycircthenderso",
+      "kycirct54",
+      "kycirctboone",
+      "kycirct55",
+      "kycirctbullitt",
+      "kycirct56",
+      "kycirctlivingst"
+    ],
+    "bankruptcy": [
+      "kyeb",
+      "kywb"
+    ],
+    "local": [
+      "kyd",
+      "kyed",
+      "kywd",
+      "ky",
+      "kyctapp",
+      "kyctapphigh"
+    ]
+  },
+  "courts": [
+    {
+      "id": "kyeb",
+      "short_name": "E.D. Kentucky",
+      "full_name": "United States Bankruptcy Court, E.D. Kentucky",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kywb",
+      "short_name": "W.D. Kentucky",
+      "full_name": "United States Bankruptcy Court, W.D. Kentucky",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kyd",
+      "short_name": "D. Kentucky",
+      "full_name": "District Court, D. Kentucky",
+      "jurisdiction": "FD",
+      "start_date": "1789-09-24",
+      "end_date": "1901-02-12"
+    },
+    {
+      "id": "kyed",
+      "short_name": "E.D. Kentucky",
+      "full_name": "District Court, E.D. Kentucky",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kywd",
+      "short_name": "W.D. Kentucky",
+      "full_name": "District Court, W.D. Kentucky",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ky",
+      "short_name": "Kentucky Supreme Court",
+      "full_name": "Kentucky Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1976-01-01",
+      "end_date": null
+    },
+    {
+      "id": "kyctapp",
+      "short_name": "Court of Appeals of Kentucky",
+      "full_name": "Court of Appeals of Kentucky",
+      "jurisdiction": "SA",
+      "start_date": "1976-01-01",
+      "end_date": null
+    },
+    {
+      "id": "kyctapphigh",
+      "short_name": "Court of Appeals of Kentucky (pre-1976)",
+      "full_name": "Court of Appeals of Kentucky (pre-1976)",
+      "jurisdiction": "S",
+      "start_date": "1792-01-01",
+      "end_date": "1975-12-31"
+    },
+    {
+      "id": "kycirct",
+      "short_name": "Kentucky Circuit Court",
+      "full_name": "Kentucky Circuit Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct1",
+      "short_name": "Kentucky Circuit Court 1",
+      "full_name": "Kentucky Circuit Court 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctballard",
+      "short_name": "Ballard Circuit Court, Kentucky",
+      "full_name": "Ballard Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct6",
+      "short_name": "Kentucky Circuit Court 6",
+      "full_name": "Kentucky Circuit Court 6",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctdaviess",
+      "short_name": "Daviess Circuit Court, Kentucky",
+      "full_name": "Daviess Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct12",
+      "short_name": "Kentucky Circuit Court 12",
+      "full_name": "Kentucky Circuit Court 12",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycircthenry",
+      "short_name": "Henry Circuit Court, Kentucky",
+      "full_name": "Henry Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct16",
+      "short_name": "Kentucky Circuit Court 16",
+      "full_name": "Kentucky Circuit Court 16",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctkenton",
+      "short_name": "Kenton Circuit Court, Kentucky",
+      "full_name": "Kenton Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct17",
+      "short_name": "Kentucky Circuit Court 17",
+      "full_name": "Kentucky Circuit Court 17",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctcampbell",
+      "short_name": "Campbell Circuit Court, Kentucky",
+      "full_name": "Campbell Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct20",
+      "short_name": "Kentucky Circuit Court 20",
+      "full_name": "Kentucky Circuit Court 20",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctgreenup",
+      "short_name": "Greenup Circuit Court, Kentucky",
+      "full_name": "Greenup Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct22",
+      "short_name": "Kentucky Circuit Court 22",
+      "full_name": "Kentucky Circuit Court 22",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctfayette",
+      "short_name": "Fayette Circuit Court, Kentucky",
+      "full_name": "Fayette Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct24",
+      "short_name": "Kentucky Circuit Court 24",
+      "full_name": "Kentucky Circuit Court 24",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctjohnson",
+      "short_name": "Johnson Circuit Court, Kentucky",
+      "full_name": "Johnson Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct26",
+      "short_name": "Kentucky Circuit Court 26",
+      "full_name": "Kentucky Circuit Court 26",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctharlan",
+      "short_name": "Harlan Circuit Court, Kentucky",
+      "full_name": "Harlan Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct27",
+      "short_name": "Kentucky Circuit Court 27",
+      "full_name": "Kentucky Circuit Court 27",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctknox",
+      "short_name": "Knox Circuit Court, Kentucky",
+      "full_name": "Knox Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct31",
+      "short_name": "Kentucky Circuit Court 31",
+      "full_name": "Kentucky Circuit Court 31",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctfloyd",
+      "short_name": "Floyd Circuit Court, Kentucky",
+      "full_name": "Floyd Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct32",
+      "short_name": "Kentucky Circuit Court 32",
+      "full_name": "Kentucky Circuit Court 32",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctboyd",
+      "short_name": "Boyd Circuit Court, Kentucky",
+      "full_name": "Boyd Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct38",
+      "short_name": "Kentucky Circuit Court 38",
+      "full_name": "Kentucky Circuit Court 38",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctedmonson",
+      "short_name": "Edmonson Circuit Court, Kentucky",
+      "full_name": "Edmonson Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctbutler",
+      "short_name": "Butler Circuit Court, Kentucky",
+      "full_name": "Butler Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct41",
+      "short_name": "Kentucky Circuit Court 41",
+      "full_name": "Kentucky Circuit Court 41",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctclay",
+      "short_name": "Clay Circuit Court, Kentucky",
+      "full_name": "Clay Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct42",
+      "short_name": "Kentucky Circuit Court 42",
+      "full_name": "Kentucky Circuit Court 42",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctcalloway",
+      "short_name": "Calloway Circuit Court, Kentucky",
+      "full_name": "Calloway Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct44",
+      "short_name": "Kentucky Circuit Court 44",
+      "full_name": "Kentucky Circuit Court 44",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctbell",
+      "short_name": "Bell Circuit Court, Kentucky",
+      "full_name": "Bell Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct48",
+      "short_name": "Kentucky Circuit Court 48",
+      "full_name": "Kentucky Circuit Court 48",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctfranklin",
+      "short_name": "Franklin Circuit Court, Kentucky",
+      "full_name": "Franklin Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct50",
+      "short_name": "Kentucky Circuit Court 50",
+      "full_name": "Kentucky Circuit Court 50",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctboyle",
+      "short_name": "Boyle Circuit Court, Kentucky",
+      "full_name": "Boyle Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct51",
+      "short_name": "Kentucky Circuit Court 51",
+      "full_name": "Kentucky Circuit Court 51",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycircthenderso",
+      "short_name": "Henderson Circuit Court, Kentucky",
+      "full_name": "Henderson Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct54",
+      "short_name": "Kentucky Circuit Court 54",
+      "full_name": "Kentucky Circuit Court 54",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctboone",
+      "short_name": "Boone Circuit Court, Kentucky",
+      "full_name": "Boone Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct55",
+      "short_name": "Kentucky Circuit Court 55",
+      "full_name": "Kentucky Circuit Court 55",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctbullitt",
+      "short_name": "Bullitt Circuit Court, Kentucky",
+      "full_name": "Bullitt Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirct56",
+      "short_name": "Kentucky Circuit Court 56",
+      "full_name": "Kentucky Circuit Court 56",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "kycirctlivingst",
+      "short_name": "Livingston Circuit Court, Kentucky",
+      "full_name": "Livingston Circuit Court, Kentucky",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

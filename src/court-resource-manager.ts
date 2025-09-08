@@ -158,8 +158,8 @@ export class CourtResourceManager {
       return path.join(this.RESOURCES_DIR, mappings[withoutScheme]);
     }
 
-    // Handle state court URIs (courts/states/california -> courts/states/california.json)
-    if (withoutScheme.startsWith('courts/states/')) {
+    // Handle state court URIs (courts/state-california -> courts/state-california.json)
+    if (withoutScheme.startsWith('courts/state-')) {
       return path.join(this.RESOURCES_DIR, withoutScheme + '.json');
     }
 
@@ -168,33 +168,32 @@ export class CourtResourceManager {
   }
   
   private static generateStateResources(): Resource[] {
-    const statesDir = path.join(this.RESOURCES_DIR, 'courts', 'states');
+    const courtsDir = path.join(this.RESOURCES_DIR, 'courts');
     
-    if (!fs.existsSync(statesDir)) {
-      console.warn('States directory not found, no state resources available');
+    if (!fs.existsSync(courtsDir)) {
+      console.warn('Courts directory not found, no state resources available');
       return [];
     }
 
     try {
-      const stateFiles = fs.readdirSync(statesDir);
+      const stateFiles = fs.readdirSync(courtsDir).filter(file => file.startsWith('state-') && file.endsWith('.json'));
       return stateFiles
-        .filter(file => file.endsWith('.json'))
         .map(file => {
-          const stateName = file.replace('.json', '');
+          const stateName = file.replace('state-', '').replace('.json', '');
           const displayName = stateName
             .split('-')
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
           
           return {
-            uri: `courtlistener://courts/states/${stateName}`,
+            uri: `courtlistener://courts/state-${stateName}`,
             name: `${displayName} Courts`,
             mimeType: 'application/json',
             description: `All courts in ${displayName} including federal, state, bankruptcy, and local courts`
           };
         });
     } catch (error) {
-      console.error('Error reading states directory:', error);
+      console.error('Error reading courts directory:', error);
       return [];
     }
   }

@@ -1,0 +1,33 @@
+{
+  "state": "alaska",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 2,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "akb"
+    ],
+    "local": [
+      "akd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "akb",
+      "short_name": "D. Alaska",
+      "full_name": "United States Bankruptcy Court, D. Alaska",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "akd",
+      "short_name": "D. Alaska",
+      "full_name": "District Court, D. Alaska",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

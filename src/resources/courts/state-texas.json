@@ -1,0 +1,6406 @@
+{
+  "state": "texas",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 710,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "texbizct",
+      "texdistct",
+      "texdistct1",
+      "texdistct2",
+      "texdistct3",
+      "texdistct4",
+      "texdistct5",
+      "texdistct6",
+      "texdistct7",
+      "texdistct8",
+      "texdistct9",
+      "texdistct10",
+      "texdistct11",
+      "texdistct12",
+      "texdistct13",
+      "texdistct14",
+      "texdistct15",
+      "texdistct16",
+      "texdistct17",
+      "texdistct18",
+      "texdistct19",
+      "texdistct20",
+      "texdistct21",
+      "texdistct22",
+      "texdistct23",
+      "texdistct24",
+      "texdistct25",
+      "texdistct26",
+      "texdistct27",
+      "texdistct28",
+      "texdistct29",
+      "texdistct30",
+      "texdistct31",
+      "texdistct32",
+      "texdistct33",
+      "texdistct34",
+      "texdistct35",
+      "texdistct36",
+      "texdistct37",
+      "texdistct38",
+      "texdistct39",
+      "texdistct40",
+      "texdistct41",
+      "texdistct42",
+      "texdistct43",
+      "texdistct44",
+      "texdistct45",
+      "texdistct46",
+      "texdistct47",
+      "texdistct48",
+      "texdistct49",
+      "texdistct50",
+      "texdistct51",
+      "texdistct52",
+      "texdistct53",
+      "texdistct54",
+      "texdistct55",
+      "texdistct56",
+      "texdistct57",
+      "texdistct58",
+      "texdistct59",
+      "texdistct60",
+      "texdistct61",
+      "texdistct62",
+      "texdistct63",
+      "texdistct64",
+      "texdistct65",
+      "texdistct66",
+      "texdistct67",
+      "texdistct68",
+      "texdistct69",
+      "texdistct70",
+      "texdistct71",
+      "texdistct72",
+      "texdistct73",
+      "texdistct74",
+      "texdistct75",
+      "texdistct76",
+      "texdistct77",
+      "texdistct78",
+      "texdistct79",
+      "texdistct80",
+      "texdistct81",
+      "texdistct82",
+      "texdistct83",
+      "texdistct84",
+      "texdistct85",
+      "texdistct86",
+      "texdistct87",
+      "texdistct88",
+      "texdistct89",
+      "texdistct90",
+      "texdistct91",
+      "texdistct92",
+      "texdistct93",
+      "texdistct94",
+      "texdistct95",
+      "texdistct96",
+      "texdistct97",
+      "texdistct98",
+      "texdistct99",
+      "texdistct100",
+      "texdistct101",
+      "texdistct102",
+      "texdistct103",
+      "texdistct104",
+      "texdistct105",
+      "texdistct106",
+      "texdistct107",
+      "texdistct108",
+      "texdistct109",
+      "texdistct110",
+      "texdistct111",
+      "texdistct112",
+      "texdistct113",
+      "texdistct114",
+      "texdistct115",
+      "texdistct116",
+      "texdistct117",
+      "texdistct118",
+      "texdistct119",
+      "texdistct120",
+      "texdistct121",
+      "texdistct122",
+      "texdistct123",
+      "texdistct124",
+      "texdistct125",
+      "texdistct126",
+      "texdistct127",
+      "texdistct128",
+      "texdistct129",
+      "texdistct130",
+      "texdistct131",
+      "texdistct132",
+      "texdistct133",
+      "texdistct134",
+      "texdistct135",
+      "texdistct136",
+      "texdistct137",
+      "texdistct138",
+      "texdistct139",
+      "texdistct140",
+      "texdistct141",
+      "texdistct142",
+      "texdistct143",
+      "texdistct144",
+      "texdistct145",
+      "texdistct146",
+      "texdistct147",
+      "texdistct148",
+      "texdistct149",
+      "texdistct150",
+      "texdistct151",
+      "texdistct152",
+      "texdistct153",
+      "texdistct154",
+      "texdistct155",
+      "texdistct156",
+      "texdistct157",
+      "texdistct158",
+      "texdistct159",
+      "texdistct160",
+      "texdistct161",
+      "texdistct162",
+      "texdistct163",
+      "texdistct164",
+      "texdistct165",
+      "texdistct166",
+      "texdistct167",
+      "texdistct168",
+      "texdistct169",
+      "texdistct170",
+      "texdistct171",
+      "texdistct172",
+      "texdistct173",
+      "texdistct174",
+      "texdistct175",
+      "texdistct176",
+      "texdistct177",
+      "texdistct178",
+      "texdistct179",
+      "texdistct180",
+      "texdistct181",
+      "texdistct182",
+      "texdistct183",
+      "texdistct184",
+      "texdistct185",
+      "texdistct186",
+      "texdistct187",
+      "texdistct188",
+      "texdistct189",
+      "texdistct190",
+      "texdistct191",
+      "texdistct192",
+      "texdistct193",
+      "texdistct194",
+      "texdistct195",
+      "texdistct196",
+      "texdistct197",
+      "texdistct198",
+      "texdistct199",
+      "texdistct200",
+      "texdistct201",
+      "texdistct202",
+      "texdistct203",
+      "texdistct204",
+      "texdistct205",
+      "texdistct206",
+      "texdistct207",
+      "texdistct208",
+      "texdistct209",
+      "texdistct210",
+      "texdistct211",
+      "texdistct212",
+      "texdistct213",
+      "texdistct214",
+      "texdistct215",
+      "texdistct216",
+      "texdistct217",
+      "texdistct218",
+      "texdistct219",
+      "texdistct220",
+      "texdistct221",
+      "texdistct222",
+      "texdistct223",
+      "texdistct224",
+      "texdistct225",
+      "texdistct226",
+      "texdistct227",
+      "texdistct228",
+      "texdistct229",
+      "texdistct230",
+      "texdistct231",
+      "texdistct232",
+      "texdistct233",
+      "texdistct234",
+      "texdistct235",
+      "texdistct236",
+      "texdistct237",
+      "texdistct238",
+      "texdistct239",
+      "texdistct240",
+      "texdistct241",
+      "texdistct242",
+      "texdistct243",
+      "texdistct244",
+      "texdistct245",
+      "texdistct246",
+      "texdistct247",
+      "texdistct248",
+      "texdistct249",
+      "texdistct250",
+      "texdistct251",
+      "texdistct252",
+      "texdistct253",
+      "texdistct254",
+      "texdistct255",
+      "texdistct256",
+      "texdistct257",
+      "texdistct258",
+      "texdistct259",
+      "texdistct260",
+      "texdistct261",
+      "texdistct262",
+      "texdistct263",
+      "texdistct264",
+      "texdistct265",
+      "texdistct266",
+      "texdistct267",
+      "texdistct268",
+      "texdistct269",
+      "texdistct270",
+      "texdistct271",
+      "texdistct272",
+      "texdistct273",
+      "texdistct274",
+      "texdistct275",
+      "texdistct276",
+      "texdistct277",
+      "texdistct278",
+      "texdistct279",
+      "texdistct280",
+      "texdistct281",
+      "texdistct282",
+      "texdistct283",
+      "texdistct284",
+      "texdistct285",
+      "texdistct286",
+      "texdistct287",
+      "texdistct288",
+      "texdistct289",
+      "texdistct290",
+      "texdistct291",
+      "texdistct292",
+      "texdistct293",
+      "texdistct294",
+      "texdistct295",
+      "texdistct296",
+      "texdistct297",
+      "texdistct298",
+      "texdistct299",
+      "texdistct300",
+      "texdistct301",
+      "texdistct302",
+      "texdistct303",
+      "texdistct304",
+      "texdistct305",
+      "texdistct306",
+      "texdistct307",
+      "texdistct308",
+      "texdistct309",
+      "texdistct310",
+      "texdistct311",
+      "texdistct312",
+      "texdistct313",
+      "texdistct314",
+      "texdistct315",
+      "texdistct316",
+      "texdistct317",
+      "texdistct318",
+      "texdistct319",
+      "texdistct320",
+      "texdistct321",
+      "texdistct322",
+      "texdistct323",
+      "texdistct324",
+      "texdistct325",
+      "texdistct326",
+      "texdistct327",
+      "texdistct328",
+      "texdistct329",
+      "texdistct330",
+      "texdistct331",
+      "texdistct332",
+      "texdistct333",
+      "texdistct334",
+      "texdistct335",
+      "texdistct336",
+      "texdistct337",
+      "texdistct338",
+      "texdistct339",
+      "texdistct340",
+      "texdistct341",
+      "texdistct342",
+      "texdistct343",
+      "texdistct344",
+      "texdistct345",
+      "texdistct346",
+      "texdistct347",
+      "texdistct348",
+      "texdistct349",
+      "texdistct350",
+      "texdistct351",
+      "texdistct352",
+      "texdistct353",
+      "texdistct354",
+      "texdistct355",
+      "texdistct356",
+      "texdistct357",
+      "texdistct358",
+      "texdistct359",
+      "texdistct360",
+      "texdistct361",
+      "texdistct362",
+      "texdistct363",
+      "texdistct364",
+      "texdistct365",
+      "texdistct366",
+      "texdistct367",
+      "texdistct368",
+      "texdistct369",
+      "texdistct370",
+      "texdistct371",
+      "texdistct372",
+      "texdistct373",
+      "texdistct374",
+      "texdistct375",
+      "texdistct376",
+      "texdistct377",
+      "texdistct378",
+      "texdistct379",
+      "texdistct380",
+      "texdistct381",
+      "texdistct382",
+      "texdistct383",
+      "texdistct384",
+      "texdistct385",
+      "texdistct386",
+      "texdistct387",
+      "texdistct388",
+      "texdistct389",
+      "texdistct390",
+      "texdistct391",
+      "texdistct392",
+      "texdistct393",
+      "texdistct394",
+      "texdistct395",
+      "texdistct396",
+      "texdistct397",
+      "texdistct398",
+      "texdistct399",
+      "texdistct400",
+      "texdistct401",
+      "texdistct402",
+      "texdistct403",
+      "texdistct404",
+      "texdistct405",
+      "texdistct406",
+      "texdistct407",
+      "texdistct408",
+      "texdistct409",
+      "texdistct410",
+      "texdistct411",
+      "texdistct412",
+      "texdistct413",
+      "texdistct414",
+      "texdistct415",
+      "texdistct416",
+      "texdistct417",
+      "texdistct418",
+      "texdistct419",
+      "texdistct420",
+      "texdistct421",
+      "texdistct422",
+      "texdistct423",
+      "texdistct424",
+      "texdistct425",
+      "texdistct426",
+      "texdistct427",
+      "texdistct428",
+      "texdistct429",
+      "texdistct430",
+      "texdistct431",
+      "texdistct432",
+      "texdistct433",
+      "texdistct434",
+      "texdistct435",
+      "texdistct436",
+      "texdistct437",
+      "texdistct438",
+      "texdistct439",
+      "texdistct440",
+      "texdistct441",
+      "texdistct442",
+      "texdistct443",
+      "texdistct444",
+      "texdistct445",
+      "texdistct446",
+      "texdistct447",
+      "texdistct448",
+      "texdistct449",
+      "texdistct450",
+      "texdistct451",
+      "texdistct452",
+      "texdistct453",
+      "texdistct454",
+      "texdistct455",
+      "texdistct456",
+      "texdistct457",
+      "texdistct458",
+      "texdistct459",
+      "texdistct460",
+      "texdistct461",
+      "texdistct462",
+      "texdistct463",
+      "texdistct464",
+      "texdistct465",
+      "texdistct466",
+      "texdistct467",
+      "texdistct468",
+      "texdistct469",
+      "texdistct470",
+      "texdistct471",
+      "texdistct472",
+      "texdistct473",
+      "texdistct474",
+      "texdistct475",
+      "texdistct476",
+      "texdistct477",
+      "texdistct478",
+      "texdistct479",
+      "texdistct480",
+      "texdistct481",
+      "texdistct482",
+      "texdistct483",
+      "texdistct484",
+      "texdistct485",
+      "texdistct486",
+      "texdistct487",
+      "texdistct488",
+      "texdistct489",
+      "texdistct490",
+      "texdistct491",
+      "texdistct492",
+      "texdistct493",
+      "texdistct494",
+      "texdistct495",
+      "texdistct496",
+      "texdistct497",
+      "texdistct498",
+      "texdistct499",
+      "texdistct500",
+      "texdistct501",
+      "texdistct502",
+      "texdistct503",
+      "texdistct504",
+      "texdistct505",
+      "texdistct506",
+      "texdistct507",
+      "texdistct508",
+      "texcrimdistct1",
+      "texcrimdistct2",
+      "texcrimdistct3",
+      "texcrimdistct4",
+      "texcrimdistct5",
+      "texcrimdistct6",
+      "texcrimdistct7",
+      "texcrimdistct8",
+      "texctyct",
+      "texctyct1",
+      "texctyct2",
+      "texctyct3",
+      "texctyct4",
+      "texctyct5",
+      "texctyct6",
+      "texctyct7",
+      "texctyct8",
+      "texctyct9",
+      "texctyct10",
+      "texctyct11",
+      "texctyct12",
+      "texctyct13",
+      "texctyct14",
+      "texctyct15",
+      "texctyct16",
+      "texctyct17",
+      "texctyct18",
+      "texctyct19",
+      "texctyct20",
+      "texctyct21",
+      "texctyct22",
+      "texctyct23",
+      "texctyct24",
+      "texctyct25",
+      "texctyct26",
+      "texctyct27",
+      "texctyct28",
+      "texctyct29",
+      "texctyct30",
+      "texctyct31",
+      "texctyct32",
+      "texctyct33",
+      "texctyct34",
+      "texctyct35",
+      "texctyct36",
+      "texctyct37",
+      "texctyct38",
+      "texctyct39",
+      "texctyct40",
+      "texctyct41",
+      "texctyct42",
+      "texctyct43",
+      "texctyct44",
+      "texctyct45",
+      "texctyct46",
+      "texctyct47",
+      "texctyct48",
+      "texctyct49",
+      "texctyct50",
+      "texctyct51",
+      "texctyct52",
+      "texctyct53",
+      "texctyct54",
+      "texctyct55",
+      "texctyct56",
+      "texctyct57",
+      "texctyct58",
+      "texctyct59",
+      "texctyct60",
+      "texctyct61",
+      "texctyct62",
+      "texctyct63",
+      "texctyct64",
+      "texctyct65",
+      "texctyct66",
+      "texctyct67",
+      "texctyct68",
+      "texctyct69",
+      "texctyct70",
+      "texctyct71",
+      "texctyct72",
+      "texctyct73",
+      "texctyct74",
+      "texctyct75",
+      "texctyct76",
+      "texctyct77",
+      "texctyct78",
+      "texctyct79",
+      "texctyct80",
+      "texctyct81",
+      "texctyct82",
+      "texctyct83",
+      "texctyct84",
+      "texctyct85",
+      "texctyct86",
+      "texctyct87",
+      "texctyct88",
+      "texctyct89",
+      "texctyct90",
+      "texctyct91",
+      "texctyct92",
+      "texctyct93",
+      "texctyct94",
+      "texctyct95",
+      "texctyct96",
+      "texctyct97",
+      "texctyct98",
+      "texctyct99",
+      "texctyct100",
+      "texctyct101",
+      "texctyct102",
+      "texctyct103",
+      "texctyct104",
+      "texctyct105",
+      "texctyct106",
+      "texctyct107",
+      "texctyct108",
+      "texctyct109",
+      "texctyct110",
+      "texctyct111",
+      "texctyct112",
+      "texctyct113",
+      "texctyct114",
+      "texctyct115",
+      "texctyct116",
+      "texctyct117",
+      "texctyct118",
+      "texctyct119",
+      "texctyct120",
+      "texctyct121",
+      "texctyct122",
+      "texctyct123",
+      "texctyct124",
+      "texctyct125",
+      "texctyct126",
+      "texctyct127",
+      "texctyct128",
+      "texctyct129",
+      "texctyct130",
+      "texctyct131",
+      "texctyct132",
+      "texctyct133",
+      "texctyct134",
+      "texctyct135",
+      "texctyct136",
+      "texctyct137",
+      "texctyct138",
+      "texctyct139",
+      "texctyct140",
+      "texctyct141",
+      "texctyct142",
+      "texctyct143",
+      "texctyct144",
+      "texctyct145",
+      "texctyct146",
+      "texctyct147",
+      "texctyct148",
+      "texctyct149",
+      "texctyct150",
+      "texctyct151",
+      "texctyct152",
+      "texctyct153",
+      "texctyct154",
+      "texctyct155",
+      "texctyct156",
+      "texctyct157",
+      "texprobct",
+      "texprobct1"
+    ],
+    "bankruptcy": [
+      "txeb",
+      "txnb",
+      "txsb",
+      "txwb"
+    ],
+    "local": [
+      "texd",
+      "txed",
+      "txnd",
+      "txsd",
+      "txwd",
+      "tex",
+      "texcommnapp",
+      "texrevtrib",
+      "texapp",
+      "texcrimapp",
+      "texreview",
+      "texjpml",
+      "texag",
+      "txctapp1",
+      "txctapp2",
+      "txctapp3",
+      "txctapp4",
+      "txctapp5",
+      "txctapp6",
+      "txctapp7",
+      "txctapp8",
+      "txctapp9",
+      "txctapp10",
+      "txctapp11",
+      "txctapp12",
+      "txctapp13A",
+      "txctapp13B",
+      "txctapp14"
+    ]
+  },
+  "courts": [
+    {
+      "id": "txeb",
+      "short_name": "E.D. Texas",
+      "full_name": "United States Bankruptcy Court, E.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txnb",
+      "short_name": "N.D. Texas",
+      "full_name": "United States Bankruptcy Court, N.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txsb",
+      "short_name": "S.D. Texas",
+      "full_name": "United States Bankruptcy Court, S.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txwb",
+      "short_name": "W.D. Texas",
+      "full_name": "United States Bankruptcy Court, W.D. Texas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texd",
+      "short_name": "D. Texas",
+      "full_name": "District Court, D. Texas",
+      "jurisdiction": "FD",
+      "start_date": "1845-12-29",
+      "end_date": "1857-02-21"
+    },
+    {
+      "id": "txed",
+      "short_name": "E.D. Texas",
+      "full_name": "District Court, E.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txnd",
+      "short_name": "N.D. Texas",
+      "full_name": "District Court, N.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txsd",
+      "short_name": "S.D. Texas",
+      "full_name": "District Court, S.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txwd",
+      "short_name": "W.D. Texas",
+      "full_name": "District Court, W.D. Texas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "tex",
+      "short_name": "Texas Supreme Court",
+      "full_name": "Texas Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1840-01-01",
+      "end_date": null
+    },
+    {
+      "id": "texcommnapp",
+      "short_name": "Texas Commission of Appeals",
+      "full_name": "Texas Commission of Appeals",
+      "jurisdiction": "SS",
+      "start_date": "1918-01-01",
+      "end_date": "1945-12-31"
+    },
+    {
+      "id": "texrevtrib",
+      "short_name": "Texas Court of Review Tribunal",
+      "full_name": "Texas Court of Review Tribunal",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texapp",
+      "short_name": "Court of Appeals of Texas",
+      "full_name": "Court of Appeals of Texas",
+      "jurisdiction": "SA",
+      "start_date": "1891-01-01",
+      "end_date": null
+    },
+    {
+      "id": "texcrimapp",
+      "short_name": "Court of Criminal Appeals of Texas",
+      "full_name": "Court of Criminal Appeals of Texas",
+      "jurisdiction": "S",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texreview",
+      "short_name": "Texas Special Court of Review",
+      "full_name": "Texas Special Court of Review",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texjpml",
+      "short_name": "Texas Judicial Panel on Multidistrict Litigation",
+      "full_name": "Texas Judicial Panel on Multidistrict Litigation",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texag",
+      "short_name": "Texas Attorney General Reports",
+      "full_name": "Texas Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp1",
+      "short_name": "Tex. App. Ct., 1st Dist. (Houston)",
+      "full_name": "Texas Court of Appeals, 1st District (Houston)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp2",
+      "short_name": "Tex. App. Ct., 2nd Dist. (Fort Worth)",
+      "full_name": "Texas Court of Appeals, 2nd District (Fort Worth)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp3",
+      "short_name": "Tex. App. Ct., 3rd Dist. (Austin)",
+      "full_name": "Texas Court of Appeals, 3rd District (Austin)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp4",
+      "short_name": "Tex. App. Ct., 4th Dist. (San Antonio)",
+      "full_name": "Texas Court of Appeals, 4th District (San Antonio)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp5",
+      "short_name": "Tex. App. Ct., 5th Dist. (Dallas)",
+      "full_name": "Texas Court of Appeals, 5th District (Dallas)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp6",
+      "short_name": "Tex. App. Ct., 6th Dist. (Texarkana)",
+      "full_name": "Texas Court of Appeals, 6th District (Texarkana)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp7",
+      "short_name": "Tex. App. Ct., 7th Dist. (Amarillo)",
+      "full_name": "Texas Court of Appeals, 7th District (Amarillo)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp8",
+      "short_name": "Tex. App. Ct., 8th Dist. (El Paso)",
+      "full_name": "Texas Court of Appeals, 8th District (El Paso)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp9",
+      "short_name": "Tex. App. Ct., 9th Dist. (Beaumont)",
+      "full_name": "Texas Court of Appeals, 9th District (Beaumont)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp10",
+      "short_name": "Tex. App. Ct., 10th Dist. (Waco)",
+      "full_name": "Texas Court of Appeals, 10th District (Waco)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp11",
+      "short_name": "Tex. App. Ct., 11th Dist. (Eastland)",
+      "full_name": "Texas Court of Appeals, 11th District (Eastland)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp12",
+      "short_name": "Tex. App. Ct., 12th Dist. (Tyler)",
+      "full_name": "Texas Court of Appeals, 12th District (Tyler)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp13A",
+      "short_name": "Tex. App. Ct., 13th Dist. (Corpus Christi)",
+      "full_name": "Texas Court of Appeals, 13th District (Corpus Christi)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp13B",
+      "short_name": "Tex. App. Ct., 13th Dist. (Edinburg)",
+      "full_name": "Texas Court of Appeals, 13th District (Edinburg)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "txctapp14",
+      "short_name": "Tex. App. Ct., 14th Dist. (Houston)",
+      "full_name": "Texas Court of Appeals, 14th District (Houston)",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texbizct",
+      "short_name": "Texas Business Court",
+      "full_name": "Texas Business Court",
+      "jurisdiction": "ST",
+      "start_date": "2023-06-09",
+      "end_date": null
+    },
+    {
+      "id": "texdistct",
+      "short_name": "Tex. Dist. Ct.",
+      "full_name": "Texas District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct1",
+      "short_name": "Tex. 1st Jud. Dist. Ct.",
+      "full_name": "Texas 1st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct2",
+      "short_name": "Tex. 1A Jud. Dist. Ct.",
+      "full_name": "Texas 1A Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct3",
+      "short_name": "Tex. 2nd Jud. Dist. Ct.",
+      "full_name": "Texas 2nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct4",
+      "short_name": "Tex. 3rd Jud. Dist. Ct.",
+      "full_name": "Texas 3rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct5",
+      "short_name": "Tex. 4th Jud. Dist. Ct.",
+      "full_name": "Texas 4th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct6",
+      "short_name": "Tex. 5th Jud. Dist. Ct.",
+      "full_name": "Texas 5th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct7",
+      "short_name": "Tex. 6th Jud. Dist. Ct.",
+      "full_name": "Texas 6th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct8",
+      "short_name": "Tex. 7th Jud. Dist. Ct.",
+      "full_name": "Texas 7th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct9",
+      "short_name": "Tex. 8th Jud. Dist. Ct.",
+      "full_name": "Texas 8th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct10",
+      "short_name": "Tex. 9th Jud. Dist. Ct.",
+      "full_name": "Texas 9th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct11",
+      "short_name": "Tex. 10th Jud. Dist. Ct.",
+      "full_name": "Texas 10th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct12",
+      "short_name": "Tex. 11th Jud. Dist. Ct.",
+      "full_name": "Texas 11th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct13",
+      "short_name": "Tex. 12th Jud. Dist. Ct.",
+      "full_name": "Texas 12th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct14",
+      "short_name": "Tex. 13th Jud. Dist. Ct.",
+      "full_name": "Texas 13th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct15",
+      "short_name": "Tex. 14th Jud. Dist. Ct.",
+      "full_name": "Texas 14th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct16",
+      "short_name": "Tex. 15th Jud. Dist. Ct.",
+      "full_name": "Texas 15th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct17",
+      "short_name": "Tex. 16th Jud. Dist. Ct.",
+      "full_name": "Texas 16th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct18",
+      "short_name": "Tex. 17th Jud. Dist. Ct.",
+      "full_name": "Texas 17th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct19",
+      "short_name": "Tex. 18th Jud. Dist. Ct.",
+      "full_name": "Texas 18th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct20",
+      "short_name": "Tex. 19th Jud. Dist. Ct.",
+      "full_name": "Texas 19th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct21",
+      "short_name": "Tex. 20th Jud. Dist. Ct.",
+      "full_name": "Texas 20th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct22",
+      "short_name": "Tex. 21st Jud. Dist. Ct.",
+      "full_name": "Texas 21st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct23",
+      "short_name": "Tex. 22nd Jud. Dist. Ct.",
+      "full_name": "Texas 22nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct24",
+      "short_name": "Tex. 23rd Jud. Dist. Ct.",
+      "full_name": "Texas 23rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct25",
+      "short_name": "Tex. 24th Jud. Dist. Ct.",
+      "full_name": "Texas 24th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct26",
+      "short_name": "Tex. 25th Jud. Dist. Ct.",
+      "full_name": "Texas 25th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct27",
+      "short_name": "Tex. 26th Jud. Dist. Ct.",
+      "full_name": "Texas 26th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct28",
+      "short_name": "Tex. 27th Jud. Dist. Ct.",
+      "full_name": "Texas 27th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct29",
+      "short_name": "Tex. 28th Jud. Dist. Ct.",
+      "full_name": "Texas 28th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct30",
+      "short_name": "Tex. 29th Jud. Dist. Ct.",
+      "full_name": "Texas 29th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct31",
+      "short_name": "Tex. 30th Jud. Dist. Ct.",
+      "full_name": "Texas 30th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct32",
+      "short_name": "Tex. 31st Jud. Dist. Ct.",
+      "full_name": "Texas 31st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct33",
+      "short_name": "Tex. 32nd Jud. Dist. Ct.",
+      "full_name": "Texas 32nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct34",
+      "short_name": "Tex. 33rd Jud. Dist. Ct.",
+      "full_name": "Texas 33rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct35",
+      "short_name": "Tex. 34th Jud. Dist. Ct.",
+      "full_name": "Texas 34th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct36",
+      "short_name": "Tex. 35th Jud. Dist. Ct.",
+      "full_name": "Texas 35th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct37",
+      "short_name": "Tex. 36th Jud. Dist. Ct.",
+      "full_name": "Texas 36th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct38",
+      "short_name": "Tex. 37th Jud. Dist. Ct.",
+      "full_name": "Texas 37th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct39",
+      "short_name": "Tex. 38th Jud. Dist. Ct.",
+      "full_name": "Texas 38th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct40",
+      "short_name": "Tex. 39th Jud. Dist. Ct.",
+      "full_name": "Texas 39th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct41",
+      "short_name": "Tex. 40th Jud. Dist. Ct.",
+      "full_name": "Texas 40th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct42",
+      "short_name": "Tex. 41st Jud. Dist. Ct.",
+      "full_name": "Texas 41st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct43",
+      "short_name": "Tex. 42nd Jud. Dist. Ct.",
+      "full_name": "Texas 42nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct44",
+      "short_name": "Tex. 43rd Jud. Dist. Ct.",
+      "full_name": "Texas 43rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct45",
+      "short_name": "Tex. 44th Jud. Dist. Ct.",
+      "full_name": "Texas 44th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct46",
+      "short_name": "Tex. 45th Jud. Dist. Ct.",
+      "full_name": "Texas 45th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct47",
+      "short_name": "Tex. 46th Jud. Dist. Ct.",
+      "full_name": "Texas 46th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct48",
+      "short_name": "Tex. 47th Jud. Dist. Ct.",
+      "full_name": "Texas 47th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct49",
+      "short_name": "Tex. 48th Jud. Dist. Ct.",
+      "full_name": "Texas 48th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct50",
+      "short_name": "Tex. 49th Jud. Dist. Ct.",
+      "full_name": "Texas 49th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct51",
+      "short_name": "Tex. 50th Jud. Dist. Ct.",
+      "full_name": "Texas 50th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct52",
+      "short_name": "Tex. 51st Jud. Dist. Ct.",
+      "full_name": "Texas 51st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct53",
+      "short_name": "Tex. 52nd Jud. Dist. Ct.",
+      "full_name": "Texas 52nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct54",
+      "short_name": "Tex. 53rd Jud. Dist. Ct.",
+      "full_name": "Texas 53rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct55",
+      "short_name": "Tex. 54th Jud. Dist. Ct.",
+      "full_name": "Texas 54th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct56",
+      "short_name": "Tex. 55th Jud. Dist. Ct.",
+      "full_name": "Texas 55th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct57",
+      "short_name": "Tex. 56th Jud. Dist. Ct.",
+      "full_name": "Texas 56th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct58",
+      "short_name": "Tex. 57th Jud. Dist. Ct.",
+      "full_name": "Texas 57th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct59",
+      "short_name": "Tex. 58th Jud. Dist. Ct.",
+      "full_name": "Texas 58th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct60",
+      "short_name": "Tex. 59th Jud. Dist. Ct.",
+      "full_name": "Texas 59th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct61",
+      "short_name": "Tex. 60th Jud. Dist. Ct.",
+      "full_name": "Texas 60th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct62",
+      "short_name": "Tex. 61st Jud. Dist. Ct.",
+      "full_name": "Texas 61st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct63",
+      "short_name": "Tex. 62nd Jud. Dist. Ct.",
+      "full_name": "Texas 62nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct64",
+      "short_name": "Tex. 63rd Jud. Dist. Ct.",
+      "full_name": "Texas 63rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct65",
+      "short_name": "Tex. 64th Jud. Dist. Ct.",
+      "full_name": "Texas 64th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct66",
+      "short_name": "Tex. 65th Jud. Dist. Ct.",
+      "full_name": "Texas 65th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct67",
+      "short_name": "Tex. 66th Jud. Dist. Ct.",
+      "full_name": "Texas 66th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct68",
+      "short_name": "Tex. 67th Jud. Dist. Ct.",
+      "full_name": "Texas 67th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct69",
+      "short_name": "Tex. 68th Jud. Dist. Ct.",
+      "full_name": "Texas 68th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct70",
+      "short_name": "Tex. 69th Jud. Dist. Ct.",
+      "full_name": "Texas 69th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct71",
+      "short_name": "Tex. 70th Jud. Dist. Ct.",
+      "full_name": "Texas 70th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct72",
+      "short_name": "Tex. 71st Jud. Dist. Ct.",
+      "full_name": "Texas 71st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct73",
+      "short_name": "Tex. 72nd Jud. Dist. Ct.",
+      "full_name": "Texas 72nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct74",
+      "short_name": "Tex. 73rd Jud. Dist. Ct.",
+      "full_name": "Texas 73rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct75",
+      "short_name": "Tex. 74th Jud. Dist. Ct.",
+      "full_name": "Texas 74th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct76",
+      "short_name": "Tex. 75th Jud. Dist. Ct.",
+      "full_name": "Texas 75th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct77",
+      "short_name": "Tex. 76th Jud. Dist. Ct.",
+      "full_name": "Texas 76th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct78",
+      "short_name": "Tex. 77th Jud. Dist. Ct.",
+      "full_name": "Texas 77th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct79",
+      "short_name": "Tex. 78th Jud. Dist. Ct.",
+      "full_name": "Texas 78th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct80",
+      "short_name": "Tex. 79th Jud. Dist. Ct.",
+      "full_name": "Texas 79th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct81",
+      "short_name": "Tex. 80th Jud. Dist. Ct.",
+      "full_name": "Texas 80th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct82",
+      "short_name": "Tex. 81st Jud. Dist. Ct.",
+      "full_name": "Texas 81st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct83",
+      "short_name": "Tex. 82nd Jud. Dist. Ct.",
+      "full_name": "Texas 82nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct84",
+      "short_name": "Tex. 83rd Jud. Dist. Ct.",
+      "full_name": "Texas 83rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct85",
+      "short_name": "Tex. 84th Jud. Dist. Ct.",
+      "full_name": "Texas 84th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct86",
+      "short_name": "Tex. 85th Jud. Dist. Ct.",
+      "full_name": "Texas 85th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct87",
+      "short_name": "Tex. 86th Jud. Dist. Ct.",
+      "full_name": "Texas 86th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct88",
+      "short_name": "Tex. 87th Jud. Dist. Ct.",
+      "full_name": "Texas 87th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct89",
+      "short_name": "Tex. 88th Jud. Dist. Ct.",
+      "full_name": "Texas 88th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct90",
+      "short_name": "Tex. 89th Jud. Dist. Ct.",
+      "full_name": "Texas 89th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct91",
+      "short_name": "Tex. 90th Jud. Dist. Ct.",
+      "full_name": "Texas 90th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct92",
+      "short_name": "Tex. 91st Jud. Dist. Ct.",
+      "full_name": "Texas 91st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct93",
+      "short_name": "Tex. 92nd Jud. Dist. Ct.",
+      "full_name": "Texas 92nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct94",
+      "short_name": "Tex. 93rd Jud. Dist. Ct.",
+      "full_name": "Texas 93rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct95",
+      "short_name": "Tex. 94th Jud. Dist. Ct.",
+      "full_name": "Texas 94th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct96",
+      "short_name": "Tex. 95th Jud. Dist. Ct.",
+      "full_name": "Texas 95th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct97",
+      "short_name": "Tex. 96th Jud. Dist. Ct.",
+      "full_name": "Texas 96th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct98",
+      "short_name": "Tex. 97th Jud. Dist. Ct.",
+      "full_name": "Texas 97th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct99",
+      "short_name": "Tex. 98th Jud. Dist. Ct.",
+      "full_name": "Texas 98th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct100",
+      "short_name": "Tex. 99th Jud. Dist. Ct.",
+      "full_name": "Texas 99th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct101",
+      "short_name": "Tex. 100th Jud. Dist. Ct.",
+      "full_name": "Texas 100th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct102",
+      "short_name": "Tex. 101st Jud. Dist. Ct.",
+      "full_name": "Texas 101st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct103",
+      "short_name": "Tex. 102nd Jud. Dist. Ct.",
+      "full_name": "Texas 102nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct104",
+      "short_name": "Tex. 103rd Jud. Dist. Ct.",
+      "full_name": "Texas 103rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct105",
+      "short_name": "Tex. 104th Jud. Dist. Ct.",
+      "full_name": "Texas 104th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct106",
+      "short_name": "Tex. 105th Jud. Dist. Ct.",
+      "full_name": "Texas 105th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct107",
+      "short_name": "Tex. 106th Jud. Dist. Ct.",
+      "full_name": "Texas 106th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct108",
+      "short_name": "Tex. 107th Jud. Dist. Ct.",
+      "full_name": "Texas 107th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct109",
+      "short_name": "Tex. 108th Jud. Dist. Ct.",
+      "full_name": "Texas 108th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct110",
+      "short_name": "Tex. 109th Jud. Dist. Ct.",
+      "full_name": "Texas 109th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct111",
+      "short_name": "Tex. 110th Jud. Dist. Ct.",
+      "full_name": "Texas 110th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct112",
+      "short_name": "Tex. 111th Jud. Dist. Ct.",
+      "full_name": "Texas 111th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct113",
+      "short_name": "Tex. 112th Jud. Dist. Ct.",
+      "full_name": "Texas 112th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct114",
+      "short_name": "Tex. 113th Jud. Dist. Ct.",
+      "full_name": "Texas 113th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct115",
+      "short_name": "Tex. 114th Jud. Dist. Ct.",
+      "full_name": "Texas 114th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct116",
+      "short_name": "Tex. 115th Jud. Dist. Ct.",
+      "full_name": "Texas 115th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct117",
+      "short_name": "Tex. 116th Jud. Dist. Ct.",
+      "full_name": "Texas 116th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct118",
+      "short_name": "Tex. 117th Jud. Dist. Ct.",
+      "full_name": "Texas 117th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct119",
+      "short_name": "Tex. 118th Jud. Dist. Ct.",
+      "full_name": "Texas 118th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct120",
+      "short_name": "Tex. 119th Jud. Dist. Ct.",
+      "full_name": "Texas 119th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct121",
+      "short_name": "Tex. 120th Jud. Dist. Ct.",
+      "full_name": "Texas 120th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct122",
+      "short_name": "Tex. 121st Jud. Dist. Ct.",
+      "full_name": "Texas 121st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct123",
+      "short_name": "Tex. 122nd Jud. Dist. Ct.",
+      "full_name": "Texas 122nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct124",
+      "short_name": "Tex. 123rd Jud. Dist. Ct.",
+      "full_name": "Texas 123rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct125",
+      "short_name": "Tex. 124th Jud. Dist. Ct.",
+      "full_name": "Texas 124th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct126",
+      "short_name": "Tex. 125th Jud. Dist. Ct.",
+      "full_name": "Texas 125th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct127",
+      "short_name": "Tex. 126th Jud. Dist. Ct.",
+      "full_name": "Texas 126th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct128",
+      "short_name": "Tex. 127th Jud. Dist. Ct.",
+      "full_name": "Texas 127th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct129",
+      "short_name": "Tex. 128th Jud. Dist. Ct.",
+      "full_name": "Texas 128th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct130",
+      "short_name": "Tex. 129th Jud. Dist. Ct.",
+      "full_name": "Texas 129th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct131",
+      "short_name": "Tex. 130th Jud. Dist. Ct.",
+      "full_name": "Texas 130th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct132",
+      "short_name": "Tex. 131st Jud. Dist. Ct.",
+      "full_name": "Texas 131st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct133",
+      "short_name": "Tex. 132nd Jud. Dist. Ct.",
+      "full_name": "Texas 132nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct134",
+      "short_name": "Tex. 133rd Jud. Dist. Ct.",
+      "full_name": "Texas 133rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct135",
+      "short_name": "Tex. 134th Jud. Dist. Ct.",
+      "full_name": "Texas 134th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct136",
+      "short_name": "Tex. 135th Jud. Dist. Ct.",
+      "full_name": "Texas 135th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct137",
+      "short_name": "Tex. 136th Jud. Dist. Ct.",
+      "full_name": "Texas 136th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct138",
+      "short_name": "Tex. 137th Jud. Dist. Ct.",
+      "full_name": "Texas 137th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct139",
+      "short_name": "Tex. 138th Jud. Dist. Ct.",
+      "full_name": "Texas 138th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct140",
+      "short_name": "Tex. 139th Jud. Dist. Ct.",
+      "full_name": "Texas 139th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct141",
+      "short_name": "Tex. 140th Jud. Dist. Ct.",
+      "full_name": "Texas 140th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct142",
+      "short_name": "Tex. 141st Jud. Dist. Ct.",
+      "full_name": "Texas 141st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct143",
+      "short_name": "Tex. 142nd Jud. Dist. Ct.",
+      "full_name": "Texas 142nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct144",
+      "short_name": "Tex. 143rd Jud. Dist. Ct.",
+      "full_name": "Texas 143rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct145",
+      "short_name": "Tex. 144th Jud. Dist. Ct.",
+      "full_name": "Texas 144th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct146",
+      "short_name": "Tex. 145th Jud. Dist. Ct.",
+      "full_name": "Texas 145th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct147",
+      "short_name": "Tex. 146th Jud. Dist. Ct.",
+      "full_name": "Texas 146th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct148",
+      "short_name": "Tex. 147th Jud. Dist. Ct.",
+      "full_name": "Texas 147th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct149",
+      "short_name": "Tex. 148th Jud. Dist. Ct.",
+      "full_name": "Texas 148th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct150",
+      "short_name": "Tex. 149th Jud. Dist. Ct.",
+      "full_name": "Texas 149th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct151",
+      "short_name": "Tex. 150th Jud. Dist. Ct.",
+      "full_name": "Texas 150th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct152",
+      "short_name": "Tex. 151st Jud. Dist. Ct.",
+      "full_name": "Texas 151st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct153",
+      "short_name": "Tex. 152nd Jud. Dist. Ct.",
+      "full_name": "Texas 152nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct154",
+      "short_name": "Tex. 153rd Jud. Dist. Ct.",
+      "full_name": "Texas 153rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct155",
+      "short_name": "Tex. 154th Jud. Dist. Ct.",
+      "full_name": "Texas 154th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct156",
+      "short_name": "Tex. 155th Jud. Dist. Ct.",
+      "full_name": "Texas 155th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct157",
+      "short_name": "Tex. 156th Jud. Dist. Ct.",
+      "full_name": "Texas 156th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct158",
+      "short_name": "Tex. 157th Jud. Dist. Ct.",
+      "full_name": "Texas 157th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct159",
+      "short_name": "Tex. 158th Jud. Dist. Ct.",
+      "full_name": "Texas 158th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct160",
+      "short_name": "Tex. 159th Jud. Dist. Ct.",
+      "full_name": "Texas 159th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct161",
+      "short_name": "Tex. 160th Jud. Dist. Ct.",
+      "full_name": "Texas 160th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct162",
+      "short_name": "Tex. 161st Jud. Dist. Ct.",
+      "full_name": "Texas 161st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct163",
+      "short_name": "Tex. 162nd Jud. Dist. Ct.",
+      "full_name": "Texas 162nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct164",
+      "short_name": "Tex. 163rd Jud. Dist. Ct.",
+      "full_name": "Texas 163rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct165",
+      "short_name": "Tex. 164th Jud. Dist. Ct.",
+      "full_name": "Texas 164th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct166",
+      "short_name": "Tex. 165th Jud. Dist. Ct.",
+      "full_name": "Texas 165th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct167",
+      "short_name": "Tex. 166th Jud. Dist. Ct.",
+      "full_name": "Texas 166th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct168",
+      "short_name": "Tex. 167th Jud. Dist. Ct.",
+      "full_name": "Texas 167th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct169",
+      "short_name": "Tex. 168th Jud. Dist. Ct.",
+      "full_name": "Texas 168th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct170",
+      "short_name": "Tex. 169th Jud. Dist. Ct.",
+      "full_name": "Texas 169th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct171",
+      "short_name": "Tex. 170th Jud. Dist. Ct.",
+      "full_name": "Texas 170th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct172",
+      "short_name": "Tex. 171st Jud. Dist. Ct.",
+      "full_name": "Texas 171st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct173",
+      "short_name": "Tex. 172nd Jud. Dist. Ct.",
+      "full_name": "Texas 172nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct174",
+      "short_name": "Tex. 173rd Jud. Dist. Ct.",
+      "full_name": "Texas 173rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct175",
+      "short_name": "Tex. 174th Jud. Dist. Ct.",
+      "full_name": "Texas 174th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct176",
+      "short_name": "Tex. 175th Jud. Dist. Ct.",
+      "full_name": "Texas 175th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct177",
+      "short_name": "Tex. 176th Jud. Dist. Ct.",
+      "full_name": "Texas 176th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct178",
+      "short_name": "Tex. 177th Jud. Dist. Ct.",
+      "full_name": "Texas 177th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct179",
+      "short_name": "Tex. 178th Jud. Dist. Ct.",
+      "full_name": "Texas 178th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct180",
+      "short_name": "Tex. 179th Jud. Dist. Ct.",
+      "full_name": "Texas 179th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct181",
+      "short_name": "Tex. 180th Jud. Dist. Ct.",
+      "full_name": "Texas 180th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct182",
+      "short_name": "Tex. 181st Jud. Dist. Ct.",
+      "full_name": "Texas 181st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct183",
+      "short_name": "Tex. 182nd Jud. Dist. Ct.",
+      "full_name": "Texas 182nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct184",
+      "short_name": "Tex. 183rd Jud. Dist. Ct.",
+      "full_name": "Texas 183rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct185",
+      "short_name": "Tex. 184th Jud. Dist. Ct.",
+      "full_name": "Texas 184th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct186",
+      "short_name": "Tex. 185th Jud. Dist. Ct.",
+      "full_name": "Texas 185th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct187",
+      "short_name": "Tex. 186th Jud. Dist. Ct.",
+      "full_name": "Texas 186th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct188",
+      "short_name": "Tex. 187th Jud. Dist. Ct.",
+      "full_name": "Texas 187th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct189",
+      "short_name": "Tex. 188th Jud. Dist. Ct.",
+      "full_name": "Texas 188th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct190",
+      "short_name": "Tex. 189th Jud. Dist. Ct.",
+      "full_name": "Texas 189th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct191",
+      "short_name": "Tex. 190th Jud. Dist. Ct.",
+      "full_name": "Texas 190th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct192",
+      "short_name": "Tex. 191st Jud. Dist. Ct.",
+      "full_name": "Texas 191st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct193",
+      "short_name": "Tex. 192nd Jud. Dist. Ct.",
+      "full_name": "Texas 192nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct194",
+      "short_name": "Tex. 193rd Jud. Dist. Ct.",
+      "full_name": "Texas 193rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct195",
+      "short_name": "Tex. 194th Jud. Dist. Ct.",
+      "full_name": "Texas 194th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct196",
+      "short_name": "Tex. 195th Jud. Dist. Ct.",
+      "full_name": "Texas 195th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct197",
+      "short_name": "Tex. 196th Jud. Dist. Ct.",
+      "full_name": "Texas 196th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct198",
+      "short_name": "Tex. 197th Jud. Dist. Ct.",
+      "full_name": "Texas 197th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct199",
+      "short_name": "Tex. 198th Jud. Dist. Ct.",
+      "full_name": "Texas 198th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct200",
+      "short_name": "Tex. 199th Jud. Dist. Ct.",
+      "full_name": "Texas 199th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct201",
+      "short_name": "Tex. 200th Jud. Dist. Ct.",
+      "full_name": "Texas 200th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct202",
+      "short_name": "Tex. 201st Jud. Dist. Ct.",
+      "full_name": "Texas 201st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct203",
+      "short_name": "Tex. 202nd Jud. Dist. Ct.",
+      "full_name": "Texas 202nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct204",
+      "short_name": "Tex. 203rd Jud. Dist. Ct.",
+      "full_name": "Texas 203rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct205",
+      "short_name": "Tex. 204th Jud. Dist. Ct.",
+      "full_name": "Texas 204th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct206",
+      "short_name": "Tex. 205th Jud. Dist. Ct.",
+      "full_name": "Texas 205th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct207",
+      "short_name": "Tex. 206th Jud. Dist. Ct.",
+      "full_name": "Texas 206th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct208",
+      "short_name": "Tex. 207th Jud. Dist. Ct.",
+      "full_name": "Texas 207th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct209",
+      "short_name": "Tex. 208th Jud. Dist. Ct.",
+      "full_name": "Texas 208th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct210",
+      "short_name": "Tex. 209th Jud. Dist. Ct.",
+      "full_name": "Texas 209th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct211",
+      "short_name": "Tex. 210th Jud. Dist. Ct.",
+      "full_name": "Texas 210th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct212",
+      "short_name": "Tex. 211th Jud. Dist. Ct.",
+      "full_name": "Texas 211th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct213",
+      "short_name": "Tex. 212th Jud. Dist. Ct.",
+      "full_name": "Texas 212th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct214",
+      "short_name": "Tex. 213th Jud. Dist. Ct.",
+      "full_name": "Texas 213th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct215",
+      "short_name": "Tex. 214th Jud. Dist. Ct.",
+      "full_name": "Texas 214th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct216",
+      "short_name": "Tex. 215th Jud. Dist. Ct.",
+      "full_name": "Texas 215th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct217",
+      "short_name": "Tex. 216th Jud. Dist. Ct.",
+      "full_name": "Texas 216th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct218",
+      "short_name": "Tex. 217th Jud. Dist. Ct.",
+      "full_name": "Texas 217th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct219",
+      "short_name": "Tex. 218th Jud. Dist. Ct.",
+      "full_name": "Texas 218th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct220",
+      "short_name": "Tex. 219th Jud. Dist. Ct.",
+      "full_name": "Texas 219th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct221",
+      "short_name": "Tex. 220th Jud. Dist. Ct.",
+      "full_name": "Texas 220th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct222",
+      "short_name": "Tex. 221st Jud. Dist. Ct.",
+      "full_name": "Texas 221st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct223",
+      "short_name": "Tex. 222nd Jud. Dist. Ct.",
+      "full_name": "Texas 222nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct224",
+      "short_name": "Tex. 223rd Jud. Dist. Ct.",
+      "full_name": "Texas 223rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct225",
+      "short_name": "Tex. 224th Jud. Dist. Ct.",
+      "full_name": "Texas 224th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct226",
+      "short_name": "Tex. 225th Jud. Dist. Ct.",
+      "full_name": "Texas 225th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct227",
+      "short_name": "Tex. 226th Jud. Dist. Ct.",
+      "full_name": "Texas 226th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct228",
+      "short_name": "Tex. 227th Jud. Dist. Ct.",
+      "full_name": "Texas 227th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct229",
+      "short_name": "Tex. 228th Jud. Dist. Ct.",
+      "full_name": "Texas 228th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct230",
+      "short_name": "Tex. 229th Jud. Dist. Ct.",
+      "full_name": "Texas 229th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct231",
+      "short_name": "Tex. 230th Jud. Dist. Ct.",
+      "full_name": "Texas 230th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct232",
+      "short_name": "Tex. 231st Jud. Dist. Ct.",
+      "full_name": "Texas 231st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct233",
+      "short_name": "Tex. 232nd Jud. Dist. Ct.",
+      "full_name": "Texas 232nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct234",
+      "short_name": "Tex. 233rd Jud. Dist. Ct.",
+      "full_name": "Texas 233rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct235",
+      "short_name": "Tex. 234th Jud. Dist. Ct.",
+      "full_name": "Texas 234th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct236",
+      "short_name": "Tex. 235th Jud. Dist. Ct.",
+      "full_name": "Texas 235th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct237",
+      "short_name": "Tex. 236th Jud. Dist. Ct.",
+      "full_name": "Texas 236th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct238",
+      "short_name": "Tex. 237th Jud. Dist. Ct.",
+      "full_name": "Texas 237th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct239",
+      "short_name": "Tex. 238th Jud. Dist. Ct.",
+      "full_name": "Texas 238th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct240",
+      "short_name": "Tex. 239th Jud. Dist. Ct.",
+      "full_name": "Texas 239th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct241",
+      "short_name": "Tex. 240th Jud. Dist. Ct.",
+      "full_name": "Texas 240th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct242",
+      "short_name": "Tex. 241st Jud. Dist. Ct.",
+      "full_name": "Texas 241st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct243",
+      "short_name": "Tex. 242nd Jud. Dist. Ct.",
+      "full_name": "Texas 242nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct244",
+      "short_name": "Tex. 243rd Jud. Dist. Ct.",
+      "full_name": "Texas 243rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct245",
+      "short_name": "Tex. 244th Jud. Dist. Ct.",
+      "full_name": "Texas 244th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct246",
+      "short_name": "Tex. 245th Jud. Dist. Ct.",
+      "full_name": "Texas 245th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct247",
+      "short_name": "Tex. 246th Jud. Dist. Ct.",
+      "full_name": "Texas 246th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct248",
+      "short_name": "Tex. 247th Jud. Dist. Ct.",
+      "full_name": "Texas 247th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct249",
+      "short_name": "Tex. 248th Jud. Dist. Ct.",
+      "full_name": "Texas 248th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct250",
+      "short_name": "Tex. 249th Jud. Dist. Ct.",
+      "full_name": "Texas 249th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct251",
+      "short_name": "Tex. 250th Jud. Dist. Ct.",
+      "full_name": "Texas 250th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct252",
+      "short_name": "Tex. 251st Jud. Dist. Ct.",
+      "full_name": "Texas 251st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct253",
+      "short_name": "Tex. 252nd Jud. Dist. Ct.",
+      "full_name": "Texas 252nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct254",
+      "short_name": "Tex. 253rd Jud. Dist. Ct.",
+      "full_name": "Texas 253rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct255",
+      "short_name": "Tex. 254th Jud. Dist. Ct.",
+      "full_name": "Texas 254th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct256",
+      "short_name": "Tex. 255th Jud. Dist. Ct.",
+      "full_name": "Texas 255th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct257",
+      "short_name": "Tex. 256th Jud. Dist. Ct.",
+      "full_name": "Texas 256th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct258",
+      "short_name": "Tex. 257th Jud. Dist. Ct.",
+      "full_name": "Texas 257th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct259",
+      "short_name": "Tex. 258th Jud. Dist. Ct.",
+      "full_name": "Texas 258th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct260",
+      "short_name": "Tex. 259th Jud. Dist. Ct.",
+      "full_name": "Texas 259th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct261",
+      "short_name": "Tex. 260th Jud. Dist. Ct.",
+      "full_name": "Texas 260th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct262",
+      "short_name": "Tex. 261st Jud. Dist. Ct.",
+      "full_name": "Texas 261st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct263",
+      "short_name": "Tex. 262nd Jud. Dist. Ct.",
+      "full_name": "Texas 262nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct264",
+      "short_name": "Tex. 263rd Jud. Dist. Ct.",
+      "full_name": "Texas 263rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct265",
+      "short_name": "Tex. 264th Jud. Dist. Ct.",
+      "full_name": "Texas 264th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct266",
+      "short_name": "Tex. 265th Jud. Dist. Ct.",
+      "full_name": "Texas 265th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct267",
+      "short_name": "Tex. 266th Jud. Dist. Ct.",
+      "full_name": "Texas 266th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct268",
+      "short_name": "Tex. 267th Jud. Dist. Ct.",
+      "full_name": "Texas 267th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct269",
+      "short_name": "Tex. 268th Jud. Dist. Ct.",
+      "full_name": "Texas 268th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct270",
+      "short_name": "Tex. 269th Jud. Dist. Ct.",
+      "full_name": "Texas 269th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct271",
+      "short_name": "Tex. 270th Jud. Dist. Ct.",
+      "full_name": "Texas 270th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct272",
+      "short_name": "Tex. 271st Jud. Dist. Ct.",
+      "full_name": "Texas 271st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct273",
+      "short_name": "Tex. 272nd Jud. Dist. Ct.",
+      "full_name": "Texas 272nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct274",
+      "short_name": "Tex. 273rd Jud. Dist. Ct.",
+      "full_name": "Texas 273rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct275",
+      "short_name": "Tex. 274th Jud. Dist. Ct.",
+      "full_name": "Texas 274th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct276",
+      "short_name": "Tex. 275th Jud. Dist. Ct.",
+      "full_name": "Texas 275th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct277",
+      "short_name": "Tex. 276th Jud. Dist. Ct.",
+      "full_name": "Texas 276th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct278",
+      "short_name": "Tex. 277th Jud. Dist. Ct.",
+      "full_name": "Texas 277th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct279",
+      "short_name": "Tex. 278th Jud. Dist. Ct.",
+      "full_name": "Texas 278th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct280",
+      "short_name": "Tex. 279th Jud. Dist. Ct.",
+      "full_name": "Texas 279th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct281",
+      "short_name": "Tex. 280th Jud. Dist. Ct.",
+      "full_name": "Texas 280th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct282",
+      "short_name": "Tex. 281st Jud. Dist. Ct.",
+      "full_name": "Texas 281st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct283",
+      "short_name": "Tex. 282nd Jud. Dist. Ct.",
+      "full_name": "Texas 282nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct284",
+      "short_name": "Tex. 283rd Jud. Dist. Ct.",
+      "full_name": "Texas 283rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct285",
+      "short_name": "Tex. 284th Jud. Dist. Ct.",
+      "full_name": "Texas 284th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct286",
+      "short_name": "Tex. 285th Jud. Dist. Ct.",
+      "full_name": "Texas 285th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct287",
+      "short_name": "Tex. 286th Jud. Dist. Ct.",
+      "full_name": "Texas 286th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct288",
+      "short_name": "Tex. 287th Jud. Dist. Ct.",
+      "full_name": "Texas 287th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct289",
+      "short_name": "Tex. 288th Jud. Dist. Ct.",
+      "full_name": "Texas 288th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct290",
+      "short_name": "Tex. 289th Jud. Dist. Ct.",
+      "full_name": "Texas 289th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct291",
+      "short_name": "Tex. 290th Jud. Dist. Ct.",
+      "full_name": "Texas 290th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct292",
+      "short_name": "Tex. 291st Jud. Dist. Ct.",
+      "full_name": "Texas 291st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct293",
+      "short_name": "Tex. 292nd Jud. Dist. Ct.",
+      "full_name": "Texas 292nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct294",
+      "short_name": "Tex. 293rd Jud. Dist. Ct.",
+      "full_name": "Texas 293rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct295",
+      "short_name": "Tex. 294th Jud. Dist. Ct.",
+      "full_name": "Texas 294th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct296",
+      "short_name": "Tex. 295th Jud. Dist. Ct.",
+      "full_name": "Texas 295th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct297",
+      "short_name": "Tex. 296th Jud. Dist. Ct.",
+      "full_name": "Texas 296th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct298",
+      "short_name": "Tex. 297th Jud. Dist. Ct.",
+      "full_name": "Texas 297th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct299",
+      "short_name": "Tex. 298th Jud. Dist. Ct.",
+      "full_name": "Texas 298th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct300",
+      "short_name": "Tex. 299th Jud. Dist. Ct.",
+      "full_name": "Texas 299th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct301",
+      "short_name": "Tex. 300th Jud. Dist. Ct.",
+      "full_name": "Texas 300th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct302",
+      "short_name": "Tex. 301st Jud. Dist. Ct.",
+      "full_name": "Texas 301st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct303",
+      "short_name": "Tex. 302nd Jud. Dist. Ct.",
+      "full_name": "Texas 302nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct304",
+      "short_name": "Tex. 303rd Jud. Dist. Ct.",
+      "full_name": "Texas 303rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct305",
+      "short_name": "Tex. 304th Jud. Dist. Ct.",
+      "full_name": "Texas 304th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct306",
+      "short_name": "Tex. 305th Jud. Dist. Ct.",
+      "full_name": "Texas 305th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct307",
+      "short_name": "Tex. 306th Jud. Dist. Ct.",
+      "full_name": "Texas 306th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct308",
+      "short_name": "Tex. 307th Jud. Dist. Ct.",
+      "full_name": "Texas 307th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct309",
+      "short_name": "Tex. 308th Jud. Dist. Ct.",
+      "full_name": "Texas 308th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct310",
+      "short_name": "Tex. 309th Jud. Dist. Ct.",
+      "full_name": "Texas 309th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct311",
+      "short_name": "Tex. 310th Jud. Dist. Ct.",
+      "full_name": "Texas 310th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct312",
+      "short_name": "Tex. 311th Jud. Dist. Ct.",
+      "full_name": "Texas 311th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct313",
+      "short_name": "Tex. 312th Jud. Dist. Ct.",
+      "full_name": "Texas 312th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct314",
+      "short_name": "Tex. 313th Jud. Dist. Ct.",
+      "full_name": "Texas 313th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct315",
+      "short_name": "Tex. 314th Jud. Dist. Ct.",
+      "full_name": "Texas 314th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct316",
+      "short_name": "Tex. 315th Jud. Dist. Ct.",
+      "full_name": "Texas 315th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct317",
+      "short_name": "Tex. 316th Jud. Dist. Ct.",
+      "full_name": "Texas 316th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct318",
+      "short_name": "Tex. 317th Jud. Dist. Ct.",
+      "full_name": "Texas 317th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct319",
+      "short_name": "Tex. 318th Jud. Dist. Ct.",
+      "full_name": "Texas 318th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct320",
+      "short_name": "Tex. 319th Jud. Dist. Ct.",
+      "full_name": "Texas 319th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct321",
+      "short_name": "Tex. 320th Jud. Dist. Ct.",
+      "full_name": "Texas 320th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct322",
+      "short_name": "Tex. 321st Jud. Dist. Ct.",
+      "full_name": "Texas 321st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct323",
+      "short_name": "Tex. 322nd Jud. Dist. Ct.",
+      "full_name": "Texas 322nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct324",
+      "short_name": "Tex. 323rd Jud. Dist. Ct.",
+      "full_name": "Texas 323rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct325",
+      "short_name": "Tex. 324th Jud. Dist. Ct.",
+      "full_name": "Texas 324th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct326",
+      "short_name": "Tex. 325th Jud. Dist. Ct.",
+      "full_name": "Texas 325th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct327",
+      "short_name": "Tex. 326th Jud. Dist. Ct.",
+      "full_name": "Texas 326th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct328",
+      "short_name": "Tex. 327th Jud. Dist. Ct.",
+      "full_name": "Texas 327th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct329",
+      "short_name": "Tex. 328th Jud. Dist. Ct.",
+      "full_name": "Texas 328th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct330",
+      "short_name": "Tex. 329th Jud. Dist. Ct.",
+      "full_name": "Texas 329th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct331",
+      "short_name": "Tex. 330th Jud. Dist. Ct.",
+      "full_name": "Texas 330th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct332",
+      "short_name": "Tex. 331st Jud. Dist. Ct.",
+      "full_name": "Texas 331st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct333",
+      "short_name": "Tex. 332nd Jud. Dist. Ct.",
+      "full_name": "Texas 332nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct334",
+      "short_name": "Tex. 333rd Jud. Dist. Ct.",
+      "full_name": "Texas 333rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct335",
+      "short_name": "Tex. 334th Jud. Dist. Ct.",
+      "full_name": "Texas 334th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct336",
+      "short_name": "Tex. 335th Jud. Dist. Ct.",
+      "full_name": "Texas 335th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct337",
+      "short_name": "Tex. 336th Jud. Dist. Ct.",
+      "full_name": "Texas 336th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct338",
+      "short_name": "Tex. 337th Jud. Dist. Ct.",
+      "full_name": "Texas 337th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct339",
+      "short_name": "Tex. 338th Jud. Dist. Ct.",
+      "full_name": "Texas 338th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct340",
+      "short_name": "Tex. 339th Jud. Dist. Ct.",
+      "full_name": "Texas 339th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct341",
+      "short_name": "Tex. 340th Jud. Dist. Ct.",
+      "full_name": "Texas 340th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct342",
+      "short_name": "Tex. 341st Jud. Dist. Ct.",
+      "full_name": "Texas 341st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct343",
+      "short_name": "Tex. 342nd Jud. Dist. Ct.",
+      "full_name": "Texas 342nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct344",
+      "short_name": "Tex. 343rd Jud. Dist. Ct.",
+      "full_name": "Texas 343rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct345",
+      "short_name": "Tex. 344th Jud. Dist. Ct.",
+      "full_name": "Texas 344th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct346",
+      "short_name": "Tex. 345th Jud. Dist. Ct.",
+      "full_name": "Texas 345th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct347",
+      "short_name": "Tex. 346th Jud. Dist. Ct.",
+      "full_name": "Texas 346th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct348",
+      "short_name": "Tex. 347th Jud. Dist. Ct.",
+      "full_name": "Texas 347th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct349",
+      "short_name": "Tex. 348th Jud. Dist. Ct.",
+      "full_name": "Texas 348th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct350",
+      "short_name": "Tex. 349th Jud. Dist. Ct.",
+      "full_name": "Texas 349th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct351",
+      "short_name": "Tex. 350th Jud. Dist. Ct.",
+      "full_name": "Texas 350th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct352",
+      "short_name": "Tex. 351st Jud. Dist. Ct.",
+      "full_name": "Texas 351st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct353",
+      "short_name": "Tex. 352nd Jud. Dist. Ct.",
+      "full_name": "Texas 352nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct354",
+      "short_name": "Tex. 353rd Jud. Dist. Ct.",
+      "full_name": "Texas 353rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct355",
+      "short_name": "Tex. 354th Jud. Dist. Ct.",
+      "full_name": "Texas 354th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct356",
+      "short_name": "Tex. 355th Jud. Dist. Ct.",
+      "full_name": "Texas 355th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct357",
+      "short_name": "Tex. 356th Jud. Dist. Ct.",
+      "full_name": "Texas 356th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct358",
+      "short_name": "Tex. 357th Jud. Dist. Ct.",
+      "full_name": "Texas 357th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct359",
+      "short_name": "Tex. 358th Jud. Dist. Ct.",
+      "full_name": "Texas 358th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct360",
+      "short_name": "Tex. 359th Jud. Dist. Ct.",
+      "full_name": "Texas 359th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct361",
+      "short_name": "Tex. 360th Jud. Dist. Ct.",
+      "full_name": "Texas 360th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct362",
+      "short_name": "Tex. 361st Jud. Dist. Ct.",
+      "full_name": "Texas 361st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct363",
+      "short_name": "Tex. 362nd Jud. Dist. Ct.",
+      "full_name": "Texas 362nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct364",
+      "short_name": "Tex. 363rd Jud. Dist. Ct.",
+      "full_name": "Texas 363rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct365",
+      "short_name": "Tex. 364th Jud. Dist. Ct.",
+      "full_name": "Texas 364th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct366",
+      "short_name": "Tex. 365th Jud. Dist. Ct.",
+      "full_name": "Texas 365th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct367",
+      "short_name": "Tex. 366th Jud. Dist. Ct.",
+      "full_name": "Texas 366th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct368",
+      "short_name": "Tex. 367th Jud. Dist. Ct.",
+      "full_name": "Texas 367th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct369",
+      "short_name": "Tex. 368th Jud. Dist. Ct.",
+      "full_name": "Texas 368th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct370",
+      "short_name": "Tex. 369th Jud. Dist. Ct.",
+      "full_name": "Texas 369th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct371",
+      "short_name": "Tex. 370th Jud. Dist. Ct.",
+      "full_name": "Texas 370th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct372",
+      "short_name": "Tex. 371st Jud. Dist. Ct.",
+      "full_name": "Texas 371st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct373",
+      "short_name": "Tex. 372nd Jud. Dist. Ct.",
+      "full_name": "Texas 372nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct374",
+      "short_name": "Tex. 373rd Jud. Dist. Ct.",
+      "full_name": "Texas 373rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct375",
+      "short_name": "Tex. 374th Jud. Dist. Ct.",
+      "full_name": "Texas 374th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct376",
+      "short_name": "Tex. 375th Jud. Dist. Ct.",
+      "full_name": "Texas 375th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct377",
+      "short_name": "Tex. 376th Jud. Dist. Ct.",
+      "full_name": "Texas 376th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct378",
+      "short_name": "Tex. 377th Jud. Dist. Ct.",
+      "full_name": "Texas 377th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct379",
+      "short_name": "Tex. 378th Jud. Dist. Ct.",
+      "full_name": "Texas 378th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct380",
+      "short_name": "Tex. 379th Jud. Dist. Ct.",
+      "full_name": "Texas 379th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct381",
+      "short_name": "Tex. 380th Jud. Dist. Ct.",
+      "full_name": "Texas 380th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct382",
+      "short_name": "Tex. 381st Jud. Dist. Ct.",
+      "full_name": "Texas 381st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct383",
+      "short_name": "Tex. 382nd Jud. Dist. Ct.",
+      "full_name": "Texas 382nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct384",
+      "short_name": "Tex. 383rd Jud. Dist. Ct.",
+      "full_name": "Texas 383rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct385",
+      "short_name": "Tex. 384th Jud. Dist. Ct.",
+      "full_name": "Texas 384th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct386",
+      "short_name": "Tex. 385th Jud. Dist. Ct.",
+      "full_name": "Texas 385th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct387",
+      "short_name": "Tex. 386th Jud. Dist. Ct.",
+      "full_name": "Texas 386th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct388",
+      "short_name": "Tex. 387th Jud. Dist. Ct.",
+      "full_name": "Texas 387th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct389",
+      "short_name": "Tex. 388th Jud. Dist. Ct.",
+      "full_name": "Texas 388th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct390",
+      "short_name": "Tex. 389th Jud. Dist. Ct.",
+      "full_name": "Texas 389th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct391",
+      "short_name": "Tex. 390th Jud. Dist. Ct.",
+      "full_name": "Texas 390th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct392",
+      "short_name": "Tex. 391st Jud. Dist. Ct.",
+      "full_name": "Texas 391st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct393",
+      "short_name": "Tex. 392nd Jud. Dist. Ct.",
+      "full_name": "Texas 392nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct394",
+      "short_name": "Tex. 393rd Jud. Dist. Ct.",
+      "full_name": "Texas 393rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct395",
+      "short_name": "Tex. 394th Jud. Dist. Ct.",
+      "full_name": "Texas 394th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct396",
+      "short_name": "Tex. 395th Jud. Dist. Ct.",
+      "full_name": "Texas 395th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct397",
+      "short_name": "Tex. 396th Jud. Dist. Ct.",
+      "full_name": "Texas 396th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct398",
+      "short_name": "Tex. 397th Jud. Dist. Ct.",
+      "full_name": "Texas 397th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct399",
+      "short_name": "Tex. 398th Jud. Dist. Ct.",
+      "full_name": "Texas 398th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct400",
+      "short_name": "Tex. 399th Jud. Dist. Ct.",
+      "full_name": "Texas 399th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct401",
+      "short_name": "Tex. 400th Jud. Dist. Ct.",
+      "full_name": "Texas 400th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct402",
+      "short_name": "Tex. 401st Jud. Dist. Ct.",
+      "full_name": "Texas 401st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct403",
+      "short_name": "Tex. 402nd Jud. Dist. Ct.",
+      "full_name": "Texas 402nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct404",
+      "short_name": "Tex. 403rd Jud. Dist. Ct.",
+      "full_name": "Texas 403rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct405",
+      "short_name": "Tex. 404th Jud. Dist. Ct.",
+      "full_name": "Texas 404th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct406",
+      "short_name": "Tex. 405th Jud. Dist. Ct.",
+      "full_name": "Texas 405th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct407",
+      "short_name": "Tex. 406th Jud. Dist. Ct.",
+      "full_name": "Texas 406th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct408",
+      "short_name": "Tex. 407th Jud. Dist. Ct.",
+      "full_name": "Texas 407th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct409",
+      "short_name": "Tex. 408th Jud. Dist. Ct.",
+      "full_name": "Texas 408th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct410",
+      "short_name": "Tex. 409th Jud. Dist. Ct.",
+      "full_name": "Texas 409th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct411",
+      "short_name": "Tex. 410th Jud. Dist. Ct.",
+      "full_name": "Texas 410th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct412",
+      "short_name": "Tex. 411th Jud. Dist. Ct.",
+      "full_name": "Texas 411th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct413",
+      "short_name": "Tex. 412th Jud. Dist. Ct.",
+      "full_name": "Texas 412th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct414",
+      "short_name": "Tex. 413th Jud. Dist. Ct.",
+      "full_name": "Texas 413th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct415",
+      "short_name": "Tex. 414th Jud. Dist. Ct.",
+      "full_name": "Texas 414th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct416",
+      "short_name": "Tex. 415th Jud. Dist. Ct.",
+      "full_name": "Texas 415th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct417",
+      "short_name": "Tex. 416th Jud. Dist. Ct.",
+      "full_name": "Texas 416th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct418",
+      "short_name": "Tex. 417th Jud. Dist. Ct.",
+      "full_name": "Texas 417th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct419",
+      "short_name": "Tex. 418th Jud. Dist. Ct.",
+      "full_name": "Texas 418th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct420",
+      "short_name": "Tex. 419th Jud. Dist. Ct.",
+      "full_name": "Texas 419th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct421",
+      "short_name": "Tex. 420th Jud. Dist. Ct.",
+      "full_name": "Texas 420th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct422",
+      "short_name": "Tex. 421st Jud. Dist. Ct.",
+      "full_name": "Texas 421st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct423",
+      "short_name": "Tex. 422nd Jud. Dist. Ct.",
+      "full_name": "Texas 422nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct424",
+      "short_name": "Tex. 423rd Jud. Dist. Ct.",
+      "full_name": "Texas 423rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct425",
+      "short_name": "Tex. 424th Jud. Dist. Ct.",
+      "full_name": "Texas 424th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct426",
+      "short_name": "Tex. 425th Jud. Dist. Ct.",
+      "full_name": "Texas 425th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct427",
+      "short_name": "Tex. 426th Jud. Dist. Ct.",
+      "full_name": "Texas 426th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct428",
+      "short_name": "Tex. 427th Jud. Dist. Ct.",
+      "full_name": "Texas 427th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct429",
+      "short_name": "Tex. 428th Jud. Dist. Ct.",
+      "full_name": "Texas 428th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct430",
+      "short_name": "Tex. 429th Jud. Dist. Ct.",
+      "full_name": "Texas 429th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct431",
+      "short_name": "Tex. 430th Jud. Dist. Ct.",
+      "full_name": "Texas 430th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct432",
+      "short_name": "Tex. 431st Jud. Dist. Ct.",
+      "full_name": "Texas 431st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct433",
+      "short_name": "Tex. 432nd Jud. Dist. Ct.",
+      "full_name": "Texas 432nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct434",
+      "short_name": "Tex. 433rd Jud. Dist. Ct.",
+      "full_name": "Texas 433rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct435",
+      "short_name": "Tex. 434th Jud. Dist. Ct.",
+      "full_name": "Texas 434th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct436",
+      "short_name": "Tex. 435th Jud. Dist. Ct.",
+      "full_name": "Texas 435th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct437",
+      "short_name": "Tex. 436th Jud. Dist. Ct.",
+      "full_name": "Texas 436th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct438",
+      "short_name": "Tex. 437th Jud. Dist. Ct.",
+      "full_name": "Texas 437th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct439",
+      "short_name": "Tex. 438th Jud. Dist. Ct.",
+      "full_name": "Texas 438th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct440",
+      "short_name": "Tex. 439th Jud. Dist. Ct.",
+      "full_name": "Texas 439th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct441",
+      "short_name": "Tex. 440th Jud. Dist. Ct.",
+      "full_name": "Texas 440th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct442",
+      "short_name": "Tex. 441st Jud. Dist. Ct.",
+      "full_name": "Texas 441st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct443",
+      "short_name": "Tex. 442nd Jud. Dist. Ct.",
+      "full_name": "Texas 442nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct444",
+      "short_name": "Tex. 443rd Jud. Dist. Ct.",
+      "full_name": "Texas 443rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct445",
+      "short_name": "Tex. 444th Jud. Dist. Ct.",
+      "full_name": "Texas 444th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct446",
+      "short_name": "Tex. 445th Jud. Dist. Ct.",
+      "full_name": "Texas 445th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct447",
+      "short_name": "Tex. 446th Jud. Dist. Ct.",
+      "full_name": "Texas 446th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct448",
+      "short_name": "Tex. 447th Jud. Dist. Ct.",
+      "full_name": "Texas 447th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct449",
+      "short_name": "Tex. 448th Jud. Dist. Ct.",
+      "full_name": "Texas 448th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct450",
+      "short_name": "Tex. 449th Jud. Dist. Ct.",
+      "full_name": "Texas 449th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct451",
+      "short_name": "Tex. 450th Jud. Dist. Ct.",
+      "full_name": "Texas 450th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct452",
+      "short_name": "Tex. 451st Jud. Dist. Ct.",
+      "full_name": "Texas 451st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct453",
+      "short_name": "Tex. 452nd Jud. Dist. Ct.",
+      "full_name": "Texas 452nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct454",
+      "short_name": "Tex. 453rd Jud. Dist. Ct.",
+      "full_name": "Texas 453rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct455",
+      "short_name": "Tex. 454th Jud. Dist. Ct.",
+      "full_name": "Texas 454th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct456",
+      "short_name": "Tex. 455th Jud. Dist. Ct.",
+      "full_name": "Texas 455th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct457",
+      "short_name": "Tex. 456th Jud. Dist. Ct.",
+      "full_name": "Texas 456th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct458",
+      "short_name": "Tex. 457th Jud. Dist. Ct.",
+      "full_name": "Texas 457th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct459",
+      "short_name": "Tex. 458th Jud. Dist. Ct.",
+      "full_name": "Texas 458th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct460",
+      "short_name": "Tex. 459th Jud. Dist. Ct.",
+      "full_name": "Texas 459th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct461",
+      "short_name": "Tex. 460th Jud. Dist. Ct.",
+      "full_name": "Texas 460th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct462",
+      "short_name": "Tex. 461st Jud. Dist. Ct.",
+      "full_name": "Texas 461st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct463",
+      "short_name": "Tex. 462nd Jud. Dist. Ct.",
+      "full_name": "Texas 462nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct464",
+      "short_name": "Tex. 463rd Jud. Dist. Ct.",
+      "full_name": "Texas 463rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct465",
+      "short_name": "Tex. 464th Jud. Dist. Ct.",
+      "full_name": "Texas 464th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct466",
+      "short_name": "Tex. 465th Jud. Dist. Ct.",
+      "full_name": "Texas 465th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct467",
+      "short_name": "Tex. 466th Jud. Dist. Ct.",
+      "full_name": "Texas 466th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct468",
+      "short_name": "Tex. 467th Jud. Dist. Ct.",
+      "full_name": "Texas 467th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct469",
+      "short_name": "Tex. 468th Jud. Dist. Ct.",
+      "full_name": "Texas 468th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct470",
+      "short_name": "Tex. 469th Jud. Dist. Ct.",
+      "full_name": "Texas 469th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct471",
+      "short_name": "Tex. 470th Jud. Dist. Ct.",
+      "full_name": "Texas 470th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct472",
+      "short_name": "Tex. 471st Jud. Dist. Ct.",
+      "full_name": "Texas 471st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct473",
+      "short_name": "Tex. 472nd Jud. Dist. Ct.",
+      "full_name": "Texas 472nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct474",
+      "short_name": "Tex. 473rd Jud. Dist. Ct.",
+      "full_name": "Texas 473rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct475",
+      "short_name": "Tex. 474th Jud. Dist. Ct.",
+      "full_name": "Texas 474th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct476",
+      "short_name": "Tex. 475th Jud. Dist. Ct.",
+      "full_name": "Texas 475th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct477",
+      "short_name": "Tex. 476th Jud. Dist. Ct.",
+      "full_name": "Texas 476th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct478",
+      "short_name": "Tex. 477th Jud. Dist. Ct.",
+      "full_name": "Texas 477th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct479",
+      "short_name": "Tex. 478th Jud. Dist. Ct.",
+      "full_name": "Texas 478th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct480",
+      "short_name": "Tex. 479th Jud. Dist. Ct.",
+      "full_name": "Texas 479th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct481",
+      "short_name": "Tex. 480th Jud. Dist. Ct.",
+      "full_name": "Texas 480th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct482",
+      "short_name": "Tex. 481st Jud. Dist. Ct.",
+      "full_name": "Texas 481st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct483",
+      "short_name": "Tex. 482nd Jud. Dist. Ct.",
+      "full_name": "Texas 482nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct484",
+      "short_name": "Tex. 483rd Jud. Dist. Ct.",
+      "full_name": "Texas 483rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct485",
+      "short_name": "Tex. 484th Jud. Dist. Ct.",
+      "full_name": "Texas 484th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct486",
+      "short_name": "Tex. 485th Jud. Dist. Ct.",
+      "full_name": "Texas 485th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct487",
+      "short_name": "Tex. 486th Jud. Dist. Ct.",
+      "full_name": "Texas 486th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct488",
+      "short_name": "Tex. 487th Jud. Dist. Ct.",
+      "full_name": "Texas 487th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct489",
+      "short_name": "Tex. 488th Jud. Dist. Ct.",
+      "full_name": "Texas 488th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct490",
+      "short_name": "Tex. 489th Jud. Dist. Ct.",
+      "full_name": "Texas 489th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct491",
+      "short_name": "Tex. 490th Jud. Dist. Ct.",
+      "full_name": "Texas 490th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct492",
+      "short_name": "Tex. 491st Jud. Dist. Ct.",
+      "full_name": "Texas 491st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct493",
+      "short_name": "Tex. 492nd Jud. Dist. Ct.",
+      "full_name": "Texas 492nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct494",
+      "short_name": "Tex. 493rd Jud. Dist. Ct.",
+      "full_name": "Texas 493rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct495",
+      "short_name": "Tex. 494th Jud. Dist. Ct.",
+      "full_name": "Texas 494th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct496",
+      "short_name": "Tex. 495th Jud. Dist. Ct.",
+      "full_name": "Texas 495th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct497",
+      "short_name": "Tex. 496th Jud. Dist. Ct.",
+      "full_name": "Texas 496th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct498",
+      "short_name": "Tex. 497th Jud. Dist. Ct.",
+      "full_name": "Texas 497th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct499",
+      "short_name": "Tex. 498th Jud. Dist. Ct.",
+      "full_name": "Texas 498th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct500",
+      "short_name": "Tex. 499th Jud. Dist. Ct.",
+      "full_name": "Texas 499th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct501",
+      "short_name": "Tex. 500th Jud. Dist. Ct.",
+      "full_name": "Texas 500th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct502",
+      "short_name": "Tex. 501st Jud. Dist. Ct.",
+      "full_name": "Texas 501st Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct503",
+      "short_name": "Tex. 502nd Jud. Dist. Ct.",
+      "full_name": "Texas 502nd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct504",
+      "short_name": "Tex. 503rd Jud. Dist. Ct.",
+      "full_name": "Texas 503rd Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct505",
+      "short_name": "Tex. 504th Jud. Dist. Ct.",
+      "full_name": "Texas 504th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct506",
+      "short_name": "Tex. 505th Jud. Dist. Ct.",
+      "full_name": "Texas 505th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct507",
+      "short_name": "Tex. 506th Jud. Dist. Ct.",
+      "full_name": "Texas 506th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texdistct508",
+      "short_name": "Tex. 507th Jud. Dist. Ct.",
+      "full_name": "Texas 507th Judicial District Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct1",
+      "short_name": "Tex. Crim. Dist. Ct., No. 1, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 1, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct2",
+      "short_name": "Tex. Crim. Dist. Ct., No. 2, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 2, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct3",
+      "short_name": "Tex. Crim. Dist. Ct., No. 3, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 3, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct4",
+      "short_name": "Tex. Crim. Dist. Ct., No. 4, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 4, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct5",
+      "short_name": "Tex. Crim. Dist. Ct., No. 5, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 5, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct6",
+      "short_name": "Tex. Crim. Dist. Ct., No. 6, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 6, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct7",
+      "short_name": "Tex. Crim. Dist. Ct., No. 7, Dallas Cty.",
+      "full_name": "Texas Criminal District Court, No. 7, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texcrimdistct8",
+      "short_name": "Tex. Crim. Dist. Ct., Jefferson Cty.",
+      "full_name": "Texas Criminal District Court, Jefferson City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct",
+      "short_name": "Tex. Cty. Ct.",
+      "full_name": "Texas City Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct1",
+      "short_name": "Tex. Cty. Ct., Angelina Cty.",
+      "full_name": "Texas City Court, Angelina City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct2",
+      "short_name": "Tex. Cty. Ct., Angelina Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Angelina City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct3",
+      "short_name": "Tex. Cty. Ct., Austin Cty.",
+      "full_name": "Texas City Court, Austin City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct4",
+      "short_name": "Tex. Cty. Ct., Austin Cty. Ct. at Law",
+      "full_name": "Texas City Court, Austin City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct5",
+      "short_name": "Tex. Cty. Ct., Bastrop Cty.",
+      "full_name": "Texas City Court, Bastrop City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct6",
+      "short_name": "Tex. Cty. Ct., Bell Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Bell City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct7",
+      "short_name": "Tex. Cty. Ct., Bell Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Bell City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct8",
+      "short_name": "Tex. Cty. Ct., Bexar Cty.",
+      "full_name": "Texas City Court, Bexar City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct9",
+      "short_name": "Tex. Cty. Ct., Bexar Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Bexar City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct10",
+      "short_name": "Tex. Cty. Ct., Bexar Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Bexar City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct11",
+      "short_name": "Tex. Cty. Ct., Bexar Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Bexar City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct12",
+      "short_name": "Tex. Cty. Ct., Bexar Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, Bexar City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct13",
+      "short_name": "Tex. Cty. Ct., Bowie Cty. Ct. at Law",
+      "full_name": "Texas City Court, Bowie City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct14",
+      "short_name": "Tex. Cty. Ct., Brazoria Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Brazoria City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct15",
+      "short_name": "Tex. Cty. Ct., Brazoria Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Brazoria City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct16",
+      "short_name": "Tex. Cty. Ct., Brazoria Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Brazoria City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct17",
+      "short_name": "Tex. Cty. Ct., Brazos Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Brazos City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct18",
+      "short_name": "Tex. Cty. Ct., Brazos Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Brazos City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct19",
+      "short_name": "Tex. Cty. Ct., Burnet Cty.",
+      "full_name": "Texas City Court, Burnet City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct20",
+      "short_name": "Tex. Cty. Ct., Burnet Cty. Ct. at Law",
+      "full_name": "Texas City Court, Burnet City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct21",
+      "short_name": "Tex. Cty. Ct., Caldwell Cty.",
+      "full_name": "Texas City Court, Caldwell City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct22",
+      "short_name": "Tex. Cty. Ct., Caldwell Cty. Ct. at Law",
+      "full_name": "Texas City Court, Caldwell City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct23",
+      "short_name": "Tex. Cty. Ct., Calhoun Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Calhoun City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct24",
+      "short_name": "Tex. Cty. Ct., Cameron Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Cameron City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct25",
+      "short_name": "Tex. Cty. Ct., Cameron Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Cameron City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct26",
+      "short_name": "Tex. Cty. Ct., Cameron Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Cameron City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct27",
+      "short_name": "Tex. Cty. Ct., Chambers Cty.",
+      "full_name": "Texas City Court, Chambers City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct28",
+      "short_name": "Tex. Cty. Ct., Cherokee Cty. Ct. at Law",
+      "full_name": "Texas City Court, Cherokee City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct29",
+      "short_name": "Tex. Cty. Ct., Collin Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Collin City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct30",
+      "short_name": "Tex. Cty. Ct., Collin Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, Collin City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct31",
+      "short_name": "Tex. Cty. Ct., Collin Cty. Ct. at Law No. 6",
+      "full_name": "Texas City Court, Collin City Court at Law No. 6",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct32",
+      "short_name": "Tex. Cty. Ct., Comal Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Comal City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct33",
+      "short_name": "Tex. Cty. Ct., Coryell Cty. Ct. at Law",
+      "full_name": "Texas City Court, Coryell City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct34",
+      "short_name": "Tex. Cty. Ct., Dallas Cty.",
+      "full_name": "Texas City Court, Dallas City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct35",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Dallas City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct36",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Dallas City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct37",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Dallas City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct38",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Dallas City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct39",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, Dallas City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct40",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Crim. Ct. No. 1",
+      "full_name": "Texas City Court, Dallas City Criminal Court No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct41",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Crim. Ct. No. 3",
+      "full_name": "Texas City Court, Dallas City Criminal Court No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct42",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Crim. Ct. No. 5",
+      "full_name": "Texas City Court, Dallas City Criminal Court No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct43",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Crim. Ct. No. 6",
+      "full_name": "Texas City Court, Dallas City Criminal Court No. 6",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct44",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Crim. Ct. No. 7",
+      "full_name": "Texas City Court, Dallas City Criminal Court No. 7",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct45",
+      "short_name": "Tex. Cty. Ct., Dallas Cty. Crim. Ct. No. 10",
+      "full_name": "Texas City Court, Dallas City Criminal Court No. 10",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct46",
+      "short_name": "Tex. Cty. Ct., Denton Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Denton City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct47",
+      "short_name": "Tex. Cty. Ct., Denton Cty. Crim. Ct. No. 1",
+      "full_name": "Texas City Court, Denton City Criminal Court No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct48",
+      "short_name": "Tex. Cty. Ct., Denton Cty. Crim. Ct. No. 3",
+      "full_name": "Texas City Court, Denton City Criminal Court No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct49",
+      "short_name": "Tex. Cty. Ct., Ector Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Ector City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct50",
+      "short_name": "Tex. Cty. Ct., El Paso Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, El Paso City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct51",
+      "short_name": "Tex. Cty. Ct., El Paso Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, El Paso City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct52",
+      "short_name": "Tex. Cty. Ct., El Paso Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, El Paso City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct53",
+      "short_name": "Tex. Cty. Ct., El Paso Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, El Paso City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct54",
+      "short_name": "Tex. Cty. Ct., El Paso Cty. Ct. at Law No. 6",
+      "full_name": "Texas City Court, El Paso City Court at Law No. 6",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct55",
+      "short_name": "Tex. Cty. Ct., El Paso Cty. Ct. at Law No. 7",
+      "full_name": "Texas City Court, El Paso City Court at Law No. 7",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct56",
+      "short_name": "Tex. Cty. Ct., Fort Bend Cty.",
+      "full_name": "Texas City Court, Fort Bend City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct57",
+      "short_name": "Tex. Cty. Ct., Fort Bend Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Fort Bend City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct58",
+      "short_name": "Tex. Cty. Ct., Fort Bend Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Fort Bend City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct59",
+      "short_name": "Tex. Cty. Ct., Fort Bend Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Fort Bend City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct60",
+      "short_name": "Tex. Cty. Ct., Fort Bend Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Fort Bend City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct61",
+      "short_name": "Tex. Cty. Ct., Franklin Cty.",
+      "full_name": "Texas City Court, Franklin City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct62",
+      "short_name": "Tex. Cty. Ct., Galveston Cty.",
+      "full_name": "Texas City Court, Galveston City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct63",
+      "short_name": "Tex. Cty. Ct., Galveston Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Galveston City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct64",
+      "short_name": "Tex. Cty. Ct., Galveston Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Galveston City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct65",
+      "short_name": "Tex. Cty. Ct., Galveston Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Galveston City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct66",
+      "short_name": "Tex. Cty. Ct., Grayson Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Grayson City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct67",
+      "short_name": "Tex. Cty. Ct., Gregg Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Gregg City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct68",
+      "short_name": "Tex. Cty. Ct., Guadalupe Cty.",
+      "full_name": "Texas City Court, Guadalupe City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct69",
+      "short_name": "Tex. Cty. Ct., Harris Cty.",
+      "full_name": "Texas City Court, Harris City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct70",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Crim. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Harris City Criminal Court at Law No.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct71",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Crim. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Harris City Criminal Court at Law No.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct72",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Crim. Ct. at Law No. 11",
+      "full_name": "Texas City Court, Harris City Criminal Court at Law No.",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct73",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Civ. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Harris City Civ. Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct74",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Civ. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Harris City Civ. Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct75",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Civ. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Harris City Civ. Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct76",
+      "short_name": "Tex. Cty. Ct., Harris Cty. Civ. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Harris City Civ. Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct77",
+      "short_name": "Tex. Cty. Ct., Hays Cty.",
+      "full_name": "Texas City Court, Hays City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct78",
+      "short_name": "Tex. Cty. Ct., Henderson Cty.",
+      "full_name": "Texas City Court, Henderson City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct79",
+      "short_name": "Tex. Cty. Ct., Hidalgo Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Hidalgo City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct80",
+      "short_name": "Tex. Cty. Ct., Hidalgo Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Hidalgo City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct81",
+      "short_name": "Tex. Cty. Ct., Hidalgo Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, Hidalgo City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct82",
+      "short_name": "Tex. Cty. Ct., Hidalgo Cty. Ct. at Law No. 6",
+      "full_name": "Texas City Court, Hidalgo City Court at Law No. 6",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct83",
+      "short_name": "Tex. Cty. Ct., Hidalgo Cty. Ct. at Law No. 7",
+      "full_name": "Texas City Court, Hidalgo City Court at Law No. 7",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct84",
+      "short_name": "Tex. Cty. Ct., Hidalgo Cty. Ct. at Law No. 8",
+      "full_name": "Texas City Court, Hidalgo City Court at Law No. 8",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct85",
+      "short_name": "Tex. Cty. Ct., Hill Cty.",
+      "full_name": "Texas City Court, Hill City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct86",
+      "short_name": "Tex. Cty. Ct., Hood Cty.",
+      "full_name": "Texas City Court, Hood City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct87",
+      "short_name": "Tex. Cty. Ct., Hopkins Cty.",
+      "full_name": "Texas City Court, Hopkins City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct88",
+      "short_name": "Tex. Cty. Ct., Houston Cty.",
+      "full_name": "Texas City Court, Houston City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct89",
+      "short_name": "Tex. Cty. Ct., Howard Cty.",
+      "full_name": "Texas City Court, Howard City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct90",
+      "short_name": "Tex. Cty. Ct., Jasper Cty.",
+      "full_name": "Texas City Court, Jasper City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct91",
+      "short_name": "Tex. Cty. Ct., Jefferson Cty.",
+      "full_name": "Texas City Court, Jefferson City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct92",
+      "short_name": "Tex. Cty. Ct., Jefferson Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Jefferson City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct93",
+      "short_name": "Tex. Cty. Ct., Jefferson Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Jefferson City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct94",
+      "short_name": "Tex. Cty. Ct., Karnes Cty.",
+      "full_name": "Texas City Court, Karnes City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct95",
+      "short_name": "Tex. Cty. Ct., Kaufman Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Kaufman City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct96",
+      "short_name": "Tex. Cty. Ct., Kendall Cty.",
+      "full_name": "Texas City Court, Kendall City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct97",
+      "short_name": "Tex. Cty. Ct., Kerr Cty.",
+      "full_name": "Texas City Court, Kerr City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct98",
+      "short_name": "Tex. Cty. Ct., Kerr Cty. Ct. at Law",
+      "full_name": "Texas City Court, Kerr City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct99",
+      "short_name": "Tex. Cty. Ct., Kleberg Cty.",
+      "full_name": "Texas City Court, Kleberg City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct100",
+      "short_name": "Tex. Cty. Ct., Lamar Cty.",
+      "full_name": "Texas City Court, Lamar City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct101",
+      "short_name": "Tex. Cty. Ct., Leon Cty.",
+      "full_name": "Texas City Court, Leon City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct102",
+      "short_name": "Tex. Cty. Ct., Liberty Cty. Ct. at Law",
+      "full_name": "Texas City Court, Liberty City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct103",
+      "short_name": "Tex. Cty. Ct., Lubbock Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Lubbock City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct104",
+      "short_name": "Tex. Cty. Ct., McCulloch Cty.",
+      "full_name": "Texas City Court, McCulloch City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct105",
+      "short_name": "Tex. Cty. Ct., McLennan Cty.",
+      "full_name": "Texas City Court, McLennan City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct106",
+      "short_name": "Tex. Cty. Ct., McLennan Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, McLennan City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct107",
+      "short_name": "Tex. Cty. Ct., Midland Cty.",
+      "full_name": "Texas City Court, Midland City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct108",
+      "short_name": "Tex. Cty. Ct., Montgomery Cty.",
+      "full_name": "Texas City Court, Montgomery City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct109",
+      "short_name": "Tex. Cty. Ct., Montgomery Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Montgomery City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct110",
+      "short_name": "Tex. Cty. Ct., Montgomery Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Montgomery City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct111",
+      "short_name": "Tex. Cty. Ct., Montgomery Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Montgomery City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct112",
+      "short_name": "Tex. Cty. Ct., Montgomery Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Montgomery City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct113",
+      "short_name": "Tex. Cty. Ct., Montgomery Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, Montgomery City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct114",
+      "short_name": "Tex. Cty. Ct., Nacogdoches Cty.",
+      "full_name": "Texas City Court, Nacogdoches City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct115",
+      "short_name": "Tex. Cty. Ct., Nueces Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Nueces City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct116",
+      "short_name": "Tex. Cty. Ct., Nueces Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Nueces City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct117",
+      "short_name": "Tex. Cty. Ct., Nueces Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Nueces City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct118",
+      "short_name": "Tex. Cty. Ct., Nueces Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Nueces City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct119",
+      "short_name": "Tex. Cty. Ct., Nueces Cty. Ct. at Law No. 5",
+      "full_name": "Texas City Court, Nueces City Court at Law No. 5",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct120",
+      "short_name": "Tex. Cty. Ct., Ochiltree Cty.",
+      "full_name": "Texas City Court, Ochiltree City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct121",
+      "short_name": "Tex. Cty. Ct., Orange Cty.",
+      "full_name": "Texas City Court, Orange City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct122",
+      "short_name": "Tex. Cty. Ct., Orange Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Orange City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct123",
+      "short_name": "Tex. Cty. Ct., Panola Cty.",
+      "full_name": "Texas City Court, Panola City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct124",
+      "short_name": "Tex. Cty. Ct., Parker Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Parker City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct125",
+      "short_name": "Tex. Cty. Ct., Polk Cty.",
+      "full_name": "Texas City Court, Polk City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct126",
+      "short_name": "Tex. Cty. Ct., Polk Cty. Ct. at Law",
+      "full_name": "Texas City Court, Polk City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct127",
+      "short_name": "Tex. Cty. Ct., Potter Cty.",
+      "full_name": "Texas City Court, Potter City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct128",
+      "short_name": "Tex. Cty. Ct., Potter Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Potter City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct129",
+      "short_name": "Tex. Cty. Ct., Red River Cty.",
+      "full_name": "Texas City Court, Red River City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct130",
+      "short_name": "Tex. Cty. Ct., San Jacinto Cty.",
+      "full_name": "Texas City Court, San Jacinto City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct131",
+      "short_name": "Tex. Cty. Ct., San Patricio Cty.",
+      "full_name": "Texas City Court, San Patricio City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct132",
+      "short_name": "Tex. Cty. Ct., San Patricio Cty. Ct. at Law",
+      "full_name": "Texas City Court, San Patricio City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct133",
+      "short_name": "Tex. Cty. Ct., Smith Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Smith City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct134",
+      "short_name": "Tex. Cty. Ct., Tarrant Cty.",
+      "full_name": "Texas City Court, Tarrant City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct135",
+      "short_name": "Tex. Cty. Ct., Tarrant Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Tarrant City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct136",
+      "short_name": "Tex. Cty. Ct., Tarrant Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Tarrant City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct137",
+      "short_name": "Tex. Cty. Ct., Tarrant Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Tarrant City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct138",
+      "short_name": "Tex. Cty. Ct., Taylor Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Taylor City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct139",
+      "short_name": "Tex. Cty. Ct., Travis Cty.",
+      "full_name": "Texas City Court, Travis City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct140",
+      "short_name": "Tex. Cty. Ct., Travis Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Travis City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct141",
+      "short_name": "Tex. Cty. Ct., Travis Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Travis City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct142",
+      "short_name": "Tex. Cty. Ct., Travis Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Travis City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct143",
+      "short_name": "Tex. Cty. Ct., Trinity Cty.",
+      "full_name": "Texas City Court, Trinity City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct144",
+      "short_name": "Tex. Cty. Ct., Val Verde Cty. Ct. at Law",
+      "full_name": "Texas City Court, Val Verde City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct145",
+      "short_name": "Tex. Cty. Ct., Walker Cty. Ct. at Law",
+      "full_name": "Texas City Court, Walker City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct146",
+      "short_name": "Tex. Cty. Ct., Waller Cty.",
+      "full_name": "Texas City Court, Waller City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct147",
+      "short_name": "Tex. Cty. Ct., Waller Cty. Ct. at Law",
+      "full_name": "Texas City Court, Waller City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct148",
+      "short_name": "Tex. Cty. Ct., Wash. Cty. Ct. at Law",
+      "full_name": "Texas City Court, Wash. City Court at Law",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct149",
+      "short_name": "Tex. Cty. Ct., Webb Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Webb City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct150",
+      "short_name": "Tex. Cty. Ct., Webb Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Webb City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct151",
+      "short_name": "Tex. Cty. Ct., Wichita Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Wichita City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct152",
+      "short_name": "Tex. Cty. Ct., Willacy Cty.",
+      "full_name": "Texas City Court, Willacy City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct153",
+      "short_name": "Tex. Cty. Ct., Williamson Cty. Ct. at Law No. 1",
+      "full_name": "Texas City Court, Williamson City Court at Law No. 1",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct154",
+      "short_name": "Tex. Cty. Ct., Williamson Cty. Ct. at Law No. 2",
+      "full_name": "Texas City Court, Williamson City Court at Law No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct155",
+      "short_name": "Tex. Cty. Ct., Williamson Cty. Ct. at Law No. 3",
+      "full_name": "Texas City Court, Williamson City Court at Law No. 3",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct156",
+      "short_name": "Tex. Cty. Ct., Williamson Cty. Ct. at Law No. 4",
+      "full_name": "Texas City Court, Williamson City Court at Law No. 4",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texctyct157",
+      "short_name": "Tex. Cty. Ct., Young Cty.",
+      "full_name": "Texas City Court, Young City",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texprobct",
+      "short_name": "Tex. Prob. Ct.",
+      "full_name": "Texas Probate Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "texprobct1",
+      "short_name": "Tex. Prob. Ct., Dallas No. 2",
+      "full_name": "Texas Probate Court, Dallas No. 2",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

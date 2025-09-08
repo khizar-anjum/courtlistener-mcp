@@ -1,0 +1,151 @@
+{
+  "state": "arkansas",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 15,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "arizsuper"
+    ],
+    "bankruptcy": [
+      "arb",
+      "areb",
+      "arwb"
+    ],
+    "local": [
+      "armfor",
+      "ared",
+      "arwd",
+      "ard",
+      "ariz",
+      "arizctapp",
+      "ariztaxct",
+      "ark",
+      "arkctapp",
+      "arkworkcompcom",
+      "arkag"
+    ]
+  },
+  "courts": [
+    {
+      "id": "armfor",
+      "short_name": "Court of Appeals for the Armed Forces",
+      "full_name": "Court of Appeals for the Armed Forces",
+      "jurisdiction": "MA",
+      "start_date": "1951-05-31",
+      "end_date": null
+    },
+    {
+      "id": "arb",
+      "short_name": "D. Arizona",
+      "full_name": "United States Bankruptcy Court, D. Arizona",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "areb",
+      "short_name": "E.D. Arkansas",
+      "full_name": "United States Bankruptcy Court, E.D. Arkansas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arwb",
+      "short_name": "W.D. Arkansas",
+      "full_name": "United States Bankruptcy Court, W.D. Arkansas",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ared",
+      "short_name": "E.D. Arkansas",
+      "full_name": "District Court, E.D. Arkansas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arwd",
+      "short_name": "W.D. Arkansas",
+      "full_name": "District Court, W.D. Arkansas",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ard",
+      "short_name": "United States District Court for the District of Arkansas",
+      "full_name": "United States District Court for the District of Arkansas",
+      "jurisdiction": "FD",
+      "start_date": "1836-06-15",
+      "end_date": "1851-03-03"
+    },
+    {
+      "id": "ariz",
+      "short_name": "Arizona Supreme Court",
+      "full_name": "Arizona Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1912-01-01",
+      "end_date": null
+    },
+    {
+      "id": "arizctapp",
+      "short_name": "Court of Appeals of Arizona",
+      "full_name": "Court of Appeals of Arizona",
+      "jurisdiction": "SA",
+      "start_date": "1965-01-01",
+      "end_date": null
+    },
+    {
+      "id": "arizsuper",
+      "short_name": "Arizona Superior Court",
+      "full_name": "Arizona Superior Court",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ariztaxct",
+      "short_name": "Arizona Tax Court",
+      "full_name": "Arizona Tax Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ark",
+      "short_name": "Supreme Court of Arkansas",
+      "full_name": "Supreme Court of Arkansas",
+      "jurisdiction": "S",
+      "start_date": "1841-01-01",
+      "end_date": null
+    },
+    {
+      "id": "arkctapp",
+      "short_name": "Court of Appeals of Arkansas",
+      "full_name": "Court of Appeals of Arkansas",
+      "jurisdiction": "SA",
+      "start_date": "1979-08-08",
+      "end_date": null
+    },
+    {
+      "id": "arkworkcompcom",
+      "short_name": "Arkansas Workers' Compensation Commission",
+      "full_name": "Arkansas Workers' Compensation Commission",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "arkag",
+      "short_name": "Arkansas Attorney General Reports",
+      "full_name": "Arkansas Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

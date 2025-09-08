@@ -1,0 +1,42 @@
+{
+  "state": "wyoming",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 3,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "wyb"
+    ],
+    "local": [
+      "wyd",
+      "wyo"
+    ]
+  },
+  "courts": [
+    {
+      "id": "wyb",
+      "short_name": "D. Wyoming",
+      "full_name": "United States Bankruptcy Court, D. Wyoming",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wyd",
+      "short_name": "D. Wyoming",
+      "full_name": "District Court, D. Wyoming",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "wyo",
+      "short_name": "Wyoming Supreme Court",
+      "full_name": "Wyoming Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1921-01-01",
+      "end_date": null
+    }
+  ]
+}

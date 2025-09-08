@@ -1,0 +1,124 @@
+{
+  "state": "louisiana",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 12,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "lasuperct"
+    ],
+    "bankruptcy": [
+      "laeb",
+      "lamb",
+      "lawb"
+    ],
+    "local": [
+      "lad",
+      "laed",
+      "lamd",
+      "lawd",
+      "la",
+      "lacterrapp",
+      "lactapp",
+      "laag"
+    ]
+  },
+  "courts": [
+    {
+      "id": "laeb",
+      "short_name": "E.D. Louisiana",
+      "full_name": "United States Bankruptcy Court, E.D. Louisiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lamb",
+      "short_name": "M.D. Louisiana",
+      "full_name": "United States Bankruptcy Court, M.D. Louisiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lawb",
+      "short_name": "W.D. Louisiana",
+      "full_name": "United States Bankruptcy Court, W.D. Louisiana",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lad",
+      "short_name": "D. Louisiana",
+      "full_name": "District Court, D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": "1812-04-08",
+      "end_date": "1881-03-03"
+    },
+    {
+      "id": "laed",
+      "short_name": "E.D. Louisiana",
+      "full_name": "District Court, E.D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lamd",
+      "short_name": "M.D. Louisiana",
+      "full_name": "District Court, M.D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "lawd",
+      "short_name": "W.D. Louisiana",
+      "full_name": "District Court, W.D. Louisiana",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "la",
+      "short_name": "Supreme Court of Louisiana",
+      "full_name": "Supreme Court of Louisiana",
+      "jurisdiction": "S",
+      "start_date": "1813-01-01",
+      "end_date": null
+    },
+    {
+      "id": "lacterrapp",
+      "short_name": "Louisiana Court of Errors and Appeals",
+      "full_name": "Louisiana Court of Errors and Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1843-01-01",
+      "end_date": "1846-12-31"
+    },
+    {
+      "id": "lactapp",
+      "short_name": "Louisiana Court of Appeal",
+      "full_name": "Louisiana Court of Appeal",
+      "jurisdiction": "SA",
+      "start_date": "1879-01-01",
+      "end_date": null
+    },
+    {
+      "id": "lasuperct",
+      "short_name": "Superior Court of Louisiana",
+      "full_name": "Superior Court of Louisiana",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "laag",
+      "short_name": "Louisiana Attorney General Reports",
+      "full_name": "Louisiana Attorney General Reports",
+      "jurisdiction": "SAG",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

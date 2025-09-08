@@ -1,0 +1,124 @@
+{
+  "state": "delaware",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 12,
+  "court_types": {
+    "federal": [],
+    "state": [
+      "deloyerterm",
+      "delgensess"
+    ],
+    "bankruptcy": [
+      "deb"
+    ],
+    "local": [
+      "deptinterior",
+      "ded",
+      "del",
+      "delch",
+      "delorphct",
+      "delsuperct",
+      "delctcompl",
+      "delfamct",
+      "deljudct"
+    ]
+  },
+  "courts": [
+    {
+      "id": "deptinterior",
+      "short_name": "Department of Interior",
+      "full_name": "Department of Interior",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "deb",
+      "short_name": "D. Delaware",
+      "full_name": "United States Bankruptcy Court, D. Delaware",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ded",
+      "short_name": "D. Delaware",
+      "full_name": "District Court, D. Delaware",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "del",
+      "short_name": "Supreme Court of Delaware",
+      "full_name": "Supreme Court of Delaware",
+      "jurisdiction": "S",
+      "start_date": "1832-01-01",
+      "end_date": null
+    },
+    {
+      "id": "deloyerterm",
+      "short_name": "Delaware Court of Oyer and Terminer",
+      "full_name": "Delaware Court of Oyer and Terminer",
+      "jurisdiction": "ST",
+      "start_date": "1831-01-01",
+      "end_date": "1951-12-31"
+    },
+    {
+      "id": "delch",
+      "short_name": "Court of Chancery of Delaware",
+      "full_name": "Court of Chancery of Delaware",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delorphct",
+      "short_name": "Delaware Orphan's Court",
+      "full_name": "Orphan's Court of Delaware",
+      "jurisdiction": "SA",
+      "start_date": "1683-01-01",
+      "end_date": "1970-12-31"
+    },
+    {
+      "id": "delgensess",
+      "short_name": "Court of General Sessions of Delaware",
+      "full_name": "Court of General Sessions of The Peace And Jail Delivery of Delaware",
+      "jurisdiction": "ST",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delsuperct",
+      "short_name": "Superior Court of Delaware",
+      "full_name": "Superior Court of Delaware",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delctcompl",
+      "short_name": "Delaware Court of Common Pleas",
+      "full_name": "Delaware Court of Common Pleas",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "delfamct",
+      "short_name": "Delaware Family Court",
+      "full_name": "Delaware Family Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "deljudct",
+      "short_name": "Court on the Judiciary of Delaware",
+      "full_name": "Court on the Judiciary of Delaware.",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

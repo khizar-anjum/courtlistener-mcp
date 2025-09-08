@@ -1,0 +1,51 @@
+{
+  "state": "north-dakota",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 4,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "ndb"
+    ],
+    "local": [
+      "ndd",
+      "nd",
+      "ndctapp"
+    ]
+  },
+  "courts": [
+    {
+      "id": "ndb",
+      "short_name": "D. North Dakota",
+      "full_name": "United States Bankruptcy Court, D. North Dakota",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ndd",
+      "short_name": "D. North Dakota",
+      "full_name": "District Court, D. North Dakota",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "nd",
+      "short_name": "North Dakota Supreme Court",
+      "full_name": "North Dakota Supreme Court",
+      "jurisdiction": "S",
+      "start_date": "1861-01-01",
+      "end_date": null
+    },
+    {
+      "id": "ndctapp",
+      "short_name": "North Dakota Court of Appeals",
+      "full_name": "North Dakota Court of Appeals",
+      "jurisdiction": "SA",
+      "start_date": "1987-09-01",
+      "end_date": null
+    }
+  ]
+}

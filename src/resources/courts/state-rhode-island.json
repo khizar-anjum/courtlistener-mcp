@@ -1,0 +1,60 @@
+{
+  "state": "rhode-island",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 5,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "rib"
+    ],
+    "local": [
+      "rid",
+      "ri",
+      "risuperct",
+      "riviceadmct"
+    ]
+  },
+  "courts": [
+    {
+      "id": "rib",
+      "short_name": "D. Rhode Island",
+      "full_name": "United States Bankruptcy Court, D. Rhode Island",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "rid",
+      "short_name": "D. Rhode Island",
+      "full_name": "District Court, D. Rhode Island",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "ri",
+      "short_name": "Supreme Court of Rhode Island",
+      "full_name": "Supreme Court of Rhode Island",
+      "jurisdiction": "S",
+      "start_date": "1747-01-01",
+      "end_date": null
+    },
+    {
+      "id": "risuperct",
+      "short_name": "Superior Court of Rhode Island",
+      "full_name": "Superior Court of Rhode Island",
+      "jurisdiction": "SA",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "riviceadmct",
+      "short_name": "Rhode Island Vice Admiralty Court",
+      "full_name": "Rhode Island Vice Admiralty Court",
+      "jurisdiction": "SS",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}

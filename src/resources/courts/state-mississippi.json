@@ -1,0 +1,60 @@
+{
+  "state": "mississippi",
+  "generated_at": "2025-09-08T16:39:49.140Z",
+  "total_courts": 5,
+  "court_types": {
+    "federal": [],
+    "state": [],
+    "bankruptcy": [
+      "msnb",
+      "mssb"
+    ],
+    "local": [
+      "mspb",
+      "msnd",
+      "mssd"
+    ]
+  },
+  "courts": [
+    {
+      "id": "mspb",
+      "short_name": "Merit Systems Protection Board",
+      "full_name": "Merit Systems Protection Board",
+      "jurisdiction": "FS",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "msnb",
+      "short_name": "N.D. Mississippi",
+      "full_name": "United States Bankruptcy Court, N.D. Mississippi",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mssb",
+      "short_name": "S.D. Mississippi",
+      "full_name": "United States Bankruptcy Court, S.D. Mississippi",
+      "jurisdiction": "FB",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "msnd",
+      "short_name": "N.D. Mississippi",
+      "full_name": "District Court, N.D. Mississippi",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "id": "mssd",
+      "short_name": "S.D. Mississippi",
+      "full_name": "District Court, S.D. Mississippi",
+      "jurisdiction": "FD",
+      "start_date": null,
+      "end_date": null
+    }
+  ]
+}
