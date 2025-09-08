@@ -97,8 +97,8 @@ export class CourtResourceManager {
         description: 'Special federal courts like Tax Court, Court of Federal Claims, etc.'
       },
       
-      // State-specific resources (generated dynamically)
-      ...this.generateStateResources(),
+      // State-specific resources (hardcoded for Smithery compatibility)
+      ...this.getStateResources(),
       
       // Jurisdiction mappings
       { 
@@ -167,35 +167,59 @@ export class CourtResourceManager {
     return path.join(this.RESOURCES_DIR, withoutScheme + '.json');
   }
   
-  private static generateStateResources(): Resource[] {
-    const courtsDir = path.join(this.RESOURCES_DIR, 'courts');
-    
-    if (!fs.existsSync(courtsDir)) {
-      console.warn('Courts directory not found, no state resources available');
-      return [];
-    }
-
-    try {
-      const stateFiles = fs.readdirSync(courtsDir).filter(file => file.startsWith('state-') && file.endsWith('.json'));
-      return stateFiles
-        .map(file => {
-          const stateName = file.replace('state-', '').replace('.json', '');
-          const displayName = stateName
-            .split('-')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-          
-          return {
-            uri: `courtlistener://courts/state-${stateName}`,
-            name: `${displayName} Courts`,
-            mimeType: 'application/json',
-            description: `All courts in ${displayName} including federal, state, bankruptcy, and local courts`
-          };
-        });
-    } catch (error) {
-      console.error('Error reading courts directory:', error);
-      return [];
-    }
+  private static getStateResources(): Resource[] {
+    return [
+      { uri: 'courtlistener://courts/state-alabama', name: 'Alabama Courts', mimeType: 'application/json', description: 'All courts in Alabama including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-alaska', name: 'Alaska Courts', mimeType: 'application/json', description: 'All courts in Alaska including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-arizona', name: 'Arizona Courts', mimeType: 'application/json', description: 'All courts in Arizona including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-arkansas', name: 'Arkansas Courts', mimeType: 'application/json', description: 'All courts in Arkansas including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-california', name: 'California Courts', mimeType: 'application/json', description: 'All courts in California including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-colorado', name: 'Colorado Courts', mimeType: 'application/json', description: 'All courts in Colorado including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-connecticut', name: 'Connecticut Courts', mimeType: 'application/json', description: 'All courts in Connecticut including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-delaware', name: 'Delaware Courts', mimeType: 'application/json', description: 'All courts in Delaware including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-florida', name: 'Florida Courts', mimeType: 'application/json', description: 'All courts in Florida including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-georgia', name: 'Georgia Courts', mimeType: 'application/json', description: 'All courts in Georgia including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-hawaii', name: 'Hawaii Courts', mimeType: 'application/json', description: 'All courts in Hawaii including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-idaho', name: 'Idaho Courts', mimeType: 'application/json', description: 'All courts in Idaho including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-illinois', name: 'Illinois Courts', mimeType: 'application/json', description: 'All courts in Illinois including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-indiana', name: 'Indiana Courts', mimeType: 'application/json', description: 'All courts in Indiana including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-iowa', name: 'Iowa Courts', mimeType: 'application/json', description: 'All courts in Iowa including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-kansas', name: 'Kansas Courts', mimeType: 'application/json', description: 'All courts in Kansas including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-kentucky', name: 'Kentucky Courts', mimeType: 'application/json', description: 'All courts in Kentucky including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-louisiana', name: 'Louisiana Courts', mimeType: 'application/json', description: 'All courts in Louisiana including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-maine', name: 'Maine Courts', mimeType: 'application/json', description: 'All courts in Maine including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-maryland', name: 'Maryland Courts', mimeType: 'application/json', description: 'All courts in Maryland including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-massachusetts', name: 'Massachusetts Courts', mimeType: 'application/json', description: 'All courts in Massachusetts including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-michigan', name: 'Michigan Courts', mimeType: 'application/json', description: 'All courts in Michigan including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-minnesota', name: 'Minnesota Courts', mimeType: 'application/json', description: 'All courts in Minnesota including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-mississippi', name: 'Mississippi Courts', mimeType: 'application/json', description: 'All courts in Mississippi including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-missouri', name: 'Missouri Courts', mimeType: 'application/json', description: 'All courts in Missouri including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-montana', name: 'Montana Courts', mimeType: 'application/json', description: 'All courts in Montana including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-nebraska', name: 'Nebraska Courts', mimeType: 'application/json', description: 'All courts in Nebraska including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-nevada', name: 'Nevada Courts', mimeType: 'application/json', description: 'All courts in Nevada including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-new-hampshire', name: 'New Hampshire Courts', mimeType: 'application/json', description: 'All courts in New Hampshire including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-new-jersey', name: 'New Jersey Courts', mimeType: 'application/json', description: 'All courts in New Jersey including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-new-mexico', name: 'New Mexico Courts', mimeType: 'application/json', description: 'All courts in New Mexico including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-new-york', name: 'New York Courts', mimeType: 'application/json', description: 'All courts in New York including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-north-carolina', name: 'North Carolina Courts', mimeType: 'application/json', description: 'All courts in North Carolina including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-north-dakota', name: 'North Dakota Courts', mimeType: 'application/json', description: 'All courts in North Dakota including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-ohio', name: 'Ohio Courts', mimeType: 'application/json', description: 'All courts in Ohio including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-oklahoma', name: 'Oklahoma Courts', mimeType: 'application/json', description: 'All courts in Oklahoma including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-oregon', name: 'Oregon Courts', mimeType: 'application/json', description: 'All courts in Oregon including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-pennsylvania', name: 'Pennsylvania Courts', mimeType: 'application/json', description: 'All courts in Pennsylvania including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-rhode-island', name: 'Rhode Island Courts', mimeType: 'application/json', description: 'All courts in Rhode Island including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-south-carolina', name: 'South Carolina Courts', mimeType: 'application/json', description: 'All courts in South Carolina including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-south-dakota', name: 'South Dakota Courts', mimeType: 'application/json', description: 'All courts in South Dakota including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-tennessee', name: 'Tennessee Courts', mimeType: 'application/json', description: 'All courts in Tennessee including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-texas', name: 'Texas Courts', mimeType: 'application/json', description: 'All courts in Texas including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-utah', name: 'Utah Courts', mimeType: 'application/json', description: 'All courts in Utah including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-vermont', name: 'Vermont Courts', mimeType: 'application/json', description: 'All courts in Vermont including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-virginia', name: 'Virginia Courts', mimeType: 'application/json', description: 'All courts in Virginia including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-washington', name: 'Washington Courts', mimeType: 'application/json', description: 'All courts in Washington including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-west-virginia', name: 'West Virginia Courts', mimeType: 'application/json', description: 'All courts in West Virginia including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-wisconsin', name: 'Wisconsin Courts', mimeType: 'application/json', description: 'All courts in Wisconsin including federal, state, bankruptcy, and local courts' },
+      { uri: 'courtlistener://courts/state-wyoming', name: 'Wyoming Courts', mimeType: 'application/json', description: 'All courts in Wyoming including federal, state, bankruptcy, and local courts' }
+    ];
   }
 
   // Utility method to get all available jurisdictions for validation
